@@ -82,11 +82,11 @@
             '</h1>' +
             '<div class="duck-subhead">' +
               '<div class="duck-subinfo">' +
-                '<p class="duck-franchise">' +
-                  '<a class="franchise-link text-link" href="index.html?franchise=' +
-                    encodeURIComponent(fig.franchise) + '" ' +
-                    'title="Show all ' + T.esc(fig.franchise) + ' TUBBZ">' +
-                    T.esc(fig.franchise) +
+                '<p class="duck-collection">' +
+                  '<a class="collection-link text-link" href="index.html?collection=' +
+                    encodeURIComponent(fig.collection) + '" ' +
+                    'title="Show all ' + T.esc(fig.collection) + ' TUBBZ">' +
+                    T.esc(fig.collection) +
                   '</a>' +
                 '</p>' +
                 '<dl class="duck-meta">' +

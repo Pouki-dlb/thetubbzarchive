@@ -61,13 +61,13 @@ window.Tubbz = (function () {
       var meta = data.meta || {};
       var figurines = Array.isArray(data.figurines) ? data.figurines.slice() : [];
       // Numéro → nombre (parseFloat pour gérer les « 3.1 » qui suivent le « 3 ») ;
-      // absent ou invalide = Infinity (rejeté en fin de franchise).
+      // absent ou invalide = Infinity (rejeté en fin de collection).
       function numOf(v) { var n = parseFloat(v); return isNaN(n) ? Infinity : n; }
-      // Tri par défaut : franchise (alpha), puis numéro croissant (sans-numéro à la fin),
+      // Tri par défaut : collection (alpha), puis numéro croissant (sans-numéro à la fin),
       // puis nom (départage à numéro égal ou entre sans-numéro).
       figurines.sort(function (a, b) {
-        var byFranchise = String(a.franchise || "").localeCompare(String(b.franchise || ""), "fr");
-        if (byFranchise !== 0) return byFranchise;
+        var byCollection = String(a.collection || "").localeCompare(String(b.collection || ""), "fr");
+        if (byCollection !== 0) return byCollection;
         var na = numOf(a.number), nb = numOf(b.number);
         if (na !== nb) return na - nb;
         return String(a.name || "").localeCompare(String(b.name || ""), "fr");

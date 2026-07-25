@@ -31,7 +31,7 @@ window.TUBBZ_DATA = {
     {
       "id": "2001-space-odyssey-dr-david-bowman",
       "name": "Dr. David Bowman",
-      "franchise": "2001 Space Odyssey",
+      "collection": "2001 Space Odyssey",
       "number": "1",
       "releaseYear": "2024",
       "description": "“Open the pod bay doors, HAL!” - Dr. David Bowman has been transformed into a quacking TUBBZ collectible toy! Dressed in his signature orange space suit and helmet, this intrepid astronaut is ready to venture beyond the stars and into your collection. With meticulous detailing and a collector’s presentation box, this officially licensed 2001: A Space Odyssey TUBBZ is a must-have for sci-fi fans and collectors alike.",
@@ -49,7 +49,7 @@ window.TUBBZ_DATA = {
     {
       "id": "5-year-anniversary-splash",
       "name": "Splash",
-      "franchise": "5 year Anniversary",
+      "collection": "5 year Anniversary",
       "releaseYear": "2024",
       "description": "Introducing ‘Splash’, celebrating 5 quack-tastic years of TUBBZ! TUBBZ began with a simple rubber duck, the designers’ imaginations ran wild and created the cosplaying toy rubber duck legends that have gone down a storm with pop culture fans. Splash is part of the TUBBZ toy range, a highly collectible series of your favourite gaming, movie, TV show and pop culture characters in duck form!",
       "variants": [
@@ -62,7 +62,7 @@ window.TUBBZ_DATA = {
     {
       "id": "a-clockworkd-orange-alex-delarge",
       "name": "Alex Delarge",
-      "franchise": "A Clockworkd Orange",
+      "collection": "A Clockworkd Orange",
       "number": "2",
       "releaseYear": "2024",
       "description": "The duck pond has taken a dystopian turn as Alex Delarge joins the toy collection. There’s no mistaking him, the detail is epic and captures him perfectly. He’s wearing the signature bowler hat, white button-down shirt (or is it a straitjacket) and of course one eye has the weird long eyelashes. ",
@@ -80,7 +80,7 @@ window.TUBBZ_DATA = {
     {
       "id": "assassin-s-creeds-ezio-auditore-da-firenze",
       "name": "Ezio Auditore Da Firenze",
-      "franchise": "Assassin's Creeds",
+      "collection": "Assassin's Creeds",
       "number": "1",
       "releaseYear": "2025",
       "description": "Step into the shadows of Renaissance Italy with the Assassin’s Creed: Ezio TUBBZ. This legendary Master Assassin has been reimagined as a cosplaying duck, complete with his iconic hood, hidden blades, and unmistakable flair. From the sharp detailing on his robes to the confident stance, this duck is a must-have for any Assassin’s Creed fan looking to add a splash of stealth to their shelf.",
@@ -94,7 +94,7 @@ window.TUBBZ_DATA = {
     {
       "id": "assassin-s-creeds-kassandra",
       "name": "Kassandra",
-      "franchise": "Assassin's Creeds",
+      "collection": "Assassin's Creeds",
       "number": "2",
       "releaseYear": "2025",
       "description": "The fearless mercenary turned legendary heroine has swapped her eagle for feathers!\n\nReimagined as a cosplaying duck, Kassandra dons her iconic Spartan armour and lethal weaponry, ready to leap into any battle or display shelf skirmish.\n\nWith intricate detailing that captures her strength, spirit, and sass, this collectible is an unmissable tribute to one of Assassin’s Creed’s fiercest leads.",
@@ -108,7 +108,7 @@ window.TUBBZ_DATA = {
     {
       "id": "back-to-the-future-marty-mcfly",
       "name": "Marty Mcfly",
-      "franchise": "Back to the Future",
+      "collection": "Back to the Future",
       "number": "1",
       "releaseYear": "2020",
       "description": "\"Your kids, Marty! Something's got to be done about your kids!\"\n\nMeet Marty McFly, the iconic hero from Back to the Future. Armed with his trusty camcorder, Marty is ready to go back in time to try and regain his human form.\n\nWith his red puffer vest, typical 1980s style, and instantly recognizable gear, this figurine perfectly captures the energy and charm of the famous time traveler.",
@@ -134,7 +134,7 @@ window.TUBBZ_DATA = {
     {
       "id": "back-to-the-future-doc-brown",
       "name": "Doc Brown",
-      "franchise": "Back to the Future",
+      "collection": "Back to the Future",
       "number": "2",
       "releaseYear": "2020",
       "description": "Great Scott! The flux capacitor has done it again.\n\nMeet Dr Emmett Brown, the brilliant inventor of the time-traveling DeLorean. It seems a temporal experiment went wrong: Doc Brown has been transformed into a collectible cosplay duck.\n\nWith his wild white hair, scientist's coat, and instantly recognizable look, this figurine perfectly captures the eccentricity and genius of one of Back to the Future's most iconic characters.",
@@ -156,7 +156,7 @@ window.TUBBZ_DATA = {
     {
       "id": "back-to-the-future-marty-mcfly-anti-radiation-suit",
       "name": "Marty Mcfly Anti-Radiation Suit",
-      "franchise": "Back to the Future",
+      "collection": "Back to the Future",
       "number": "3",
       "releaseYear": "2021",
       "description": "We're not entirely sure Marty McFly's radiation suit works – he looks like he's turned into a bath duck after handling plutonium!",
@@ -174,7 +174,7 @@ window.TUBBZ_DATA = {
     {
       "id": "back-to-the-future-doc-brown-1955",
       "name": "Doc Brown 1955",
-      "franchise": "Back to the Future",
+      "collection": "Back to the Future",
       "number": "4",
       "releaseYear": "2021",
       "description": "Even before the flux capacitor, Doc Emmet Brown was the creator of all sorts of strange and wonderful inventions. One of them dates back to 1955, when he built a mind-reading brainwave analyzer (which doesn't work).",
@@ -196,7 +196,7 @@ window.TUBBZ_DATA = {
     {
       "id": "back-to-the-future-marty-mcfly-2015",
       "name": "Marty Mcfly 2015",
-      "franchise": "Back to the Future",
+      "collection": "Back to the Future",
       "number": "5",
       "releaseYear": "2022",
       "description": "Great Scott! It seems Marty's antics in time have gone slightly awry as he's been turned into a duck in 2015.",
@@ -214,7 +214,7 @@ window.TUBBZ_DATA = {
     {
       "id": "back-to-the-future-doc-brown-2015",
       "name": "Doc Brown 2015",
-      "franchise": "Back to the Future",
+      "collection": "Back to the Future",
       "number": "6",
       "releaseYear": "2022",
       "description": "Who would have thought we'd have flying cars and hoverboards in 2015?! We're sure Doc Emmet Brown didn't expect it!",
@@ -232,7 +232,7 @@ window.TUBBZ_DATA = {
     {
       "id": "back-to-the-future-biff-tannen-2015",
       "name": "Biff Tannen 2015",
-      "franchise": "Back to the Future",
+      "collection": "Back to the Future",
       "number": "7",
       "releaseYear": "2022",
       "description": "The big, aggressive, stupid bully Biff Tannen is no different in 2015! He's still busy waxing cars to keep himself afloat.",
@@ -246,7 +246,7 @@ window.TUBBZ_DATA = {
     {
       "id": "back-to-the-future-george-mcfly",
       "name": "George Mcfly",
-      "franchise": "Back to the Future",
+      "collection": "Back to the Future",
       "description": "George McFly, the geek turned hero, is here ! Clumsy but determined, he is living proof that a single moment can change everything. Whether he's dodging bullies or finding the courage to fight back, he perfectly embodies the adage \"one moment can change everything.\"",
       "variants": [
         {
@@ -258,7 +258,7 @@ window.TUBBZ_DATA = {
     {
       "id": "back-to-the-future-lorraine-baines",
       "name": "Lorraine Baines",
-      "franchise": "Back to the Future",
+      "collection": "Back to the Future",
       "description": "Before the future got complicated, Lorraine was a charming young woman, always smiling and elegant. But don't be fooled by her innocent look: this TUBBZ has many surprises in store, especially if your name is Calvin Klein!",
       "variants": [
         {
@@ -270,7 +270,7 @@ window.TUBBZ_DATA = {
     {
       "id": "back-to-the-future-time-machine-special-edition",
       "name": "Time Machine (Special Edition)",
-      "franchise": "Back to the Future",
+      "collection": "Back to the Future",
       "releaseYear": "2025",
       "description": "Great Scott! Take your Mini TUBBZ on a time-traveling adventure with this officially licensed TUBBZ Time Machine! Inspired by the iconic vehicle from Back to the Future, this highly detailed time machine is designed to fit two Mini TUBBZ figures. Travel in style to the past, present, or future! With its intricate piping, detailed time circuits, and unforgettable butterfly doors, this piece is a must-have addition to any Back to the Future fan's collection.\n\nNo plutonium needed: simply install your Mini TUBBZ and get ready to reach 142 km/h!",
       "variants": [
@@ -283,7 +283,7 @@ window.TUBBZ_DATA = {
     {
       "id": "bloodbath-horror-beetlejuice-beetlejuice",
       "name": "Beetlejuice - Beetlejuice",
-      "franchise": "Bloodbath / Horror",
+      "collection": "Bloodbath / Horror",
       "number": "1",
       "releaseYear": "2020",
       "description": "Discover Beetlejuice (Betelgeuse), the craziest bio-exorcist in cinema. With his black and white striped suit, messy hair, and macabre humor, Beetlejuice takes on a new appearance that is as strange as it is irresistible: a collectible cosplay duck.\n\nCunning, unpredictable, and always ready to sow chaos, Beetlejuice retains all his charisma even in duck form. A must-have for fans of fantastic cinema and dark humor.",
@@ -305,7 +305,7 @@ window.TUBBZ_DATA = {
     {
       "id": "bloodbath-horror-the-exorcist-regan",
       "name": "The Exorcist - Regan",
-      "franchise": "Bloodbath / Horror",
+      "collection": "Bloodbath / Horror",
       "number": "2",
       "releaseYear": "2020",
       "description": "The 1973 cult horror is coming to the pond.\n\nMeet Regan MacNeil, the iconic character from the film The Exorcist. Possessed by a demonic force, Regan is reinterpreted here as a collectible cosplay duck that is as unsettling as it is quirky.\n\nWith her floral nightgown, scarred face, turned head, and details inspired by the cult green vomit scene, this figurine pays homage to one of the most memorable characters in horror cinema.",
@@ -323,7 +323,7 @@ window.TUBBZ_DATA = {
     {
       "id": "bloodbath-horror-it-chapter-two-pennywise",
       "name": "IT Chapter Two - Pennywise",
-      "franchise": "Bloodbath / Horror",
+      "collection": "Bloodbath / Horror",
       "number": "3",
       "releaseYear": "2020",
       "description": "You'll all float… even in the pond.\n\nMeet Pennywise, also known as Grippe-Sou. Even transformed into a cosplay duck, the terrifying clown from IT retains his unsettling smile, iconic makeup, and famous red balloon.\n\nWith his detailed clown costume and menacing expression, this figurine perfectly captures the character's horrifying atmosphere. This piece is as original as it is terrifying, ideal for haunting your collection for a long time.",
@@ -345,7 +345,7 @@ window.TUBBZ_DATA = {
     {
       "id": "bloodbath-horror-the-lost-boys-david",
       "name": "The Lost Boys - David",
-      "franchise": "Bloodbath / Horror",
+      "collection": "Bloodbath / Horror",
       "number": "4",
       "releaseYear": "2020",
       "description": "\"You'll never grow old, Michael... but you must feed.\"\n\nMeet David, the charismatic and unsettling vampire from The Lost Boys. Even transformed into a cosplay duck, the leader of the Lost Boys retains his menacing gaze, rebellious look, and all the dark aura of the cult 1980s film.\n\nWith his rock style, vampiric appearance, and central role in the story, this figurine pays tribute to one of the most iconic characters in 80s fantasy cinema.",
@@ -363,7 +363,7 @@ window.TUBBZ_DATA = {
     {
       "id": "bloodbath-horror-the-lost-boys-mickael",
       "name": "The Lost Boys - Mickael",
-      "franchise": "Bloodbath / Horror",
+      "collection": "Bloodbath / Horror",
       "number": "5",
       "releaseYear": "2022",
       "description": "It's better to be a duck than to join the vampires.\n\nMeet Michael Emerson, the central character from the cult film The Lost Boys. Unwillingly drawn into the dangerous world of the Lost Boys, Michael tries to preserve his humanity against the temptations of the vampiric lifestyle.\n\nEven in cosplay duck form, he retains his rebellious look and his connection to the dark, rock, and fantastic atmosphere of the film.",
@@ -382,7 +382,7 @@ window.TUBBZ_DATA = {
     {
       "id": "bloodbath-horror-the-nun-the-nun",
       "name": "The Nun - The Nun",
-      "franchise": "Bloodbath / Horror",
+      "collection": "Bloodbath / Horror",
       "number": "6",
       "releaseYear": "2022",
       "description": "Don't cross her gaze... even as a duck.\n\nThe terrifying demonic Nun from The Nun joins the TUBBZ collection, in a version as unsettling as it is fascinating.\nWith her piercing gaze... that glows in the dark, this figure transforms an icon of horror into a unique and disturbing collectible.\n\nSilent, menacing, and omnipresent, she perfectly captures the dark atmosphere of the film with the quirky touch characteristic of TUBBZ.",
@@ -401,7 +401,7 @@ window.TUBBZ_DATA = {
     {
       "id": "bloodbath-horror-annabelle",
       "name": "Annabelle",
-      "franchise": "Bloodbath / Horror",
+      "collection": "Bloodbath / Horror",
       "number": "7",
       "releaseYear": "2022",
       "description": "Evil has found a new form…\n\nThe terrifying Annabelle joins the TUBBZ collection, in a version as disturbing as it is fascinating.\nReimagined as a porcelain doll duck, she retains her unnerving gaze and sinister aura, ready to haunt your collection.\n\nBetween horror and dark humor, this collectible perfectly captures the film's universe with the quirky touch unique to TUBBZ.",
@@ -420,7 +420,7 @@ window.TUBBZ_DATA = {
     {
       "id": "borderlands-3-psycho",
       "name": "Psycho",
-      "franchise": "Borderlands 3",
+      "collection": "Borderlands 3",
       "number": "1",
       "releaseYear": "2019",
       "description": "These psychotic outlaws are almost as obsessed with the Vault as they are with bread! This official Borderlands 3 Psycho collectible turns the series’ most infamous enemies into loveable cutesy duck figurines, complete with Borderlands’ unique cel-shaded effect. If you love Borderlands, this unique collector’s item is a must-have!",
@@ -434,7 +434,7 @@ window.TUBBZ_DATA = {
     {
       "id": "borderlands-3-lilith",
       "name": "Lilith",
-      "franchise": "Borderlands 3",
+      "collection": "Borderlands 3",
       "number": "2",
       "releaseYear": "2019",
       "description": "Borderlands' Siren class heroine Lilith is originally from the planet Dionysus, but now she's jumping headfirst into the pond! This official Borderlands 3 Lilith collectable turns the series' most beloved Siren into a cute, highly collectable duck figurine, complete with the series' signature visual style and a collector's display box. This one of a kind collectable is a total must have for fans!",
@@ -448,7 +448,7 @@ window.TUBBZ_DATA = {
     {
       "id": "borderlands-3-moxxi",
       "name": "Moxxi",
-      "franchise": "Borderlands 3",
+      "collection": "Borderlands 3",
       "number": "3",
       "releaseYear": "2019",
       "description": "Mad Moxxi has always been a bit quackers, but even we're surprised to see her in duck form! This official Borderlands 3 collectable turns everyone's favourite deathmatch hostess and bar owner into a loveable, cute collectable duck, complete with a collector's display box and visual style from the games. If you're a real Vault Haunter, you need this in your collection!",
@@ -462,7 +462,7 @@ window.TUBBZ_DATA = {
     {
       "id": "borderlands-3-tina",
       "name": "Tina",
-      "franchise": "Borderlands 3",
+      "collection": "Borderlands 3",
       "number": "4",
       "releaseYear": "2019",
       "description": "Tiny Tina only eats crumpets, so her transition into a duck makes perfect sense! This official Borderlands 3 collectable take the explosive-loving, crumpet-eating queen of obscene into a cutesy duck, perfect for serious fans to display at home! Complete with the series' signature visual style and collector's packaging, this suited and booted Tina duck is a must-have collectable.",
@@ -476,7 +476,7 @@ window.TUBBZ_DATA = {
     {
       "id": "borderlands-3-brick",
       "name": "Brick",
-      "franchise": "Borderlands 3",
+      "collection": "Borderlands 3",
       "number": "5",
       "releaseYear": "2019",
       "description": "Like Lilith, Brick is a veteran Vault Hunter who's always ready for a fight—though his opponents are typically knocked flat by a single punch. This cosplaying duck nails the look of Brick (occasionally codenamed \"Meatslab\"), from the scarred bill to the bolted-up knuckles on the feathered fists and even the commemorative paw he wears around his neck. This official Borderlands 3 collectable captures Brick's essence in a cute duck figurine, complete with the series' signature visual style and a collector's display box.",
@@ -490,7 +490,7 @@ window.TUBBZ_DATA = {
     {
       "id": "borderlands-3-maya",
       "name": "Maya",
-      "franchise": "Borderlands 3",
+      "collection": "Borderlands 3",
       "number": "6",
       "releaseYear": "2019",
       "description": "Maya is a powerful Siren with a serious sense of style, so it's no wonder this duck is dressed up like the blue-haired Vault Hunter. This official Borderlands 3 collectable captures Maya's essence in a cute duck figurine, complete with the series' signature visual style and a collector's display box. Turns out that blue lipstick, long hair, and a futuristic hoodie all look pretty dang cool on a duck—who knew?",
@@ -504,7 +504,7 @@ window.TUBBZ_DATA = {
     {
       "id": "borderlands-3-tyreen-calypso",
       "name": "Tyreen Calypso",
-      "franchise": "Borderlands 3",
+      "collection": "Borderlands 3",
       "number": "7",
       "releaseYear": "2019",
       "description": "You can just feel the air of superiority coming off this defiant duck styled after the self-proclaimed \"God Queen\" Tyreen Calypso, a wicked young Siren turned social media star and cult leader. This official Borderlands 3 collectable captures Tyreen's essence in a cute duck figurine, complete with the series' signature visual style and a collector's display box. Be careful that you don't let this duck leech your lifeforce when you add it to your collection!",
@@ -518,7 +518,7 @@ window.TUBBZ_DATA = {
     {
       "id": "borderlands-3-troy-calypso",
       "name": "Troy Calypso",
-      "franchise": "Borderlands 3",
+      "collection": "Borderlands 3",
       "number": "8",
       "releaseYear": "2019",
       "description": "Troy Calypso is just as cruel and cocky as his twin sister Tyreen, but don't let that metal arm and sleek sword fool you—he's something of a parasite who depends on Tyreen's powers to survive. This official Borderlands 3 collectable captures Troy's essence in a cute duck figurine, complete with the series' signature visual style and a collector's display box. With its pond-ready cosplay of the only known male Siren in all of Borderlands, this Troy duck definitely deserves a spot in your collection.",
@@ -532,7 +532,7 @@ window.TUBBZ_DATA = {
     {
       "id": "borderlands-3-mordecai",
       "name": "Mordecai",
-      "franchise": "Borderlands 3",
+      "collection": "Borderlands 3",
       "number": "9",
       "releaseYear": "2020",
       "description": "The Crimson Raider’s most iconic sharpshooter jumps headfirst into the pond, armed with his sniper rifle and trusty winged companion, Bloodwing! It would be a mistake to underestimate him even in his quacking form. This official Borderlands 3 Mordercai collectible turns the series’ most beloved Hunter into a cute, highly collectible duck figurine, complete with the series’ signature cel-shaded effect and a collector’s display box. This one of a kind collectible is a total must have for fans!",
@@ -546,7 +546,7 @@ window.TUBBZ_DATA = {
     {
       "id": "borderlands-3-handsome-jack",
       "name": "Handsome Jack",
-      "franchise": "Borderlands 3",
+      "collection": "Borderlands 3",
       "number": "10",
       "releaseYear": "2020",
       "description": "As the leader of the Hyperion corporation and dictator of Pandora, one should not underestimate Handsome Jack's notorious ways, despite being a transformed into a quacking duck! This official Borderlands 3 Handsome Jack collectable turns the series' most beloved antagonist into a cute, highly collectable duck figurine, complete with the series' signature cel-shaded effect and a collector's display box. This one of a kind collectable is a total must have for fans!",
@@ -560,7 +560,7 @@ window.TUBBZ_DATA = {
     {
       "id": "carrie-carrie",
       "name": "Carrie",
-      "franchise": "Carrie",
+      "collection": "Carrie",
       "number": "1",
       "description": "Welcome to the world of Carrie, the cosplaying collectible toy duck that's sure to intrigue horror fans! With her striking red hair and unique appearance, she's not your typical collectible. This quirky and slightly disturbed version of Carrie is inspired by the infamous character from the horror genre. Embrace the dark and unexpected as you add Carrie to your toy collection - a playful twist on a classic tale. Don't miss the chance to own this one-of-a-kind cosplaying toy duck, and indulge in the nostalgia of horror with a touch of humor.",
       "variants": [
@@ -573,7 +573,7 @@ window.TUBBZ_DATA = {
     {
       "id": "chucky-scarred-chucky",
       "name": "Scarred Chucky",
-      "franchise": "Chucky",
+      "collection": "Chucky",
       "number": "1",
       "releaseYear": "2021",
       "description": "It looks like the serial killer Chucky has accidentally transferred his soul into the wrong body and found himself in a quacking duck! This doesn't make him any less vicious as he's relentless in his attempts to possess a suitable human body.",
@@ -595,7 +595,7 @@ window.TUBBZ_DATA = {
     {
       "id": "crash-bandicoot-crash",
       "name": "Crash",
-      "franchise": "Crash Bandicoot",
+      "collection": "Crash Bandicoot",
       "number": "1",
       "releaseYear": "2019",
       "description": "Crash, bang, woooooah!\n\nFind Crash Bandicoot, the craziest marsupial in video games. Always ready to rush, spin, and cause chaos, Crash joins the TUBBZ pond as a collector's cosplay duck.\n\nWith his mischievous smile, uncontrollable energy, and instantly recognizable style, this figurine perfectly captures the fun and explosive spirit of the Crash Bandicoot license.",
@@ -609,7 +609,7 @@ window.TUBBZ_DATA = {
     {
       "id": "crash-bandicoot-dr-neo-cortex",
       "name": "Dr. Neo Cortex",
-      "franchise": "Crash Bandicoot",
+      "collection": "Crash Bandicoot",
       "number": "2",
       "releaseYear": "2019",
       "description": "Crash, bang, woooooah!\n\nMeet Dr. Neo Cortex, Crash Bandicoot's arch-nemesis. An evil genius, megalomaniacal inventor, and expert in failed schemes, Cortex joins the TUBBZ pond as an even more villainous cosplay duck.\n\nWith his recognizable oversized head, his Machiavellian look, and his chaos-ready equipment, this figurine perfectly captures the wacky humor and cartoon energy of the Crash Bandicoot universe.",
@@ -623,7 +623,7 @@ window.TUBBZ_DATA = {
     {
       "id": "crash-bandicoot-coco-bandicoot",
       "name": "Coco Bandicoot",
-      "franchise": "Crash Bandicoot",
+      "collection": "Crash Bandicoot",
       "number": "3",
       "releaseYear": "2019",
       "description": "Crash, bang, wooooah!\n\nFind Coco Bandicoot, Crash's brilliant and inventive sister. Intelligent, resourceful, and always ready to thwart Dr. Neo Cortex's plans, Coco joins the TUBBZ pond with all her energy and gadgets.\n\nWith her iconic look, clever mind, and essential role in the Crash Bandicoot universe, this cosplay duck version perfectly captures Coco's charm and personality.",
@@ -637,7 +637,7 @@ window.TUBBZ_DATA = {
     {
       "id": "crash-bandicoot-dr-n-gin",
       "name": "Dr. N. Gin",
-      "franchise": "Crash Bandicoot",
+      "collection": "Crash Bandicoot",
       "number": "4",
       "releaseYear": "2019",
       "description": "Crash, bang, woooooah!\n\nMeet Dr. N. Gin, the completely crazy cyborg scientist from the Crash Bandicoot universe. Dr. Neo Cortex's loyal right-hand man, N. Gin is ready to do anything to capture Crash and impress his master.\n\nWith his cybernetic appearance, his crazy look, and his cult role in the saga, this duck cosplay version perfectly captures the chaotic and humorous energy of Crash Bandicoot.",
@@ -651,7 +651,7 @@ window.TUBBZ_DATA = {
     {
       "id": "dark-souls-oscar-knight-of-astora",
       "name": "Oscar, Knight of Astora",
-      "franchise": "Dark Souls",
+      "collection": "Dark Souls",
       "number": "1",
       "releaseYear": "2021",
       "description": "The first knight of your adventure joins the pond.\n\nMeet Oscar, Knight of Astora, one of the first characters encountered in Dark Souls. Found in the Undead Asylum, Oscar entrusts the player with a mission that marks the true beginning of their journey through Lordran.\n\nEven transformed into a collectible cosplay duck, he retains all his heroic allure thanks to his iconic western armor, Astora's Straight Sword, and Crest Shield.",
@@ -669,7 +669,7 @@ window.TUBBZ_DATA = {
     {
       "id": "dark-souls-solaire-of-astora",
       "name": "Solaire of Astora",
-      "franchise": "Dark Souls",
+      "collection": "Dark Souls",
       "number": "2",
       "releaseYear": "2021",
       "description": "\"Praise the Sun!\"\n\nMeet Solaire of Astora, the most iconic knight from Dark Souls. Recognizable by his armor adorned with the radiant sun and his unwavering optimism, Solaire has become one of the most beloved characters in the Souls community.\n\nAlways ready to lend a hand to the chosen Undead, this valiant knight tirelessly pursues his personal quest in search of his own sun. Even transformed into a collectible cosplay duck, he retains all his nobility and his famous, now cult, salute.",
@@ -687,7 +687,7 @@ window.TUBBZ_DATA = {
     {
       "id": "dc-comics-batman",
       "name": "Batman",
-      "franchise": "DC Comics",
+      "collection": "DC Comics",
       "number": "1",
       "releaseYear": "2020",
       "description": "POW! BOOM! BLAM! QUACK!\n\nThe legendary Batman joins the DC Comics TUBBZ collection. It seems the Joker's gas had an unexpected effect: the Dark Knight has been transformed into a collector's duck!\n\nWith his iconic cape, instantly recognizable mask, and crime-fighting attitude ready to track down Gotham's criminals, this figure perfectly captures the spirit of DC's cult hero.",
@@ -709,7 +709,7 @@ window.TUBBZ_DATA = {
     {
       "id": "dc-comics-ww84-wonder-woman",
       "name": "WW84 - Wonder Woman",
-      "franchise": "DC Comics",
+      "collection": "DC Comics",
       "number": "1",
       "releaseYear": "2021",
       "description": "The Amazon warrior joins the pond.\n\nDiscover Wonder Woman, the legendary heroine from DC Comics and iconic member of the Justice League. Armed with her Lasso of Truth, indestructible bracelets, and magical tiara, Diana Prince remains a heroic force even in collectible cosplay duck form.\n\nWith her iconic armor, warrior charisma, and status as a symbol of courage, this figurine perfectly captures the spirit of one of pop culture's greatest heroines.",
@@ -731,7 +731,7 @@ window.TUBBZ_DATA = {
     {
       "id": "dc-comics-aquaman-aquaman",
       "name": "Aquaman - Aquaman",
-      "franchise": "DC Comics",
+      "collection": "DC Comics",
       "number": "2",
       "releaseYear": "2021",
       "description": "The king of the oceans joins the pond.\n\nDiscover Aquaman, the iconic DC Comics superhero. Armed with his trident and master of the oceans, Aquaman remains a formidable hero… even when transformed into a collector cosplay duck.\n\nWith his iconic armor, trident, and natural connection to water, this figurine perfectly captures the spirit of the ruler of Atlantis.",
@@ -745,7 +745,7 @@ window.TUBBZ_DATA = {
     {
       "id": "dc-comics-the-joker",
       "name": "The Joker",
-      "franchise": "DC Comics",
+      "collection": "DC Comics",
       "number": "2",
       "releaseYear": "2020",
       "description": "POW! BOOM! BLAM! QUACK!\n\nChaos splashes into the pond with The Joker, Batman's most unpredictable foe.\n\nAlways ready to sow panic in Gotham, the Clown Prince of Crime is cooking up a completely absurd plan this time: transforming the city's waters into a playground for evil ducks.",
@@ -767,7 +767,7 @@ window.TUBBZ_DATA = {
     {
       "id": "dc-comics-batman-the-dark-knight",
       "name": "Batman (The Dark Knight)",
-      "franchise": "DC Comics",
+      "collection": "DC Comics",
       "number": "3",
       "releaseYear": "2025",
       "description": "The Joker can't win. Gotham needs its true hero—enter The Dark Knight TUBBZ ! This stunning collectible captures Batman's iconic look from The Dark Knight and features detailed armor with a flowing cape and the unmistakable Bat-symbol on his chest. From his steely expression to the striking cowl, every inch of this highly detailed duck captures the gritty essence of Gotham's silent protector. Perfect for Batman fans and TUBBZ collectors alike, this duck is everything Gotham needs and comes with a branded tub featuring The Dark Knight logo. A one-of-a-kind tribute to one of DC's most legendary heroes!",
@@ -789,7 +789,7 @@ window.TUBBZ_DATA = {
     {
       "id": "dc-comics-harley-quinn",
       "name": "Harley Quinn",
-      "franchise": "DC Comics",
+      "collection": "DC Comics",
       "number": "3",
       "releaseYear": "2020",
       "description": "POW! BOOM! BLAM! QUACK!\n\nGotham's most unpredictable criminal is joining the DC Comics TUBBZ collection! Discover Harley Quinn. Escaped from Arkham Asylum, Harley is ready to wreak havoc in Gotham's ponds... in an irresistible cosplay duck form.\n\nWith her iconic costume, mischievous smile, and completely unhinged energy, this figurine perfectly captures the character's spirit. Whether you're a Batman fan or an admirer of DC Comics' most famous supervillains, Harley Quinn deserves a prominent place in your collection.",
@@ -811,7 +811,7 @@ window.TUBBZ_DATA = {
     {
       "id": "dc-comics-joker-the-dark-knight",
       "name": "Joker (The Dark Knight)",
-      "franchise": "DC Comics",
+      "collection": "DC Comics",
       "number": "4",
       "releaseYear": "2025",
       "description": "Why so serious? The Joker TUBBZ brings all the chaotic charm of The Dark Knight's legendary villain to the duck pond! With his green hair, bright clown makeup, and unsettling smile, this highly detailed collectible perfectly captures the Joker's chaotic energy. Standing 3.54 inches tall and dressed in his iconic purple suit and holding a playing card with his signature emblem, this duck is no monster, he's just ahead of his time!",
@@ -833,7 +833,7 @@ window.TUBBZ_DATA = {
     {
       "id": "dc-comics-robin",
       "name": "Robin",
-      "franchise": "DC Comics",
+      "collection": "DC Comics",
       "number": "4",
       "releaseYear": "2020",
       "description": "POW! BOOM! BLAM! QUACK!\n\nBatman's faithful sidekick joins the DC Comics TUBBZ. Even transformed into a cosplay duck, Robin is ready to defend Gotham City alongside the Dark Knight against the Joker, Harley Quinn, and all the city's supervillains.\n\nWith his iconic costume, cape, and mask, Robin retains all the courage and agility that make him one of the most popular heroes in the DC Comics universe.",
@@ -847,7 +847,7 @@ window.TUBBZ_DATA = {
     {
       "id": "dc-comics-two-face",
       "name": "Two-Face",
-      "franchise": "DC Comics",
+      "collection": "DC Comics",
       "number": "5",
       "releaseYear": "2022",
       "description": "'POW! BOOM! BLAM! QUACK!'\n\nA duality-obsessed criminal mastermind and former close ally of Batman, Two-Face is a force to be reckoned with and has become one of the Dark Knight's greatest enemies!",
@@ -861,7 +861,7 @@ window.TUBBZ_DATA = {
     {
       "id": "dc-comics-catwoman",
       "name": "Catwoman",
-      "franchise": "DC Comics",
+      "collection": "DC Comics",
       "number": "6",
       "releaseYear": "2022",
       "description": "Someone must have forgotten some radioactive catnip because Selina Kyle, aka Catwoman, has been transformed into a quacking duck! Beware, she's still just as capable of taking down any enemies who come her way!",
@@ -875,7 +875,7 @@ window.TUBBZ_DATA = {
     {
       "id": "dc-comics-superman",
       "name": "Superman",
-      "franchise": "DC Comics",
+      "collection": "DC Comics",
       "number": "7",
       "releaseYear": "2022",
       "description": "Faster than a speeding bullet... even as a duck.\n\nThe legendary Superman joins the TUBBZ collection, ready to protect the pond just as he protects Metropolis.\nStriking an iconic flying pose, with his red cape and \"S\" emblem, this figure captures all the power and hope of DC Comics' greatest superhero.\n\nHeroic, timeless, and instantly recognizable, this collectible perfectly encapsulates the essence of Superman with the quirky twist unique to TUBBZ.",
@@ -898,7 +898,7 @@ window.TUBBZ_DATA = {
     {
       "id": "dc-comics-green-lantern",
       "name": "Green Lantern",
-      "franchise": "DC Comics",
+      "collection": "DC Comics",
       "number": "8",
       "releaseYear": "2024",
       "description": "Green Lantern joins legendary DC Comics heroes Batman, Superman, and Wonder Woman as a cosplay duck in the TUBBZ pond! This officially licensed TUBBZ perfectly embodies the spirit of one of the most beloved Green Lanterns, Hal Jordan. Power Battery in hand and wielding a power ring, he's ready for action, ensuring no evil escapes his grasp!",
@@ -916,7 +916,7 @@ window.TUBBZ_DATA = {
     {
       "id": "dc-comics-the-flash",
       "name": "The Flash",
-      "franchise": "DC Comics",
+      "collection": "DC Comics",
       "number": "9",
       "releaseYear": "2024",
       "description": "Lightning has struck twice! Barry Allen, aka The Flash, is now aka TUBBZ Collectible. Don't miss out, he'll be gone in a flash!",
@@ -934,7 +934,7 @@ window.TUBBZ_DATA = {
     {
       "id": "dc-comics-martian-manhunter",
       "name": "Martian Manhunter",
-      "franchise": "DC Comics",
+      "collection": "DC Comics",
       "number": "10",
       "releaseYear": "2024",
       "description": "I'll defend the duck pond! The superhero Martian Manhunter bursts into the TUBBZ collection.",
@@ -948,7 +948,7 @@ window.TUBBZ_DATA = {
     {
       "id": "dc-comics-batman-diy-edition",
       "name": "Batman (DIY Edition)",
-      "franchise": "DC Comics",
+      "collection": "DC Comics",
       "releaseYear": "2024",
       "variants": [
         {
@@ -960,7 +960,7 @@ window.TUBBZ_DATA = {
     {
       "id": "dc-comics-superman-diy-edition",
       "name": "Superman (DIY Edition)",
-      "franchise": "DC Comics",
+      "collection": "DC Comics",
       "releaseYear": "2024",
       "description": "This looks like a paint job for Superman! Change Superman's pants colour and paint this DIY TUBBZ any colour you wish.",
       "variants": [
@@ -973,7 +973,7 @@ window.TUBBZ_DATA = {
     {
       "id": "dc-comics-the-joker-diy-edition",
       "name": "The Joker (DIY Edition)",
-      "franchise": "DC Comics",
+      "collection": "DC Comics",
       "releaseYear": "2024",
       "description": "The Joker's purple suit is looking a little tired, why not paint him a new one? DIY TUBBZ lets you create your own custom TUBBZ Joker, there are no rules!",
       "variants": [
@@ -986,7 +986,7 @@ window.TUBBZ_DATA = {
     {
       "id": "demon-slayer-tanjiro-kamado",
       "name": "Tanjiro Kamado",
-      "franchise": "Demon Slayer",
+      "collection": "Demon Slayer",
       "number": "1",
       "releaseYear": "2026",
       "description": "Driven by compassion and unbreakable will, Tanjiro Kamado arrives in duck form ready to take on any demon in his path. This Demon Slayer TUBBZ captures the determined swordsman wielding his Nichirin blade, dressed in his iconic checkered haori, and prepared for battle with the calm focus of a true member of the Demon Slayer Corps.",
@@ -1008,7 +1008,7 @@ window.TUBBZ_DATA = {
     {
       "id": "demon-slayer-nezuko-kamado",
       "name": "Nezuko Kamado",
-      "franchise": "Demon Slayer",
+      "collection": "Demon Slayer",
       "number": "2",
       "releaseYear": "2026",
       "description": "Beneath Nezuko Kamado’s quiet appearance lies the strength of a powerful demon determined to protect the ones she loves. This Demon Slayer TUBBZ captures Nezuko in her iconic pink kimono and bamboo muzzle, faithfully reimagined in duck form while showcasing the fierce spirit that made her one of the series’ most beloved characters.",
@@ -1030,7 +1030,7 @@ window.TUBBZ_DATA = {
     {
       "id": "destiny-cayde-6",
       "name": "Cayde-6",
-      "franchise": "Destiny",
+      "collection": "Destiny",
       "number": "1",
       "releaseYear": "2019",
       "description": "Stand Guard With the Destiny Cayde-6 TUBBZ\nCayde-6 is one of the most popular characters in the Destiny series; a heroic Hunter Vanguard who brings humour and hope to the stark world constantly under threat.\n\nPossessing the same skills and optimism as the original Cayde-6, our whimsical rubber duck version is now leading the way in the TUBBZ pond. This Cayde-6 TUBBZ toy wears all his iconic gear: the Exo helmet, tattered cloak and signature mask. Our quirky duck also has Cayde-6’s trademark glowing, blue eyes.",
@@ -1052,7 +1052,7 @@ window.TUBBZ_DATA = {
     {
       "id": "destiny-cayde-6-gunsliger",
       "name": "Cayde-6 Gunsliger",
-      "franchise": "Destiny",
+      "collection": "Destiny",
       "number": "1.1",
       "releaseYear": "2021",
       "description": "Hey, you! Yes, you! Ready for the ultimate bathing experience? Then we´ve got the perfect accessory for you - our Destiny - Cayde 6 Gunslinger Duck! This snappy rubber ducky is not just a rubber duck, no, it´s also a high-quality collectible. With his faithful spirit Sundance by his side, Cayde-6 is a true free spirit. Up for mischief? He´s always in! But don´t underestimate him, he´s a gunslinger that will surprise you with his incredible skills.",
@@ -1066,7 +1066,7 @@ window.TUBBZ_DATA = {
     {
       "id": "destiny-lord-shaxx",
       "name": "Lord Shaxx",
-      "franchise": "Destiny",
+      "collection": "Destiny",
       "number": "2",
       "releaseYear": "2019",
       "description": "The titan manager of the crucible is trading places for the duck pond, make way as Lord Shaxx joins the TUBBZ Collection. Beyond being the Crucible’s gatekeeper, Lord Shaxx is a living testament to the power of discipline and resilience.\n\nDonning his classic armoured costume, our Destiny: Lord Shaxx TUBBZ figure pays homage to the mighty warrior. His armour tells the story of a warrior who’s seen countless fights but still maintains an unbroken resolve.",
@@ -1088,7 +1088,7 @@ window.TUBBZ_DATA = {
     {
       "id": "destiny-sweeper-bot",
       "name": "Sweeper Bot",
-      "franchise": "Destiny",
+      "collection": "Destiny",
       "number": "3",
       "releaseYear": "2019",
       "description": "The duck pond welcomes Sweeper Bot who will put in some hard graft even as a cosplaying collectible. Make Destiny’s favourite Tower caretaker part of your collection with the Destiny: Sweeper Bot TUBBZ.",
@@ -1106,7 +1106,7 @@ window.TUBBZ_DATA = {
     {
       "id": "destiny-eris-morn",
       "name": "Eris Morn",
-      "franchise": "Destiny",
+      "collection": "Destiny",
       "number": "4",
       "releaseYear": "2019",
       "description": "Become a true collector with the Destiny: Eris Morn TUBBZ! This edition features Destiny's iconic character Eris Morn cosplaying as a collectable duck toy. Show off your love for the game with this unique and fun addition to your collection.",
@@ -1128,7 +1128,7 @@ window.TUBBZ_DATA = {
     {
       "id": "destiny-saint-14",
       "name": "Saint 14",
-      "franchise": "Destiny",
+      "collection": "Destiny",
       "number": "5",
       "releaseYear": "2020",
       "description": "Saint 14, the strongest Titan, aims to be the strongest duck in the TUBBZ Collection as he gets the coveted duck makeover treatment.\n\n“For the city!” Channel the spirit of the Last City’s defender with the Destiny: Saint-14 TUBBZ figure! Known for his unbreakable will and iconic helmet, Saint-14 fought tirelessly to protect humanity. The legendary titan himself takes on a new challenge to become the strongest duck in a TUBBZ collection.",
@@ -1146,7 +1146,7 @@ window.TUBBZ_DATA = {
     {
       "id": "destiny-the-drifter",
       "name": "The Drifter",
-      "franchise": "Destiny",
+      "collection": "Destiny",
       "number": "6",
       "releaseYear": "2020",
       "description": "The Drifter has resurrected again, this time as a TUBBZ cosplaying duck, great news for Destiny fans. Channel the cunning of the Drifter and add the game master himself to your collection with the Destiny: The Drifter TUBBZ figure!",
@@ -1168,7 +1168,7 @@ window.TUBBZ_DATA = {
     {
       "id": "destiny-the-stranger",
       "name": "The Stranger",
-      "franchise": "Destiny",
+      "collection": "Destiny",
       "number": "7",
       "releaseYear": "2020",
       "description": "Take Control of the Future With Destiny: The Stranger TUBBZ\nThe Exo Stranger is an integral character in the story arc of the Destiny video game series. And now we present our quacktastic Destiny: The Stranger TUBBZ – the perfect blend of the Destiny game and our TUBBZ collectables design.\n\nLike the original character, our TUBBZ toy duck wears a hood and armour pieces while carrying its signature pulse rifle and blue face plate. We take pride in our attention to detail, blurring the line between the on-screen and off-screen versions of your favourite characters.",
@@ -1186,7 +1186,7 @@ window.TUBBZ_DATA = {
     {
       "id": "destiny-zavala",
       "name": "Zavala",
-      "franchise": "Destiny",
+      "collection": "Destiny",
       "number": "8",
       "releaseYear": "2022",
       "description": "Leader of the Vanguard, now Leader of the TUBBZ. Zavala has a newfound status, a TUBBZ cosplaying duck.\n\nWho could be a better protector of your collection than the Vanguard Commander himself? Inspire leadership and bring home the Destiny: Zavala TUBBZ figure!",
@@ -1208,7 +1208,7 @@ window.TUBBZ_DATA = {
     {
       "id": "destiny-ikora",
       "name": "Ikora",
-      "franchise": "Destiny",
+      "collection": "Destiny",
       "number": "9",
       "releaseYear": "2024",
       "description": "Introducing Destiny's Ikora, now in adorable TUBBZ form! This collectible toy is a must-have for any fan of the game. Ikora's powerful presence and iconic design will make a bold statement on any desk, shelf, or collector's display. ",
@@ -1226,7 +1226,7 @@ window.TUBBZ_DATA = {
     {
       "id": "destiny-mara-sov",
       "name": "Mara Sov",
-      "franchise": "Destiny",
+      "collection": "Destiny",
       "number": "10",
       "releaseYear": "2024",
       "description": "Unleash the power of Mara Sov, the Queen of Awoken, with the Destiny TUBBZ. Join her on epic adventures and conquer the unknown in style. This collectible toy is a must-have for any Destiny fan.",
@@ -1240,7 +1240,7 @@ window.TUBBZ_DATA = {
     {
       "id": "destiny-savathun",
       "name": "Savathûn",
-      "franchise": "Destiny",
+      "collection": "Destiny",
       "number": "11",
       "releaseYear": "2025",
       "description": "Dominate your collection with the cunning and power of Savathûn, the Witch Queen - now available in duck form as an XL TUBBZ!\n\nPrepare to welcome the cunning and powerful Witch Queen into your TUBBZ collection with this XL edition of the Hive deity, Savathûn! This larger-than-life collectable toy stands at 11-inches tall and transforms the Hive goddess into a monstrous, imposing duck, capturing her regal and fearsome essence in incredible detail. From her glowing, all-seeing eyes to the intricate armor of her Hive throne world, Savathun’s iconic look has never been more captivating — or quack-tastic.",
@@ -1254,7 +1254,7 @@ window.TUBBZ_DATA = {
     {
       "id": "dirty-dancing-frances-baby-houseman",
       "name": "Frances ‘Baby’ Houseman",
-      "franchise": "Dirty Dancing",
+      "collection": "Dirty Dancing",
       "number": "1",
       "releaseYear": "2024",
       "description": "Baby is about to have the time of her life as a new TUBBZ cosplay collectible. She’s carrying a scented watermelon, of course!",
@@ -1268,7 +1268,7 @@ window.TUBBZ_DATA = {
     {
       "id": "dirty-dancing-johnny-castle",
       "name": "Johnny Castle",
-      "franchise": "Dirty Dancing",
+      "collection": "Dirty Dancing",
       "number": "2",
       "releaseYear": "2024",
       "description": "Johnny sways his hips and brings the Pachanga to the duck pond as he re-dresses into a duck form the TUBBZ way.",
@@ -1282,7 +1282,7 @@ window.TUBBZ_DATA = {
     {
       "id": "doom-eternal-doom-slayer",
       "name": "Doom Slayer",
-      "franchise": "Doom Eternal",
+      "collection": "Doom Eternal",
       "number": "1",
       "releaseYear": "2020",
       "description": "Rip and tear... even in the pond.\n\nDiscover the legendary DOOM Slayer, also known as DOOM Guy. Even transformed into a cosplay duck, the Hell Walker remains ready to wage his eternal war against the demons of Hell.\n\nWith his iconic green armor, relentless attitude, and famous super shotgun, this figurine perfectly captures all the brutal power of the DOOM universe.",
@@ -1304,7 +1304,7 @@ window.TUBBZ_DATA = {
     {
       "id": "doom-eternal-imp",
       "name": "IMP",
-      "franchise": "Doom Eternal",
+      "collection": "Doom Eternal",
       "number": "2",
       "releaseYear": "2020",
       "description": "An infernal demon splashes into the pond.\n\nDiscover the Imp, one of DOOM’s most iconic enemies. Even if considered a relatively weak opponent against the DOOM Slayer, the Imp remains the backbone of the infernal hordes.\n\nWith its demonic appearance, aggressive style, and direct link to the brutal DOOM universe, this figurine perfectly captures the infernal atmosphere of the franchise.",
@@ -1318,7 +1318,7 @@ window.TUBBZ_DATA = {
     {
       "id": "doom-eternal-hell-knight",
       "name": "Hell Knight",
-      "franchise": "Doom Eternal",
+      "collection": "Doom Eternal",
       "number": "3",
       "releaseYear": "2020",
       "description": "An infernal behemoth arrives in the pond.\n\nDiscover the Hell Knight, one of DOOM's most imposing demons. Powerful, brutal, and built to crush his enemies, this infernal gladiator remains a threat even in the form of a collectible cosplay duck.\n\nWith its massive silhouette, devastating fists, and demonic appearance, this figurine perfectly captures the dark and violent intensity of the DOOM universe",
@@ -1332,7 +1332,7 @@ window.TUBBZ_DATA = {
     {
       "id": "doom-eternal-marauder",
       "name": "Marauder",
-      "franchise": "Doom Eternal",
+      "collection": "Doom Eternal",
       "number": "4",
       "releaseYear": "2020",
       "description": "The demon hunter enters the pond.\n\nDiscover the Marauder, one of DOOM's most formidable enemies. Armed with his double-bladed battle axe, super shotgun, and infernal appearance, this horned demon remains a threat even in the form of a collectible cosplay duck.\n\nWith his chain of skulls, brutal equipment, and dark style, this figurine perfectly captures the violent and demonic intensity of the DOOM universe.",
@@ -1350,7 +1350,7 @@ window.TUBBZ_DATA = {
     {
       "id": "doom-the-dark-ages-doom-slayer",
       "name": "Doom Slayer",
-      "franchise": "Doom The Dark Ages",
+      "collection": "Doom The Dark Ages",
       "number": "1",
       "releaseYear": "2025",
       "description": "The Legions of Hell never saw him coming! Decked out in medieval armor, wielding his brutal spiked mace and demonic shield, the DOOM Slayer is reimagined as a formidable cosplay duck.\n\nThis officially licensed collectible TUBBZ replicates the look of the Dark Ages Slayer with incredible detail: from the razor-sharp helmet to the shaggy fur cape and studded armor, every inch of this First Edition duck reflects the raw power of the Slayer.",
@@ -1372,7 +1372,7 @@ window.TUBBZ_DATA = {
     {
       "id": "dr-seuss-the-grinch",
       "name": "The Grinch",
-      "franchise": "Dr. Seuss",
+      "collection": "Dr. Seuss",
       "number": "1",
       "releaseYear": "2021",
       "description": "Christmas is coming… and the Grinch is still not pleased.\n\nDiscover The Grinch, the famous grumpy character from the Dr. Seuss universe. Hairy, cynical, and allergic to the Christmas spirit, the Grinch joins the TUBBZ pond as a collector cosplay duck.\n\nWith his sullen look, instantly recognizable style, and legendary anti-holiday attitude, this figurine perfectly captures all the character's charming grumpiness.",
@@ -1398,7 +1398,7 @@ window.TUBBZ_DATA = {
     {
       "id": "dr-seuss-cindy-lou-who",
       "name": "Cindy Lou Who",
-      "franchise": "Dr. Seuss",
+      "collection": "Dr. Seuss",
       "number": "2",
       "releaseYear": "2021",
       "description": "Best friend to the grumpy Grinch, Cindy Lou Who is always there to remind him of the true meaning of Christmas: spending time with loved ones!\n\nWe all know how grumpy the Grinch is. Luckily, Cindy Lou is there to remind him that Christmas isn't about gifts, but about spending time with loved ones!",
@@ -1420,7 +1420,7 @@ window.TUBBZ_DATA = {
     {
       "id": "dr-seuss-the-grinch-santa-costume",
       "name": "The Grinch (Santa Costume)",
-      "franchise": "Dr. Seuss",
+      "collection": "Dr. Seuss",
       "number": "3",
       "releaseYear": "2025",
       "description": "Steal the show (and maybe even the show at Christmas) with the TUBBZ Grinch! Dressed in his festive red suit and carrying a bag overflowing with 'borrowed' presents and a Christmas tree, this delightfully mischievous duck brings classic Dr. Seuss pranks to life.\n\nBoth festive and devilish, it's the ideal collectible toy for the holidays, for all those who love the magic of Christmas with a touch of mischief.",
@@ -1442,7 +1442,7 @@ window.TUBBZ_DATA = {
     {
       "id": "dr-seuss-max",
       "name": "Max",
-      "franchise": "Dr. Seuss",
+      "collection": "Dr. Seuss",
       "description": "Loyal, endearing, and sporting his one unforgettable deer antler, Max is the most faithful companion a Grinch could ever dream of. This officially licensed Mini TUBBZ captures his festive charm in a 5 cm (2 inch) version with impeccable detail, ready to follow the Grinch in all his pranks to cancel Christmas. Adorable and a tad patient, Max is the true heart of the story and the perfect centerpiece for any fan's collection.",
       "variants": [
         {
@@ -1458,7 +1458,7 @@ window.TUBBZ_DATA = {
     {
       "id": "dr-seuss-the-grinch-book-santa-costume",
       "name": "The Grinch (Book: Santa Costume)",
-      "franchise": "Dr. Seuss",
+      "collection": "Dr. Seuss",
       "releaseYear": "2025",
       "description": "Celebrate the holiday season with a sinister twist through the Amazon Exclusive Grinch Book Santa Costume TUBBZ. Officially licensed Dr. Seuss merchandise and designed by Numskull Designs, this limited first edition vinyl collectible transforms the iconic festive villain into a cosplaying duck. Featuring frosty white fur, blazing red eyes, and a sack stuffed with stolen gifts and a swiped Christmas tree, this Grinch is ready to snatch Christmas—and prime space on your display shelf. Crafted from premium PVC and standing at approximately 9cm tall, it is a must-have addition for collectors, fans of The Grinch, and anyone who enjoys rare, seasonal exclusives.",
       "variants": [
@@ -1471,7 +1471,7 @@ window.TUBBZ_DATA = {
     {
       "id": "dungeons-dragons-hank-the-ranger",
       "name": "Hank, the ranger",
-      "franchise": "Dungeons & Dragons",
+      "collection": "Dungeons & Dragons",
       "number": "1",
       "variants": [
         {
@@ -1483,7 +1483,7 @@ window.TUBBZ_DATA = {
     {
       "id": "dungeons-dragons-diana-the-acrobat",
       "name": "Diana, the acrobat",
-      "franchise": "Dungeons & Dragons",
+      "collection": "Dungeons & Dragons",
       "number": "2",
       "variants": [
         {
@@ -1495,7 +1495,7 @@ window.TUBBZ_DATA = {
     {
       "id": "dungeons-dragons-presto-the-magician",
       "name": "Presto, the magician",
-      "franchise": "Dungeons & Dragons",
+      "collection": "Dungeons & Dragons",
       "number": "3",
       "variants": [
         {
@@ -1507,7 +1507,7 @@ window.TUBBZ_DATA = {
     {
       "id": "dungeons-dragons-sheila-the-thief",
       "name": "Sheila, the thief",
-      "franchise": "Dungeons & Dragons",
+      "collection": "Dungeons & Dragons",
       "number": "4",
       "variants": [
         {
@@ -1519,7 +1519,7 @@ window.TUBBZ_DATA = {
     {
       "id": "fallout-vault-boy",
       "name": "Vault Boy",
-      "franchise": "Fallout",
+      "collection": "Fallout",
       "number": "1",
       "releaseYear": "2019",
       "description": "Fallout fans will definitely give Vault Boy’s quacking new look a big thumbs up, he’s looking awesome as a TUBBZ cosplaying collectable. This officially licensed collectable toy is part of the TUBBZ range, a highly collectable series of your favourite gaming, movie, TV show, and pop culture characters in duck form! With incredibly detailed features, this is a must for fans.",
@@ -1545,7 +1545,7 @@ window.TUBBZ_DATA = {
     {
       "id": "fallout-vault-girl",
       "name": "Vault Girl",
-      "franchise": "Fallout",
+      "collection": "Fallout",
       "number": "2",
       "releaseYear": "2019",
       "description": "Vault Girl has zipped up her iconic blue suit and is leaving Boston to join the duck collectables, she’s going to fit right in. This officially licensed collectable toy is part of the TUBBZ range, a highly collectable series of your favourite gaming, movie, TV show, and pop culture characters in duck form! With incredibly detailed features, this is a must for fans. ",
@@ -1563,7 +1563,7 @@ window.TUBBZ_DATA = {
     {
       "id": "fallout-t-51",
       "name": "T-51",
-      "franchise": "Fallout",
+      "collection": "Fallout",
       "number": "3",
       "releaseYear": "2019",
       "description": "Power Armor T-51's development is finally complete and West Tek’s work is done, T-51 is now a cosplaying duck. This officially licensed collectable toy is part of the TUBBZ range, a highly collectable series of your favourite gaming, movie, TV show, and pop culture characters in duck form! With incredibly detailed features, this is a must for fans.\n\nThe T-51 TUBBZ is an homage to the Fallout series’s most powerful, mechanised armour. Our quirky duck has donned this armour and is ready to take on any pond battle. ",
@@ -1585,7 +1585,7 @@ window.TUBBZ_DATA = {
     {
       "id": "fallout-nuka-cola-t-51",
       "name": "Nuka-Cola T-51",
-      "franchise": "Fallout",
+      "collection": "Fallout",
       "number": "3.1",
       "releaseYear": "2023",
       "description": "Check this out, what a suit! Nuka Cola T-51 is kitted out and ready to face the challenges of the post-apocalyptic wastelands and the duck pond. This officially licensed collectable toy is part of the TUBBZ range, a highly collectable series of your favourite gaming, movie, TV show, and pop culture characters in duck form! With incredibly detailed features, this is a must for fans.\n\nIf you’ve ever travelled through the Fallout universe, two items would be on your must-have list: the T-51 Armour and Nuka-Cola. Our TUBBZ duck brings together both of these essentials with Nuka-Cola-powered T-51 Armour. ",
@@ -1599,7 +1599,7 @@ window.TUBBZ_DATA = {
     {
       "id": "fallout-nuka-cola-pin-up-girl",
       "name": "Nuka Cola Pin UP Girl",
-      "franchise": "Fallout",
+      "collection": "Fallout",
       "number": "4",
       "releaseYear": "2019",
       "description": "Done with gracing the wasteland, Nuka Cola Girl is setting her sights on the duck pond instead. There’s no mistaking her in the rocket suit and helmet. This officially licensed collectable toy is part of the TUBBZ range, a highly collectable series of your favourite gaming, movie, TV show, and pop culture characters in duck form! With incredibly detailed features, this is a must for fans\n\nIf you play Fallout, you can’t help but notice the Nuka Cola Pin Up Girl poster throughout the Commonwealth, Island, and Nuka World. This blonde bombshell wears a fitted spacesuit and carries a raygun called the Thirst Zapper.",
@@ -1621,7 +1621,7 @@ window.TUBBZ_DATA = {
     {
       "id": "friends-rachel-green",
       "name": "Rachel Green",
-      "franchise": "Friends",
+      "collection": "Friends",
       "number": "1",
       "releaseYear": "2020",
       "description": "To Central Perk… but as a duck.\n\nMeet Rachel Green, the iconic character from Friends. On her way to meet the gang at Central Perk, Rachel finds herself in an unexpected situation: transformed into a collectible cosplay duck.\n\nWith her iconic style, New York charm, and legendary connection to Ross, this figurine pays homage to one of the series' most popular characters.",
@@ -1643,7 +1643,7 @@ window.TUBBZ_DATA = {
     {
       "id": "friends-joey-tribbiani",
       "name": "Joey Tribbiani",
-      "franchise": "Friends",
+      "collection": "Friends",
       "number": "2",
       "releaseYear": "2020",
       "description": "DoubleHow you doin'… in duck form?\n\nFind Joey Tribbiani, the charming and food-loving actor from Friends. Always ready to flirt, eat pizza, or deliver a classic line, Joey retains all his New York charm even as a cosplay duck.\n\nWith his recognizable style and endearing humor, this figurine pays tribute to one of the most popular characters in the series.",
@@ -1665,7 +1665,7 @@ window.TUBBZ_DATA = {
     {
       "id": "friends-ross-geller",
       "name": "Ross Geller",
-      "franchise": "Friends",
+      "collection": "Friends",
       "number": "3",
       "releaseYear": "2020",
       "description": "Pivot! Even as a duck, Ross keeps his legendary charm.\n\nFind Ross Geller, Friends' most iconic paleontologist. Dinosaur expert, master of awkward situations, and undisputed \"pivot\" master, Ross joins the collection as a collector cosplay duck.\n\nWith his recognizable style and clumsy humor, this figurine pays tribute to one of the series' most memorable characters.",
@@ -1687,7 +1687,7 @@ window.TUBBZ_DATA = {
     {
       "id": "friends-phoebe-buffay",
       "name": "Phoebe Buffay",
-      "franchise": "Friends",
+      "collection": "Friends",
       "number": "4",
       "releaseYear": "2020",
       "description": "Smelly Cat arrives in the pond.\n\nDiscover Phoebe Buffay, the most eccentric and endearing member of the Friends gang. A masseuse, musician, tree-lover, and queen of improbable songs, Phoebe joins the collection as a collectible cosplay duck.\n\nWith her bohemian style, unique energy, and cult connection to Central Perk, this figurine pays homage to one of the series' most original characters.",
@@ -1709,7 +1709,7 @@ window.TUBBZ_DATA = {
     {
       "id": "friends-chandler-bing",
       "name": "Chandler Bing",
-      "franchise": "Friends",
+      "collection": "Friends",
       "number": "5",
       "releaseYear": "2020",
       "description": "Could it BE any more collectible?\n\nMeet Chandler Bing, the king of sarcasm from Friends. Always ready with a witty remark, Chandler retains all his ironic charm even in cosplay duck form.\n\nWith his recognizable style and cult humor, this figurine pays tribute to one of the series' most beloved characters.",
@@ -1731,7 +1731,7 @@ window.TUBBZ_DATA = {
     {
       "id": "friends-monica-geller",
       "name": "Monica Geller",
-      "franchise": "Friends",
+      "collection": "Friends",
       "number": "6",
       "releaseYear": "2020",
       "description": "Monica-level clean is coming to the pond.\n\nDiscover Monica Geller, the most organized of the Friends gang. A true pillar of the group, an admitted perfectionist, and Chandler's \"lobster,\" Monica remains true to herself even when transformed into a collectible cosplay duck.\n\nWith her recognizable style, competitive energy, and legendary tidiness, this figurine pays tribute to one of the series' most endearing characters.",
@@ -1753,7 +1753,7 @@ window.TUBBZ_DATA = {
     {
       "id": "full-metal-jacket-sergeant-j-t-joker-davis",
       "name": "Sergeant J.T \"Joker\" Davis",
-      "franchise": "Full Metal Jacket",
+      "collection": "Full Metal Jacket",
       "number": "3",
       "releaseYear": "2024",
       "variants": [
@@ -1766,7 +1766,7 @@ window.TUBBZ_DATA = {
     {
       "id": "ghost-papa-emeritus-iv",
       "name": "Papa Emeritus IV",
-      "franchise": "Ghost",
+      "collection": "Ghost",
       "number": "6",
       "variants": [
         {
@@ -1778,7 +1778,7 @@ window.TUBBZ_DATA = {
     {
       "id": "ghost-papa-nihil",
       "name": "Papa Nihil",
-      "franchise": "Ghost",
+      "collection": "Ghost",
       "number": "7",
       "variants": [
         {
@@ -1790,7 +1790,7 @@ window.TUBBZ_DATA = {
     {
       "id": "ghost-cardinal-copia",
       "name": "Cardinal Copia",
-      "franchise": "Ghost",
+      "collection": "Ghost",
       "number": "8",
       "variants": [
         {
@@ -1802,7 +1802,7 @@ window.TUBBZ_DATA = {
     {
       "id": "ghost-papa-perpetua-v",
       "name": "Papa Perpetua V",
-      "franchise": "Ghost",
+      "collection": "Ghost",
       "number": "10",
       "variants": [
         {
@@ -1814,7 +1814,7 @@ window.TUBBZ_DATA = {
     {
       "id": "ghost-papa-emeritus-i",
       "name": "Papa Emeritus I",
-      "franchise": "Ghost",
+      "collection": "Ghost",
       "number": "11",
       "variants": [
         {
@@ -1826,7 +1826,7 @@ window.TUBBZ_DATA = {
     {
       "id": "ghostbusters-egon-spengler",
       "name": "Egon Spengler",
-      "franchise": "Ghostbusters",
+      "collection": "Ghostbusters",
       "number": "1",
       "releaseYear": "2020",
       "description": "Who ya gonna call? Ghostbusters!\n\nDiscover Egon Spengler, the scientific mastermind of the Ghostbusters team. A paranormal specialist, brilliant inventor, and methodical ghost hunter, Egon joins the pond as a collectible cosplay duck.",
@@ -1848,7 +1848,7 @@ window.TUBBZ_DATA = {
     {
       "id": "ghostbusters-ray-stantz",
       "name": "Ray Stantz",
-      "franchise": "Ghostbusters",
+      "collection": "Ghostbusters",
       "number": "2",
       "releaseYear": "2020",
       "description": "Who ya gonna call? Ghostbusters!\n\nMeet Ray Stantz, the passionate and enthusiastic ghost hunter from the Ghostbusters team. Always ready to study the strangest paranormal phenomena, Ray joins the pond as a collector cosplay duck.",
@@ -1870,7 +1870,7 @@ window.TUBBZ_DATA = {
     {
       "id": "ghostbusters-peter-venkman",
       "name": "Peter Venkman",
-      "franchise": "Ghostbusters",
+      "collection": "Ghostbusters",
       "number": "3",
       "releaseYear": "2020",
       "description": "Who ya gonna call? Ghostbusters!\n\nMeet Peter Venkman, the most charismatic of ghostbusters. Always ready to investigate with humor, composure, and a good dose of irony, Venkman joins the pond as a collector cosplay duck.",
@@ -1892,7 +1892,7 @@ window.TUBBZ_DATA = {
     {
       "id": "ghostbusters-peter-venkman-slimed",
       "name": "Peter Venkman Slimed",
-      "franchise": "Ghostbusters",
+      "collection": "Ghostbusters",
       "number": "3.1",
       "releaseYear": "2022",
       "description": "\"Who ya gonna call? Ghostbusters!\"\n\nMeet Peter Venkman, the most charismatic of the ghost hunters. During a new paranormal mission, Venkman was splattered by a mysterious green ectoplasm… with the unexpected consequence of his transformation into a collector cosplaying duck!\n\nThis exclusive Slime Edition features Peter Venkman covered in green slime, an unmissable nod to the Ghostbusters universe. With his Ghostbuster uniform, Proton Pack, and ectoplasm-covered details, this version is an original piece that will appeal to all collectors.",
@@ -1906,7 +1906,7 @@ window.TUBBZ_DATA = {
     {
       "id": "ghostbusters-winston-zeddemore",
       "name": "Winston Zeddemore",
-      "franchise": "Ghostbusters",
+      "collection": "Ghostbusters",
       "number": "4",
       "releaseYear": "2020",
       "description": "Who are you gonna call? Ghostbusters!\n\nMeet Winston Zeddemore, the courageous member of the Ghostbusters team. Equipped with his Proton Pack, Winston is ready to take on ghosts, ghouls, and paranormal creatures... even in the pond.",
@@ -1928,7 +1928,7 @@ window.TUBBZ_DATA = {
     {
       "id": "ghostbusters-stay-puft",
       "name": "Stay Puft",
-      "franchise": "Ghostbusters",
+      "collection": "Ghostbusters",
       "number": "5",
       "releaseYear": "2021",
       "description": "The Marshmallow Man joins the pond… with a marshmallow scent.\n\nMeet Stay Puft, one of the most iconic creatures from Ghostbusters. This special edition recreates the instantly recognizable appearance of the giant marshmallow while adding an original finish: a marshmallow scent.\n\nWith his sailor suit, innocent smile, and deceptively soft appearance, Stay Puft becomes a collector's cosplay duck that is as amusing as it is original.",
@@ -1950,7 +1950,7 @@ window.TUBBZ_DATA = {
     {
       "id": "ghostbusters-stay-puft-burnt-edition",
       "name": "Stay Puft (Burnt Edition)",
-      "franchise": "Ghostbusters",
+      "collection": "Ghostbusters",
       "number": "5.1",
       "releaseYear": "2021",
       "description": "The Stay Puft Marshmallow Man is back… slightly overdone!\n\nMeet Stay Puft, the famous Marshmallow Man from Ghostbusters. Transformed into a collectible cosplay duck, this time he sports an exclusive \"burnt\" finish reminiscent of his final confrontation in the film.\n\nEven more original, this limited edition emits a subtle marshmallow scent, for a collecting experience that is as fun as it is immersive.",
@@ -1964,7 +1964,7 @@ window.TUBBZ_DATA = {
     {
       "id": "ghostbusters-slimer",
       "name": "Slimer",
-      "franchise": "Ghostbusters",
+      "collection": "Ghostbusters",
       "number": "6",
       "releaseYear": "2022",
       "description": "We got slimed... and it glows!\n\nThe legendary Slimer from Ghostbusters joins the TUBBZ collection, ready to haunt your shelf... even in the dark.\nTransformed into a glow-in-the-dark cosplay duck, he retains all his gooey, funny, and unpredictable charm.\n\nAfter escaping the Ghostbusters, Slimer thinks he can hide... but his glow-in-the-dark effect might just give him away!",
@@ -1987,7 +1987,7 @@ window.TUBBZ_DATA = {
     {
       "id": "ghostbusters-janine-melnitz",
       "name": "Janine Melnitz",
-      "franchise": "Ghostbusters",
+      "collection": "Ghostbusters",
       "number": "7",
       "releaseYear": "2022",
       "description": "Look! There's a new girl at the Duckbusting Firehouse! A staple of the Ghostbusters firehouse, Janine loves making coffee and knowing who's on call. Show your love for Ghostbusters with this Janine Melnitz TUBBZ, the collectible cosplay duck figurine and shout WE GOT ONE!",
@@ -2006,7 +2006,7 @@ window.TUBBZ_DATA = {
     {
       "id": "ghostbusters-stay-puft-giant",
       "name": "Stay Puft (Giant)",
-      "franchise": "Ghostbusters",
+      "collection": "Ghostbusters",
       "number": "8",
       "releaseYear": "2023",
       "description": "Stay Puft Marshmallow Man was a huge character in Ghostbusters and is now Extra Large! (XL) as a cosplay duck character. Giant Stay Puft TUBBZ towers over the rest of the Ghostbusters TUBBZ in the collection, making him a must-have for collectors.\n\nIn Ghostbusters, Stay Puft is larger than life as he rages around New York City, making his gruesome presence unavoidable. Now, Giant Stay Puft TUBBZ is also making his mark in the duck pond. He is oversized, much larger than the other Ghostbusters TUBBZ and all collections need him!",
@@ -2021,7 +2021,7 @@ window.TUBBZ_DATA = {
     {
       "id": "ghostbusters-gozer",
       "name": "Gozer",
-      "franchise": "Ghostbusters",
+      "collection": "Ghostbusters",
       "number": "9",
       "releaseYear": "2024",
       "description": "Oh no, Gozer has new ideas. No more trying to destroy Earth, Gozer is now moving on to the duck pond.",
@@ -2035,7 +2035,7 @@ window.TUBBZ_DATA = {
     {
       "id": "ghostbusters-terror-dog",
       "name": "Terror Dog",
-      "franchise": "Ghostbusters",
+      "collection": "Ghostbusters",
       "number": "10",
       "releaseYear": "2024",
       "description": "Zuul is going through an identity crisis, part terror dog, part cosplay duck, but still looking to possess his next victim. Look at the glowing red eyes, horns, and teeth, it's clearly Zuul.",
@@ -2049,7 +2049,7 @@ window.TUBBZ_DATA = {
     {
       "id": "ghostbusters-dana-barrett",
       "name": "Dana Barrett",
-      "franchise": "Ghostbusters",
+      "collection": "Ghostbusters",
       "number": "11",
       "releaseYear": "2024",
       "description": "Poor Dana Barrett, she's about to go on a date with Venkman and now this... she's not only possessed by Zuul, but also by a rubber duck. Dana Barrett joins the TUBBZ cosplay collection in all her flowing brown hair and red dress glory.",
@@ -2063,7 +2063,7 @@ window.TUBBZ_DATA = {
     {
       "id": "ghostbusters-louis-tully",
       "name": "Louis Tully",
-      "franchise": "Ghostbusters",
+      "collection": "Ghostbusters",
       "number": "12",
       "releaseYear": "2024",
       "description": "I am the Duck Master! Louis Tully is clearly possessed by Vinz Clortho, the colander hat is attached to his head and he runs around town in a frenzied state. The nerdy neighbor has also been chosen to become a quacking cosplay duck and he looks pretty cool for once!",
@@ -2077,7 +2077,7 @@ window.TUBBZ_DATA = {
     {
       "id": "god-of-war-kratos",
       "name": "Kratos",
-      "franchise": "God of War",
+      "collection": "God of War",
       "number": "1",
       "variants": [
         {
@@ -2089,7 +2089,7 @@ window.TUBBZ_DATA = {
     {
       "id": "god-of-war-atreus",
       "name": "Atreus",
-      "franchise": "God of War",
+      "collection": "God of War",
       "number": "2",
       "variants": [
         {
@@ -2101,7 +2101,7 @@ window.TUBBZ_DATA = {
     {
       "id": "god-of-war-ragnarok-kratos",
       "name": "Kratos",
-      "franchise": "God of War Ragnarok",
+      "collection": "God of War Ragnarok",
       "number": "1",
       "variants": [
         {
@@ -2113,7 +2113,7 @@ window.TUBBZ_DATA = {
     {
       "id": "god-of-war-ragnarok-atreus",
       "name": "Atreus",
-      "franchise": "God of War Ragnarok",
+      "collection": "God of War Ragnarok",
       "number": "2",
       "variants": [
         {
@@ -2125,7 +2125,7 @@ window.TUBBZ_DATA = {
     {
       "id": "godzilla-godzilla-giant-xl-edition",
       "name": "Godzilla (Giant XL Edition)",
-      "franchise": "Godzilla",
+      "collection": "Godzilla",
       "number": "1",
       "variants": [
         {
@@ -2137,7 +2137,7 @@ window.TUBBZ_DATA = {
     {
       "id": "gremlins-stripe",
       "name": "Stripe",
-      "franchise": "Gremlins",
+      "collection": "Gremlins",
       "number": "1",
       "releaseYear": "2021",
       "description": "Did you drop your Mogwai in water? Oh dear. You'd better hope it's not Stripe as he's known as one of the most mischievous and sinister Gremlins. Even in duck form, he's still terrifying!",
@@ -2159,7 +2159,7 @@ window.TUBBZ_DATA = {
     {
       "id": "halloween-2007-a-rob-zombie-film-michael-myers",
       "name": "Michael Myers",
-      "franchise": "Halloween (2007 A Rob Zombie film)",
+      "collection": "Halloween (2007 A Rob Zombie film)",
       "number": "1",
       "variants": [
         {
@@ -2171,7 +2171,7 @@ window.TUBBZ_DATA = {
     {
       "id": "hammer-house-of-horror-dracula",
       "name": "Dracula",
-      "franchise": "Hammer House of Horror",
+      "collection": "Hammer House of Horror",
       "number": "1",
       "releaseYear": "2021",
       "description": "A new breed of vampire has emerged. Leading them is that famed blood-sucking duck - Quackula, I mean Dracula!\n\nKeep your wits about you as this blood-thirsty duck is not one to be messed with! The infamous vampire Dracula has undergone a strange and wonderful transformation to live out his immortal life as a bathing duck.",
@@ -2185,7 +2185,7 @@ window.TUBBZ_DATA = {
     {
       "id": "hammer-house-of-horror-frankenstein-s-creature",
       "name": "Frankenstein’s Creature",
-      "franchise": "Hammer House of Horror",
+      "collection": "Hammer House of Horror",
       "number": "2",
       "releaseYear": "2021",
       "description": "You have to hand it to Frankenstein for his ability to stitch together a monster and bring it back from the dead! However, we’re not too sure why he chose to piece together this particular creature using duck parts…",
@@ -2199,7 +2199,7 @@ window.TUBBZ_DATA = {
     {
       "id": "hammer-house-of-horror-the-mummy",
       "name": "The Mummy",
-      "franchise": "Hammer House of Horror",
+      "collection": "Hammer House of Horror",
       "number": "3",
       "releaseYear": "2021",
       "description": "Although many may mistake this for a duck wrapped in toilet paper, they couldn't be more wrong. Straight from the tombs of Egypt, this duck has been resurrected and is ready to curse those who seek to meddle with its treasures!",
@@ -2213,7 +2213,7 @@ window.TUBBZ_DATA = {
     {
       "id": "hammer-house-of-horror-werewolf",
       "name": "Werewolf",
-      "franchise": "Hammer House of Horror",
+      "collection": "Hammer House of Horror",
       "number": "4",
       "releaseYear": "2021",
       "description": "It's time to cash in all the money you have because we've heard rumors of a wolf/duck hybrid hunting all night. If you're not careful, you could become its prey!",
@@ -2227,7 +2227,7 @@ window.TUBBZ_DATA = {
     {
       "id": "harry-potter-gryffindor",
       "name": "Gryffindor",
-      "franchise": "Harry Potter",
+      "collection": "Harry Potter",
       "number": "1",
       "releaseYear": "2026",
       "variants": [
@@ -2244,7 +2244,7 @@ window.TUBBZ_DATA = {
     {
       "id": "harry-potter-slytherin",
       "name": "Slytherin",
-      "franchise": "Harry Potter",
+      "collection": "Harry Potter",
       "number": "2",
       "releaseYear": "2026",
       "variants": [
@@ -2261,7 +2261,7 @@ window.TUBBZ_DATA = {
     {
       "id": "harry-potter-hufflepuff",
       "name": "Hufflepuff",
-      "franchise": "Harry Potter",
+      "collection": "Harry Potter",
       "number": "3",
       "releaseYear": "2026",
       "variants": [
@@ -2278,7 +2278,7 @@ window.TUBBZ_DATA = {
     {
       "id": "harry-potter-ravenclaw",
       "name": "Ravenclaw",
-      "franchise": "Harry Potter",
+      "collection": "Harry Potter",
       "number": "4",
       "releaseYear": "2026",
       "variants": [
@@ -2295,7 +2295,7 @@ window.TUBBZ_DATA = {
     {
       "id": "hatsune-miku-hatsune-miku",
       "name": "Hatsune Miku",
-      "franchise": "Hatsune Miku",
+      "collection": "Hatsune Miku",
       "number": "1",
       "releaseYear": "2022",
       "description": "The world's most famous virtual idol takes the stage… from the pond.\n\nMeet Hatsune Miku, the Japanese cultural phenomenon and global icon of virtual music. With her long turquoise pigtails, microphone, and instantly recognizable futuristic outfit, Miku retains all her style even in the form of a collectible cosplay duck.\n\nThis figure pays tribute to one of the world's most popular virtual voices, who has become a true star thanks to her concerts, songs, and international community of creators and fans.",
@@ -2313,7 +2313,7 @@ window.TUBBZ_DATA = {
     {
       "id": "hatsune-miku-snow-miku",
       "name": "Snow Miku",
-      "franchise": "Hatsune Miku",
+      "collection": "Hatsune Miku",
       "number": "1.1",
       "releaseYear": "2023",
       "description": "The voice of the future... winter edition.\n\nThe iconic Hatsune Miku, virtual J-Pop superstar, is reinvented as Snow Miku in this TUBBZ.\nWith her elegant winter look and icy details, she brings a touch of freshness and magic to your collection.\n\nReimagined as a cosplay duck, this collectible captures all of Miku's grace and unique aesthetic, with a fun and original interpretation unique to TUBBZ.",
@@ -2328,7 +2328,7 @@ window.TUBBZ_DATA = {
     {
       "id": "iron-maiden-eddie-the-trooper",
       "name": "Eddie The Trooper",
-      "franchise": "Iron Maiden",
+      "collection": "Iron Maiden",
       "number": "3",
       "variants": [
         {
@@ -2340,7 +2340,7 @@ window.TUBBZ_DATA = {
     {
       "id": "iron-maiden-cyborg-eddie",
       "name": "Cyborg Eddie",
-      "franchise": "Iron Maiden",
+      "collection": "Iron Maiden",
       "number": "4",
       "variants": [
         {
@@ -2352,7 +2352,7 @@ window.TUBBZ_DATA = {
     {
       "id": "jaws-bruce",
       "name": "Bruce",
-      "franchise": "Jaws",
+      "collection": "Jaws",
       "number": "1",
       "releaseYear": "2021",
       "description": "Da dum… da dum… something is approaching in the pond.\n\nMeet Bruce, the iconic great white shark from Jaws. Even transformed into a collectible cosplay duck, this mythical predator retains his menacing smile and instantly recognizable allure.\n\nInspired by Steven Spielberg's cult film, this figurine humorously reinterprets one of the most famous monsters in cinematic history.",
@@ -2374,7 +2374,7 @@ window.TUBBZ_DATA = {
     {
       "id": "jaws-quint",
       "name": "Quint",
-      "franchise": "Jaws",
+      "collection": "Jaws",
       "number": "2",
       "releaseYear": "2021",
       "description": "A killer shark on the loose? There's only one man for the job.\n\nMeet Quint, the formidable shark hunter from Jaws. Captain of the famous boat Orca, Quint is accustomed to tracking the most dangerous marine predators.\n\nEven transformed into a collector cosplay duck, he retains all his seasoned sailor's allure, his hunting experience, and his determined character. Faced with the great white shark terrorizing Amity Island, he remains the man for the job.",
@@ -2396,7 +2396,7 @@ window.TUBBZ_DATA = {
     {
       "id": "jaws-matt-hooper",
       "name": "Matt Hooper",
-      "franchise": "Jaws",
+      "collection": "Jaws",
       "number": "3",
       "releaseYear": "2021",
       "description": "The shark expert embarks on the Orca… then joins the pond.\n\nMeet Matt Hooper, oceanographer and shark expert from Jaws. Fascinated by large marine predators, Hooper joins Brody and Quint aboard the Orca to track the shark terrorizing Amity Island.\n\nEven transformed into a collectible cosplay duck, he retains his field expert look and his essential role in the hunt for the famous great white shark.",
@@ -2418,7 +2418,7 @@ window.TUBBZ_DATA = {
     {
       "id": "jaws-chief-martin-brody",
       "name": "Chief Martin Brody",
-      "franchise": "Jaws",
+      "collection": "Jaws",
       "number": "4",
       "releaseYear": "2021",
       "description": "Amity Island's police chief takes to the sea… and then joins the pond.\n\nDiscover Martin Brody, Amity Island's police chief and iconic hero from Jaws. Unaccustomed to sharks, and even less so to the open sea, Brody must nonetheless confront the gigantic predator terrorizing residents and vacationers.\n\nAccompanied by Matt Hooper and Quint aboard the Orca, he embarks on a hunt as dangerous as it is unforgettable. Even transformed into a collectible cosplay duck, he retains all his courage and determination.",
@@ -2440,7 +2440,7 @@ window.TUBBZ_DATA = {
     {
       "id": "jaws-bruce-xl",
       "name": "Bruce (Giant XL Edition)",
-      "franchise": "Jaws",
+      "collection": "Jaws",
       "number": "5",
       "releaseYear": "2023",
       "description": "Da dum da dum… the shark hunters caught the shark, it was harpooned, they put the scuba tank in its mouth and bingo, game over! Jaws fans, this is a very special collectible – the Jaws Bruce Cosplay Duck in size XL. Simply a statement piece in any collection.",
@@ -2454,7 +2454,7 @@ window.TUBBZ_DATA = {
     {
       "id": "jaws-orca-boat",
       "name": "Orca Boat",
-      "franchise": "Jaws",
+      "collection": "Jaws",
       "releaseYear": "2026",
       "description": "Embark on a legendary adventure with the Jaws Special Edition Orca TUBBZ Boat, a premium replica of the iconic ship from the classic 1975 film, designed to showcase your Jaws Mini TUBBZ collection.\n\nMade of high-quality PVC and ABS, this boat can accommodate up to three Mini TUBBZ, so there's no need to buy a bigger one! Whether you display Chief Brody, Quint, and Hooper's Mini TUBBZ or switch them up with your own shipmates, this detailed collectible will bring the thrill of the chase to life.\n\nThe set includes Mini TUBBZ of the three legendary shark hunters, a full-size TUBBZ Bruce the Shark, plus the iconic yellow barrels and diving cylinder. With its movie-accurate paint scheme, sturdy flat base, and ability to float, the Orca boat is ideal for play and display, and a must-have for Jaws fans of all ages.",
       "variants": [
@@ -2467,7 +2467,7 @@ window.TUBBZ_DATA = {
     {
       "id": "jet-set-radio-beat",
       "name": "Beat",
-      "franchise": "Jet Set Radio",
+      "collection": "Jet Set Radio",
       "number": "1",
       "releaseYear": "2021",
       "description": "The king of rollerblading and graffiti lands in the pond.\n\nMeet Beat, the iconic hero from Jet Set Radio. As the leader of the GGs (Graffiti Gang), Beat cruises the streets of Tokyo-to on rollerblades, creating spectacular graffiti while evading the police force.\n\nEven transformed into a collectible cosplay duck, Beat retains his overflowing energy, unique urban style, and passion for street art. With his rollerblades, iconic glasses, and colorful outfit, this figurine perfectly captures the spirit of SEGA's cult game.",
@@ -2481,7 +2481,7 @@ window.TUBBZ_DATA = {
     {
       "id": "john-wick-john-wick",
       "name": "John Wick",
-      "franchise": "John Wick",
+      "collection": "John Wick",
       "number": "1",
       "variants": [
         {
@@ -2493,7 +2493,7 @@ window.TUBBZ_DATA = {
     {
       "id": "john-wick-john-wick-with-pencil",
       "name": "John Wick (With Pencil)",
-      "franchise": "John Wick",
+      "collection": "John Wick",
       "number": "2",
       "description": "Dome de la baignoire plastique cassé",
       "variants": [
@@ -2506,7 +2506,7 @@ window.TUBBZ_DATA = {
     {
       "id": "john-wick-john-wick-with-book",
       "name": "John Wick (With Book)",
-      "franchise": "John Wick",
+      "collection": "John Wick",
       "number": "3",
       "variants": [
         {
@@ -2518,7 +2518,7 @@ window.TUBBZ_DATA = {
     {
       "id": "jujutsu-kaisen-yuji-itadori",
       "name": "Yuji Itadori",
-      "franchise": "Jujutsu Kaisën",
+      "collection": "Jujutsu Kaisën",
       "number": "1",
       "variants": [
         {
@@ -2530,7 +2530,7 @@ window.TUBBZ_DATA = {
     {
       "id": "jujutsu-kaisen-satoru-gojo",
       "name": "Satoru Gojo",
-      "franchise": "Jujutsu Kaisën",
+      "collection": "Jujutsu Kaisën",
       "number": "2",
       "variants": [
         {
@@ -2542,7 +2542,7 @@ window.TUBBZ_DATA = {
     {
       "id": "jurassic-park-dr-john-hammond",
       "name": "Dr. John Hammond",
-      "franchise": "Jurassic Park",
+      "collection": "Jurassic Park",
       "number": "1",
       "releaseYear": "2021",
       "description": "Welcome to Jurassic Park… in duck form.\n\nMeet Dr. John Hammond, the visionary founder of Jurassic Park. A passionate billionaire and the creator of InGen, Hammond realizes his most ambitious dream: bringing dinosaurs to life through genetic engineering and opening a unique park on Isla Nublar.\n\nWith his white suit, hat, glasses, amber-topped cane, and characteristic beard, this cosplay duck version incorporates the character's most recognizable details.",
@@ -2560,7 +2560,7 @@ window.TUBBZ_DATA = {
     {
       "id": "jurassic-park-dennis-nedry",
       "name": "Dennis Nedry",
-      "franchise": "Jurassic Park",
+      "collection": "Jurassic Park",
       "number": "2",
       "releaseYear": "2021",
       "description": "Greed sometimes has dire consequences... even for a duck.\n\nMeet Dennis Nedry, the computer programmer from Jurassic Park. An InGen employee, Nedry agrees to steal dinosaur embryos for a rival company, causing the park's security systems to fail and the ensuing chaos.\n\nWith his iconic glasses, yellow raincoat, and appearance faithful to the cult 1993 film, this cosplaying duck version pays homage to one of the most memorable characters from Jurassic Park.",
@@ -2578,7 +2578,7 @@ window.TUBBZ_DATA = {
     {
       "id": "jurassic-park-dr-alan-grant",
       "name": "Dr. Alan Grant",
-      "franchise": "Jurassic Park",
+      "collection": "Jurassic Park",
       "number": "3",
       "releaseYear": "2022",
       "description": "Facing the T-Rex... he's in control.\n\nThe legendary Dr. Alan Grant, renowned paleontologist, joins the TUBBZ collection in an iconic scene from Jurassic Park. Flare in hand, ready to distract the T-Rex, he perfectly embodies courage and ingenuity in the face of danger... even as a duck.\n\nReimagined as a cosplaying duck, this collectible captures all the tension and intelligence of the character with the quirky touch unique to TUBBZ.",
@@ -2597,7 +2597,7 @@ window.TUBBZ_DATA = {
     {
       "id": "jurassic-park-t-rex-giant",
       "name": "T-Rex (Giant)",
-      "franchise": "Jurassic Park",
+      "collection": "Jurassic Park",
       "number": "4",
       "releaseYear": "2022",
       "description": "The king of dinosaurs... in XXL version.\n\nThe legendary Tyrannosaurus rex from Jurassic Park escapes its enclosure to join the TUBBZ collection in Giant XL Edition. An unlikely fusion of dinosaur and duck, this legendary predator becomes a spectacular, oversized piece.\n\nMassive, imposing, and ultra-detailed, this reinterpreted T. rex captures all the power and terror of the film... with an irresistible quirky touch.\n\nPresented in an official Jurassic Park display box, this model is designed to become the centerpiece of your collection.",
@@ -2612,7 +2612,7 @@ window.TUBBZ_DATA = {
     {
       "id": "jurassic-park-dr-ian-malcolm",
       "name": "Dr. Ian Malcolm",
-      "franchise": "Jurassic Park",
+      "collection": "Jurassic Park",
       "number": "5",
       "releaseYear": "2022",
       "description": "\"Life finds a way...\" even as a duck.\n\nThe charismatic Dr. Ian Malcolm, a specialist in chaos theory, joins the TUBBZ collection. Reimagined as a cosplaying duck, he retains all his iconic style and inimitable attitude in the face of Jurassic Park's chaos.\n\nWith his iconic look, legendary charisma, and unpredictable wit, this figure perfectly captures the essence of the character with the quirky touch unique to TUBBZ.",
@@ -2631,7 +2631,7 @@ window.TUBBZ_DATA = {
     {
       "id": "jurassic-park-dr-ellie-sattler",
       "name": "Dr. Ellie Sattler",
-      "franchise": "Jurassic Park",
+      "collection": "Jurassic Park",
       "number": "6",
       "releaseYear": "2022",
       "description": "Science. Courage. Survival.\n\nThe brilliant Dr. Ellie Sattler, iconic paleobotanist from Jurassic Park, joins the TUBBZ collection. Reimagined as a cosplaying duck, she retains all her determination and key role in the face of the park's chaos.\n\nIntelligent, courageous, and indispensable to the group's survival, this figurine perfectly captures the spirit of the character with the quirky touch unique to TUBBZ.",
@@ -2650,7 +2650,7 @@ window.TUBBZ_DATA = {
     {
       "id": "jurassic-park-robert-muldoon",
       "name": "Robert Muldoon",
-      "franchise": "Jurassic Park",
+      "collection": "Jurassic Park",
       "number": "7",
       "description": "Robert Muldoon takes his job as Game Warden very seriously, even as a cosplaying duck. Safety is paramount; he must ensure the safety of visitors and make sure they don't end up as dinosaur lunch. He also has to keep a close eye on the dinosaurs, as they could turn on him at any moment.",
       "variants": [
@@ -2667,7 +2667,7 @@ window.TUBBZ_DATA = {
     {
       "id": "jurassic-park-velociraptor",
       "name": "Velociraptor",
-      "franchise": "Jurassic Park",
+      "collection": "Jurassic Park",
       "number": "8",
       "description": "There's a shake-up coming to the duck pond. The TUBBZ T-Rex is about to get some dino company as the Velociraptor joins the TUBBZ Jurassic Park lineup. This dinosaur/hybrid is a predator on the prowl; no duck is safe.",
       "variants": [
@@ -2684,7 +2684,7 @@ window.TUBBZ_DATA = {
     {
       "id": "jurassic-park-dilophosaurus",
       "name": "Dilophosaurus",
-      "franchise": "Jurassic Park",
+      "collection": "Jurassic Park",
       "number": "9",
       "description": "This Dilophosaurus feels right at home in Jurassic Park, strutting around as if it owns the place, until it realizes there's an audience. Who are all these strange-looking creatures staring blankly ahead? Apparently, these creatures are ducks in cosplay. Dilophosaurus isn't quite sure what to make of them, so it decides to eat them!",
       "variants": [
@@ -2705,7 +2705,7 @@ window.TUBBZ_DATA = {
     {
       "id": "jurassic-park-t-rex",
       "name": "T-Rex",
-      "franchise": "Jurassic Park",
+      "collection": "Jurassic Park",
       "number": "10",
       "description": "Why is the duck pond water rippling? What's that thudding sound? T-rex is now a collectible cosplay duck and joins the other 9 Jurassic Park characters in this ever-growing popular range.",
       "variants": [
@@ -2722,7 +2722,7 @@ window.TUBBZ_DATA = {
     {
       "id": "jurassic-park-t-rex-duck-natural-history-museum-edition",
       "name": "T-Rex Duck (Natural History Museum Edition)",
-      "franchise": "Jurassic Park",
+      "collection": "Jurassic Park",
       "description": "Beware, the deadly T. rex has escaped its enclosure and has a huge new dinosaur-duck hybrid form to stalk its prey! This officially licensed collectible is part of the TUBBZ range, a collectible series of your favorite game, movie, TV show, and pop culture characters in duck form! Featuring incredibly detailed features, this amazing collectible comes complete in a themed display box.",
       "variants": [
         {
@@ -2734,7 +2734,7 @@ window.TUBBZ_DATA = {
     {
       "id": "jurassic-world-owen-grady",
       "name": "Owen Grady",
-      "franchise": "Jurassic World",
+      "collection": "Jurassic World",
       "number": "11",
       "releaseYear": "2025",
       "description": " Life always finds a way… and so does Owen Grady, now transformed into a collectible, quacking TUBBZ! This expert raptor trainer has traded the jungle for the water, sporting his signature vest, utility belt, and rugged boots, ready to take on even the most mischievous Mini TUBBZ.\n\nWith its intricate details and Jurassic World-inspired case, this TUBBZ is a must-have for fans of the franchise and collectors! Add Owen Grady TUBBZ to your collection today, but keep an eye out for Blue lurking nearby!",
@@ -2748,7 +2748,7 @@ window.TUBBZ_DATA = {
     {
       "id": "jurassic-world-claire-dearing",
       "name": "Claire Dearing",
-      "franchise": "Jurassic World",
+      "collection": "Jurassic World",
       "number": "12",
       "releaseYear": "2025",
       "description": "From running a dinosaur theme park to running away, Claire Dearing is always ready for action and now she's available as a TUBBZ! Reimagined as an adorable collectible duck, she sports her signature white work outfit, complete with a stylish blazer. Adorned with intricate details and housed in a Jurassic World-themed bathtub, this TUBBZ is a must-have for fans of the franchise and collectors!\n\nAdd Claire Dearing TUBBZ to your collection today and remember: surviving the dinosaurs is just like any other day at work!",
@@ -2762,7 +2762,7 @@ window.TUBBZ_DATA = {
     {
       "id": "jurassic-world-mosasaurus-giant-xl-edition",
       "name": "Mosasaurus (Giant XL Edition)",
-      "franchise": "Jurassic World",
+      "collection": "Jurassic World",
       "number": "13",
       "releaseYear": "2025",
       "description": "The ocean's apex predator has resurfaced...bigger, bolder, and ready to make a splash in your collection as an epic TUBBZ XL! This mind-blowing TUBBZ XL transforms the mighty Mosasaurus into an oversized, highly detailed duck, complete with scales, a piercing stare, and its most frightening feature yet: an entire shark caught in its beak!\n\nMore than twice the size of a standard TUBBZ , this colossal collectible perfectly captures the raw power of the titan of the deep with playful yet breathtaking detail. Whether you're a die-hard Jurassic World fan or simply love larger-than-life collectibles, the Mosasaurus XL TUBBZ is a must-have.",
@@ -2776,7 +2776,7 @@ window.TUBBZ_DATA = {
     {
       "id": "jurassic-world-blue",
       "name": "Blue",
-      "franchise": "Jurassic World",
+      "collection": "Jurassic World",
       "number": "14",
       "releaseYear": "2025",
       "description": "Jurassic World's smartest raptor is ready to rule the pond! Blue has transformed into a collectible TUBBZ that's as fearsome as it is adorable, sporting her signature blue stripes, piercing yellow eyes, and sharp claws. Whether leading the pack or quietly slinking across your shelf, this highly detailed duck-raptor hybrid is a must-have for fans of the franchise. Housed in a Jurassic World -themed tub, this TUBBZ is perfect for any collector looking to add a prehistoric touch to their collection!\n\nAdd the TUBBZ Blue to your collection, but stay alert: it's always watching you!",
@@ -2794,7 +2794,7 @@ window.TUBBZ_DATA = {
     {
       "id": "knight-rider-michael-knight",
       "name": "Michael Knight",
-      "franchise": "Knight Rider",
+      "collection": "Knight Rider",
       "number": "1",
       "releaseYear": "2021",
       "description": "One man, one car… and now a duck.\n\nMeet Michael Knight, the iconic hero of Knight Rider. Recognizable by his leather jacket and casual style, Michael fights crime with the help of KITT, his intelligent car equipped with advanced artificial intelligence.\n\nEven transformed into a collector cosplaying duck, he retains all his confidence and remains ready to defend the innocent against criminals.",
@@ -2808,7 +2808,7 @@ window.TUBBZ_DATA = {
     {
       "id": "lord-of-the-rings-frodo-baggins",
       "name": "Frodo Baggins",
-      "franchise": "Lord of the Rings",
+      "collection": "Lord of the Rings",
       "number": "1",
       "releaseYear": "2019",
       "description": "One bath to rule them all…\n\nDiscover Frodo Baggins, the famous bearer of the One Ring. The effects of the Ring seem to have taken their toll on poor Frodo... he's been transformed into a collectible cosplay duck.\n\nWith his hobbit-like appearance, his quiet courage, and his central role in the quest to Mordor, this figurine perfectly captures the spirit of Middle-earth's most determined hero.",
@@ -2830,7 +2830,7 @@ window.TUBBZ_DATA = {
     {
       "id": "lord-of-the-rings-gandalf-the-grey",
       "name": "Gandalf The Grey",
-      "franchise": "Lord of the Rings",
+      "collection": "Lord of the Rings",
       "number": "2",
       "releaseYear": "2019",
       "description": "One bath to rule them all…\n\nDiscover Gandalf the Grey, Middle-earth's famous wizard. The legendary guide of the Fellowship of the Ring trades his staff for bread and joins the pond as a collectible cosplay duck.\n\nWith his grey robe, wise demeanor, and mythical aura, this figurine perfectly captures the spirit of one of the most iconic characters from The Lord of the Rings.",
@@ -2852,7 +2852,7 @@ window.TUBBZ_DATA = {
     {
       "id": "lord-of-the-rings-sauron",
       "name": "Sauron",
-      "franchise": "Lord of the Rings",
+      "collection": "Lord of the Rings",
       "number": "3",
       "releaseYear": "2019",
       "variants": [
@@ -2869,7 +2869,7 @@ window.TUBBZ_DATA = {
     {
       "id": "lord-of-the-rings-legolas",
       "name": "Legolas",
-      "franchise": "Lord of the Rings",
+      "collection": "Lord of the Rings",
       "number": "4",
       "releaseYear": "2019",
       "variants": [
@@ -2886,7 +2886,7 @@ window.TUBBZ_DATA = {
     {
       "id": "lord-of-the-rings-gimli",
       "name": "Gimli",
-      "franchise": "Lord of the Rings",
+      "collection": "Lord of the Rings",
       "number": "5",
       "releaseYear": "2021",
       "variants": [
@@ -2903,7 +2903,7 @@ window.TUBBZ_DATA = {
     {
       "id": "lord-of-the-rings-galadriel",
       "name": "Galadriel",
-      "franchise": "Lord of the Rings",
+      "collection": "Lord of the Rings",
       "number": "6",
       "releaseYear": "2021",
       "variants": [
@@ -2920,7 +2920,7 @@ window.TUBBZ_DATA = {
     {
       "id": "lord-of-the-rings-aragorn",
       "name": "Aragorn",
-      "franchise": "Lord of the Rings",
+      "collection": "Lord of the Rings",
       "number": "7",
       "releaseYear": "2021",
       "variants": [
@@ -2937,7 +2937,7 @@ window.TUBBZ_DATA = {
     {
       "id": "lord-of-the-rings-lurtz",
       "name": "Lurtz",
-      "franchise": "Lord of the Rings",
+      "collection": "Lord of the Rings",
       "number": "8",
       "releaseYear": "2021",
       "variants": [
@@ -2954,7 +2954,7 @@ window.TUBBZ_DATA = {
     {
       "id": "lord-of-the-rings-saruman",
       "name": "Saruman",
-      "franchise": "Lord of the Rings",
+      "collection": "Lord of the Rings",
       "number": "9",
       "releaseYear": "2021",
       "variants": [
@@ -2971,7 +2971,7 @@ window.TUBBZ_DATA = {
     {
       "id": "lord-of-the-rings-samwise-gamgee",
       "name": "Samwise Gamgee",
-      "franchise": "Lord of the Rings",
+      "collection": "Lord of the Rings",
       "number": "10",
       "releaseYear": "2021",
       "variants": [
@@ -2988,7 +2988,7 @@ window.TUBBZ_DATA = {
     {
       "id": "lord-of-the-rings-arwen",
       "name": "Arwen",
-      "franchise": "Lord of the Rings",
+      "collection": "Lord of the Rings",
       "number": "11",
       "releaseYear": "2021",
       "variants": [
@@ -3005,7 +3005,7 @@ window.TUBBZ_DATA = {
     {
       "id": "lord-of-the-rings-gollum",
       "name": "Gollum",
-      "franchise": "Lord of the Rings",
+      "collection": "Lord of the Rings",
       "number": "12",
       "releaseYear": "2021",
       "variants": [
@@ -3022,7 +3022,7 @@ window.TUBBZ_DATA = {
     {
       "id": "lord-of-the-rings-boromir",
       "name": "Boromir",
-      "franchise": "Lord of the Rings",
+      "collection": "Lord of the Rings",
       "number": "13",
       "releaseYear": "2021",
       "variants": [
@@ -3035,7 +3035,7 @@ window.TUBBZ_DATA = {
     {
       "id": "lord-of-the-rings-uruk-hai",
       "name": "Uruk-Hai",
-      "franchise": "Lord of the Rings",
+      "collection": "Lord of the Rings",
       "number": "14",
       "releaseYear": "2021",
       "variants": [
@@ -3048,7 +3048,7 @@ window.TUBBZ_DATA = {
     {
       "id": "lord-of-the-rings-nazgul",
       "name": "Nazgûl",
-      "franchise": "Lord of the Rings",
+      "collection": "Lord of the Rings",
       "number": "15",
       "releaseYear": "2021",
       "variants": [
@@ -3065,7 +3065,7 @@ window.TUBBZ_DATA = {
     {
       "id": "lord-of-the-rings-gandalf-the-white",
       "name": "Gandalf The White",
-      "franchise": "Lord of the Rings",
+      "collection": "Lord of the Rings",
       "number": "16",
       "releaseYear": "2021",
       "variants": [
@@ -3082,7 +3082,7 @@ window.TUBBZ_DATA = {
     {
       "id": "lord-of-the-rings-pippin-took",
       "name": "Pippin Took",
-      "franchise": "Lord of the Rings",
+      "collection": "Lord of the Rings",
       "number": "17",
       "releaseYear": "2022",
       "variants": [
@@ -3100,7 +3100,7 @@ window.TUBBZ_DATA = {
     {
       "id": "lord-of-the-rings-merry-brandybuck",
       "name": "Merry Brandybuck",
-      "franchise": "Lord of the Rings",
+      "collection": "Lord of the Rings",
       "number": "18",
       "releaseYear": "2022",
       "variants": [
@@ -3118,7 +3118,7 @@ window.TUBBZ_DATA = {
     {
       "id": "lord-of-the-rings-balrog",
       "name": "Balrog",
-      "franchise": "Lord of the Rings",
+      "collection": "Lord of the Rings",
       "number": "19",
       "releaseYear": "2023",
       "variants": [
@@ -3132,7 +3132,7 @@ window.TUBBZ_DATA = {
     {
       "id": "lord-of-the-rings-gandalf-ysnp",
       "name": "Gandalf (YSNP)",
-      "franchise": "Lord of the Rings",
+      "collection": "Lord of the Rings",
       "number": "20",
       "releaseYear": "2023",
       "variants": [
@@ -3150,7 +3150,7 @@ window.TUBBZ_DATA = {
     {
       "id": "lord-of-the-rings-treebeard-giant-xl-edition",
       "name": "Treebeard (Giant XL Edition)",
-      "franchise": "Lord of the Rings",
+      "collection": "Lord of the Rings",
       "number": "21",
       "releaseYear": "2024",
       "description": "Holds 2 standard tubbz",
@@ -3164,7 +3164,7 @@ window.TUBBZ_DATA = {
     {
       "id": "lord-of-the-rings-eowyn",
       "name": "Eowyn",
-      "franchise": "Lord of the Rings",
+      "collection": "Lord of the Rings",
       "number": "22",
       "releaseYear": "2024",
       "variants": [
@@ -3177,7 +3177,7 @@ window.TUBBZ_DATA = {
     {
       "id": "metal-gear-solid-solid-snake",
       "name": "Solid Snake",
-      "franchise": "Metal Gear Solid",
+      "collection": "Metal Gear Solid",
       "number": "1",
       "releaseYear": "2020",
       "description": "The infiltration mission begins in the pond.\n\nDiscover Solid Snake, the legendary hero of Metal Gear Solid. Even transformed into a cosplay duck, Snake remains an infiltration expert, ready to neutralize his target with precision and discretion.\n\nWith his iconic spec-ops gear, his suppressor, and his elite soldier attitude, this figurine perfectly captures the tactical and cult spirit of the Metal Gear Solid saga.",
@@ -3199,7 +3199,7 @@ window.TUBBZ_DATA = {
     {
       "id": "metal-gear-solid-revolver-ocelot",
       "name": "Revolver Ocelot",
-      "franchise": "Metal Gear Solid",
+      "collection": "Metal Gear Solid",
       "number": "2",
       "releaseYear": "2020",
       "description": "The ricochet genius joins the pond.\n\nMeet Revolver Ocelot, Solid Snake's iconic rival. Master interrogator, formidable marksman, and essential character from Metal Gear Solid, Ocelot retains all his charisma even in the form of a collectible cosplay duck.\n\nWith his iconic revolvers, Major's uniform, and duelist's attitude, this figurine perfectly captures the tactical, military, and cult spirit of the Metal Gear Solid saga.",
@@ -3221,7 +3221,7 @@ window.TUBBZ_DATA = {
     {
       "id": "metal-gear-solid-genome-soldier",
       "name": "Genome Soldier",
-      "franchise": "Metal Gear Solid",
+      "collection": "Metal Gear Solid",
       "number": "3",
       "releaseYear": "2021",
       "description": "FOXHOUND's genetically modified elite infiltrates the pond.\n\nMeet the Genome Soldier, the iconic elite soldier from Metal Gear Solid. Originating from a top-secret military program, Genome Soldiers were genetically modified to enhance their combat abilities and complete the most dangerous missions.\n\nEven transformed into a collector cosplay duck, this soldier retains his tactical gear, full-face mask, and menacing demeanor. He is ready to eliminate anyone who might compromise the operation on Shadow Moses.",
@@ -3243,7 +3243,7 @@ window.TUBBZ_DATA = {
     {
       "id": "metal-gear-solid-gray-fox",
       "name": "Gray Fox",
-      "franchise": "Metal Gear Solid",
+      "collection": "Metal Gear Solid",
       "number": "4",
       "releaseYear": "2021",
       "description": "The FOXHOUND cyborg ninja infiltrates the pond.\n\nDiscover Gray Fox, legendary mercenary and former member of the FOXHOUND special unit. The only soldier to earn the prestigious code name Fox, he owes this distinction to his exceptional abilities on the battlefield.\n\nEven transformed into a collector cosplay duck, Gray Fox retains all his aura as a formidable warrior. His cyborg ninja armor, helmet, and stealthy appearance make him one of the most recognizable characters from Metal Gear Solid.",
@@ -3265,7 +3265,7 @@ window.TUBBZ_DATA = {
     {
       "id": "metal-gear-solid-dr-hal-otacon-emmerich",
       "name": "Dr. Hal Otacon Emmerich",
-      "franchise": "Metal Gear Solid",
+      "collection": "Metal Gear Solid",
       "number": "5",
       "releaseYear": "2023",
       "description": "The man behind Metal Gear REX brings his impressive scientific skills to the TUBBZ collection. As a collectible bath duck, he's always a showstopper and is a replica of his human form with his wavy hair, glasses, and lab coat as key elements – he’s a must-have for fans.\n\nDr. Hal Otacon-Emmerich looks to have performed a scientific experiment on himself as he finds himself as a TUBBZ cosplaying duck. It’s still business as usual, even as a duck, he needs to busy himself and develop stealth camouflage.",
@@ -3284,7 +3284,7 @@ window.TUBBZ_DATA = {
     {
       "id": "metal-gear-solid-psycho-mantis",
       "name": "Psycho Mantis",
-      "franchise": "Metal Gear Solid",
+      "collection": "Metal Gear Solid",
       "number": "6",
       "releaseYear": "2023",
       "description": "Psycho Mantis may now be a TUBBZ collectible, but he still doesn’t want the thoughts of all those other ducks infiltrating his mind. To keep his mind clear and to camouflage his scars, he’s made sure his gas mask is firmly in place. This character is a great addition to the Metal Gear Solid collection.\n\nPsycho Mantis has left FOXHOUND for the duck pond, though this change of scenery hasn't made him any less troubled. His gas mask is his \"armor\", and he's ready to unleash his psychic powers on his fellow TUBBZ.",
@@ -3303,7 +3303,7 @@ window.TUBBZ_DATA = {
     {
       "id": "metal-gear-solid-naked-snake-mgs3",
       "name": "Naked Snake (MGS3)",
-      "franchise": "Metal Gear Solid",
+      "collection": "Metal Gear Solid",
       "number": "7",
       "releaseYear": "2025",
       "description": "Get a tactical look with the TUBBZ Naked Snake! A stealthy tribute to the legendary soldier from Metal Gear Solid 3: Snake Eater. With his iconic infiltration outfit, bandana, and steely gaze, this cosplaying duck embodies Snake's survival instinct and tenacity on the battlefield, all in TUBBZ's unmistakable style.",
@@ -3317,7 +3317,7 @@ window.TUBBZ_DATA = {
     {
       "id": "metal-gear-solid-the-boss-mgs3",
       "name": "The Boss (MGS3)",
-      "franchise": "Metal Gear Solid",
+      "collection": "Metal Gear Solid",
       "number": "8",
       "releaseYear": "2025",
       "description": "Command respect with The Boss TUBBZ! A vibrant tribute to MGS3's mentor and fearless warrior. Reimagined as a TUBBZ duck, with her stealthy white suit and quiet strength, she perfectly embodies the legendary soldier, revisited with a canine touch. True to her mission and bold in all circumstances.",
@@ -3331,7 +3331,7 @@ window.TUBBZ_DATA = {
     {
       "id": "metal-gear-solid-solid-snake-stealth-camo",
       "name": "Solid Snake - Stealth Camo",
-      "franchise": "Metal Gear Solid",
+      "collection": "Metal Gear Solid",
       "releaseYear": "2025",
       "description": "Although he has been transformed into a duck, underestimating Solid Snake's prowess on the battlefield is a sure-fire way to lead to the demise of his target. Armed with a silencer and his iconic spec-ops gear, this is a collectible you’d definitely want in your arsenal!\n\nOnly sold on Amazon, limited edition rare collectible, perfect for collectors and MGS fans.",
       "variants": [
@@ -3344,7 +3344,7 @@ window.TUBBZ_DATA = {
     {
       "id": "metal-gear-solid-the-orange-box",
       "name": "The Orange Box",
-      "franchise": "Metal Gear Solid",
+      "collection": "Metal Gear Solid",
       "releaseYear": "2025",
       "description": "The Metal Gear Solid: The Orange Box TUBBZ takes iconic stealth to absurd new heights, because this time the box is the duck. With a bold orange beak peeking out from an otherwise plain, unmistakable cardboard crate, it’s a genius twist on the legendary in-game disguise. It’s simple, strange, and absolutely brilliant, exactly what you didn’t know your collection was missing \n\nImportant : This 1st edition does not come with the famous bathtub",
       "variants": [
@@ -3357,7 +3357,7 @@ window.TUBBZ_DATA = {
     {
       "id": "minecraft-steve",
       "name": "Steve",
-      "franchise": "Minecraft",
+      "collection": "Minecraft",
       "number": "1",
       "releaseYear": "2024",
       "description": "Steve is leaving the world of Minecraft and heading to the world of TUBBZ cosplay rubber ducks. He's a true legend and he fits right in.",
@@ -3379,7 +3379,7 @@ window.TUBBZ_DATA = {
     {
       "id": "minecraft-creeper",
       "name": "Creeper",
-      "franchise": "Minecraft",
+      "collection": "Minecraft",
       "number": "2",
       "releaseYear": "2024",
       "description": "Minecraft's iconic monster has been transformed into a  TUBBZ Collectible. You can get closer, this duck version won't explode.",
@@ -3401,7 +3401,7 @@ window.TUBBZ_DATA = {
     {
       "id": "minecraft-zombie",
       "name": "Zombie",
-      "franchise": "Minecraft",
+      "collection": "Minecraft",
       "number": "3",
       "releaseYear": "2025",
       "description": "Aim for and add a spooky touch to your collection with the Skeleton TUBBZ! This iconic Minecraft mob has been transformed into a cosplay duck, complete with its signature pixelated bow and eerie, hollow gaze. Whether it's lurking in the shadows or proudly displayed on your shelf, this quacking reinvention of the Skeleton is a must-have for any Minecraft fan.",
@@ -3423,7 +3423,7 @@ window.TUBBZ_DATA = {
     {
       "id": "minecraft-skeleton",
       "name": "Skeleton",
-      "franchise": "Minecraft",
+      "collection": "Minecraft",
       "number": "4",
       "releaseYear": "2025",
       "description": "Aim for and add a spooky touch to your collection with the Skeleton TUBBZ! This iconic Minecraft mob has been transformed into a cosplay duck, complete with its signature pixelated bow and eerie, hollow gaze. Whether it's lurking in the shadows or proudly displayed on your shelf, this quacking reinvention of the Skeleton is a must-have for any Minecraft fan.",
@@ -3445,7 +3445,7 @@ window.TUBBZ_DATA = {
     {
       "id": "motorhead-lemmy",
       "name": "Lemmy",
-      "franchise": "Motörhead",
+      "collection": "Motörhead",
       "number": "1",
       "variants": [
         {
@@ -3457,7 +3457,7 @@ window.TUBBZ_DATA = {
     {
       "id": "my-hero-academina-izuku-midoriya",
       "name": "Izuku Midoriya",
-      "franchise": "My Hero Academina",
+      "collection": "My Hero Academina",
       "number": "1",
       "variants": [
         {
@@ -3469,7 +3469,7 @@ window.TUBBZ_DATA = {
     {
       "id": "my-hero-academina-katsuki-bakugo",
       "name": "Katsuki Bakugo",
-      "franchise": "My Hero Academina",
+      "collection": "My Hero Academina",
       "number": "2",
       "variants": [
         {
@@ -3481,7 +3481,7 @@ window.TUBBZ_DATA = {
     {
       "id": "my-hero-academina-all-might",
       "name": "All Might",
-      "franchise": "My Hero Academina",
+      "collection": "My Hero Academina",
       "number": "3",
       "variants": [
         {
@@ -3493,7 +3493,7 @@ window.TUBBZ_DATA = {
     {
       "id": "my-hero-academina-shoto-todorok",
       "name": "Shoto Todorok",
-      "franchise": "My Hero Academina",
+      "collection": "My Hero Academina",
       "number": "4",
       "variants": [
         {
@@ -3505,7 +3505,7 @@ window.TUBBZ_DATA = {
     {
       "id": "my-hero-academina-ochaco-uraraka",
       "name": "Ochaco Uraraka",
-      "franchise": "My Hero Academina",
+      "collection": "My Hero Academina",
       "number": "5",
       "variants": [
         {
@@ -3517,7 +3517,7 @@ window.TUBBZ_DATA = {
     {
       "id": "my-hero-academina-shota-aizawa",
       "name": "Shota Aizawa",
-      "franchise": "My Hero Academina",
+      "collection": "My Hero Academina",
       "number": "6",
       "variants": [
         {
@@ -3529,7 +3529,7 @@ window.TUBBZ_DATA = {
     {
       "id": "ozzy-osbourne-ozzy-osbourne",
       "name": "Ozzy Osbourne",
-      "franchise": "Ozzy Osbourne",
+      "collection": "Ozzy Osbourne",
       "number": "2",
       "variants": [
         {
@@ -3541,7 +3541,7 @@ window.TUBBZ_DATA = {
     {
       "id": "ozzy-osbourne-ozzy-osbourne-diary-of-a-mad-man",
       "name": "Ozzy Osbourne (diary of a mad man)",
-      "franchise": "Ozzy Osbourne",
+      "collection": "Ozzy Osbourne",
       "number": "5",
       "variants": [
         {
@@ -3553,7 +3553,7 @@ window.TUBBZ_DATA = {
     {
       "id": "poltergeist-carol-anne-freeling",
       "name": "Carol Anne Freeling",
-      "franchise": "Poltergeist",
+      "collection": "Poltergeist",
       "number": "3",
       "variants": [
         {
@@ -3565,7 +3565,7 @@ window.TUBBZ_DATA = {
     {
       "id": "power-rangers-red-ranger",
       "name": "Red Ranger",
-      "franchise": "Power Rangers",
+      "collection": "Power Rangers",
       "number": "1",
       "variants": [
         {
@@ -3577,7 +3577,7 @@ window.TUBBZ_DATA = {
     {
       "id": "power-rangers-blue-ranger",
       "name": "Blue Ranger",
-      "franchise": "Power Rangers",
+      "collection": "Power Rangers",
       "number": "2",
       "variants": [
         {
@@ -3589,7 +3589,7 @@ window.TUBBZ_DATA = {
     {
       "id": "power-rangers-pink-ranger",
       "name": "Pink Ranger",
-      "franchise": "Power Rangers",
+      "collection": "Power Rangers",
       "number": "3",
       "variants": [
         {
@@ -3601,7 +3601,7 @@ window.TUBBZ_DATA = {
     {
       "id": "power-rangers-yellow-ranger",
       "name": "Yellow Ranger",
-      "franchise": "Power Rangers",
+      "collection": "Power Rangers",
       "number": "4",
       "variants": [
         {
@@ -3613,7 +3613,7 @@ window.TUBBZ_DATA = {
     {
       "id": "power-rangers-black-ranger",
       "name": "Black Ranger",
-      "franchise": "Power Rangers",
+      "collection": "Power Rangers",
       "number": "5",
       "variants": [
         {
@@ -3625,7 +3625,7 @@ window.TUBBZ_DATA = {
     {
       "id": "reservoir-dogs-mr-white",
       "name": "Mr. White",
-      "franchise": "Reservoir Dogs",
+      "collection": "Reservoir Dogs",
       "number": "1",
       "releaseYear": "2025",
       "description": "Mr. White, the smooth and seasoned criminal from Reservoir Dogs, brings some classic cool to the TUBBZ duck pond. Dressed in his signature black suit, tie, and shades, and wielding pistols in both hands, this TUBBZ perfectly recreates Mr. White’s iconic scene from the cult movie.",
@@ -3639,7 +3639,7 @@ window.TUBBZ_DATA = {
     {
       "id": "reservoir-dogs-mr-orange",
       "name": "Mr. Orange",
-      "franchise": "Reservoir Dogs",
+      "collection": "Reservoir Dogs",
       "number": "2",
       "releaseYear": "2025",
       "description": "Dressed in his signature black suit and tie, along with blood-stained white shirt and gunshot wound, the Mr. Orange TUBBZ perfectly captures the tension and drama of Tarantino’s classic crime thriller, Reservoir Dogs",
@@ -3653,7 +3653,7 @@ window.TUBBZ_DATA = {
     {
       "id": "reservoir-dogs-mr-blonde",
       "name": "Mr. Blonde",
-      "franchise": "Reservoir Dogs",
+      "collection": "Reservoir Dogs",
       "number": "3",
       "releaseYear": "2025",
       "description": "‘Are you gonna quack all day little ducky?’\n\nThe unpredictable and menacing Mr. Blonde has arrived as a cosplaying duck with attitude! This TUBBZ recreates the Reservoir Dogs character's iconic look from the film, featuring a razor in one hand, and severed ear in the other!",
@@ -3667,7 +3667,7 @@ window.TUBBZ_DATA = {
     {
       "id": "reservoir-dogs-mr-pink",
       "name": "Mr. Pink",
-      "franchise": "Reservoir Dogs",
+      "collection": "Reservoir Dogs",
       "number": "4",
       "releaseYear": "2025",
       "description": "The fast-talking, non-tipper, Mr. Pink, has arrived in the duck pond as a TUBBZ. Sporting a sarcastic, questioning expression, with gun in one hand and briefcase by his side, this cosplaying collectible brings the style and grit of Quentin Tarantino's seminal crime caper to your TUBBZ collection.",
@@ -3681,7 +3681,7 @@ window.TUBBZ_DATA = {
     {
       "id": "resident-evil-tofu",
       "name": "Tofu",
-      "franchise": "Resident Evil",
+      "collection": "Resident Evil",
       "number": "0",
       "releaseYear": "2021",
       "description": "Resident Evil's most unlikely secret character joins the pond.\n\nMeet Tofu, the famous bonus character from the Resident Evil saga. Known for his deliberately absurd appearance and improbable survivor status, Tofu takes the form of an unusual yet essential collectible cosplay duck.\n\nInspired by the unlockable secret character from the franchise, this figurine pays homage to Resident Evil's hidden humor while retaining the series' dark and cult aesthetic.",
@@ -3703,7 +3703,7 @@ window.TUBBZ_DATA = {
     {
       "id": "resident-evil-jill-valentine",
       "name": "Jill Valentine",
-      "franchise": "Resident Evil",
+      "collection": "Resident Evil",
       "number": "1",
       "releaseYear": "2020",
       "description": "Even Raccoon City zombies aren't ready for this duck.\n\nMeet Jill Valentine, elite member of the S.T.A.R.S. and iconic heroine of Resident Evil. Accustomed to facing hordes of zombies and Umbrella creatures, Jill retains all her determination even as a cosplay duck.\n\nWith her iconic look, composure, and legendary survivor status, this figurine perfectly captures the survival horror spirit of the Resident Evil saga.",
@@ -3725,7 +3725,7 @@ window.TUBBZ_DATA = {
     {
       "id": "resident-evil-leon-s-kennedy",
       "name": "Leon S. Kennedy",
-      "franchise": "Resident Evil",
+      "collection": "Resident Evil",
       "number": "2",
       "releaseYear": "2020",
       "description": "First day in Raccoon City... and already turned into a duck.\n\nDiscover Leon S. Kennedy, the iconic survivor of the Raccoon City incident. Targeted by Umbrella Corporation's bio-weapons, Leon makes out pretty well: he becomes a collectible cosplay duck rather than a carnivorous zombie.\n\nWith his iconic young police officer look, his bravery against the infected, and his major role in the Resident Evil saga, this figurine perfectly captures the survival horror spirit of the franchise.",
@@ -3747,7 +3747,7 @@ window.TUBBZ_DATA = {
     {
       "id": "resident-evil-chris-redfield",
       "name": "Chris Redfield",
-      "franchise": "Resident Evil",
+      "collection": "Resident Evil",
       "number": "3",
       "releaseYear": "2020",
       "description": "The biological threat better watch out.\n\nFind Chris Redfield, one of Resident Evil's most iconic heroes. A specialist in biological weapon elimination and a pillar in the fight against Umbrella Corporation, Chris remains a formidable force… even when transformed into a cosplay duck.\n\nWith his fighter's demeanor, his experience facing mutant creatures, and his central role in the saga, this figurine perfectly captures the survival horror spirit of Resident Evil.",
@@ -3769,7 +3769,7 @@ window.TUBBZ_DATA = {
     {
       "id": "resident-evil-claire-redfield",
       "name": "Claire Redfield",
-      "franchise": "Resident Evil",
+      "collection": "Resident Evil",
       "number": "4",
       "releaseYear": "2020",
       "description": "Raccoon City never ceases to surprise.\n\nDiscover Claire Redfield, one of the most popular survivors of Resident Evil. Investigating the zombie outbreak and Umbrella Corporation's plans, Claire finds herself transformed into a collector cosplay duck.\n\nWith her iconic look, courage, and determination in the face of Raccoon City's horrors, this figurine perfectly captures the survival horror spirit of the Resident Evil saga.",
@@ -3791,7 +3791,7 @@ window.TUBBZ_DATA = {
     {
       "id": "resident-evil-nemesis",
       "name": "Nemesis",
-      "franchise": "Resident Evil",
+      "collection": "Resident Evil",
       "number": "5",
       "releaseYear": "2021",
       "description": "S.T.A.R.S… even in the pond.\n\nMeet Nemesis, Umbrella Corporation's ultimate bio-organic weapon. Ruthless, intelligent, and possessing devastating power, Resident Evil's famous pursuer remains a formidable threat even as a collectible cosplay duck.\n\nWith its distorted face, imposing musculature, and instantly recognizable appearance, this figurine perfectly captures the oppressive and monstrous atmosphere of Resident Evil 3.",
@@ -3809,7 +3809,7 @@ window.TUBBZ_DATA = {
     {
       "id": "resident-evil-ada-wong",
       "name": "Ada Wong",
-      "franchise": "Resident Evil",
+      "collection": "Resident Evil",
       "number": "6",
       "releaseYear": "2021",
       "description": "Resident Evil's most enigmatic spy infiltrates the pond.\n\nMeet Ada Wong, the mysterious agent and iconic spy from Resident Evil. Accustomed to top-secret missions, double-crossing, and the most dangerous situations, Ada maintains her elegance and composure even as a collectible cosplay duck.\n\nWith her immediately recognizable appearance and sophisticated style, this figure pays homage to one of the franchise's most elusive characters.",
@@ -3827,7 +3827,7 @@ window.TUBBZ_DATA = {
     {
       "id": "resident-evil-hunk",
       "name": "Hunk",
-      "franchise": "Resident Evil",
+      "collection": "Resident Evil",
       "number": "7",
       "releaseYear": "2021",
       "description": "Death joins the pond... and leaves no one alive.\n\nMeet HUNK, Umbrella Corporation's most mysterious elite agent. Cold, silent, and relentless, the leader of the U.S.S. Alpha team is famous for completing the most dangerous missions and often returning alone.\n\nEven transformed into a collector cosplay duck, the one nicknamed Mr. Death or Grim Reaper retains his tactical appearance and particularly menacing aura.",
@@ -3845,7 +3845,7 @@ window.TUBBZ_DATA = {
     {
       "id": "resident-evil-the-merchant",
       "name": "The merchant",
-      "franchise": "Resident Evil",
+      "collection": "Resident Evil",
       "number": "8",
       "releaseYear": "2021",
       "description": "“Heh heh heh… Thank you!”\n\nMeet the Merchant, the mysterious weapons and supplies dealer from Resident Evil 4. Despite his intimidating appearance, this traveling merchant proves to be a particularly useful ally for surviving the creatures and dangers encountered during the adventure.\n\nWith his long dark coat, hidden face, and impressive stock of equipment, this figurine perfectly captures the enigmatic allure of one of the most memorable secondary characters in the saga.",
@@ -3863,7 +3863,7 @@ window.TUBBZ_DATA = {
     {
       "id": "resident-evil-mr-x",
       "name": "Mr X",
-      "franchise": "Resident Evil",
+      "collection": "Resident Evil",
       "number": "9",
       "releaseYear": "2022",
       "description": "Impossible to escape… even as a duck.\n\nThe fearsome Mr. X (T-103 Tyrant), Umbrella's iconic biological weapon, joins the TUBBZ collection. Relentless, silent, and terrifying, he is reimagined here as a cosplay duck, ready to hunt you down… in style.\n\nInstantly recognizable with his trench coat and iconic fedora, this figurine captures all the character's menacing presence… with an unexpected quirky touch.",
@@ -3882,7 +3882,7 @@ window.TUBBZ_DATA = {
     {
       "id": "resident-evil-william-birkin",
       "name": "William Birkin",
-      "franchise": "Resident Evil",
+      "collection": "Resident Evil",
       "number": "10",
       "releaseYear": "2022",
       "description": "The mutation never stops… even as a duck.\n\nThe terrifying William Birkin, a scientist turned creature due to the G-Virus, joins the TUBBZ collection. In this revisited version, he appears as a mutant cosplay duck, capturing all the horror and iconic transformation of the character.\n\nAltered, unstable, and monstrous, this collectible perfectly captures Birkin's nightmarish evolution with the quirky touch unique to TUBBZ.",
@@ -3901,7 +3901,7 @@ window.TUBBZ_DATA = {
     {
       "id": "rocky-rocky-balboa",
       "name": "Rocky Balboa",
-      "franchise": "Rocky",
+      "collection": "Rocky",
       "number": "1",
       "releaseYear": "2021",
       "description": "The Italian Stallion returns to the ring… from the pond.\n\nMeet Rocky Balboa, former two-time world heavyweight champion, in this TUBBZ. Even transformed into a collectible cosplay duck, Rocky retains all his determination, courage, and desire to fight until the final round.\n\nWith his iconic boxing attire and champion's demeanor, this figurine pays homage to one of the most famous characters in sports cinema.",
@@ -3915,7 +3915,7 @@ window.TUBBZ_DATA = {
     {
       "id": "rocky-apollo-creed",
       "name": "Apollo Creed",
-      "franchise": "Rocky",
+      "collection": "Rocky",
       "number": "2",
       "releaseYear": "2021",
       "description": "The Dancing Destroyer enters the ring… and the pond.\n\nMeet Apollo Creed, charismatic champion and legendary rival of Rocky Balboa. Known for his footwork, showmanship, and victories against the best boxers, Apollo remains a formidable opponent even as a cosplay duck collectible.\n\nWith his iconic boxing attire, champion's swagger, and American-inspired style, this figure pays homage to one of the most memorable characters in the Rocky saga.",
@@ -3929,7 +3929,7 @@ window.TUBBZ_DATA = {
     {
       "id": "shenmue-ryo-hazuki",
       "name": "Ryo Hazuki",
-      "franchise": "Shenmue",
+      "collection": "Shenmue",
       "number": "1",
       "releaseYear": "2021",
       "description": "Ryo Hazuki's quest for revenge continues, even in the pond.\n\nMeet Ryo Hazuki, the iconic hero of Shenmue. After his father's assassination, Ryo sets out to find Lan Di, determined to uncover the truth and get justice.\n\nEven transformed into a collector cosplay duck, he retains his instantly recognizable look: a brown leather jacket adorned with a tiger on the back, jeans, combat boots, and a small bandage under his left eye.",
@@ -3943,7 +3943,7 @@ window.TUBBZ_DATA = {
     {
       "id": "shrek-shrek",
       "name": "Shrek",
-      "franchise": "Shrek",
+      "collection": "Shrek",
       "number": "1",
       "variants": [
         {
@@ -3955,7 +3955,7 @@ window.TUBBZ_DATA = {
     {
       "id": "shrek-donkey",
       "name": "Donkey",
-      "franchise": "Shrek",
+      "collection": "Shrek",
       "number": "2",
       "variants": [
         {
@@ -3967,7 +3967,7 @@ window.TUBBZ_DATA = {
     {
       "id": "shrek-fiona",
       "name": "Fiona",
-      "franchise": "Shrek",
+      "collection": "Shrek",
       "number": "3",
       "variants": [
         {
@@ -3979,7 +3979,7 @@ window.TUBBZ_DATA = {
     {
       "id": "shrek-lord-farquaad",
       "name": "Lord Farquaad",
-      "franchise": "Shrek",
+      "collection": "Shrek",
       "number": "4",
       "variants": [
         {
@@ -3991,7 +3991,7 @@ window.TUBBZ_DATA = {
     {
       "id": "silent-hill-2-nurse",
       "name": "Nurse",
-      "franchise": "Silent Hill 2",
+      "collection": "Silent Hill 2",
       "number": "1",
       "variants": [
         {
@@ -4003,7 +4003,7 @@ window.TUBBZ_DATA = {
     {
       "id": "silent-hill-2-pyramid-head",
       "name": "Pyramid Head",
-      "franchise": "Silent Hill 2",
+      "collection": "Silent Hill 2",
       "number": "2",
       "variants": [
         {
@@ -4015,7 +4015,7 @@ window.TUBBZ_DATA = {
     {
       "id": "silent-hill-3-heather-mason",
       "name": "Heather Mason",
-      "franchise": "Silent Hill 3",
+      "collection": "Silent Hill 3",
       "number": "3",
       "releaseYear": "2026",
       "variants": [
@@ -4032,7 +4032,7 @@ window.TUBBZ_DATA = {
     {
       "id": "silent-hill-3-robbie-the-rabbit",
       "name": "Robbie The Rabbit",
-      "franchise": "Silent Hill 3",
+      "collection": "Silent Hill 3",
       "number": "4",
       "releaseYear": "2026",
       "variants": [
@@ -4049,7 +4049,7 @@ window.TUBBZ_DATA = {
     {
       "id": "skyrim-dovahkiin",
       "name": "Dovahkiin",
-      "franchise": "Skyrim",
+      "collection": "Skyrim",
       "number": "1",
       "releaseYear": "2019",
       "description": "Born with the soul of a dragon, the Dovahkiin are tasked with defeating the powerful dragon, Alduin – it’s an even harder task when you’re a duck - the protagonist of Skyrim will need all of their Dragonborn skills to succeed in this task!",
@@ -4071,7 +4071,7 @@ window.TUBBZ_DATA = {
     {
       "id": "skyrim-dovahkiin-ebony",
       "name": "Dovahkiin Ebony",
-      "franchise": "Skyrim",
+      "collection": "Skyrim",
       "number": "1.1",
       "description": "The last Dragonborn dons Ebony Armor… even in the pond.\n\nMeet Dovahkiin, the iconic hero of The Elder Scrolls V: Skyrim. Despite his dragon soul and new cosplay duck appearance, the last Dragonborn remains a formidable fighter.\n\nThis special edition features him in an imposing all-black outfit inspired by Ebony Armor, ready to face dragons, Draugr, and creatures of the northern lands.",
       "variants": [
@@ -4084,7 +4084,7 @@ window.TUBBZ_DATA = {
     {
       "id": "skyrim-alduin",
       "name": "Alduin",
-      "franchise": "Skyrim",
+      "collection": "Skyrim",
       "number": "2",
       "releaseYear": "2019",
       "description": "The powerful dragon Alduin shouldn’t be underestimated – even as a cosplaying duck! Traverse the world and explore the mountains, fields, and villages of Skyrim with the Elder Scrolls range of TUBBZ, the collectable cosplaying duck toy figurines! ",
@@ -4102,7 +4102,7 @@ window.TUBBZ_DATA = {
     {
       "id": "skyrim-ulfric-stormcloak",
       "name": "Ulfric Stormcloak",
-      "franchise": "Skyrim",
+      "collection": "Skyrim",
       "number": "3",
       "releaseYear": "2019",
       "description": "Hero or power-hungry opportunist? As the leader of the Stormcloak rebellion, Ulfric might be a polarising figure in Skyrim but there's no denying how good he looks as a cosplaying duck! Traverse the world and explore the mountains, fields, and villages of Skyrim with the Elder Scrolls range of TUBBZ, the collectable cosplaying duck figurines!",
@@ -4120,7 +4120,7 @@ window.TUBBZ_DATA = {
     {
       "id": "skyrim-jarl-balgruuf",
       "name": "Jarl Balgruuf",
-      "franchise": "Skyrim",
+      "collection": "Skyrim",
       "number": "4",
       "releaseYear": "2019",
       "description": "Even as a cosplaying duck, we imagine Jarl Balgruuf the Greater would still be respected and admired by the citizens of Whiterun.&nbsp; Traverse the world and explore the mountains, fields, and villages of Skyrim with the Elder Scrolls range of TUBBZ, the collectable cosplaying duck figurines!",
@@ -4138,7 +4138,7 @@ window.TUBBZ_DATA = {
     {
       "id": "sonic-the-hedgehog-sonic-the-hedgehog",
       "name": "Sonic the Hedgehog",
-      "franchise": "Sonic the Hedgehog",
+      "collection": "Sonic the Hedgehog",
       "number": "1",
       "releaseYear": "2020",
       "description": "The fastest blue hedgehog in video games joins the pond.\n\nFind Sonic, the legendary SEGA mascot. Inspired by his classic 1991 style, Sonic retains all his supersonic energy, iconic pose, and confident attitude… even when transformed into a collectible cosplay duck.",
@@ -4160,7 +4160,7 @@ window.TUBBZ_DATA = {
     {
       "id": "sonic-the-hedgehog-dr-eggman",
       "name": "Dr. Eggman",
-      "franchise": "Sonic the Hedgehog",
+      "collection": "Sonic the Hedgehog",
       "number": "2",
       "releaseYear": "2020",
       "description": "Sonic's evil genius is planning a new scheme... in the pond.\n\nDiscover Dr. Eggman, also known as Dr. Robotnik. Sonic's sworn enemy, a megalomaniacal inventor, and master of diabolical schemes, Eggman retains all his ambition for world domination, even as a collectible cosplay duck.\n\nWith his iconic mustache, instantly recognizable look, and mad scientist spirit, this figurine perfectly captures the humor and energy of the Sonic the Hedgehog universe.",
@@ -4182,7 +4182,7 @@ window.TUBBZ_DATA = {
     {
       "id": "sonic-the-hedgehog-miles-tails-prower",
       "name": "Miles \"Tails\" Prower",
-      "franchise": "Sonic the Hedgehog",
+      "collection": "Sonic the Hedgehog",
       "number": "3",
       "description": "Sonic's best friend takes flight in the pond.\n\nDiscover Tails, the famous two-tailed fox from Sonic the Hedgehog. Ingenious, loyal, and always ready to help Sonic against Dr. Eggman's schemes, Tails joins the collection as a collectible cosplay duck.\n\nEven with wings, Tails remains true to his iconic method: using his two tails as a propeller to fly and accompany his friends on the most perilous adventures.",
       "variants": [
@@ -4203,7 +4203,7 @@ window.TUBBZ_DATA = {
     {
       "id": "sonic-the-hedgehog-knuckles-the-echidna",
       "name": "Knuckles The Echidna",
-      "franchise": "Sonic the Hedgehog",
+      "collection": "Sonic the Hedgehog",
       "number": "4",
       "description": "Sonic's brute strength joins the pond.\n\nDiscover Knuckles the Echidna, Sonic's powerful and determined ally. Guardian of the Master Emerald and the last descendant of the Knuckles clan, he's ready to smash all obstacles... even as a collector cosplay duck.\n\nWith his iconic red color, powerful fists, and fighter attitude, this figure perfectly captures the energy of one of the most popular characters from Sonic the Hedgehog.",
       "variants": [
@@ -4224,7 +4224,7 @@ window.TUBBZ_DATA = {
     {
       "id": "sonic-the-hedgehog-super-sonic",
       "name": "Super Sonic",
-      "franchise": "Sonic the Hedgehog",
+      "collection": "Sonic the Hedgehog",
       "number": "5",
       "description": "It looks like the famous blue blur, Sonic, has finally unleashed his greatest asset in combat! Sonic can transform into his Super State by harnessing the seven Chaos Emeralds, bringing down Dr. Robotnik and his evil ambitions once and for all.",
       "variants": [
@@ -4245,7 +4245,7 @@ window.TUBBZ_DATA = {
     {
       "id": "sonic-the-hedgehog-shadow-the-hedgehog",
       "name": "Shadow The Hedgehog",
-      "franchise": "Sonic the Hedgehog",
+      "collection": "Sonic the Hedgehog",
       "number": "6",
       "releaseYear": "2022",
       "description": "The ruthless lone wolf and Shadow \"Ultimate Life Form\" has been transformed into a quacking duck. Delivered in a superb displayable \"Sonic the Hedgehog\" bathtub display stand, this one-of-a-kind collectible is ideal for fans of the series.",
@@ -4268,7 +4268,7 @@ window.TUBBZ_DATA = {
     {
       "id": "sonic-the-hedgehog-amy-rose",
       "name": "Amy Rose",
-      "franchise": "Sonic the Hedgehog",
+      "collection": "Sonic the Hedgehog",
       "number": "7",
       "releaseYear": "2022",
       "description": "Determined to be by Sonic's side wherever he goes, nothing will stop Amy Rose from supporting him on his journey, even if she finds herself turned into a duck!",
@@ -4291,7 +4291,7 @@ window.TUBBZ_DATA = {
     {
       "id": "sonic-the-hedgehog-metal-sonic",
       "name": "Metal Sonic",
-      "franchise": "Sonic the Hedgehog",
+      "collection": "Sonic the Hedgehog",
       "number": "8",
       "description": "At first glance, you'd be forgiven for thinking this is Sonic the Hedgehog, but oh no, this TUBBZ is the evil robotic hedgehog… Metal Sonic. He might be a bad guy, but this cosplay duck is still a must-have for any Sonic collection.",
       "variants": [
@@ -4304,7 +4304,7 @@ window.TUBBZ_DATA = {
     {
       "id": "sonic-the-hedgehog-espio-the-chameleon",
       "name": "Espio the Chameleon",
-      "franchise": "Sonic the Hedgehog",
+      "collection": "Sonic the Hedgehog",
       "number": "9",
       "releaseYear": "2024",
       "description": "As a chameleon, Espio has the ability to blend into his surroundings – we wonder if Sonic the Hedgehog and the rest of the TUBBZ will recognize him in duck form?",
@@ -4318,7 +4318,7 @@ window.TUBBZ_DATA = {
     {
       "id": "sonic-the-hedgehog-rouge-the-bat",
       "name": "Rouge the Bat",
-      "franchise": "Sonic the Hedgehog",
+      "collection": "Sonic the Hedgehog",
       "number": "10",
       "releaseYear": "2024",
       "description": "Rouge the Bat, the iconic treasure hunter from the Sonic the Hedgehog universe, joins the TUBBZ collection with all her inimitable style.\nHer signature black jumpsuit, her heart-shaped chest plate, her distinctive makeup, and her confident attitude are perfectly recreated in this cosplay duck version.\n\nBoth elegant, cunning, and charismatic, this figurine captures the character's entire personality with the quirky touch unique to TUBBZ.",
@@ -4332,7 +4332,7 @@ window.TUBBZ_DATA = {
     {
       "id": "sonic-the-hedgehog-silver-the-hedgehog",
       "name": "Silver the Hedgehog",
-      "franchise": "Sonic the Hedgehog",
+      "collection": "Sonic the Hedgehog",
       "number": "11",
       "releaseYear": "2024",
       "description": "Time travel... collector's edition.\n\nSilver the Hedgehog crosses dimensions to join the TUBBZ universe!\nEven in duck cosplay form, he retains his determination to protect the future from the plans of the formidable Dr. Eggman.\n\nWith its faithful design and recognizable style, this figurine perfectly captures the character's spirit, combining power, mystery, and heroism.",
@@ -4346,7 +4346,7 @@ window.TUBBZ_DATA = {
     {
       "id": "spyro-the-dragon-spyro",
       "name": "Spyro",
-      "franchise": "Spyro the Dragon",
+      "collection": "Spyro the Dragon",
       "number": "1",
       "releaseYear": "2019",
       "description": "The purple dragon is setting the pond on fire. Discover Spyro, the famous purple dragon from the Spyro the Dragon universe. Ready for adventure, Spyro trades magical realms for a charming collectible cosplay duck form. With his instantly recognizable look, horns, wings, and mischievous energy, this figurine perfectly captures the spirit of the cult video game hero.",
@@ -4360,7 +4360,7 @@ window.TUBBZ_DATA = {
     {
       "id": "spyro-the-dragon-ripto",
       "name": "Ripto",
-      "franchise": "Spyro the Dragon",
+      "collection": "Spyro the Dragon",
       "number": "2",
       "releaseYear": "2019",
       "description": "Hey, Bath Hero! Ever heard of the Spyro - Ripto Rubber Duck? Yes, you read right, a duck. But not just any duck – this is the rubber duck that will rock your bathroom! Made of high-quality vinyl and crafted with an infinite amount of detail, this duck is the ultimate gift for every Spyro fan.",
@@ -4374,7 +4374,7 @@ window.TUBBZ_DATA = {
     {
       "id": "spyro-the-dragon-elora",
       "name": "Elora",
-      "franchise": "Spyro the Dragon",
+      "collection": "Spyro the Dragon",
       "number": "3",
       "releaseYear": "2019",
       "description": "Welcome one of the most beloved characters from the Spyro the Dragon video game into your collection with the Elora TUBBZ version. Elora is a pivotal character in the Spyro universe because of her intelligence, compassion, and peace-loving nature. A friend of Spyro, and a foe of Ripto, this half-human and half-goat mythical character is simply extraordinary.",
@@ -4388,7 +4388,7 @@ window.TUBBZ_DATA = {
     {
       "id": "spyro-the-dragon-moneybags",
       "name": "Moneybags",
-      "franchise": "Spyro the Dragon",
+      "collection": "Spyro the Dragon",
       "number": "4",
       "releaseYear": "2019",
       "description": "Hey there, water baby! Let´s take a dip into the fantastic world of rubber ducks. Say ´hello´ to our newest addition - the incomparable, spectacular, squeaking Spyro - Moneybags Duck!",
@@ -4402,7 +4402,7 @@ window.TUBBZ_DATA = {
     {
       "id": "star-trek-james-t-kirk",
       "name": "James T. Kirk",
-      "franchise": "Star Trek",
+      "collection": "Star Trek",
       "number": "1",
       "releaseYear": "2020",
       "description": "Meet James Tiberius Kirk, one of Starfleet's most famous captains. Even transformed into a cosplay duck, Kirk retains his charisma, courage, and taste for exploring the far reaches of space.\n\nWith his iconic Starfleet uniform and commanding attitude, this figurine pays homage to the legendary captain of the USS Enterprise and one of Star Trek's most iconic characters.",
@@ -4424,7 +4424,7 @@ window.TUBBZ_DATA = {
     {
       "id": "star-trek-spock",
       "name": "Spock",
-      "franchise": "Star Trek",
+      "collection": "Star Trek",
       "number": "2",
       "releaseYear": "2020",
       "description": "Meet Spock, the iconic Vulcan science officer from Star Trek. Exceptional logical mind, iconic bowl cut, and perfectly mastered Vulcan salute: even transformed into a cosplay duck, Spock remains instantly recognizable.\n\nWith his Starfleet uniform, pointed ears, and famous Vulcan gesture 🖖, this figure pays homage to one of the most important characters in science fiction.",
@@ -4446,7 +4446,7 @@ window.TUBBZ_DATA = {
     {
       "id": "star-trek-leonard-bones-mccoy",
       "name": "Leonard « Bones » McCoy",
-      "franchise": "Star Trek",
+      "collection": "Star Trek",
       "number": "3",
       "releaseYear": "2020",
       "description": "\"I'm a doctor, not a duck!\"\n\nMeet Dr. Leonard “Bones” McCoy, the iconic doctor of the USS Enterprise. Always ready to dispute Spock's decisions or remind everyone that he's a doctor first and foremost, McCoy discovers this time that he has actually been transformed into a collectible cosplay duck.\n\nWith his Starfleet medical uniform, characteristic expression, and direct temperament, this figure pays tribute to one of the most beloved characters from the original Star Trek series.",
@@ -4464,7 +4464,7 @@ window.TUBBZ_DATA = {
     {
       "id": "star-trek-nyota-uhura",
       "name": "Nyota Uhura",
-      "franchise": "Star Trek",
+      "collection": "Star Trek",
       "number": "4",
       "releaseYear": "2020",
       "description": "Starfleet communications have never been so... quacky.\n\nMeet Nyota Uhura, the iconic communications officer of the USS Enterprise. Renowned for her intelligence, linguistic talent, and composure, Uhura is an indispensable member of Captain Kirk's crew, even in the form of a collectible cosplay duck.\n\nWith her iconic Starfleet uniform and natural elegance, this figurine pays homage to one of the most significant female characters in science fiction history.",
@@ -4482,7 +4482,7 @@ window.TUBBZ_DATA = {
     {
       "id": "star-trek-jean-luc-picard",
       "name": "Jean-Luc Picard",
-      "franchise": "Star Trek",
+      "collection": "Star Trek",
       "number": "5",
       "releaseYear": "2021",
       "description": "The captain of the Enterprise-D takes command of the pond.\n\nMeet Jean-Luc Picard, one of the most respected captains in Starfleet history. Even transformed into a collectible cosplay duck, his intelligence, calm, and remarkable analytical mind remain perfectly intact.\n\nWith his iconic uniform from Star Trek: The Next Generation and his commanding demeanor, this figure pays tribute to the famous captain of the USS Enterprise-D.",
@@ -4504,7 +4504,7 @@ window.TUBBZ_DATA = {
     {
       "id": "star-trek-worf",
       "name": "Worf",
-      "franchise": "Star Trek",
+      "collection": "Star Trek",
       "number": "6",
       "releaseYear": "2021",
       "description": "A Klingon warrior remains formidable, even in duck form.\n\nMeet Worf, the famous Starfleet officer and Klingon warrior. Even transformed into a cosplay duck during his space adventures, Worf retains all his strength, honor, and combative temperament.\n\nWith his Starfleet uniform, characteristic Klingon features, and imposing stature, this figure pays tribute to one of the most iconic characters in the Star Trek universe.",
@@ -4522,7 +4522,7 @@ window.TUBBZ_DATA = {
     {
       "id": "star-trek-geordi-la-forge",
       "name": "Geordi La Forge",
-      "franchise": "Star Trek",
+      "collection": "Star Trek",
       "number": "7",
       "releaseYear": "2021",
       "description": "The Enterprise-D's Chief Engineer joins the pond.\n\nMeet Geordi La Forge, the iconic Chief Engineer of the USS Enterprise-D. Even transformed into a collectible cosplay duck, Geordi retains his technical expertise, analytical mind, and talent for resolving Starfleet's most complex breakdowns.\n\nWith his Starfleet uniform and famous VISOR, this figurine captures the instantly recognizable elements of one of Star Trek: The Next Generation's major characters.",
@@ -4540,7 +4540,7 @@ window.TUBBZ_DATA = {
     {
       "id": "star-trek-deanna-troi",
       "name": "Deanna Troi",
-      "franchise": "Star Trek",
+      "collection": "Star Trek",
       "number": "8",
       "releaseYear": "2021",
       "description": "The Betazoid empath joins the pond.\n\nDiscover Deanna Troi, counselor of the USS Enterprise-D. Half-human and half-Betazoid, she retains her remarkable extrasensory abilities even in the form of a collectible cosplay duck.\n\nThanks to her empathy, Deanna can sense the emotions and intentions of those around her. A valuable skill for accompanying Captain Jean-Luc Picard during diplomatic negotiations and encounters with potentially hostile species.\n\nWith her instantly recognizable outfit and elegant appearance, this figurine pays homage to one of the essential crew members of Star Trek: The Next Generation.",
@@ -4558,7 +4558,7 @@ window.TUBBZ_DATA = {
     {
       "id": "star-trek-borg",
       "name": "Borg",
-      "franchise": "Star Trek",
+      "collection": "Star Trek",
       "number": "9",
       "releaseYear": "2022",
       "description": "Resistance is futile… even in the pond.\n\nDiscover the formidable Borg, one of the most iconic species in Star Trek. Half-duck, half-assimilated drone, this collectible transforms the threat of the Collective into a geeky piece that is as original as it is unsettling.\n\nWith its cybernetic appearance, mechanical style, and the cold aura typical of the Collective, this TUBBZ perfectly captures the spirit of the Borg: assimilation, technology, and hive domination.",
@@ -4576,7 +4576,7 @@ window.TUBBZ_DATA = {
     {
       "id": "star-trek-q",
       "name": "Q",
-      "franchise": "Star Trek",
+      "collection": "Star Trek",
       "number": "10",
       "releaseYear": "2022",
       "description": "An omnipotent being in a new… and very unexpected form.\n\nFind Q, the most unpredictable entity in Star Trek. Always ready to test, provoke, or destabilize Captain Jean-Luc Picard and the Enterprise crew, Q this time chooses a cosplay duck form as strange as it is brilliant.\n\nCapable of manipulating reality at will, Q is one of the most fascinating and mischievous characters in the Star Trek universe. This TUBBZ version perfectly captures his theatrical charisma and taste for unexpected appearances.",
@@ -4594,7 +4594,7 @@ window.TUBBZ_DATA = {
     {
       "id": "star-trek-scotty",
       "name": "Scotty",
-      "franchise": "Star Trek",
+      "collection": "Star Trek",
       "number": "11",
       "releaseYear": "2022",
       "description": "“I’m giving her all she’s got, Captain!”\n\nThe legendary Enterprise engineer, Montgomery “Scotty” Scott, joins the TUBBZ collection.\nA Starfleet technical genius, he returns here as a cosplaying duck, ready to keep the engines at full power… even in the pond.\n\nIngenious, loyal, and indispensable to the crew, this collectible perfectly captures the spirit of the character with the quirky touch unique to TUBBZ.",
@@ -4613,7 +4613,7 @@ window.TUBBZ_DATA = {
     {
       "id": "star-trek-klingon",
       "name": "Klingon",
-      "franchise": "Star Trek",
+      "collection": "Star Trek",
       "number": "12",
       "releaseYear": "2022",
       "description": "Qapla’! Honor above all... even as a duck.\n\nThe formidable Klingon warrior race from Star Trek joins the TUBBZ collection.\nProud, powerful, and iconic, the Klingons are re-imagined here as cosplaying ducks, ready to defend their honor... in the pond as in space.\n\nWith their distinctive appearance, combative attitude, and imposing presence, this collectible perfectly captures the Klingon warrior spirit with the quirky TUBBZ touch.",
@@ -4628,7 +4628,7 @@ window.TUBBZ_DATA = {
     {
       "id": "star-trek-khan-noonien-singh",
       "name": "Khan Noonien Singh",
-      "franchise": "Star Trek",
+      "collection": "Star Trek",
       "number": "13",
       "releaseYear": "2022",
       "description": "“KHAAAAAN!”\n\nThe legendary Khan Noonien Singh, one of Star Trek’s most iconic villains, joins the TUBBZ collection.\nFormidable, charismatic, and relentless, he returns as a cosplaying duck, ready to challenge the Enterprise.\n\nA genetically superior augment and formidable strategist, this collectible captures all the power and intensity of the character with the quirky touch unique to TUBBZ.",
@@ -4643,7 +4643,7 @@ window.TUBBZ_DATA = {
     {
       "id": "star-trek-data",
       "name": "Data",
-      "franchise": "Star Trek",
+      "collection": "Star Trek",
       "number": "14",
       "description": "Lieutenant Commander Data may be the only android on the USS Enterprise, but he's not the only cosplaying duck as he joins the rest of the TUBBZ crew. He was skillfully created to look human and now he looks like a duck with that pale skin and yellow eyes.",
       "variants": [
@@ -4661,7 +4661,7 @@ window.TUBBZ_DATA = {
     {
       "id": "star-trek-william-t-riker",
       "name": "William T. Riker",
-      "franchise": "Star Trek",
+      "collection": "Star Trek",
       "number": "15",
       "description": "William T. Riker, known as FOMO, has joined the 15 other Star Trek characters who now cosplay as bath duck collectibles and is very excited to join the crew. He has his beloved trombone with him so he can entertain the rest of the TUBBZ team.",
       "variants": [
@@ -4678,7 +4678,7 @@ window.TUBBZ_DATA = {
     {
       "id": "star-trek-kathryn-janeway",
       "name": "Kathryn Janeway",
-      "franchise": "Star Trek",
+      "collection": "Star Trek",
       "number": "16",
       "description": "The duck pond is making way for a new captain as Kathryn Janeway becomes the latest recruit to join the Star Trek TUBBZ collection. She looks impeccable with her bob haircut and red and black Starfleet uniform. She wouldn't be complete without a cup of coffee, black of course.\n\nKathryn Janeway may be a cosplay duck, but she is still a captain and is committed to never abandoning a member of her new quack team, as long as they make sure she always has coffee.",
       "variants": [
@@ -4699,7 +4699,7 @@ window.TUBBZ_DATA = {
     {
       "id": "star-trek-seven-of-nine",
       "name": "Seven of Nine",
-      "franchise": "Star Trek",
+      "collection": "Star Trek",
       "number": "17",
       "description": "Resistance… futile. Essential for your collection.\n\nSeven of Nine, the former Borg turned human, joins the TUBBZ collection in a version that is as recognizable as it is stylized.\nHer iconic silver suit and characteristic Borg implants are faithfully reproduced in this unique cosplay duck adaptation.\n\nBoth elegant and iconic, this figure captures all the duality of the character, between technology and humanity, with the quirky touch unique to TUBBZ.",
       "variants": [
@@ -4716,7 +4716,7 @@ window.TUBBZ_DATA = {
     {
       "id": "star-trek-benjamin-sisko",
       "name": "Benjamin Sisko",
-      "franchise": "Star Trek",
+      "collection": "Star Trek",
       "number": "18",
       "description": "Enter the Star Trek universe with the Star Trek TUBBZ featuring the iconic Benjamin Sisko! This Sisko TUBBZ collectible transforms your favorite Star Trek character into an adorable cosplay duck, ready to command your collection.",
       "variants": [
@@ -4733,7 +4733,7 @@ window.TUBBZ_DATA = {
     {
       "id": "star-trek-the-doctor",
       "name": "The Doctor",
-      "franchise": "Star Trek",
+      "collection": "Star Trek",
       "number": "19",
       "description": "Ready to spice up your collection? The Star Trek TUBBZ version of everyone’s favorite EMH (Emergency Medical Hologram) Doctor is here! This Voyager TUBBZ collectible brilliantly transforms the Doctor from Star Trek: Voyager into an original cosplay duck. Perfect for fans of the legendary Voyager starship, this TUBBZ captures the essence of the beloved holographic character, blending charm, wit, and medical expertise all in duck form.",
       "variants": [
@@ -4750,7 +4750,7 @@ window.TUBBZ_DATA = {
     {
       "id": "star-trek-quark",
       "name": "Quark",
-      "franchise": "Star Trek",
+      "collection": "Star Trek",
       "number": "20",
       "description": "An iconic Ferengi... collector's edition.\n\nDive at warp speed into the Star Trek universe with Quark, Deep Space Nine's famous Ferengi bartender, reimagined as a TUBBZ.\nTransformed into a characterful cosplay duck, he retains all the emblematic details that make him uniquely charming.\n\nMischievous, opportunistic, and indispensable, this collectible perfectly captures the character's spirit... with a touch of typical TUBBZ humor.",
       "variants": [
@@ -4767,7 +4767,7 @@ window.TUBBZ_DATA = {
     {
       "id": "stranger-things-eleven",
       "name": "Eleven",
-      "franchise": "Stranger Things",
+      "collection": "Stranger Things",
       "number": "1",
       "releaseYear": "2021",
       "description": "Hawkins' telekinetic powers come to the pond.\n\nMeet Eleven, the iconic hero from Stranger Things. Possessing powerful telekinetic abilities, she doesn't hesitate to face the Mind Flayer and creatures from the Upside Down to protect her friends.\n\nAfter spending so much time in contact with the Upside Down, Eleven seems to have undergone a new transformation: she is now a collector's cosplay duck.\n\nWith her immediately recognizable appearance and determined attitude, this figure pays homage to one of the most important characters in the Netflix series.",
@@ -4781,7 +4781,7 @@ window.TUBBZ_DATA = {
     {
       "id": "stranger-things-jim-hopper",
       "name": "Jim Hopper",
-      "franchise": "Stranger Things",
+      "collection": "Stranger Things",
       "number": "2",
       "releaseYear": "2021",
       "description": "Hawkins' chief of police now watches over the pond.\n\nMeet Jim Hopper, Hawkins' chief of police and Eleven's adoptive father. Protective, courageous, and always ready to face the dangers of the Upside Down, Hopper remains a reliable ally even in the form of a collectible cosplay duck.\n\nAs the threat of the Mind Flayer looms over Hawkins, he maintains his composure, instinct, and determination to protect Eleven and the town's residents.\n\nWith his police uniform and immediately recognizable look, this figurine pays homage to one of the most beloved characters from Stranger Things.",
@@ -4795,7 +4795,7 @@ window.TUBBZ_DATA = {
     {
       "id": "stranger-things-demogorgon",
       "name": "Demogorgon",
-      "franchise": "Stranger Things",
+      "collection": "Stranger Things",
       "number": "3",
       "releaseYear": "2021",
       "description": "A creature from the Upside Down has just emerged in the pond.\n\nDiscover the Demogorgon, one of the most iconic monsters from Stranger Things. A terrifying predator from the Upside Down, it retains all its unsettling appearance even when transformed into a collectible cosplay duck.\n\nWith its petal-shaped open head, numerous teeth, and instantly recognizable silhouette, this figurine captures the creature's most striking details.",
@@ -4809,7 +4809,7 @@ window.TUBBZ_DATA = {
     {
       "id": "stranger-things-steve-harrington",
       "name": "Steve Harrington",
-      "franchise": "Stranger Things",
+      "collection": "Stranger Things",
       "number": "4",
       "releaseYear": "2021",
       "description": "The king of Scoops Ahoy joins the pond.\n\nDiscover Steve Harrington, an iconic character from Stranger Things. A former popular high school student in Hawkins, Steve has evolved over the seasons into a courageous and caring protector, always ready to defend the group against creatures from the Upside Down.\n\nWorking at Scoops Ahoy, he wears his famous sailor outfit here, one of his most recognizable looks in the series. Even transformed into a collectible cosplay duck, Steve retains his charm, humor, and protective instinct.",
@@ -4823,7 +4823,7 @@ window.TUBBZ_DATA = {
     {
       "id": "stranger-things-lucas-sinclair",
       "name": "Lucas Sinclair",
-      "franchise": "Stranger Things",
+      "collection": "Stranger Things",
       "number": "5",
       "releaseYear": "2022",
       "description": "Always ready to defend the Party.\n\nThe brave Lucas Sinclair, expert in the Wrist-Rocket slingshot, joins the TUBBZ collection.\nProtector of the group and strategist on the field, he is here reinterpreted as a cosplay duck ready to face all threats... even from the Upside Down.\n\nDetermined, loyal, and always on the front lines, this collectible perfectly captures Lucas's fighting spirit with the quirky touch unique to TUBBZ.",
@@ -4837,7 +4837,7 @@ window.TUBBZ_DATA = {
     {
       "id": "stranger-things-dustin-henderson",
       "name": "Dustin Henderson",
-      "franchise": "Stranger Things",
+      "collection": "Stranger Things",
       "number": "6",
       "releaseYear": "2022",
       "description": "The brains of the group... duck version.\n\nThe endearing Dustin Henderson, an essential member of the Party in Stranger Things, joins the TUBBZ collection.\nIntelligent, loyal, and always ready to find a solution, he is revisited here as a cosplay duck with all his charm and energy.\n\nA true pillar of the group, Dustin embodies friendship, humor, and courage in the face of the mysteries of the Upside Down... even in a quirky TUBBZ version.",
@@ -4851,7 +4851,7 @@ window.TUBBZ_DATA = {
     {
       "id": "street-fighter-ken",
       "name": "Ken",
-      "franchise": "Street Fighter",
+      "collection": "Street Fighter",
       "number": "1",
       "releaseYear": "2019",
       "description": "COINKOUKEN! Ken enters the TUBBZ arena.\n\nFind Ken Masters, one of Street Fighter's most iconic fighters. Ryu's rival and friend, Ken joins the pond with his flamboyant style, explosive energy, and famous competitive spirit.\n\nWith his recognizable look, confident attitude, and direct link to the saga's greatest battles, this figurine perfectly captures the arcade and versus fighting universe of Street Fighter.",
@@ -4865,7 +4865,7 @@ window.TUBBZ_DATA = {
     {
       "id": "street-fighter-ryu",
       "name": "Ryu",
-      "franchise": "Street Fighter",
+      "collection": "Street Fighter",
       "number": "2",
       "releaseYear": "2019",
       "description": "COINKOUKEN! The legendary fighter joins the pond.\n\nFind Ryu, one of Street Fighter's most iconic characters. Whether in the arena or by the pond, Ryu remains ready to fight with discipline, power, and determination.\n\nWith his white gi, red headband, and warrior spirit, this cosplay duck version perfectly captures the aura of Capcom's cult fighter.",
@@ -4879,7 +4879,7 @@ window.TUBBZ_DATA = {
     {
       "id": "street-fighter-chun-li",
       "name": "Chun Li",
-      "franchise": "Street Fighter",
+      "collection": "Street Fighter",
       "number": "3",
       "releaseYear": "2019",
       "description": "QUACKOUKEN! The queen of combat joins the TUBBZ pond.\n\nMeet Chun-Li, one of Street Fighter's most iconic fighters. Elegant, fast, and formidable, Chun-Li trades her fists for wings... but remains just as powerful.\n\nWith her iconic blue outfit, recognizable martial arts style, and legendary fighter energy, this figurine perfectly captures the spirit of the Street Fighter saga.",
@@ -4893,7 +4893,7 @@ window.TUBBZ_DATA = {
     {
       "id": "street-fighter-blanka",
       "name": "Blanka",
-      "franchise": "Street Fighter",
+      "collection": "Street Fighter",
       "number": "4",
       "releaseYear": "2019",
       "description": "COINKOUKEN! The wild fighter electrifies the pond.\n\nDiscover Blanka, one of the most iconic characters from Street Fighter. With his brute strength, electric attacks, and wild appearance, Blanka joins the collection in a cosplay duck form that is as zany as it is formidable.\n\nKnown for his unpredictable fighting style and animal power, Blanka retains his iconic look here with his green skin, flamboyant orange hair, and fierce expression. A must-have piece for all fighting game fans.",
@@ -4907,7 +4907,7 @@ window.TUBBZ_DATA = {
     {
       "id": "street-fighter-guile",
       "name": "Guile",
-      "franchise": "Street Fighter",
+      "collection": "Street Fighter",
       "number": "5",
       "releaseYear": "2020",
       "description": "COINKOUKEN! Sonic Boom in the pond.\n\nFind Guile, the famous US Air Force major from Street Fighter. With his military approach to combat, camouflage pants, and iconic flat top haircut, Guile is ready to shake up the pond.\n\nEven transformed into a cosplay duck, Guile retains all his power with his cult attacks like Sonic Boom and Flash Kick.",
@@ -4921,7 +4921,7 @@ window.TUBBZ_DATA = {
     {
       "id": "street-fighter-e-honda",
       "name": "E-Honda",
-      "franchise": "Street Fighter",
+      "collection": "Street Fighter",
       "number": "6",
       "releaseYear": "2020",
       "description": "COINKOUKEN! The sumo master enters the pond.\n\nFind E. Honda, an iconic Street Fighter character. Edmond Honda, the grand sumo master from Japan, is ready to shake up the pond with his famous Hundred Hand Slaps.\n\nEven transformed into a cosplaying duck, E. Honda retains all his power, honor, and unique fighting style.",
@@ -4935,7 +4935,7 @@ window.TUBBZ_DATA = {
     {
       "id": "street-fighter-zangief",
       "name": "Zangief",
-      "franchise": "Street Fighter",
+      "collection": "Street Fighter",
       "number": "7",
       "releaseYear": "2020",
       "description": "COINKOUKEN! The Street Fighter colossus is splashing into the pond.\n\nDiscover Zangief, the powerful wrestler from Street Fighter. When he’s not fighting bears or dancing like a Cossack, Zangief imposes his unique fighting style in the arena… even in cosplay duck form.\n\nWith his mohawk, impressive physique, and iconic body hair, this figurine perfectly captures the character’s raw energy and muscular humor.",
@@ -4949,7 +4949,7 @@ window.TUBBZ_DATA = {
     {
       "id": "street-fighter-dhalsim",
       "name": "Dhalsim",
-      "franchise": "Street Fighter",
+      "collection": "Street Fighter",
       "number": "8",
       "releaseYear": "2020",
       "description": "COINKOUKEN! The Yoga Master joins the pond.\n\nMeet Dhalsim, mystical fighter from Street Fighter. With his unique yoga-inspired fighting style, his ability to stretch his body, and his fire attacks, Dhalsim remains a formidable opponent even as a cosplay duck.\n\nWise, spiritual, and determined to help his people, Dhalsim brings a mystical and original touch to the Street Fighter TUBBZ collection.",
@@ -4963,7 +4963,7 @@ window.TUBBZ_DATA = {
     {
       "id": "teenage-mutant-ninja-turtles-donatello",
       "name": "Donatello",
-      "franchise": "Teenage Mutant Ninja Turtles",
+      "collection": "Teenage Mutant Ninja Turtles",
       "number": "1",
       "releaseYear": "2023",
       "description": "Donatello is super smart, so how did he end up becoming a cosplay duck? Because it's super cool, that's why, and he rocks this new look. Purple is his color, so the bandana's in place and he's gripping his bo staff. Let's go!\n\nTeenage Mutant Ninja fans will love these original collectibles. All the clever details mean you'll instantly recognize Leonardo before you can even say \"cowabunga.\" TUBBZ is a fantastic addition to any collection.",
@@ -4985,7 +4985,7 @@ window.TUBBZ_DATA = {
     {
       "id": "teenage-mutant-ninja-turtles-raphael",
       "name": "Raphael",
-      "franchise": "Teenage Mutant Ninja Turtles",
+      "collection": "Teenage Mutant Ninja Turtles",
       "number": "2",
       "releaseYear": "2023",
       "description": "Raphael looks the same but different, what's going on? Here's a confused and impetuous cosplay duck. Oh, wait, he loves this new look. Red bandana, you see? Twin sai ready, okay? Ready to make a splash.\n\nTeenage Mutant Ninja fans will love these quirky collectibles. All the clever details mean you'll instantly recognize Michelangelo before you can say \"cowabunga.\" TUBBZ is a fantastic addition to any collection.",
@@ -5007,7 +5007,7 @@ window.TUBBZ_DATA = {
     {
       "id": "teenage-mutant-ninja-turtles-leonardo",
       "name": "Leonardo",
-      "franchise": "Teenage Mutant Ninja Turtles",
+      "collection": "Teenage Mutant Ninja Turtles",
       "number": "3",
       "releaseYear": "2023",
       "description": "Leonardo fancies himself the leader of the Teenage Mutant Ninja Turtles , and nothing changes when he enters the pond dressed as a cosplaying duck. You'll see him sporting his blue bandana and wielding twin katana swords; those other TUBBZ better not cross his path.\n\nTeenage Mutant Ninja fans will love these original collectibles. All the clever details mean you'll instantly recognize Leonardo before you can even say \"cowabunga.\" TUBBZ is a fantastic addition to any collection.",
@@ -5029,7 +5029,7 @@ window.TUBBZ_DATA = {
     {
       "id": "teenage-mutant-ninja-turtles-michelangelo",
       "name": "Michelangelo",
-      "franchise": "Teenage Mutant Ninja Turtles",
+      "collection": "Teenage Mutant Ninja Turtles",
       "number": "4",
       "releaseYear": "2023",
       "description": "Michelangelo finds himself as a cosplaying duck, his biggest fear? There had better be pizza in this duck pond or he's going to lose it! The most unlike himself because he is normally super chill, but pizza is pizza. His orange bandana is firmly in place and he has his nunchaku close at hand if he needs it.\n\nFans of Teenage Mutant Ninja will love these quirky collectibles. All the clever details mean you’ll instantly recognise Michelangelo before you can say \"cowabunga\". TUBBZ is a fantastic addition to any collection.",
@@ -5051,7 +5051,7 @@ window.TUBBZ_DATA = {
     {
       "id": "teenage-mutant-ninja-turtles-splinter",
       "name": "Splinter",
-      "franchise": "Teenage Mutant Ninja Turtles",
+      "collection": "Teenage Mutant Ninja Turtles",
       "number": "5",
       "description": "Splinter, sensei and father figure to the Teenage Mutant Ninja Turtles, is now a cosplaying duck and ready to impart his valuable advice and teachings to the rest of the duck pond! This officially licensed TUBBZ captures Splinter’s serene expression, traditional robes, and wise demeanour. At 9cm tall, he’s the perfect size for display on your shelf, desk, or anywhere else you want to honour the teachings of the Ninja Turtles’ mentor.",
       "variants": [
@@ -5068,7 +5068,7 @@ window.TUBBZ_DATA = {
     {
       "id": "teenage-mutant-ninja-turtles-shredder",
       "name": "Shredder",
-      "franchise": "Teenage Mutant Ninja Turtles",
+      "collection": "Teenage Mutant Ninja Turtles",
       "number": "6",
       "description": "The arch-nemesis of the heroic turtles, Shredder, has joined the duck pond! This officially licensed TUBBZ captures Shredder's menacing presence, complete with his iconic armour, sharp blades, and intense gaze. Standing 9cm tall, it's the perfect size to display on your shelf, desk, or wherever you choose to exhibit your TMNT fandom.",
       "variants": [
@@ -5085,7 +5085,7 @@ window.TUBBZ_DATA = {
     {
       "id": "teenage-mutant-ninja-turtles-bebop",
       "name": "Bebop",
-      "franchise": "Teenage Mutant Ninja Turtles",
+      "collection": "Teenage Mutant Ninja Turtles",
       "number": "7",
       "description": "Get ready to unleash your inner mutant with the Bebop TUBBZ ! This officially licensed Teenage Mutant Ninja Turtles collectible transforms the punk-rock warthog villain into an adorable rebel duck, sporting his signature purple mohawk, sunglasses, nose ring, and fighting attitude.",
       "variants": [
@@ -5102,7 +5102,7 @@ window.TUBBZ_DATA = {
     {
       "id": "teenage-mutant-ninja-turtles-rocksteady",
       "name": "Rocksteady",
-      "franchise": "Teenage Mutant Ninja Turtles",
+      "collection": "Teenage Mutant Ninja Turtles",
       "number": "8",
       "description": "Rock into action with the Rocksteady TUBBZ ! This muscular duck, complete with tank top and helmet, is here to wreak havoc on your Teenage Mutant Ninja Turtles (TMNT) collection. Officially licensed and meticulously detailed, this collectible cosplay duck embodies Rocksteady 's undeniable snout, brute strength, and charm.",
       "variants": [
@@ -5119,7 +5119,7 @@ window.TUBBZ_DATA = {
     {
       "id": "teenage-mutant-ninja-turtles-leonardo-comic-style",
       "name": "Leonardo Comic Style",
-      "franchise": "Teenage Mutant Ninja Turtles",
+      "collection": "Teenage Mutant Ninja Turtles",
       "number": "9",
       "releaseYear": "2026",
       "description": "The leader of the Ninja Turtles, just like in the original comics.\n\nWith its contrasting black and white design, comic book inking details, and iconic red bandana, this version pays tribute to the raw, underground style of the cult TMNT comics.\n\nReimagined as a collector's cosplay duck, Leonardo retains all the attitude of the Ninja Turtles' leader, ready to defend his brothers with his famous dual katanas.\n\nThe drawn line effects on his shell and gear perfectly recreate the aesthetic of the original comic books, offering a unique collectible for TMNT and comic culture fans.",
@@ -5133,7 +5133,7 @@ window.TUBBZ_DATA = {
     {
       "id": "teenage-mutant-ninja-turtles-donatello-diy-edition",
       "name": "Donatello (DIY Edition)",
-      "franchise": "Teenage Mutant Ninja Turtles",
+      "collection": "Teenage Mutant Ninja Turtles",
       "releaseYear": "2024",
       "description": "Who says all turtles have to be green? Donatello is a DIY TUBBZ, you can paint him any color you want.",
       "variants": [
@@ -5146,7 +5146,7 @@ window.TUBBZ_DATA = {
     {
       "id": "teenage-mutant-ninja-turtles-leonardo-diy-edition",
       "name": "Leonardo (DIY Edition)",
-      "franchise": "Teenage Mutant Ninja Turtles",
+      "collection": "Teenage Mutant Ninja Turtles",
       "releaseYear": "2024",
       "description": "Make Leonardo stand out from the TUBBZ crowd, go crazy with color! DIY TUBBZ lets you add your own twist to your favorite characters.",
       "variants": [
@@ -5159,7 +5159,7 @@ window.TUBBZ_DATA = {
     {
       "id": "teenage-mutant-ninja-turtles-michelangelo-diy-edition",
       "name": "Michelangelo (DIY Edition)",
-      "franchise": "Teenage Mutant Ninja Turtles",
+      "collection": "Teenage Mutant Ninja Turtles",
       "releaseYear": "2024",
       "description": "Michelangelo is more than happy to let you go wild and paint him in your own style. Well, he's named after an artist.",
       "variants": [
@@ -5172,7 +5172,7 @@ window.TUBBZ_DATA = {
     {
       "id": "teenage-mutant-ninja-turtles-raphael-diy-edition",
       "name": "Raphael (DIY Edition)",
-      "franchise": "Teenage Mutant Ninja Turtles",
+      "collection": "Teenage Mutant Ninja Turtles",
       "releaseYear": "2024",
       "description": "Raphael wears a red mask. As a DIY TUBBZ, you can paint his mask any color you want. Do it, you'll baffle people, minds will be blown!",
       "variants": [
@@ -5185,7 +5185,7 @@ window.TUBBZ_DATA = {
     {
       "id": "terminator-terminator",
       "name": "Terminator",
-      "franchise": "Terminator",
+      "collection": "Terminator",
       "number": "1",
       "releaseYear": "2026",
       "variants": [
@@ -5202,7 +5202,7 @@ window.TUBBZ_DATA = {
     {
       "id": "texas-chainsaw-massacre-leatherface",
       "name": "Leatherface",
-      "franchise": "Texas Chainsaw Massacre",
+      "collection": "Texas Chainsaw Massacre",
       "number": "5",
       "releaseYear": "2022",
       "description": "The sound of the chainsaw... even as a duck.\n\nThe terrifying Leatherface, an absolute icon of The Texas Chainsaw Massacre, joins the TUBBZ collection.\nArmed with his iconic chainsaw, this revisited duck captures all the brutality and unsettling presence of the character.\n\nRelentless, disturbing, and instantly recognizable, this collectible perfectly captures the film's oppressive atmosphere with the quirky touch unique to TUBBZ.",
@@ -5225,7 +5225,7 @@ window.TUBBZ_DATA = {
     {
       "id": "texas-chainsaw-massacre-leatherface-pretty-woman",
       "name": "Leatherface Pretty Woman",
-      "franchise": "Texas Chainsaw Massacre",
+      "collection": "Texas Chainsaw Massacre",
       "number": "6",
       "description": "Quack. Scream. Repeat. Leatherface is straight out of The Texas Chainsaw Massacre and coming to your TUBBZ collection, whether you like it or not! Chainsaw in hand and sporting his bizarre “Pretty Woman” mask, plus a suit jacket and fancy tie, this deranged duck is dressed to the nines and ready to… well, you don’t want to be on the menu! ",
       "variants": [
@@ -5242,7 +5242,7 @@ window.TUBBZ_DATA = {
     {
       "id": "the-hunger-games-katniss-everdeen",
       "name": "Katniss Everdeen",
-      "franchise": "The Hunger Games",
+      "collection": "The Hunger Games",
       "number": "1",
       "releaseYear": "2024",
       "description": "I volunteer….as a cosplaying duck! Katniss Evergreen leaves District 12 for the duck pond as she gets a TUBBZ makeover.",
@@ -5256,7 +5256,7 @@ window.TUBBZ_DATA = {
     {
       "id": "the-hunger-games-peeta-mellark",
       "name": "Peeta Mellark",
-      "franchise": "The Hunger Games",
+      "collection": "The Hunger Games",
       "number": "2",
       "releaseYear": "2024",
       "description": "Peeta has had enough of the Capitol's game and he puts Plan B into action, becoming a collectible TUBBZ rubber duck!",
@@ -5270,7 +5270,7 @@ window.TUBBZ_DATA = {
     {
       "id": "the-last-of-us-joel",
       "name": "Joel",
-      "franchise": "The Last of Us",
+      "collection": "The Last of Us",
       "number": "1",
       "releaseYear": "2020",
       "description": "Couleur boite délavé (soleil)",
@@ -5292,7 +5292,7 @@ window.TUBBZ_DATA = {
     {
       "id": "the-last-of-us-ellie",
       "name": "Ellie",
-      "franchise": "The Last of Us",
+      "collection": "The Last of Us",
       "number": "2",
       "releaseYear": "2020",
       "description": "Couleur boite délavé (soleil)",
@@ -5314,7 +5314,7 @@ window.TUBBZ_DATA = {
     {
       "id": "the-last-of-us-tess",
       "name": "Tess",
-      "franchise": "The Last of Us",
+      "collection": "The Last of Us",
       "number": "3",
       "releaseYear": "2020",
       "description": "Even the toughest survivors are not safe from the Cordyceps.\n\nMeet Tess, Joel's partner and a prominent figure from The Last of Us. An experienced smuggler and formidable strategist, Tess here succumbs to a very particular strain of the Cordyceps infection... which transforms her into a collector's cosplay duck.",
@@ -5332,7 +5332,7 @@ window.TUBBZ_DATA = {
     {
       "id": "the-last-of-us-clicker",
       "name": "Clicker",
-      "franchise": "The Last of Us",
+      "collection": "The Last of Us",
       "number": "4",
       "releaseYear": "2020",
       "description": "The Cordyceps infection even reaches the pond.\n\nDiscover the terrifying Clicker from The Last of Us. The infection has taken a strange turn: instead of a contaminated human, here is an infected cosplay duck, much less dangerous... but just as unsettling.",
@@ -5350,7 +5350,7 @@ window.TUBBZ_DATA = {
     {
       "id": "the-last-of-us-bill",
       "name": "Bill",
-      "franchise": "The Last of Us",
+      "collection": "The Last of Us",
       "number": "5",
       "releaseYear": "2023",
       "description": "It’s clear that Bill will know exactly what to do to survive in the duck pond, no one is more resourceful than him, and Ellie and Joel TUBBZ will be glad to have him by their side. Here is Bill in collectible TUBBZ cosplay, weapon in hand, ready to defend his territory.",
@@ -5364,7 +5364,7 @@ window.TUBBZ_DATA = {
     {
       "id": "the-last-of-us-bloater",
       "name": "Bloater",
-      "franchise": "The Last of Us",
+      "collection": "The Last of Us",
       "number": "6",
       "releaseYear": "2023",
       "description": "The last thing other cosplaying ducks need is for the Bloater to bring the dreaded fungal infection to the pond. The best thing The Last of Us fans need is for The Bloater to arrive in the TUBBZ collection, so here he is, a must-have for collections in all his grizzly and infected detail. It looks horrifying and fantastic all at once!",
@@ -5378,7 +5378,7 @@ window.TUBBZ_DATA = {
     {
       "id": "the-matrix-neo",
       "name": "Neo",
-      "franchise": "The Matrix",
+      "collection": "The Matrix",
       "number": "1",
       "releaseYear": "2024",
       "description": "Step into the Matrix and bring Neo home in duck form with the Neo TUBBZ collectible! As the one destined to save both his world and now the world of TUBBZ, this Matrix TUBBZ transforms the iconic hero into an epic cosplay duck, complete with his signature dark glasses and costume. Whether you’re a Matrix fan or just love original collectibles, Neo is ready to dive right into your collection. A must-have for any Matrix fan, this collectible strikes the perfect balance of action and fantasy!",
@@ -5396,7 +5396,7 @@ window.TUBBZ_DATA = {
     {
       "id": "the-matrix-morpheus",
       "name": "Morpheus",
-      "franchise": "The Matrix",
+      "collection": "The Matrix",
       "number": "2",
       "releaseYear": "2024",
       "description": "Welcome to the Matrix: Morpheus has arrived and he’s bringing his iconic wisdom to the duck pond! This Morpheus TUBBZ collectible transforms the legendary Matrix mentor into a dapper cosplay duck, complete with his signature glasses and dark suit. Whether you’re a die-hard Matrix fan or just love original collectibles, Morpheus is ready to join Neo in your collection. Part of the Matrix TUBBZ series, this release is a must-have for fans who want to relive iconic moments from the film in duck form!",
@@ -5414,7 +5414,7 @@ window.TUBBZ_DATA = {
     {
       "id": "the-matrix-trinity",
       "name": "Trinity",
-      "franchise": "The Matrix",
+      "collection": "The Matrix",
       "number": "3",
       "releaseYear": "2025",
       "description": "Dressed in her iconic black look and trademark cool, this duck is perfect for fans who love bending the rules and dodging bullets.",
@@ -5428,7 +5428,7 @@ window.TUBBZ_DATA = {
     {
       "id": "the-matrix-agent-smith",
       "name": "Agent Smith",
-      "franchise": "The Matrix",
+      "collection": "The Matrix",
       "number": "4",
       "releaseYear": "2025",
       "description": "Mr. Anderson… Agent Smith transforms into a cosplay duck, with all his coldness and calculated menace intact. From the stylish sunglasses to the impeccable suit, this TUBBZ captures the relentless digital enforcer of the Matrix. A must-have for fans who know the system always fights back.",
@@ -5442,7 +5442,7 @@ window.TUBBZ_DATA = {
     {
       "id": "the-shining-jack-torrance",
       "name": "Jack Torrance",
-      "franchise": "The Shining",
+      "collection": "The Shining",
       "number": "4",
       "releaseYear": "2024",
       "variants": [
@@ -5455,7 +5455,7 @@ window.TUBBZ_DATA = {
     {
       "id": "the-silence-of-the-lambs-hannibal-lecter",
       "name": "Hannibal Lecter",
-      "franchise": "The Silence of the Lambs",
+      "collection": "The Silence of the Lambs",
       "number": "2",
       "variants": [
         {
@@ -5467,7 +5467,7 @@ window.TUBBZ_DATA = {
     {
       "id": "the-suicide-squad-harley-quinn",
       "name": "Harley Quinn",
-      "franchise": "The Suicide Squad",
+      "collection": "The Suicide Squad",
       "number": "1",
       "releaseYear": "2021",
       "description": "The queen of chaos lands in the pond.\n\nDiscover Harley Quinn, an iconic member of the Suicide Squad. Unpredictable, explosive, and always ready to cause mayhem, Harley remains a formidable adversary even in the form of a collectible cosplay duck.\n\nThis version is inspired by her appearance in The Suicide Squad and stands out from the first Harley Quinn figurines from the classic DC Comics range.",
@@ -5485,7 +5485,7 @@ window.TUBBZ_DATA = {
     {
       "id": "the-suicide-squad-tdk",
       "name": "TDK",
-      "franchise": "The Suicide Squad",
+      "collection": "The Suicide Squad",
       "number": "2",
       "releaseYear": "2021",
       "description": "Have you ever met a duck that can detach its own arms and legs? Well, if you’ve met The Detachable Kid, you’ll know not to mess with him as this condemned Metahuman has a knack for fighting!",
@@ -5499,7 +5499,7 @@ window.TUBBZ_DATA = {
     {
       "id": "the-suicide-squad-peacemaker",
       "name": "Peacemaker",
-      "franchise": "The Suicide Squad",
+      "collection": "The Suicide Squad",
       "number": "3",
       "releaseYear": "2021",
       "description": "Peace at any cost… even in the pond.\n\nMeet Peacemaker, aka Christopher Smith. An extremist who believes peace justifies all means, he remains as dangerous as he is unpredictable, even in the form of a collectible cosplay duck.\n\nWith his distinctive chrome helmet, red, blue, and white uniform, and martial stance, this figure captures the most recognizable elements of the character from The Suicide Squad.",
@@ -5513,7 +5513,7 @@ window.TUBBZ_DATA = {
     {
       "id": "the-suicide-squad-bloodsport",
       "name": "Bloodsport",
-      "franchise": "The Suicide Squad",
+      "collection": "The Suicide Squad",
       "number": "4",
       "releaseYear": "2021",
       "description": "The Task Force X sharpshooter is making a splash.\n\nMeet Bloodsport, aka Robert DuBois. A world-class assassin and formidable marksman, Bloodsport can turn almost any object into a deadly weapon.\n\nThe only exception: rats, which he has a particular fear of.\n\nWith his tactical armor, helmet, and instantly recognizable look, this figure captures the character's iconic elements from The Suicide Squad.",
@@ -5527,7 +5527,7 @@ window.TUBBZ_DATA = {
     {
       "id": "tomb-raider-classic-lara-croft",
       "name": "Classic Lara Croft",
-      "franchise": "Tomb Raider",
+      "collection": "Tomb Raider",
       "number": "1",
       "releaseYear": "2023",
       "description": "Lara Croft – what an icon! She’s been in games, movies, comic books and now, 27 years after Tomb Raider began, she’s become a collectible TUBBZ Cosplay Duck. Tomb Raider fans, she is an absolute must-have for collections. Even as a duck, there’s no mistaking her with her dual-wielding pistols, and of course, she’s sporting her iconic tank top, shorts, and combat boots.",
@@ -5549,7 +5549,7 @@ window.TUBBZ_DATA = {
     {
       "id": "tomb-raider-survivor-lara-croft",
       "name": "Survivor Lara Croft",
-      "franchise": "Tomb Raider",
+      "collection": "Tomb Raider",
       "number": "2",
       "releaseYear": "2025",
       "description": "The most famous adventurer in video games returns in her Survivor version.\n\nDiscover Lara Croft as she appears in the Tomb Raider Survivor trilogy, more experienced, more determined, and more formidable than ever. This TUBBZ figurine reinterprets the iconic heroine as a collector's duck, while retaining her modern appearance and survivor spirit.\n\nArmed with her famous bow, marked by her many adventures, and ready to face any danger, Lara here displays a more realistic and combative style than ever before. This version perfectly captures the determination and courage that made her one of the most iconic heroines in video game history.",
@@ -5567,7 +5567,7 @@ window.TUBBZ_DATA = {
     {
       "id": "tomb-raider-lara-croft-30th-anniversary",
       "name": "Lara Croft 30th Anniversary",
-      "franchise": "Tomb Raider",
+      "collection": "Tomb Raider",
       "number": "3",
       "releaseYear": "2026",
       "description": "30 years of adventure in a collector's edition.\n\nCelebrate 30 years of Tomb Raider with this superb Lara Croft TUBBZ, a premium tribute to one of gaming's most legendary heroines.\n\nReimagined as a collector's cosplay duck, Lara Croft sports her most iconic look: intrepid attitude, adventurous spirit, and her famous dual pistols drawn, ready to explore forgotten tombs and face any danger.",
@@ -5589,7 +5589,7 @@ window.TUBBZ_DATA = {
     {
       "id": "where-s-wally-wally",
       "name": "Wally",
-      "franchise": "Where's Wally",
+      "collection": "Where's Wally",
       "number": "1",
       "releaseYear": "2021",
       "description": "Hailing from the Land of Charlies, Charlie has travelled the world, through time and distant magical lands.\n\nDespite being a seasoned adventurer, crossing all continents, space and time, Charlie still managed to get himself into trouble! It looks like he's been turned into a duck as he wanders around, still wearing his iconic red and white striped outfit.",
@@ -5603,7 +5603,7 @@ window.TUBBZ_DATA = {
     {
       "id": "wonka-willy-wonka",
       "name": "Willy Wonka",
-      "franchise": "Wonka",
+      "collection": "Wonka",
       "number": "1",
       "releaseYear": "2025",
       "description": "Dive into a world of imagination with the TUBBZ Willy Wonka ! Inspired by the whimsical 2023 film, this charming collectible transforms the legendary chocolatier into an adorable, eccentric duck. Dressed in his stylish purple coat, vibrant scarf, and iconic top hat, this Wonka duck is brimming with youthful ambition and sweet dreams. And to top it all off, he smells deliciously like chocolate!",
@@ -5621,7 +5621,7 @@ window.TUBBZ_DATA = {
     {
       "id": "yakuza-kazuma-kiryu",
       "name": "Kazuma Kiryu",
-      "franchise": "Yakuza",
+      "collection": "Yakuza",
       "number": "1",
       "releaseYear": "2021",
       "description": "The Dragon of Dojima enters the pond.\n\nMeet Kazuma Kiryu, the iconic hero of the Ryu ga Gotoku / Yakuza saga. Thanks to his legendary exploits and his rise within the Dojima family of the Tojo Clan, Kiryu has forged a reputation few dare to challenge.\n\nEven transformed into a collector's cosplay duck, the Dragon of Dojima remains a formidable fighter. And if he finds a bicycle nearby, it's best not to get in his way.\n\nWith his grey suit, red shirt, and calm yet imposing demeanor, this figurine captures the character's instantly recognizable elements.",

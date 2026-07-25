@@ -11,7 +11,7 @@
   var elGrid = document.getElementById("grid");
   var elWarning = document.getElementById("storage-warning");
   var elSearch = document.getElementById("search");
-  var elFranchise = document.getElementById("filter-franchise");
+  var elCollection = document.getElementById("filter-collection");
   var elSize = document.getElementById("filter-size");
   var elPackaging = document.getElementById("filter-packaging");
   var elStatus = document.getElementById("filter-status");
@@ -29,7 +29,7 @@
   function saveView() {
     try {
       sessionStorage.setItem(VIEW_KEY, JSON.stringify({
-        q: elSearch.value, franchise: elFranchise.value, size: elSize.value,
+        q: elSearch.value, collection: elCollection.value, size: elSize.value,
         packaging: elPackaging.value, status: elStatus.value,
         scrollY: window.pageYOffset || document.documentElement.scrollTop || 0
       }));
@@ -41,7 +41,7 @@
   function applyView(v) {
     if (!v) return;
     elSearch.value = v.q || "";
-    elFranchise.value = v.franchise || "";
+    elCollection.value = v.collection || "";
     elSize.value = v.size || "";
     elPackaging.value = v.packaging || "";
     elStatus.value = v.status || "";
@@ -57,11 +57,11 @@
     elToTop.classList.toggle("is-visible", y > TO_TOP_AT);
   }
 
-  // Clic sur une franchise (card de l'index ou fiche duck) : vue neuve filtrée
-  // sur cette seule franchise. On vide les autres filtres et on remonte en haut.
-  function applyFranchiseFilter(name) {
+  // Clic sur une collection (card de l'index ou fiche duck) : vue neuve filtrée
+  // sur cette seule collection. On vide les autres filtres et on remonte en haut.
+  function applyCollectionFilter(name) {
     elSearch.value = "";
-    elFranchise.value = name || "";
+    elCollection.value = name || "";
     elSize.value = "";
     elPackaging.value = "";
     elStatus.value = "";
@@ -77,10 +77,10 @@
   function matches(fig) {
     var q = elSearch.value.trim().toLowerCase();
     if (q) {
-      var hay = (fig.name + " " + fig.franchise).toLowerCase();
+      var hay = (fig.name + " " + fig.collection).toLowerCase();
       if (hay.indexOf(q) === -1) return false;
     }
-    if (elFranchise.value && fig.franchise !== elFranchise.value) return false;
+    if (elCollection.value && fig.collection !== elCollection.value) return false;
 
     var variants = fig.variants || [];
     if (elSize.value && !variants.some(function (v) { return v.size === elSize.value; })) return false;
@@ -138,11 +138,11 @@
           '<h3 class="card-name">' +
             '<a class="card-name-link text-link" href="' + url + '">' + T.esc(fig.name) + '</a>' +
           '</h3>' +
-          '<p class="card-franchise">' +
-            '<span class="card-franchise-link text-link" role="link" tabindex="0" ' +
-              'data-franchise="' + T.esc(fig.franchise) + '" ' +
-              'title="Show all ' + T.esc(fig.franchise) + ' TUBBZ">' +
-              T.esc(fig.franchise) +
+          '<p class="card-collection">' +
+            '<span class="card-collection-link text-link" role="link" tabindex="0" ' +
+              'data-collection="' + T.esc(fig.collection) + '" ' +
+              'title="Show all ' + T.esc(fig.collection) + ' TUBBZ">' +
+              T.esc(fig.collection) +
             '</span>' +
           '</p>' +
           '<div class="card-chips">' + variantChips(fig) + '</div>' +
@@ -166,25 +166,25 @@
   /* Filtres : peupler la liste des licences                          */
   /* ---------------------------------------------------------------- */
 
-  function populateFranchises() {
+  function populateCollections() {
     var names = {};
-    catalog.figurines.forEach(function (f) { names[f.franchise] = true; });
+    catalog.figurines.forEach(function (f) { names[f.collection] = true; });
     Object.keys(names).sort(function (a, b) { return a.localeCompare(b, "fr"); })
       .forEach(function (name) {
         var opt = document.createElement("option");
         opt.value = name;
         opt.textContent = name;
-        elFranchise.appendChild(opt);
+        elCollection.appendChild(opt);
       });
   }
 
   // Placeholder dynamique de la recherche : compte les TUBBZ uniques (un par id, on
-  // n'additionne pas les variantes) et les collections (franchises) distinctes.
+  // n'additionne pas les variantes) et les collections (collections) distinctes.
   // « TUBBZ » est un nom de marque invariable → pas de pluriel.
   function updateSearchPlaceholder() {
     var tubbz = catalog.figurines.length;
     var names = {};
-    catalog.figurines.forEach(function (f) { names[f.franchise] = true; });
+    catalog.figurines.forEach(function (f) { names[f.collection] = true; });
     var collections = Object.keys(names).length;
     elSearch.placeholder = "Search across " +
       tubbz + " TUBBZ and " +
@@ -294,40 +294,40 @@
   /* Événements                                                       */
   /* ---------------------------------------------------------------- */
 
-  // Clic (ou Entrée/Espace) sur le nom de franchise d'une card → filtre la franchise.
+  // Clic (ou Entrée/Espace) sur le nom de collection d'une card → filtre la collection.
   // Le nom est à l'intérieur du lien <a class="card"> : on empêche la navigation vers la fiche.
-  function bindFranchiseFilter() {
+  function bindCollectionFilter() {
     elGrid.addEventListener("click", function (e) {
-      var link = e.target.closest(".card-franchise-link");
+      var link = e.target.closest(".card-collection-link");
       if (!link || !elGrid.contains(link)) return;
       e.preventDefault();
       e.stopPropagation();
-      applyFranchiseFilter(link.getAttribute("data-franchise"));
+      applyCollectionFilter(link.getAttribute("data-collection"));
     });
     elGrid.addEventListener("keydown", function (e) {
       if (e.key !== "Enter" && e.key !== " ") return;
-      var link = e.target.closest(".card-franchise-link");
+      var link = e.target.closest(".card-collection-link");
       if (!link || !elGrid.contains(link)) return;
       e.preventDefault();
       e.stopPropagation();
-      applyFranchiseFilter(link.getAttribute("data-franchise"));
+      applyCollectionFilter(link.getAttribute("data-collection"));
     });
   }
 
   function bindEvents() {
     bindChipHover();
     bindChipNav();
-    bindFranchiseFilter();
+    bindCollectionFilter();
 
     function onFilterChange() { render(); saveView(); }
-    [elSearch, elFranchise, elSize, elPackaging, elStatus].forEach(function (el) {
+    [elSearch, elCollection, elSize, elPackaging, elStatus].forEach(function (el) {
       el.addEventListener("input", onFilterChange);
       el.addEventListener("change", onFilterChange);
     });
 
     document.getElementById("btn-reset").addEventListener("click", function () {
       elSearch.value = "";
-      elFranchise.value = "";
+      elCollection.value = "";
       elSize.value = "";
       elPackaging.value = "";
       elStatus.value = "";
@@ -393,27 +393,27 @@
       catalog = data;
       ready = true;
       checkStorage();
-      populateFranchises();
+      populateCollections();
       updateSearchPlaceholder();
       bindEvents();
       // Paramètres d'URL :
       //  - "?home"          (logo)     → accueil propre : on efface l'état mémorisé.
-      //  - "?franchise=<x>" (fiche)    → vue neuve filtrée sur cette franchise.
+      //  - "?collection=<x>" (fiche)    → vue neuve filtrée sur cette collection.
       var params = null;
       try { params = new URLSearchParams(location.search); } catch (e) {}
       var goHome = !!(params && params.has("home"));
-      var franchiseParam = params ? params.get("franchise") : null;
+      var collectionParam = params ? params.get("collection") : null;
 
       if (goHome) {
         try { sessionStorage.removeItem(VIEW_KEY); } catch (e) {}
       }
-      // URL propre (retire ?home / ?franchise) une fois pris en compte.
-      if (goHome || franchiseParam) {
+      // URL propre (retire ?home / ?collection) une fois pris en compte.
+      if (goHome || collectionParam) {
         try { history.replaceState(null, "", location.pathname); } catch (e) {}
       }
 
-      if (franchiseParam) {
-        applyFranchiseFilter(franchiseParam);  // set filtres + render + scroll top + saveView
+      if (collectionParam) {
+        applyCollectionFilter(collectionParam);  // set filtres + render + scroll top + saveView
       } else {
         var v = goHome ? null : loadView();
         applyView(v);      // restaure recherche + filtres (rien si accueil propre)

@@ -213,19 +213,19 @@ h1, h2, h3 { line-height: 1.2; }
   background: color-mix(in srgb, var(--text) 78%, transparent); color: var(--surface);
 }
 /* Corps de card à hauteur fixe → toutes les cards ont la même hauteur (grille alignée).
-   Le nom et la franchise sont collés en haut ; les badges sont ancrés en bas (margin-top:auto),
-   donc l'espace « flottant » se place entre la franchise et la 1re ligne de badges.
+   Le nom et la collection sont collés en haut ; les badges sont ancrés en bas (margin-top:auto),
+   donc l'espace « flottant » se place entre la collection et la 1re ligne de badges.
    (Max 4 badges par card → tient sur 2 rangées.) */
 .card-body { padding: 10px 12px 12px; display: flex; flex-direction: column; height: 128px; }
 .card-name {
   margin: 0; font-size: 1rem; line-height: 1.2;
   display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
 }
-.card-franchise {
+.card-collection {
   margin: 2px 0 0; font-size: .82rem; color: var(--muted); line-height: 1.2;
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
-/* Nom de franchise cliquable → filtre la franchise (voir index.js).
+/* Nom de collection cliquable → filtre la collection (voir index.js).
    Style porté par la classe utilitaire .text-link. */
 .card-chips {
   display: flex; flex-wrap: wrap; gap: 5px; align-content: flex-start;
@@ -269,12 +269,12 @@ h1, h2, h3 { line-height: 1.2; }
 .hero-flip:hover { background: var(--surface); border-color: var(--accent); }
 .hero-flip:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .duck-name { margin: 0 0 4px; font-size: 1.8rem; }
-/* Bloc franchise + année, avec le bouton wishlist aligné à droite. Le wrap est
+/* Bloc collection + année, avec le bouton wishlist aligné à droite. Le wrap est
    assuré par flex-wrap : si la place manque, le bouton retombe sous le bloc
    (donc entre l'année et la description, qui suit en dehors de ce conteneur). */
 .duck-subhead { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-start; gap: 10px 20px; margin: 0 0 16px; }
 .duck-subinfo { min-width: 0; }
-.duck-franchise { margin: 0 0 8px; color: var(--muted); font-weight: 600; }
+.duck-collection { margin: 0 0 8px; color: var(--muted); font-weight: 600; }
 .duck-meta { display: grid; gap: 8px; margin: 0; }
 .duck-meta div { display: flex; gap: 8px; }
 .duck-meta dt { color: var(--muted); min-width: 120px; }
