@@ -28,42 +28,23 @@
     <p id="storage-warning" class="storage-warning" role="alert" hidden></p>
 
     <section class="toolbar">
-      <div class="search-box">
+      <div class="field field-search">
         <input id="search" type="search" placeholder="Search across TUBBZ and collections…" autocomplete="off" aria-label="Search" />
       </div>
-      <div class="filters">
-        <label class="field">
-          <span>Collection</span>
-          <select id="filter-collection"><option value="">All</option></select>
-        </label>
-        <label class="field">
-          <span>Size</span>
-          <select id="filter-size">
-            <option value="">All</option>
-            <option value="classic">Classic</option>
-            <option value="mini">Mini</option>
-            <option value="xl">XL</option>
-          </select>
-        </label>
-        <label class="field">
-          <span>Packaging</span>
-          <select id="filter-packaging">
-            <option value="">All</option>
-            <option value="first-edition">First Edition</option>
-            <option value="boxed">Boxed</option>
-          </select>
-        </label>
-        <label class="field">
-          <span>Status</span>
-          <select id="filter-status">
-            <option value="">All</option>
-            <option value="owned">Owned</option>
-            <option value="not-owned">Not owned</option>
-            <option value="wishlist">Wishlist</option>
-          </select>
-        </label>
-        <button id="btn-reset" type="button" class="btn btn-ghost btn-small">Reset</button>
-      </div>
+      <label class="field">
+        <span>Collection</span>
+        <select id="filter-collection"><option value="">All</option></select>
+      </label>
+      <label class="field">
+        <span>Status</span>
+        <select id="filter-status">
+          <option value="">All</option>
+          <option value="owned">Owned</option>
+          <option value="not-owned">Not owned</option>
+          <option value="wishlist">Wishlist</option>
+        </select>
+      </label>
+      <button id="btn-reset" type="button" class="btn btn-ghost btn-small">Reset</button>
     </section>
 
     <section id="grid" class="grid" aria-busy="true">

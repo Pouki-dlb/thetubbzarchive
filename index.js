@@ -12,8 +12,6 @@
   var elWarning = document.getElementById("storage-warning");
   var elSearch = document.getElementById("search");
   var elCollection = document.getElementById("filter-collection");
-  var elSize = document.getElementById("filter-size");
-  var elPackaging = document.getElementById("filter-packaging");
   var elStatus = document.getElementById("filter-status");
   var elToTop = document.getElementById("to-top");
 
@@ -29,8 +27,7 @@
   function saveView() {
     try {
       sessionStorage.setItem(VIEW_KEY, JSON.stringify({
-        q: elSearch.value, collection: elCollection.value, size: elSize.value,
-        packaging: elPackaging.value, status: elStatus.value,
+        q: elSearch.value, collection: elCollection.value, status: elStatus.value,
         scrollY: window.pageYOffset || document.documentElement.scrollTop || 0
       }));
     } catch (e) {}
@@ -42,8 +39,6 @@
     if (!v) return;
     elSearch.value = v.q || "";
     elCollection.value = v.collection || "";
-    elSize.value = v.size || "";
-    elPackaging.value = v.packaging || "";
     elStatus.value = v.status || "";
   }
   function restoreScroll(v) {
@@ -62,8 +57,6 @@
   function applyCollectionFilter(name) {
     elSearch.value = "";
     elCollection.value = name || "";
-    elSize.value = "";
-    elPackaging.value = "";
     elStatus.value = "";
     render();
     window.scrollTo(0, 0);
@@ -81,10 +74,6 @@
       if (hay.indexOf(q) === -1) return false;
     }
     if (elCollection.value && fig.collection !== elCollection.value) return false;
-
-    var variants = fig.variants || [];
-    if (elSize.value && !variants.some(function (v) { return v.size === elSize.value; })) return false;
-    if (elPackaging.value && !variants.some(function (v) { return v.packaging === elPackaging.value; })) return false;
 
     if (elStatus.value) {
       var owned = T.ownedCountOf(state, fig).owned > 0;
@@ -320,7 +309,7 @@
     bindCollectionFilter();
 
     function onFilterChange() { render(); saveView(); }
-    [elSearch, elCollection, elSize, elPackaging, elStatus].forEach(function (el) {
+    [elSearch, elCollection, elStatus].forEach(function (el) {
       el.addEventListener("input", onFilterChange);
       el.addEventListener("change", onFilterChange);
     });
@@ -328,8 +317,6 @@
     document.getElementById("btn-reset").addEventListener("click", function () {
       elSearch.value = "";
       elCollection.value = "";
-      elSize.value = "";
-      elPackaging.value = "";
       elStatus.value = "";
       render();
       saveView();

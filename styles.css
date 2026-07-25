@@ -169,19 +169,19 @@ h1, h2, h3 { line-height: 1.2; }
 }
 
 /* ---------------- Barre d'outils / filtres ---------------- */
-.toolbar { display: grid; gap: 12px; margin: 18px 0 8px; }
-.search-box input {
-  width: 100%; font: inherit; padding: .7em 1em;
-  border: 1px solid var(--border); border-radius: 12px;
+.toolbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: end; margin: 18px 0 8px; }
+.field { display: flex; flex-direction: column; gap: 4px; font-size: .82rem; color: var(--muted); }
+.field-search { flex: 1 1 220px; min-width: 0; }
+.field-search input {
+  width: 100%; font: inherit; padding: .5em .8em;
+  border: 1px solid var(--border); border-radius: 10px;
   background: var(--surface); color: var(--text);
 }
-.filters { display: flex; flex-wrap: wrap; gap: 10px; align-items: end; }
-.field { display: flex; flex-direction: column; gap: 4px; font-size: .82rem; color: var(--muted); }
 .field select {
   font: inherit; color: var(--text); background: var(--surface);
   padding: .5em .6em; border: 1px solid var(--border); border-radius: 10px; min-width: 140px;
 }
-.filters .btn { align-self: end; }
+.toolbar .btn { align-self: end; }
 
 
 /* ---------------- Grille de cartes ---------------- */
