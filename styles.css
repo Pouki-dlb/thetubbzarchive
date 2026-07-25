@@ -105,7 +105,7 @@ h1, h2, h3 { line-height: 1.2; }
   display: grid; place-items: center;
   font-size: 1.35rem; line-height: 1; font-weight: 700;
   color: var(--accent-ink); background: var(--surface);
-  border: 1px solid var(--border); box-shadow: var(--shadow);
+  border: 1px solid var(--border);
   cursor: pointer;
   opacity: 0; transform: translateY(10px); pointer-events: none;
   transition: opacity .2s ease, transform .2s ease, background .15s ease, border-color .15s ease;
@@ -328,7 +328,7 @@ code { background: var(--surface-2); padding: .1em .4em; border-radius: 6px; fon
   width: 100%; max-width: 520px; max-height: 85vh; overflow-y: auto;
   background: var(--surface); color: var(--text);
   border: 1px solid var(--border); border-radius: var(--radius);
-  box-shadow: var(--shadow); padding: 22px 24px 22px;
+  padding: 22px 24px 22px;
 }
 .modal-box h2 { margin: 0 0 14px; font-size: 1.4rem; }
 .modal-box p { margin: 0 0 10px; font-size: .95rem; }
