@@ -309,8 +309,12 @@
     bindCollectionFilter();
 
     function onFilterChange() { render(); saveView(); }
-    [elSearch, elCollection, elStatus].forEach(function (el) {
-      el.addEventListener("input", onFilterChange);
+    // Le champ texte n'écoute QUE "input" : "change" se déclenche aussi au blur, donc
+    // cliquer une carte re-rendrait la grille (change → render) et détruirait le lien
+    // sous le curseur entre mousedown et mouseup → le 1er clic ne navigue pas.
+    // Les <select> gardent "change" (ils ne détruisent rien sous le pointeur).
+    elSearch.addEventListener("input", onFilterChange);
+    [elCollection, elStatus].forEach(function (el) {
       el.addEventListener("change", onFilterChange);
     });
 
