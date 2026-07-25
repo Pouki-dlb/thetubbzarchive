@@ -149,6 +149,7 @@
       elGrid.innerHTML = list.map(cardHTML).join("");
     }
     elGrid.setAttribute("aria-busy", "false");
+    updateSearchPlaceholder();
   }
 
   /* ---------------------------------------------------------------- */
@@ -169,15 +170,19 @@
 
   // Placeholder dynamique de la recherche : compte les TUBBZ uniques (un par id, on
   // n'additionne pas les variantes) et les collections (collections) distinctes.
+  // Le décompte reflète les filtres collection + statut en cours (la recherche est
+  // vide quand le placeholder s'affiche, donc `matches` équivaut à ces deux filtres).
   // « TUBBZ » est un nom de marque invariable → pas de pluriel.
   function updateSearchPlaceholder() {
-    var tubbz = catalog.figurines.length;
+    var list = catalog.figurines.filter(matches);
+    var tubbz = list.length;
     var names = {};
-    catalog.figurines.forEach(function (f) { names[f.collection] = true; });
+    list.forEach(function (f) { names[f.collection] = true; });
     var collections = Object.keys(names).length;
-    elSearch.placeholder = "Search across " +
-      tubbz + " TUBBZ and " +
-      collections + (collections === 1 ? " collection" : " collections") + "…";
+    // Une seule collection concernée (ex. filtre sur une collection) → on n'affiche
+    // pas « and 1 collection », qui n'apporte rien.
+    elSearch.placeholder = "Search across " + tubbz + " TUBBZ" +
+      (collections > 1 ? " and " + collections + " collections" : "") + "…";
   }
 
   /* ---------------------------------------------------------------- */
@@ -385,7 +390,6 @@
       ready = true;
       checkStorage();
       populateCollections();
-      updateSearchPlaceholder();
       bindEvents();
       // Paramètres d'URL :
       //  - "?home"          (logo)     → accueil propre : on efface l'état mémorisé.
