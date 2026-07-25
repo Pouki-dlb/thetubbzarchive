@@ -690,6 +690,7 @@ window.TUBBZ_DATA = {
       "franchise": "DC Comics",
       "number": "1",
       "releaseYear": "2020",
+      "description": "POW! BOOM! BLAM! QUACK!\n\nThe legendary Batman joins the DC Comics TUBBZ collection. It seems the Joker's gas had an unexpected effect: the Dark Knight has been transformed into a collector's duck!\n\nWith his iconic cape, instantly recognizable mask, and crime-fighting attitude ready to track down Gotham's criminals, this figure perfectly captures the spirit of DC's cult hero.",
       "variants": [
         {
           "size": "classic",
@@ -698,6 +699,10 @@ window.TUBBZ_DATA = {
         {
           "size": "classic",
           "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
         }
       ]
     },
@@ -707,6 +712,7 @@ window.TUBBZ_DATA = {
       "franchise": "DC Comics",
       "number": "1",
       "releaseYear": "2021",
+      "description": "The Amazon warrior joins the pond.\n\nDiscover Wonder Woman, the legendary heroine from DC Comics and iconic member of the Justice League. Armed with her Lasso of Truth, indestructible bracelets, and magical tiara, Diana Prince remains a heroic force even in collectible cosplay duck form.\n\nWith her iconic armor, warrior charisma, and status as a symbol of courage, this figurine perfectly captures the spirit of one of pop culture's greatest heroines.",
       "variants": [
         {
           "size": "classic",
@@ -715,6 +721,10 @@ window.TUBBZ_DATA = {
         {
           "size": "classic",
           "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
         }
       ]
     },
@@ -724,6 +734,7 @@ window.TUBBZ_DATA = {
       "franchise": "DC Comics",
       "number": "2",
       "releaseYear": "2021",
+      "description": "The king of the oceans joins the pond.\n\nDiscover Aquaman, the iconic DC Comics superhero. Armed with his trident and master of the oceans, Aquaman remains a formidable hero… even when transformed into a collector cosplay duck.\n\nWith his iconic armor, trident, and natural connection to water, this figurine perfectly captures the spirit of the ruler of Atlantis.",
       "variants": [
         {
           "size": "classic",
@@ -737,6 +748,7 @@ window.TUBBZ_DATA = {
       "franchise": "DC Comics",
       "number": "2",
       "releaseYear": "2020",
+      "description": "POW! BOOM! BLAM! QUACK!\n\nChaos splashes into the pond with The Joker, Batman's most unpredictable foe.\n\nAlways ready to sow panic in Gotham, the Clown Prince of Crime is cooking up a completely absurd plan this time: transforming the city's waters into a playground for evil ducks.",
       "variants": [
         {
           "size": "classic",
@@ -745,17 +757,31 @@ window.TUBBZ_DATA = {
         {
           "size": "classic",
           "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
         }
       ]
     },
     {
       "id": "dc-comics-batman-the-dark-knight",
-      "name": "Batman (The Dark Knight",
+      "name": "Batman (The Dark Knight)",
       "franchise": "DC Comics",
       "number": "3",
+      "releaseYear": "2025",
+      "description": "The Joker can't win. Gotham needs its true hero—enter The Dark Knight TUBBZ ! This stunning collectible captures Batman's iconic look from The Dark Knight and features detailed armor with a flowing cape and the unmistakable Bat-symbol on his chest. From his steely expression to the striking cowl, every inch of this highly detailed duck captures the gritty essence of Gotham's silent protector. Perfect for Batman fans and TUBBZ collectors alike, this duck is everything Gotham needs and comes with a branded tub featuring The Dark Knight logo. A one-of-a-kind tribute to one of DC's most legendary heroes!",
       "variants": [
         {
           "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
           "packaging": "first-edition"
         }
       ]
@@ -766,6 +792,7 @@ window.TUBBZ_DATA = {
       "franchise": "DC Comics",
       "number": "3",
       "releaseYear": "2020",
+      "description": "POW! BOOM! BLAM! QUACK!\n\nGotham's most unpredictable criminal is joining the DC Comics TUBBZ collection! Discover Harley Quinn. Escaped from Arkham Asylum, Harley is ready to wreak havoc in Gotham's ponds... in an irresistible cosplay duck form.\n\nWith her iconic costume, mischievous smile, and completely unhinged energy, this figurine perfectly captures the character's spirit. Whether you're a Batman fan or an admirer of DC Comics' most famous supervillains, Harley Quinn deserves a prominent place in your collection.",
       "variants": [
         {
           "size": "classic",
@@ -774,6 +801,10 @@ window.TUBBZ_DATA = {
         {
           "size": "classic",
           "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
         }
       ]
     },
@@ -782,9 +813,19 @@ window.TUBBZ_DATA = {
       "name": "Joker (The Dark Knight)",
       "franchise": "DC Comics",
       "number": "4",
+      "releaseYear": "2025",
+      "description": "Why so serious? The Joker TUBBZ brings all the chaotic charm of The Dark Knight's legendary villain to the duck pond! With his green hair, bright clown makeup, and unsettling smile, this highly detailed collectible perfectly captures the Joker's chaotic energy. Standing 3.54 inches tall and dressed in his iconic purple suit and holding a playing card with his signature emblem, this duck is no monster, he's just ahead of his time!",
       "variants": [
         {
           "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
           "packaging": "first-edition"
         }
       ]
@@ -795,6 +836,7 @@ window.TUBBZ_DATA = {
       "franchise": "DC Comics",
       "number": "4",
       "releaseYear": "2020",
+      "description": "POW! BOOM! BLAM! QUACK!\n\nBatman's faithful sidekick joins the DC Comics TUBBZ. Even transformed into a cosplay duck, Robin is ready to defend Gotham City alongside the Dark Knight against the Joker, Harley Quinn, and all the city's supervillains.\n\nWith his iconic costume, cape, and mask, Robin retains all the courage and agility that make him one of the most popular heroes in the DC Comics universe.",
       "variants": [
         {
           "size": "classic",
@@ -808,6 +850,7 @@ window.TUBBZ_DATA = {
       "franchise": "DC Comics",
       "number": "5",
       "releaseYear": "2022",
+      "description": "'POW! BOOM! BLAM! QUACK!'\n\nA duality-obsessed criminal mastermind and former close ally of Batman, Two-Face is a force to be reckoned with and has become one of the Dark Knight's greatest enemies!",
       "variants": [
         {
           "size": "classic",
@@ -821,6 +864,7 @@ window.TUBBZ_DATA = {
       "franchise": "DC Comics",
       "number": "6",
       "releaseYear": "2022",
+      "description": "Someone must have forgotten some radioactive catnip because Selina Kyle, aka Catwoman, has been transformed into a quacking duck! Beware, she's still just as capable of taking down any enemies who come her way!",
       "variants": [
         {
           "size": "classic",
@@ -834,6 +878,7 @@ window.TUBBZ_DATA = {
       "franchise": "DC Comics",
       "number": "7",
       "releaseYear": "2022",
+      "description": "Faster than a speeding bullet... even as a duck.\n\nThe legendary Superman joins the TUBBZ collection, ready to protect the pond just as he protects Metropolis.\nStriking an iconic flying pose, with his red cape and \"S\" emblem, this figure captures all the power and hope of DC Comics' greatest superhero.\n\nHeroic, timeless, and instantly recognizable, this collectible perfectly encapsulates the essence of Superman with the quirky twist unique to TUBBZ.",
       "variants": [
         {
           "size": "classic",
@@ -843,6 +888,10 @@ window.TUBBZ_DATA = {
         {
           "size": "classic",
           "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
         }
       ]
     },
@@ -851,10 +900,16 @@ window.TUBBZ_DATA = {
       "name": "Green Lantern",
       "franchise": "DC Comics",
       "number": "8",
+      "releaseYear": "2024",
+      "description": "Green Lantern joins legendary DC Comics heroes Batman, Superman, and Wonder Woman as a cosplay duck in the TUBBZ pond! This officially licensed TUBBZ perfectly embodies the spirit of one of the most beloved Green Lanterns, Hal Jordan. Power Battery in hand and wielding a power ring, he's ready for action, ensuring no evil escapes his grasp!",
       "variants": [
         {
           "size": "classic",
           "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
         }
       ]
     },
@@ -863,10 +918,16 @@ window.TUBBZ_DATA = {
       "name": "The Flash",
       "franchise": "DC Comics",
       "number": "9",
+      "releaseYear": "2024",
+      "description": "Lightning has struck twice! Barry Allen, aka The Flash, is now aka TUBBZ Collectible. Don't miss out, he'll be gone in a flash!",
       "variants": [
         {
           "size": "classic",
           "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
         }
       ]
     },
@@ -875,6 +936,46 @@ window.TUBBZ_DATA = {
       "name": "Martian Manhunter",
       "franchise": "DC Comics",
       "number": "10",
+      "releaseYear": "2024",
+      "description": "I'll defend the duck pond! The superhero Martian Manhunter bursts into the TUBBZ collection.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "dc-comics-batman-diy-edition",
+      "name": "Batman (DIY Edition)",
+      "franchise": "DC Comics",
+      "releaseYear": "2024",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "dc-comics-superman-diy-edition",
+      "name": "Superman (DIY Edition)",
+      "franchise": "DC Comics",
+      "releaseYear": "2024",
+      "description": "This looks like a paint job for Superman! Change Superman's pants colour and paint this DIY TUBBZ any colour you wish.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "dc-comics-the-joker-diy-edition",
+      "name": "The Joker (DIY Edition)",
+      "franchise": "DC Comics",
+      "releaseYear": "2024",
+      "description": "The Joker's purple suit is looking a little tired, why not paint him a new one? DIY TUBBZ lets you create your own custom TUBBZ Joker, there are no rules!",
       "variants": [
         {
           "size": "classic",
@@ -1155,6 +1256,8 @@ window.TUBBZ_DATA = {
       "name": "Frances ‘Baby’ Houseman",
       "franchise": "Dirty Dancing",
       "number": "1",
+      "releaseYear": "2024",
+      "description": "Baby is about to have the time of her life as a new TUBBZ cosplay collectible. She’s carrying a scented watermelon, of course!",
       "variants": [
         {
           "size": "classic",
@@ -1167,6 +1270,8 @@ window.TUBBZ_DATA = {
       "name": "Johnny Castle",
       "franchise": "Dirty Dancing",
       "number": "2",
+      "releaseYear": "2024",
+      "description": "Johnny sways his hips and brings the Pachanga to the duck pond as he re-dresses into a duck form the TUBBZ way.",
       "variants": [
         {
           "size": "classic",
@@ -1519,6 +1624,7 @@ window.TUBBZ_DATA = {
       "franchise": "Friends",
       "number": "1",
       "releaseYear": "2020",
+      "description": "To Central Perk… but as a duck.\n\nMeet Rachel Green, the iconic character from Friends. On her way to meet the gang at Central Perk, Rachel finds herself in an unexpected situation: transformed into a collectible cosplay duck.\n\nWith her iconic style, New York charm, and legendary connection to Ross, this figurine pays homage to one of the series' most popular characters.",
       "variants": [
         {
           "size": "classic",
@@ -1527,6 +1633,10 @@ window.TUBBZ_DATA = {
         {
           "size": "classic",
           "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
         }
       ]
     },
@@ -1536,7 +1646,7 @@ window.TUBBZ_DATA = {
       "franchise": "Friends",
       "number": "2",
       "releaseYear": "2020",
-      "description": "Double",
+      "description": "DoubleHow you doin'… in duck form?\n\nFind Joey Tribbiani, the charming and food-loving actor from Friends. Always ready to flirt, eat pizza, or deliver a classic line, Joey retains all his New York charm even as a cosplay duck.\n\nWith his recognizable style and endearing humor, this figurine pays tribute to one of the most popular characters in the series.",
       "variants": [
         {
           "size": "classic",
@@ -1545,6 +1655,10 @@ window.TUBBZ_DATA = {
         {
           "size": "classic",
           "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
         }
       ]
     },
@@ -1554,6 +1668,7 @@ window.TUBBZ_DATA = {
       "franchise": "Friends",
       "number": "3",
       "releaseYear": "2020",
+      "description": "Pivot! Even as a duck, Ross keeps his legendary charm.\n\nFind Ross Geller, Friends' most iconic paleontologist. Dinosaur expert, master of awkward situations, and undisputed \"pivot\" master, Ross joins the collection as a collector cosplay duck.\n\nWith his recognizable style and clumsy humor, this figurine pays tribute to one of the series' most memorable characters.",
       "variants": [
         {
           "size": "classic",
@@ -1562,6 +1677,10 @@ window.TUBBZ_DATA = {
         {
           "size": "classic",
           "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
         }
       ]
     },
@@ -1571,6 +1690,7 @@ window.TUBBZ_DATA = {
       "franchise": "Friends",
       "number": "4",
       "releaseYear": "2020",
+      "description": "Smelly Cat arrives in the pond.\n\nDiscover Phoebe Buffay, the most eccentric and endearing member of the Friends gang. A masseuse, musician, tree-lover, and queen of improbable songs, Phoebe joins the collection as a collectible cosplay duck.\n\nWith her bohemian style, unique energy, and cult connection to Central Perk, this figurine pays homage to one of the series' most original characters.",
       "variants": [
         {
           "size": "classic",
@@ -1579,6 +1699,10 @@ window.TUBBZ_DATA = {
         {
           "size": "classic",
           "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
         }
       ]
     },
@@ -1588,6 +1712,7 @@ window.TUBBZ_DATA = {
       "franchise": "Friends",
       "number": "5",
       "releaseYear": "2020",
+      "description": "Could it BE any more collectible?\n\nMeet Chandler Bing, the king of sarcasm from Friends. Always ready with a witty remark, Chandler retains all his ironic charm even in cosplay duck form.\n\nWith his recognizable style and cult humor, this figurine pays tribute to one of the series' most beloved characters.",
       "variants": [
         {
           "size": "classic",
@@ -1596,6 +1721,10 @@ window.TUBBZ_DATA = {
         {
           "size": "classic",
           "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
         }
       ]
     },
@@ -1605,6 +1734,7 @@ window.TUBBZ_DATA = {
       "franchise": "Friends",
       "number": "6",
       "releaseYear": "2020",
+      "description": "Monica-level clean is coming to the pond.\n\nDiscover Monica Geller, the most organized of the Friends gang. A true pillar of the group, an admitted perfectionist, and Chandler's \"lobster,\" Monica remains true to herself even when transformed into a collectible cosplay duck.\n\nWith her recognizable style, competitive energy, and legendary tidiness, this figurine pays tribute to one of the series' most endearing characters.",
       "variants": [
         {
           "size": "classic",
@@ -1613,6 +1743,10 @@ window.TUBBZ_DATA = {
         {
           "size": "classic",
           "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
         }
       ]
     },
@@ -2677,6 +2811,7 @@ window.TUBBZ_DATA = {
       "franchise": "Lord of the Rings",
       "number": "1",
       "releaseYear": "2019",
+      "description": "One bath to rule them all…\n\nDiscover Frodo Baggins, the famous bearer of the One Ring. The effects of the Ring seem to have taken their toll on poor Frodo... he's been transformed into a collectible cosplay duck.\n\nWith his hobbit-like appearance, his quiet courage, and his central role in the quest to Mordor, this figurine perfectly captures the spirit of Middle-earth's most determined hero.",
       "variants": [
         {
           "size": "classic",
@@ -2685,6 +2820,10 @@ window.TUBBZ_DATA = {
         {
           "size": "classic",
           "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
         }
       ]
     },
@@ -2694,6 +2833,7 @@ window.TUBBZ_DATA = {
       "franchise": "Lord of the Rings",
       "number": "2",
       "releaseYear": "2019",
+      "description": "One bath to rule them all…\n\nDiscover Gandalf the Grey, Middle-earth's famous wizard. The legendary guide of the Fellowship of the Ring trades his staff for bread and joins the pond as a collectible cosplay duck.\n\nWith his grey robe, wise demeanor, and mythical aura, this figurine perfectly captures the spirit of one of the most iconic characters from The Lord of the Rings.",
       "variants": [
         {
           "size": "classic",
@@ -2702,6 +2842,10 @@ window.TUBBZ_DATA = {
         {
           "size": "classic",
           "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
         }
       ]
     },
@@ -3215,10 +3359,20 @@ window.TUBBZ_DATA = {
       "name": "Steve",
       "franchise": "Minecraft",
       "number": "1",
+      "releaseYear": "2024",
+      "description": "Steve is leaving the world of Minecraft and heading to the world of TUBBZ cosplay rubber ducks. He's a true legend and he fits right in.",
       "variants": [
         {
           "size": "classic",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
         }
       ]
     },
@@ -3227,9 +3381,19 @@ window.TUBBZ_DATA = {
       "name": "Creeper",
       "franchise": "Minecraft",
       "number": "2",
+      "releaseYear": "2024",
+      "description": "Minecraft's iconic monster has been transformed into a  TUBBZ Collectible. You can get closer, this duck version won't explode.",
       "variants": [
         {
           "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
           "packaging": "first-edition"
         }
       ]
@@ -3239,9 +3403,19 @@ window.TUBBZ_DATA = {
       "name": "Zombie",
       "franchise": "Minecraft",
       "number": "3",
+      "releaseYear": "2025",
+      "description": "Aim for and add a spooky touch to your collection with the Skeleton TUBBZ! This iconic Minecraft mob has been transformed into a cosplay duck, complete with its signature pixelated bow and eerie, hollow gaze. Whether it's lurking in the shadows or proudly displayed on your shelf, this quacking reinvention of the Skeleton is a must-have for any Minecraft fan.",
       "variants": [
         {
           "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
           "packaging": "first-edition"
         }
       ]
@@ -3251,9 +3425,19 @@ window.TUBBZ_DATA = {
       "name": "Skeleton",
       "franchise": "Minecraft",
       "number": "4",
+      "releaseYear": "2025",
+      "description": "Aim for and add a spooky touch to your collection with the Skeleton TUBBZ! This iconic Minecraft mob has been transformed into a cosplay duck, complete with its signature pixelated bow and eerie, hollow gaze. Whether it's lurking in the shadows or proudly displayed on your shelf, this quacking reinvention of the Skeleton is a must-have for any Minecraft fan.",
       "variants": [
         {
           "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
           "packaging": "first-edition"
         }
       ]
@@ -4777,6 +4961,228 @@ window.TUBBZ_DATA = {
       ]
     },
     {
+      "id": "teenage-mutant-ninja-turtles-donatello",
+      "name": "Donatello",
+      "franchise": "Teenage Mutant Ninja Turtles",
+      "number": "1",
+      "releaseYear": "2023",
+      "description": "Donatello is super smart, so how did he end up becoming a cosplay duck? Because it's super cool, that's why, and he rocks this new look. Purple is his color, so the bandana's in place and he's gripping his bo staff. Let's go!\n\nTeenage Mutant Ninja fans will love these original collectibles. All the clever details mean you'll instantly recognize Leonardo before you can even say \"cowabunga.\" TUBBZ is a fantastic addition to any collection.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "teenage-mutant-ninja-turtles-raphael",
+      "name": "Raphael",
+      "franchise": "Teenage Mutant Ninja Turtles",
+      "number": "2",
+      "releaseYear": "2023",
+      "description": "Raphael looks the same but different, what's going on? Here's a confused and impetuous cosplay duck. Oh, wait, he loves this new look. Red bandana, you see? Twin sai ready, okay? Ready to make a splash.\n\nTeenage Mutant Ninja fans will love these quirky collectibles. All the clever details mean you'll instantly recognize Michelangelo before you can say \"cowabunga.\" TUBBZ is a fantastic addition to any collection.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "teenage-mutant-ninja-turtles-leonardo",
+      "name": "Leonardo",
+      "franchise": "Teenage Mutant Ninja Turtles",
+      "number": "3",
+      "releaseYear": "2023",
+      "description": "Leonardo fancies himself the leader of the Teenage Mutant Ninja Turtles , and nothing changes when he enters the pond dressed as a cosplaying duck. You'll see him sporting his blue bandana and wielding twin katana swords; those other TUBBZ better not cross his path.\n\nTeenage Mutant Ninja fans will love these original collectibles. All the clever details mean you'll instantly recognize Leonardo before you can even say \"cowabunga.\" TUBBZ is a fantastic addition to any collection.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "teenage-mutant-ninja-turtles-michelangelo",
+      "name": "Michelangelo",
+      "franchise": "Teenage Mutant Ninja Turtles",
+      "number": "4",
+      "releaseYear": "2023",
+      "description": "Michelangelo finds himself as a cosplaying duck, his biggest fear? There had better be pizza in this duck pond or he's going to lose it! The most unlike himself because he is normally super chill, but pizza is pizza. His orange bandana is firmly in place and he has his nunchaku close at hand if he needs it.\n\nFans of Teenage Mutant Ninja will love these quirky collectibles. All the clever details mean you’ll instantly recognise Michelangelo before you can say \"cowabunga\". TUBBZ is a fantastic addition to any collection.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "teenage-mutant-ninja-turtles-splinter",
+      "name": "Splinter",
+      "franchise": "Teenage Mutant Ninja Turtles",
+      "number": "5",
+      "description": "Splinter, sensei and father figure to the Teenage Mutant Ninja Turtles, is now a cosplaying duck and ready to impart his valuable advice and teachings to the rest of the duck pond! This officially licensed TUBBZ captures Splinter’s serene expression, traditional robes, and wise demeanour. At 9cm tall, he’s the perfect size for display on your shelf, desk, or anywhere else you want to honour the teachings of the Ninja Turtles’ mentor.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "teenage-mutant-ninja-turtles-shredder",
+      "name": "Shredder",
+      "franchise": "Teenage Mutant Ninja Turtles",
+      "number": "6",
+      "description": "The arch-nemesis of the heroic turtles, Shredder, has joined the duck pond! This officially licensed TUBBZ captures Shredder's menacing presence, complete with his iconic armour, sharp blades, and intense gaze. Standing 9cm tall, it's the perfect size to display on your shelf, desk, or wherever you choose to exhibit your TMNT fandom.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "teenage-mutant-ninja-turtles-bebop",
+      "name": "Bebop",
+      "franchise": "Teenage Mutant Ninja Turtles",
+      "number": "7",
+      "description": "Get ready to unleash your inner mutant with the Bebop TUBBZ ! This officially licensed Teenage Mutant Ninja Turtles collectible transforms the punk-rock warthog villain into an adorable rebel duck, sporting his signature purple mohawk, sunglasses, nose ring, and fighting attitude.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "teenage-mutant-ninja-turtles-rocksteady",
+      "name": "Rocksteady",
+      "franchise": "Teenage Mutant Ninja Turtles",
+      "number": "8",
+      "description": "Rock into action with the Rocksteady TUBBZ ! This muscular duck, complete with tank top and helmet, is here to wreak havoc on your Teenage Mutant Ninja Turtles (TMNT) collection. Officially licensed and meticulously detailed, this collectible cosplay duck embodies Rocksteady 's undeniable snout, brute strength, and charm.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "teenage-mutant-ninja-turtles-leonardo-comic-style",
+      "name": "Leonardo Comic Style",
+      "franchise": "Teenage Mutant Ninja Turtles",
+      "number": "9",
+      "releaseYear": "2026",
+      "description": "The leader of the Ninja Turtles, just like in the original comics.\n\nWith its contrasting black and white design, comic book inking details, and iconic red bandana, this version pays tribute to the raw, underground style of the cult TMNT comics.\n\nReimagined as a collector's cosplay duck, Leonardo retains all the attitude of the Ninja Turtles' leader, ready to defend his brothers with his famous dual katanas.\n\nThe drawn line effects on his shell and gear perfectly recreate the aesthetic of the original comic books, offering a unique collectible for TMNT and comic culture fans.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "teenage-mutant-ninja-turtles-donatello-diy-edition",
+      "name": "Donatello (DIY Edition)",
+      "franchise": "Teenage Mutant Ninja Turtles",
+      "releaseYear": "2024",
+      "description": "Who says all turtles have to be green? Donatello is a DIY TUBBZ, you can paint him any color you want.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "teenage-mutant-ninja-turtles-leonardo-diy-edition",
+      "name": "Leonardo (DIY Edition)",
+      "franchise": "Teenage Mutant Ninja Turtles",
+      "releaseYear": "2024",
+      "description": "Make Leonardo stand out from the TUBBZ crowd, go crazy with color! DIY TUBBZ lets you add your own twist to your favorite characters.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "teenage-mutant-ninja-turtles-michelangelo-diy-edition",
+      "name": "Michelangelo (DIY Edition)",
+      "franchise": "Teenage Mutant Ninja Turtles",
+      "releaseYear": "2024",
+      "description": "Michelangelo is more than happy to let you go wild and paint him in your own style. Well, he's named after an artist.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "teenage-mutant-ninja-turtles-raphael-diy-edition",
+      "name": "Raphael (DIY Edition)",
+      "franchise": "Teenage Mutant Ninja Turtles",
+      "releaseYear": "2024",
+      "description": "Raphael wears a red mask. As a DIY TUBBZ, you can paint his mask any color you want. Do it, you'll baffle people, minds will be blown!",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
       "id": "terminator-terminator",
       "name": "Terminator",
       "franchise": "Terminator",
@@ -4838,6 +5244,8 @@ window.TUBBZ_DATA = {
       "name": "Katniss Everdeen",
       "franchise": "The Hunger Games",
       "number": "1",
+      "releaseYear": "2024",
+      "description": "I volunteer….as a cosplaying duck! Katniss Evergreen leaves District 12 for the duck pond as she gets a TUBBZ makeover.",
       "variants": [
         {
           "size": "classic",
@@ -4850,6 +5258,8 @@ window.TUBBZ_DATA = {
       "name": "Peeta Mellark",
       "franchise": "The Hunger Games",
       "number": "2",
+      "releaseYear": "2024",
+      "description": "Peeta has had enough of the Capitol's game and he puts Plan B into action, becoming a collectible TUBBZ rubber duck!",
       "variants": [
         {
           "size": "classic",
