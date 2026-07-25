@@ -16,7 +16,6 @@
   --partial: #ee8804;
   --none: #97a2b0;
   --danger: #c0392b;
-  --shadow: 0 1px 3px rgba(20, 30, 45, .08), 0 6px 20px rgba(20, 30, 45, .06);
   --radius: 14px;
   color-scheme: light;
 }
@@ -40,7 +39,6 @@
   --partial: #ee8804;
   --none: #6b7787;
   --danger: #e15a4b;
-  --shadow: 0 1px 3px rgba(0, 0, 0, .35), 0 8px 24px rgba(0, 0, 0, .3);
   color-scheme: dark;
 }
 
