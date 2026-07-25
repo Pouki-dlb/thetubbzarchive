@@ -202,7 +202,6 @@ h1, h2, h3 { line-height: 1.2; }
   background: var(--surface); border: 1px solid var(--border);
   border-radius: var(--radius); overflow: hidden;
   text-decoration: none; color: inherit;
-  box-shadow: var(--shadow);
   transition: transform .1s ease, border-color .15s ease;
 }
 .card:hover { transform: translateY(-3px); border-color: var(--accent); }
@@ -258,7 +257,7 @@ h1, h2, h3 { line-height: 1.2; }
 .duck-hero {
   display: grid; grid-template-columns: minmax(0, 320px) 1fr; gap: 24px;
   background: var(--surface); border: 1px solid var(--border);
-  border-radius: var(--radius); padding: 20px; box-shadow: var(--shadow);
+  border-radius: var(--radius); padding: 20px;
 }
 .duck-hero-figure { display: flex; flex-direction: column; gap: 10px; }
 .duck-hero-media { background: var(--surface-2); border-radius: 12px; aspect-ratio: 1/1; display: grid; place-items: center; }
@@ -298,7 +297,7 @@ h1, h2, h3 { line-height: 1.2; }
 .variants { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; }
 .variant {
   background: var(--surface); border: 1px solid var(--border);
-  border-radius: 12px; overflow: hidden; box-shadow: var(--shadow);
+  border-radius: 12px; overflow: hidden;
   display: flex; flex-direction: column;
 }
 .variant.is-owned { border-color: var(--ok); box-shadow: 0 0 0 2px color-mix(in srgb, var(--ok) 40%, transparent); }
