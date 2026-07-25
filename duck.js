@@ -15,9 +15,9 @@
     root.setAttribute("aria-busy", "false");
     root.innerHTML =
       '<div class="error">' +
-        '<p><strong>Figurine not found.</strong></p>' +
+        '<p><strong>TUBBZ not found.</strong></p>' +
         (id ? '<p class="muted">No TUBBZ with the id "' + T.esc(id) + '".</p>' : '') +
-        '<p><a class="btn" href="index.html">← Back to catalog</a></p>' +
+        '<p><a class="btn" href="index.html">← Back to home</a></p>' +
       '</div>';
   }
 

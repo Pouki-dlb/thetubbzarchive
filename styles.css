@@ -193,6 +193,9 @@ h1, h2, h3 { line-height: 1.2; }
 }
 .loading, .empty, .error { grid-column: 1 / -1; padding: 30px; text-align: center; color: var(--muted); }
 .error { text-align: left; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); }
+/* Sur duck.html, l'encadré n'est pas dans la grille : on le décale sous le header,
+   au même niveau que la barre de filtre de l'index (toolbar : margin-top 18px). */
+[data-page="duck"] .loading, [data-page="duck"] .error { margin-top: 18px; }
 
 .card {
   display: flex; flex-direction: column;
