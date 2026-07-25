@@ -141,7 +141,7 @@
           '<p class="card-franchise">' +
             '<span class="card-franchise-link text-link" role="link" tabindex="0" ' +
               'data-franchise="' + T.esc(fig.franchise) + '" ' +
-              'title="Show all ' + T.esc(fig.franchise) + ' ducks">' +
+              'title="Show all ' + T.esc(fig.franchise) + ' TUBBZ">' +
               T.esc(fig.franchise) +
             '</span>' +
           '</p>' +
@@ -176,6 +176,19 @@
         opt.textContent = name;
         elFranchise.appendChild(opt);
       });
+  }
+
+  // Placeholder dynamique de la recherche : compte les TUBBZ uniques (un par id, on
+  // n'additionne pas les variantes) et les collections (franchises) distinctes.
+  // « TUBBZ » est un nom de marque invariable → pas de pluriel.
+  function updateSearchPlaceholder() {
+    var tubbz = catalog.figurines.length;
+    var names = {};
+    catalog.figurines.forEach(function (f) { names[f.franchise] = true; });
+    var collections = Object.keys(names).length;
+    elSearch.placeholder = "Search across " +
+      tubbz + " TUBBZ and " +
+      collections + (collections === 1 ? " collection" : " collections") + "…";
   }
 
   /* ---------------------------------------------------------------- */
@@ -381,6 +394,7 @@
       ready = true;
       checkStorage();
       populateFranchises();
+      updateSearchPlaceholder();
       bindEvents();
       // Paramètres d'URL :
       //  - "?home"          (logo)     → accueil propre : on efface l'état mémorisé.

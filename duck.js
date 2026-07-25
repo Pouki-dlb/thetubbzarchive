@@ -16,7 +16,7 @@
     root.innerHTML =
       '<div class="error">' +
         '<p><strong>Figurine not found.</strong></p>' +
-        (id ? '<p class="muted">No duck with the id "' + T.esc(id) + '".</p>' : '') +
+        (id ? '<p class="muted">No TUBBZ with the id "' + T.esc(id) + '".</p>' : '') +
         '<p><a class="btn" href="index.html">← Back to catalog</a></p>' +
       '</div>';
   }
@@ -85,7 +85,7 @@
                 '<p class="duck-franchise">' +
                   '<a class="franchise-link text-link" href="index.html?franchise=' +
                     encodeURIComponent(fig.franchise) + '" ' +
-                    'title="Show all ' + T.esc(fig.franchise) + ' ducks">' +
+                    'title="Show all ' + T.esc(fig.franchise) + ' TUBBZ">' +
                     T.esc(fig.franchise) +
                   '</a>' +
                 '</p>' +
