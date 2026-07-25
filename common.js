@@ -287,8 +287,15 @@ window.Tubbz = (function () {
     var footer = document.getElementById("site-footer");
     if (footer) {
       footer.innerHTML =
-        '<div class="wrap"><p class="muted">Tubbz™ is a trademark of Numskull Designs. ' +
-        'This project is an unofficial collection tool.</p></div>';
+        '<div class="wrap">' +
+          '<p class="muted"><strong>This is an unofficial, non-commercial fan project and community archive.</strong> ' +
+          'It is not affiliated with, endorsed by, sponsored by, or approved by Rubber Road Ltd, Numskull, or ' +
+          'Yellow Bulldog Ltd.</p>' +
+          '<p class="muted">TUBBZ® is a registered trademark of Rubber Road Ltd (marketed under the Numskull brand; ' +
+          'tubbz.com is operated by Yellow Bulldog Ltd). All product names, character names, likenesses, and images ' +
+          'are the property of their respective owners and are used here for identification and informational ' +
+          'purposes only. No ownership of, or affiliation with, these trademarks or copyrights is claimed.</p>' +
+        '</div>';
     }
   }
 
