@@ -144,7 +144,7 @@
     var list = catalog.figurines.filter(matches);
 
     if (list.length === 0) {
-      elGrid.innerHTML = '<p class="empty">No figurine matches your search.</p>';
+      elGrid.innerHTML = '<p class="empty">No TUBBZ matches your search.</p>';
     } else {
       elGrid.innerHTML = list.map(cardHTML).join("");
     }
