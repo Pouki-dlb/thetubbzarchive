@@ -34,7 +34,7 @@ window.TUBBZ_DATA = {
       "collection": "2001 Space Odyssey",
       "number": "1",
       "releaseYear": "2024",
-      "description": "“Open the pod bay doors, HAL!” - Dr. David Bowman has been transformed into a quacking TUBBZ collectible toy! Dressed in his signature orange space suit and helmet, this intrepid astronaut is ready to venture beyond the stars and into your collection. With meticulous detailing and a collector’s presentation box, this officially licensed 2001: A Space Odyssey TUBBZ is a must-have for sci-fi fans and collectors alike.",
+      "description": "Instead of a moon landing, David Bowman has landed in the TUBBZ collection! He's had a rough journey, being alone with only a crazy computer for company and is a little overdressed in his space suit, but you can't be too careful! A must-have for Kubrick fans.",
       "variants": [
         {
           "size": "classic",
@@ -2520,9 +2520,19 @@ window.TUBBZ_DATA = {
       "name": "Yuji Itadori",
       "collection": "Jujutsu Kaisën",
       "number": "1",
+      "releaseYear": "2025",
+      "description": "Join the fight against curses and chaos with the official Jujutsu Kaisen collectible rubber duck \"Yuji Itadori\"! Transformed into an adorable duck, but still as determined as ever, Yuji proudly sports his iconic Jujutsu High School uniform and signature red hoodie, ready to exorcise evil spirits or relax with his favorite snacks. Whether you're a fan of epic battles or Yuji's endearing personality, this original figure is the perfect blend of charm and intensity.",
       "variants": [
         {
           "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
           "packaging": "first-edition"
         }
       ]
@@ -2532,10 +2542,16 @@ window.TUBBZ_DATA = {
       "name": "Satoru Gojo",
       "collection": "Jujutsu Kaisën",
       "number": "2",
+      "releaseYear": "2025",
+      "description": "Dive into the endless world of sorcery with the official Jujutsu Kaisen \"Satoru Gojo\" Cosplay Duck TUBBZ! Transformed into a duck, but still as cool as ever, Gojo sports his iconic blindfold and stylish Jujutsu High uniform, ready to unleash his cursed technique or just chill out like the cool sensei he is. Whether you're a fan of his overpowered fights or his carefree charm, this collectible perfectly blends Gojo's charisma with the playful spirit of TUBBZ.",
       "variants": [
         {
           "size": "classic",
           "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
         }
       ]
     },
