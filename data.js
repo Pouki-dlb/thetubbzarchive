@@ -3337,6 +3337,24 @@ window.TUBBZ_DATA = {
       ]
     },
     {
+      "id": "m3gan-m3gan",
+      "name": "M3gan",
+      "collection": "M3gan",
+      "number": "1",
+      "releaseYear": "2025",
+      "description": "She's smart. She's stylish. She's… terrifying. M3GAN makes her debut at TUBBZ in all her first-edition glory, sporting that icy stare and killer confidence that fans know so well. Whether she's protecting her mate or simply spreading terror, this collectible figure captures the perfect balance of unsettling charm and high-tech horror.\n\nYou saw her dance? Now admire her haunting your shelf. A must-have for horror fans, figurine collectors, and anyone who loves their icons with glitchy smiles and deadly stares.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
       "id": "metal-gear-solid-solid-snake",
       "name": "Solid Snake",
       "collection": "Metal Gear Solid",
