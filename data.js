@@ -1619,6 +1619,152 @@ window.TUBBZ_DATA = {
       ]
     },
     {
+      "id": "five-nights-at-freddys-freddy",
+      "name": "Freddy",
+      "collection": "Five Nights at Freddy's",
+      "number": "1",
+      "releaseYear": "2024",
+      "description": "Meet Freddy Duck, microphone in hand, wearing a bow tie and bowler hat, he's nailing the cosplay duck look.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "five-nights-at-freddys-bonnie",
+      "name": "Bonnie",
+      "collection": "Five Nights at Freddy's",
+      "number": "2",
+      "releaseYear": "2024",
+      "description": "Bonnie tries his luck as a cosplaying duck and takes his guitar with him on his first night of duck adventures.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "five-nights-at-freddys-chica",
+      "name": "Chica",
+      "collection": "Five Nights at Freddy's",
+      "number": "3",
+      "releaseYear": "2024",
+      "description": "Don’t mistake us with your new duck cosplay Chica look – the cupcake, t-shirt, and purple eyes are a distinctive sign. She will look epic in any collection.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "five-nights-at-freddys-foxy",
+      "name": "Foxy",
+      "collection": "Five Nights at Freddy's",
+      "number": "4",
+      "releaseYear": "2024",
+      "description": "Check out all the details that make this cosplay duck an amazing replica of Foxy… exposed endoskeleton, hook for a right hand and an eye patch.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "five-nights-at-freddys-circus-baby",
+      "name": "Circus Baby",
+      "collection": "Five Nights at Freddy's",
+      "number": "5",
+      "releaseYear": "2025",
+      "description": "Come on, come on… the show is about to begin, and TUBBZ, the Circus Baby from Five Nights at Freddy's, is the star of the (terrifying) bathtub!",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "five-nights-at-freddys-marionette",
+      "name": "Marionette",
+      "collection": "Five Nights at Freddy's",
+      "number": "6",
+      "releaseYear": "2025",
+      "description": "The strings are cut, but the fear remains. Marionette joins the TUBBZ collection with its blank stare and haunting presence that transforms silence into tension.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "five-nights-at-freddys-golden-freddy",
+      "name": "Golden Freddy",
+      "collection": "Five Nights at Freddy's",
+      "number": "7",
+      "releaseYear": "2026",
+      "description": "Silent. Unstable. Unexplainable.\n\nAmong the most enigmatic figures in Five Nights at Freddy’s, Golden Freddy stands out as a disturbing presence at the heart of the lore.\nSpectral, unpredictable, and profoundly unsettling, he appears here in TUBBZ Edition, re-imagined as a cosplay duck without losing his unsettling aura.\n\nWith his empty stare, worn appearance, and frozen posture, this figure perfectly captures the character's oppressive and mysterious atmosphere.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
       "id": "friends-rachel-green",
       "name": "Rachel Green",
       "collection": "Friends",
