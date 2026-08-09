@@ -106,6 +106,74 @@ window.TUBBZ_DATA = {
       ]
     },
     {
+      "id": "attack-on-titan-eren-yeager",
+      "name": "Eren Yeager",
+      "collection": "Attack on Titan",
+      "number": "1",
+      "releaseYear": "2025",
+      "description": "Eren Yeager , the protagonist of Attack on Titan, has joined the TUBBZ collection. Sporting his iconic Scout Regiment uniform and imposing appearance, this duckling hero perfectly embodies Eren's fierce determination: he's ready to waddle into battle and take on the Titans!\n\nWhether you're plotting to retake Wall Maria or simply strategizing for your next TUBBZ exhibit, this collectible is perfect for Attack on Titan fans who know that even in the darkest times, there's always room for a little ducky humor.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "attack-on-titan-levi-ackerman",
+      "name": "Levi Ackerman",
+      "collection": "Attack on Titan",
+      "number": "2",
+      "releaseYear": "2025",
+      "description": "Get ready to wipe out the Titans with the TUBBZ Levi Ackerman Premier Edition! Humanity's mightiest soldier is decked out in his iconic Scout Regiment cape and wielding two ultra-light blades. Even in his duck form, Captain Levi still displays the sharp, no-nonsense attitude fans love.\n\nWhether he's leading the charge or cleaning out your TUBBZ collection, this original collectible is a must-have for any Attack on Titan fan. Recruit him today!",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "attack-on-titan-hange-zoe",
+      "name": "Hange Zoë",
+      "collection": "Attack on Titan",
+      "number": "3",
+      "releaseYear": "2025",
+      "description": "Dive into the wonderful chaos of Hange Zoë's world with this First Edition TUBBZ! The eccentric Titan researcher from the Scout Regiment, Hange brings a unique blend of intelligence and enthusiasm, now with feathers! Dressed in her iconic uniform and with spectacles perfectly perched on her beak, this Hange duck captures her curious and energetic spirit.\n\nWhether you're dissecting Titans (figuratively, of course!) or obsessing over your next collectible TUBBZ, this fantastic addition will bring a touch of scientific chaos to your collection.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "attack-on-titan-colossal-titan",
+      "name": "Colossal Titan",
+      "collection": "Attack on Titan",
+      "number": "4",
+      "releaseYear": "2025",
+      "description": "Get ready! Here's a Titan you'll actually want to let in! The Colossal Titan gets an incredible upgrade to TUBBZ XL, towering over the rest of your TUBBZ collection in all its terrifying glory. With intricate details like bulging muscles and a menacing, fiery stare, this oversized collectible captures all the power of the iconic Titan… with a touch of can-do.\n\nPerfect for Attack on Titan fans who believe that bigger is better, this Titan will dominate your shelf while looking irresistibly cute.",
+      "variants": [
+        {
+          "size": "xl",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
       "id": "back-to-the-future-marty-mcfly",
       "name": "Marty Mcfly",
       "collection": "Back to the Future",
@@ -1515,10 +1583,48 @@ window.TUBBZ_DATA = {
       ]
     },
     {
+      "id": "dragons-hiccup",
+      "name": "Hiccup",
+      "collection": "Dragons",
+      "number": "1",
+      "releaseYear": "2025",
+      "description": "Take flight into adventure with Harold TUBBZ, the inventive Dragons Viking, now transformed into a duck! This highly detailed collectible captures Harold's iconic look, complete with his trusty notebook and pen to record his latest dragon discoveries. Whether you're a fan of Berk's bravest dragon rider or a TUBBZ collector, this cosplay Viking duck is the perfect addition to your collection!",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "dragons-toothless",
+      "name": "Toothless",
+      "collection": "Dragons",
+      "number": "2",
+      "releaseYear": "2025",
+      "description": "Unleash dragon magic in your TUBBZ collection with the How to Train Your Dragon XL TUBBZ Toothless ! This highly detailed collectible transforms the mischievous Night Fury into an 8-inch rubber ducky, complete with signature green eyes, sleek black scales, and signature tail fin",
+      "variants": [
+        {
+          "size": "xl",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
       "id": "dungeons-dragons-hank-the-ranger",
       "name": "Hank, the ranger",
       "collection": "Dungeons & Dragons",
       "number": "1",
+      "releaseYear": "2023",
+      "description": "It's time for fantasy and magic in the duck pond. Hank the Ranger is now a collectible bath duck and his plan is to bring some magical energy to the pond. He has his trusty and powerful bow and arrow with him and is ready to make his mark. A must-have for fans of Dungeons & Dragons.\n\n\nHank the Ranger is a born leader, a skill that will come in handy when he heads to the duck pond as a collectible rubber duck. Armed with his magical bow and arrows, he feels brave and confident, ready to take on the world... and the pond.",
       "variants": [
         {
           "size": "classic",
@@ -1531,6 +1637,8 @@ window.TUBBZ_DATA = {
       "name": "Diana, the acrobat",
       "collection": "Dungeons & Dragons",
       "number": "2",
+      "releaseYear": "2023",
+      "description": "Diana the Acrobat leaves the realm for the duck pond as she becomes a collectible cosplay duck TUBBZ. She won’t be making a splash, she’d rather tumble and flip with her magic javelin to impress her pond mates.\n\nGet ready for magical adventures as Diana the Acrobat joins the TUBBZ cosplay duck collectibles. The gold medalist is ready for any challenge, so being a duck is no problem, she can rely on her magic javelin if she struggles a little.",
       "variants": [
         {
           "size": "classic",
@@ -1543,6 +1651,8 @@ window.TUBBZ_DATA = {
       "name": "Presto, the magician",
       "collection": "Dungeons & Dragons",
       "number": "3",
+      "releaseYear": "2023",
+      "description": "Adorned in his dazzling green robes, Presto the Magician finds himself as a duck wizard and looks fabulous. Complete with wavy brown hair and the essential glasses, he holds his magic hat and is about to impress with some wizarding action. The other ducks are sure he’ll save the day, while he is sure to look fantastic in any fan's collection.",
       "variants": [
         {
           "size": "classic",
@@ -1555,6 +1665,8 @@ window.TUBBZ_DATA = {
       "name": "Sheila, the thief",
       "collection": "Dungeons & Dragons",
       "number": "4",
+      "releaseYear": "2023",
+      "description": "Sheila the Thief joins the TUBBZ Cosplay Collectibles. She has the luxury of standing out in a crowd of ducks, or becoming invisible as she can hide under her resplendent purple cloak. With her cute freckles and beautiful flowing red hair, this little thief is super cute as a duck and a must-have for Dungeons & Dragons fans.",
       "variants": [
         {
           "size": "classic",
