@@ -2307,9 +2307,19 @@ window.TUBBZ_DATA = {
       "name": "Michael Myers",
       "collection": "Halloween (2007 A Rob Zombie film)",
       "number": "1",
+      "releaseYear": "2024",
+      "description": "Michael Myers just can't be shaken off. Just as you suspected, he's back… as a TUBBZ collectible",
       "variants": [
         {
           "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
           "packaging": "first-edition"
         }
       ]
@@ -4103,6 +4113,42 @@ window.TUBBZ_DATA = {
         {
           "size": "classic",
           "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "shaun-of-the-dead-shaun",
+      "name": "Shaun",
+      "collection": "Shaun of the Dead",
+      "number": "1",
+      "releaseYear": "2024",
+      "description": "Shaun has been busy zombie-bashing, look at the state of him. Shaun joins the TUBBZ toy collection complete with blood-splattered cricket bat.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "shaun-of-the-dead-ed",
+      "name": "Ed",
+      "collection": "Shaun of the Dead",
+      "number": "2",
+      "releaseYear": "2024",
+      "description": "Even transformed into a zombie, Ed remains the king of good humor.\n\nMeet Zombie Ed, Shaun's loyal best friend\n\nStill as relaxed as ever despite the zombie apocalypse, Zombie Ed retains all the quirky charm that made him one of the film's most beloved characters.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
         }
       ]
     },
