@@ -5813,6 +5813,199 @@ window.TUBBZ_DATA = {
       ]
     },
     {
+      "id": "universal-monster-frankensteins-monster",
+      "name": "Frankenstein's Monster",
+      "collection": "Universal Monster",
+      "number": "1",
+      "releaseYear": "2024",
+      "description": "Guaranteed to turn heads, Frankenstein's Monster now has additional duck body parts as he transforms into a TUBBZ collectible.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "universal-monster-frankensteins-monster-black-white",
+      "name": "Frankenstein's Monster (Black & White)",
+      "collection": "Universal Monster",
+      "number": "1",
+      "description": "Guaranteed to turn heads, Frankenstein's Monster now has additional duck body parts as he transforms into a TUBBZ collectible.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "universal-monster-dracula",
+      "name": "Dracula",
+      "collection": "Universal Monster",
+      "number": "2",
+      "releaseYear": "2024",
+      "description": "Dracula Duck is on the hunt and joins the TUBBZ horror collection! He sports these fangs and a candle lights the way as he stalks his next victim.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "universal-monster-dracula-black-white",
+      "name": "Dracula (Black & White)",
+      "collection": "Universal Monster",
+      "number": "2",
+      "description": "Dracula Duck is on the hunt and joins the TUBBZ horror collection! He sports these fangs and a candle lights the way as he stalks his next victim.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "universal-monster-creature-from-the-black-lagoon",
+      "name": "Creature from the Black Lagoon",
+      "collection": "Universal Monster",
+      "number": "3",
+      "releaseYear": "2024",
+      "description": "The Creature from the Black Lagoon trades the Amazon for the Duck Pond. The Gill-Man becomes the Duck-Man by becoming a cosplaying duck!",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "universal-monster-creature-from-the-black-lagoon-black-white",
+      "name": "Creature from the Black Lagoon (Black & White)",
+      "collection": "Universal Monster",
+      "number": "3",
+      "description": "The Creature from the Black Lagoon trades the Amazon for the Duck Pond. The Gill-Man becomes the Duck-Man by becoming a cosplaying duck!",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "universal-monster-the-invisible-man",
+      "name": "The Invisible Man",
+      "collection": "Universal Monster",
+      "number": "4",
+      "releaseYear": "2025",
+      "description": "He may be hard to spot, but his style is undeniable. With his iconic trench coat, protective goggles, and a touch of madness, this gentleman duck is ready to wreak havoc – invisible, but unforgettable.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "universal-monster-bride-of-frankenstein",
+      "name": "Bride of Frankenstein",
+      "collection": "Universal Monster",
+      "number": "5",
+      "releaseYear": "2025",
+      "description": "She's electrifying, in the truest sense of the word. With her imposing hair, theatrical presence, and offbeat insolence, the bride embodies the glamour of the undead like no other. A true scream queen, with a touch of the cancan.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "universal-monster-the-mummy",
+      "name": "The Mummy",
+      "collection": "Universal Monster",
+      "number": "6",
+      "releaseYear": "2025",
+      "description": "Wrapped in ancient bandages and condemned to an eternal curse, the TUBBZ Mummy is ready to rise from the shelf and haunt your nightmares. Avoid reading scrolls nearby…",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "universal-monster-the-wolf-man",
+      "name": "The Wolf Man",
+      "collection": "Universal Monster",
+      "number": "7",
+      "releaseYear": "2025",
+      "description": "Fur, fangs, and fright! On the full moon, this monstrous duck emerges from hiding. With his wild eyes and almost audible snarl, the Wolfman is here to instill terror in your collection.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
       "id": "where-s-wally-wally",
       "name": "Wally",
       "collection": "Where's Wally",
