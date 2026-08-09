@@ -1107,7 +1107,8 @@ window.TUBBZ_DATA = {
       "variants": [
         {
           "size": "classic",
-          "packaging": "first-edition"
+          "packaging": "first-edition",
+          "limitedTo": 1000
         },
         {
           "size": "classic",
@@ -1129,7 +1130,8 @@ window.TUBBZ_DATA = {
       "variants": [
         {
           "size": "classic",
-          "packaging": "first-edition"
+          "packaging": "first-edition",
+          "limitedTo": 1000
         },
         {
           "size": "classic",
@@ -1671,6 +1673,25 @@ window.TUBBZ_DATA = {
         {
           "size": "classic",
           "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "evil-dead-2-ash",
+      "name": "Ash",
+      "collection": "Evil Dead 2",
+      "number": "1",
+      "releaseYear": "2026",
+      "description": "Armed with his chainsaw hand and boomstick, Ash Williams crashes into the pond ready to take on the Deadites once again. Inspired by Evil Dead 2, this officially licensed TUBBZ Collector’s Edition captures the horror icon in all his blood-soaked glory, complete with his signature blue shirt and fearless attitude that made him a cult legend ",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition",
+          "limitedTo": 1100
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
         }
       ]
     },
@@ -2383,10 +2404,16 @@ window.TUBBZ_DATA = {
       "name": "Kratos",
       "collection": "God of War",
       "number": "1",
+      "releaseYear": "2020",
+      "description": "The Ghost of Sparta enters the Midgard pond.\n\nDiscover Kratos, legendary hero of God of War. After defeating the gods of Olympus, Kratos continues his destiny in the Nordic lands, axe in hand, ready to confront the deities of Midgard... even in the form of a collectible cosplay duck.\n\nWith his shaved head, beard, iconic red markings, and Leviathan axe, this figurine perfectly captures the character's raw power.",
       "variants": [
         {
           "size": "classic",
           "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
         }
       ]
     },
@@ -2395,10 +2422,16 @@ window.TUBBZ_DATA = {
       "name": "Atreus",
       "collection": "God of War",
       "number": "2",
+      "releaseYear": "2020",
+      "description": "Kratos' son joins the pond of gods.\n\nDiscover Atreus, son of Kratos and a central character in God of War. Heir to a Greek god of war and a Norse giantess, Atreus embraces his divine destiny to accompany his father against the powers of the Norse realms.\n\nWith his bow, his young warrior's appearance, and his strong connection to God of War mythology, this figurine perfectly captures Atreus's evolution in the epic universe of the saga.",
       "variants": [
         {
           "size": "classic",
           "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
         }
       ]
     },
@@ -2407,6 +2440,8 @@ window.TUBBZ_DATA = {
       "name": "Kratos",
       "collection": "God of War Ragnarok",
       "number": "1",
+      "releaseYear": "2023",
+      "description": "Kratos is on a mission to save the lives of the people of the Nine Realms. It won't be easy; he first has to make a detour to the duck pond, as he is now a collectible bath duck. He will obviously be up to the challenge.\n\nThis demigod is now a collectible TUBBZ rubber duck, and Kratos remains absolutely god-like in his new duck form. Fans will surely appreciate the skillful details that ensure this is a true replica of this popular character.",
       "variants": [
         {
           "size": "classic",
@@ -2419,6 +2454,8 @@ window.TUBBZ_DATA = {
       "name": "Atreus",
       "collection": "God of War Ragnarok",
       "number": "2",
+      "releaseYear": "2023",
+      "description": "Atreus is growing up and ready to accompany his father, Kratos, on their next battle…. to the duck pond as he’s become a TUBBZ Cosplaying Collectable rubber duck. He’s more than ready for action, his bow drawn and ready to fire some arrows.\n\nOdin’s battle may be spilling into the duck pond, but Atreus can handle it. He’s now older, definitely more confident and has a new quack-ass look that clearly suits him.",
       "variants": [
         {
           "size": "classic",
@@ -2544,10 +2581,12 @@ window.TUBBZ_DATA = {
       "collection": "Harry Potter",
       "number": "1",
       "releaseYear": "2026",
+      "description": "Brave, daring, and ready to dive beak-first into adventure, this Collector’s Edition Gryffindor TUBBZ is bursting with fearless energy. Dressed in the house’s iconic red and gold robes and clutching a magic wand, this cosplaying duck embodies the courage and bold spirit every Gryffindor is known for.",
       "variants": [
         {
           "size": "classic",
-          "packaging": "first-edition"
+          "packaging": "first-edition",
+          "limitedTo": 1200
         },
         {
           "size": "classic",
@@ -2561,10 +2600,12 @@ window.TUBBZ_DATA = {
       "collection": "Harry Potter",
       "number": "2",
       "releaseYear": "2026",
+      "description": "Cunning, ambitious, and ready to glide effortlessly to the top, this Slytherin TUBBZ brings a touch of calculated charm to your collection. Dressed in the house’s iconic green and silver robes and clutching a sleek wand, this cosplaying duck captures the confidence, ambition, and resourcefulness that define every Slytherin.",
       "variants": [
         {
           "size": "classic",
-          "packaging": "first-edition"
+          "packaging": "first-edition",
+          "limitedTo": 1200
         },
         {
           "size": "classic",
@@ -2578,10 +2619,12 @@ window.TUBBZ_DATA = {
       "collection": "Harry Potter",
       "number": "3",
       "releaseYear": "2026",
+      "description": "Loyal, patient, and ready to waddle the extra mile, this Hufflepuff TUBBZ is a true tribute to dedication and heart. Dressed in the house’s signature yellow and black robes and armed with a trusty wand, this cosplaying duck captures the warm, hardworking spirit that defines every Hufflepuff. ",
       "variants": [
         {
           "size": "classic",
-          "packaging": "first-edition"
+          "packaging": "first-edition",
+          "limitedTo": 1200
         },
         {
           "size": "classic",
@@ -2595,10 +2638,12 @@ window.TUBBZ_DATA = {
       "collection": "Harry Potter",
       "number": "4",
       "releaseYear": "2026",
+      "description": "Wise, curious, and always ready to unlock new ideas, this Ravenclaw TUBBZ is a celebration of intellect and creativity. Dressed in the house’s signature blue and bronze robes and clutching a finely crafted wand, this cosplaying duck embodies the sharp mind, wit, and individuality that set Ravenclaws apart.",
       "variants": [
         {
           "size": "classic",
-          "packaging": "first-edition"
+          "packaging": "first-edition",
+          "limitedTo": 1200
         },
         {
           "size": "classic",
@@ -2797,10 +2842,16 @@ window.TUBBZ_DATA = {
       "name": "John Wick",
       "collection": "John Wick",
       "number": "1",
+      "releaseYear": "2024",
+      "description": "The duck you were yesterday should never be the duck you are today! John Wick has had great success becoming a TUBBZ cosplay collectible. It's been a rough day at the pond. He's splattered with blood, brandishing his gun, but his hair still looks great and his suit is impeccable!",
       "variants": [
         {
           "size": "classic",
           "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
         }
       ]
     },
@@ -2809,11 +2860,16 @@ window.TUBBZ_DATA = {
       "name": "John Wick (With Pencil)",
       "collection": "John Wick",
       "number": "2",
-      "description": "Dome de la baignoire plastique cassé",
+      "releaseYear": "2024",
+      "description": "Who left that pencil on the bar? Get ready for action as John Wick Pencil TUBBZ dives into the duck pond! This unique collectible reimagines the legendary hitman with his iconic pencil in hand, transforming him into an adorable cosplay duck. As the second John Wick TUBBZ in the collection, this release is perfect for fans who love the action-packed world of John Wick. Whether he’s wielding his gun or his pencil, this duck is a must-have for any collector!",
       "variants": [
         {
           "size": "classic",
           "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
         }
       ]
     },
@@ -2822,10 +2878,16 @@ window.TUBBZ_DATA = {
       "name": "John Wick (With Book)",
       "collection": "John Wick",
       "number": "3",
+      "releaseYear": "2025",
+      "description": "Tailored suit. Tactical stare. Absolute focus. John Wick arrives dressed in an impeccable black suit, with his wing full of gold coins and sorrow hidden under every breath. This duck misses nothing. He remembers.",
       "variants": [
         {
           "size": "classic",
           "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
         }
       ]
     },
@@ -3875,6 +3937,74 @@ window.TUBBZ_DATA = {
       ]
     },
     {
+      "id": "naruto-shippuden-naruto-uzumaki",
+      "name": "Naruto Uzumaki",
+      "collection": "Naruto Shippuden",
+      "number": "1",
+      "releaseYear": "2025",
+      "description": "The young ninja’s dreams have come true. Naruto Uzumaki is now a leader… of the duck pond.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "naruto-shippuden-sasuke-uchiha",
+      "name": "Sasuke Uchiha",
+      "collection": "Naruto Shippuden",
+      "number": "2",
+      "releaseYear": "2026",
+      "description": "Find Sasuke Uchiha, one of the most iconic ninjas from Naruto Shippuden. True to his iconic appearance, with his legendary outfit, determined gaze, and all the charisma of the Uchiha clan, this figure captures Sasuke at the peak of his power, caught between darkness and redemption.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition",
+          "limitedTo": 3000
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "naruto-shippuden-kakashi-hatake",
+      "name": "Kakashi Hatake",
+      "collection": "Naruto Shippuden",
+      "number": "3",
+      "releaseYear": "2026",
+      "description": "Known across the shinobi world as the Copy Ninja, Kakashi Hatake arrives in the pond as an officially licensed Naruto Shippuden TUBBZ collectible.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition",
+          "limitedTo": 3000
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
       "id": "ozzy-osbourne-ozzy-osbourne",
       "name": "Ozzy Osbourne",
       "collection": "Ozzy Osbourne",
@@ -3915,10 +4045,13 @@ window.TUBBZ_DATA = {
       "name": "Red Ranger",
       "collection": "Power Rangers",
       "number": "1",
+      "releaseYear": "2023",
+      "description": "Just in case aliens are planning on taking over the duck pond, the Mighty Morphin Power Rangers are coming. Red Ranger is suited and booted in his iconic costume. He carries his trusty sword and is ready to ward off any unwelcome visitors.\nThe duck pond is the new Angel Grove and the Mighty Morphin Power Rangers are ready to defend their territory. First up is Red Ranger, zipped into his iconic red costume wielding his sword, the other TUBBZ are in safe hands.",
       "variants": [
         {
           "size": "classic",
-          "packaging": "first-edition"
+          "packaging": "first-edition",
+          "limitedTo": 3000
         }
       ]
     },
@@ -3927,10 +4060,13 @@ window.TUBBZ_DATA = {
       "name": "Blue Ranger",
       "collection": "Power Rangers",
       "number": "2",
+      "releaseYear": "2023",
+      "description": "Ay-yi-yi! Here come the Mighty Morphin Power Rangers and here is Blue Ranger, brains working and weapons at the ready. His fighting skills are sure to be just as good even if he has turned into a bath duck.\nAs Blue Ranger is now a cosplay duck, he hopes there are no fish in the pond. He looks sharp in his iconic blue suit, even as a duck, he wears it perfectly.",
       "variants": [
         {
           "size": "classic",
-          "packaging": "first-edition"
+          "packaging": "first-edition",
+          "limitedTo": 3000
         }
       ]
     },
@@ -3939,10 +4075,13 @@ window.TUBBZ_DATA = {
       "name": "Pink Ranger",
       "collection": "Power Rangers",
       "number": "3",
+      "releaseYear": "2023",
+      "description": "May the Power Rangers TUBBZ protect you! That's the new mantra of the duck pond, as the Mighty Morphin Power Rangers have had a makeover and are now cosplaying as ducks. Pink Ranger is as wise as ever and the other TUBBZ want her in their corner.\nPink Ranger makes a splash and cannot be mistaken even as a cosplay duck, the sight of the bright pink suit can only mean that the \"Pink Ranger\" is coming - peace and harmony will soon be restored.",
       "variants": [
         {
           "size": "classic",
-          "packaging": "first-edition"
+          "packaging": "first-edition",
+          "limitedTo": 3000
         }
       ]
     },
@@ -3951,10 +4090,13 @@ window.TUBBZ_DATA = {
       "name": "Yellow Ranger",
       "collection": "Power Rangers",
       "number": "4",
+      "releaseYear": "2023",
+      "description": "Training complete! Yellow Power Ranger is now ready to become a new recruit… joining the TUBBZ range of cosplay rubber ducks – ay-yi-yi to that! Fans will want to add her to collections.",
       "variants": [
         {
           "size": "classic",
-          "packaging": "first-edition"
+          "packaging": "first-edition",
+          "limitedTo": 3000
         }
       ]
     },
@@ -3963,10 +4105,13 @@ window.TUBBZ_DATA = {
       "name": "Black Ranger",
       "collection": "Power Rangers",
       "number": "5",
+      "releaseYear": "2023",
+      "description": "It's Morphin Time! The Black Power Ranger joins the cosplay rubber duck collection and looks super cool and charismatic in a new duck form. This TUBBZ looks great in its shiny black suit. Strengthen your collections with this cool collectible.",
       "variants": [
         {
           "size": "classic",
-          "packaging": "first-edition"
+          "packaging": "first-edition",
+          "limitedTo": 3000
         }
       ]
     },
@@ -4329,9 +4474,19 @@ window.TUBBZ_DATA = {
       "name": "Shrek",
       "collection": "Shrek",
       "number": "1",
+      "releaseYear": "2025",
+      "description": "Fresh from the depths of the swamp, the iconic ogre has been duckified! Dressed in his signature tunic and ready to protect his beloved mud bath, this cosplay collectible captures all of Shrek's grumpy charm and lovable attitude, in adorable duck form.",
       "variants": [
         {
           "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
           "packaging": "first-edition"
         }
       ]
@@ -4341,9 +4496,19 @@ window.TUBBZ_DATA = {
       "name": "Donkey",
       "collection": "Shrek",
       "number": "2",
+      "releaseYear": "2025",
+      "description": "Bursting with untameable charm and overflowing enthusiasm, the Donkey is at the heart of every adventure. This collectible toy captures his wonder, his intrepid loyalty, and his incredible ability to turn even the darkest quests into a comedy amongst friends.",
       "variants": [
         {
           "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
           "packaging": "first-edition"
         }
       ]
@@ -4353,9 +4518,19 @@ window.TUBBZ_DATA = {
       "name": "Fiona",
       "collection": "Shrek",
       "number": "3",
+      "releaseYear": "2026",
+      "description": "By day, she's a poised princess. By night, she's a rip-roaring ogre. This collectible toy captures Princess Fiona's dual charm: majestic, fierce, and ready to fly. But don't call her a damsel in distress.",
       "variants": [
         {
           "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
           "packaging": "first-edition"
         }
       ]
@@ -4365,9 +4540,19 @@ window.TUBBZ_DATA = {
       "name": "Lord Farquaad",
       "collection": "Shrek",
       "number": "4",
+      "releaseYear": "2025",
+      "description": "Chin up and demands even higher, Lord Farquaad dreams of a kingdom as impeccable as his pageboy haircut. This collectible toy captures his outsized ambition and royal attitude, all rolled into one diminutive villain.",
       "variants": [
         {
           "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
           "packaging": "first-edition"
         }
       ]
@@ -5572,14 +5757,20 @@ window.TUBBZ_DATA = {
       "collection": "Terminator",
       "number": "1",
       "releaseYear": "2026",
+      "description": "Straight from the future war comes the ultimate cybernetic assassin. The Terminator TUBBZ captures the unstoppable T-800 in full combat mode, complete with leather jacket, shades, and that emotionless, unflinching presence. Programmed to terminate its target with ruthless efficiency, this duck doesn’t miss.",
       "variants": [
         {
           "size": "classic",
-          "packaging": "first-edition"
+          "packaging": "first-edition",
+          "limitedTo": 3000
         },
         {
           "size": "classic",
           "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
         }
       ]
     },
