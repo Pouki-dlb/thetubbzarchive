@@ -946,6 +946,52 @@ window.TUBBZ_DATA = {
       ]
     },
     {
+      "id": "dc-comics-lois-lane",
+      "name": "Lois Lane",
+      "collection": "DC Comics",
+      "number": "11",
+      "releaseYear": "2025",
+      "description": "Fearless, determined, and always on the hunt for the next scoop, Lois Lane is making headlines in the duck pond with her TUBBZ. Equipped with her trusty microphone and recorder, the Daily Planet's star reporter is ready to chase the next big story: whether it's interviewing Metropolis's greatest heroes or unmasking its most famous villains, this intrepid journalist never backs down, even as a cosplaying duck!",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "dc-comics-hawkgirl",
+      "name": "Hawkgirl",
+      "collection": "DC Comics",
+      "number": "12",
+      "releaseYear": "2025",
+      "description": "Diving into action, Hawkgirl takes flight as an officially licensed, first-edition collectible TUBBZ! Transformed into an adorable cosplaying duck, the fearless Thanagarian warrior is ready for battle, wielding her mighty mace and sporting her iconic winged helmet. Whether protecting Metropolis or fighting alongside the Justice League, this formidable hero is a force to be reckoned with.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "dc-comics-the-penguin",
+      "name": "The Penguin",
+      "collection": "DC Comics",
+      "number": "13",
+      "releaseYear": "2025",
+      "description": "Over here! DC Comics: The Penguin TUBBZ is waddling in with a splash! This dapper DC collectible transforms Oswald Cobblepot into a formidable feathered force. With his iconic monocle, top hat, and deceptively dangerous umbrella, this First Edition duck is making waves in the criminal underworld and on your collector's shelf!",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
       "id": "dc-comics-batman-diy-edition",
       "name": "Batman (DIY Edition)",
       "collection": "DC Comics",
