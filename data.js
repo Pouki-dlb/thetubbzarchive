@@ -717,6 +717,42 @@ window.TUBBZ_DATA = {
       ]
     },
     {
+      "id": "cyberpunk-2077-johnny-silverhand",
+      "name": "Johnny Silverhand",
+      "collection": "Cyberpunk 2077",
+      "number": "1",
+      "releaseYear": "2025",
+      "description": "Loud, legendary, and loaded with attitude. Johnny Silverhand enters the TUBBZ lineup wearing his signature sunglasses, bulletproof vest, and iconic cybernetic arm. Guitar in grip and rebellion in his blood, this First Edition duck doesn’t play backup, he sets Night City ablaze.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "cyberpunk-2077-jackie-welles",
+      "name": "Jackie Welles",
+      "collection": "Cyberpunk 2077",
+      "number": "2",
+      "releaseYear": "2025",
+      "description": "A towering build. An immense heart. Jackie Welles arrives in the TUBBZ range with his iconic jacket, golden cybernetic implants, and unwavering energy.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
       "id": "dark-souls-oscar-knight-of-astora",
       "name": "Oscar, Knight of Astora",
       "collection": "Dark Souls",
@@ -1056,6 +1092,46 @@ window.TUBBZ_DATA = {
         {
           "size": "classic",
           "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "dc-comics-poison-ivy",
+      "name": "Poison Ivy",
+      "collection": "DC Comics",
+      "number": "14",
+      "releaseYear": "2026",
+      "description": "Alluring. Dangerous. Totally irresistible.\n\nThe formidable Poison Ivy joins the TUBBZ collection, bringing all the toxic charm and botanical power of the DC Comics universe.\nWith her flaming red hair and iconic green outfit, this cosplay duck version perfectly captures the aura of one of Gotham's most iconic villains.\n\nBoth elegant and menacing, this figurine conveys all of Pamela Isley's personality with the quirky touch unique to TUBBZ.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "dc-comics-supergirl",
+      "name": "Supergirl",
+      "collection": "DC Comics",
+      "number": "15",
+      "releaseYear": "2026",
+      "description": "Krypton's hope takes flight.\n\nThe legendary Supergirl joins the TUBBZ collection, bringing all the power and legacy of Krypton in a unique collector's format.\nReimagined as a cosplay duck, she sports her famous blue costume, the emblem of the House of El, her iconic red cape, and her unmistakable blonde hair.\n\nBrave, determined, and inspiring, this figure perfectly captures the heroic spirit of one of the greatest heroines in the DC Comics universe.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
         }
       ]
     },
@@ -2093,9 +2169,19 @@ window.TUBBZ_DATA = {
       "name": "Papa Emeritus IV",
       "collection": "Ghost",
       "number": "6",
+      "releaseYear": "2024",
+      "description": "The clergy grows… collector's edition.\n\nPapa Emeritus IV, central figure of the band Ghost, joins the TUBBZ collection to assert his presence… even in the pond.\nWith his iconic look, meticulous details and mystical aura, this figurine perfectly captures the theatrical and dark spirit of the band.\n\nCharismatic, mysterious and instantly recognizable, this collectible faithfully reproduces Ghost's visual identity with the quirky touch unique to TUBBZ.",
       "variants": [
         {
           "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
           "packaging": "first-edition"
         }
       ]
@@ -2105,9 +2191,19 @@ window.TUBBZ_DATA = {
       "name": "Papa Nihil",
       "collection": "Ghost",
       "number": "7",
+      "releaseYear": "2024",
+      "description": "Rock. Mystique. Legendary… even as a duck.\n\nPapa Nihil, iconic former frontman of the band Ghost, makes his grand return to the stage.\nWith his removable sunglasses and iconic saxophone, he continues to put on a show, even as a cosplaying duck.\n\nCharismatic, quirky, and instantly recognizable, this collectible perfectly captures Ghost's unique universe with the humorous touch unique to TUBBZ.",
       "variants": [
         {
           "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
           "packaging": "first-edition"
         }
       ]
@@ -2117,9 +2213,19 @@ window.TUBBZ_DATA = {
       "name": "Cardinal Copia",
       "collection": "Ghost",
       "number": "8",
+      "releaseYear": "2025",
+      "description": "Darkness. Charisma. Pure spectacle.\n\nThe mysterious Cardinal Copia joins the TUBBZ collection, ready to impose his theatrical style on your collection.\nWith his iconic red costume, black gloves, and signature makeup, this figurine perfectly captures the character's entire stage aura.\n\nBetween dark elegance and magnetic presence, this collectible captures all the intensity of the Ghost universe with the quirky touch unique to TUBBZ.",
       "variants": [
         {
           "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
           "packaging": "first-edition"
         }
       ]
@@ -2129,9 +2235,19 @@ window.TUBBZ_DATA = {
       "name": "Papa Perpetua V",
       "collection": "Ghost",
       "number": "10",
+      "releaseYear": "2026",
+      "description": "Ritual. Presence. Majesty.\n\nThe mysterious Papa Perpetua V joins the TUBBZ collection, embodying all the visual and theatrical power of the Ghost universe.\nWith his silver mask, ornate mitre, and richly detailed purple robes, he commands an aura that is both sacred and unsettling.\n\nReimagined as a cosplaying duck, this collectible perfectly captures the band's stage identity, blending distorted religious aesthetics with rock power.",
       "variants": [
         {
           "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
           "packaging": "first-edition"
         }
       ]
@@ -2141,9 +2257,19 @@ window.TUBBZ_DATA = {
       "name": "Papa Emeritus I",
       "collection": "Ghost",
       "number": "11",
+      "releaseYear": "2026",
+      "description": "The origin of the ritual. The beginning of the empire.\n\nThe legendary Papa Emeritus I, first leader of the Ghost Clergy, returns in a TUBBZ faithful to his founding aura.\nWith his skull-painted face, his black robes bordered in red, and his silver miter, he embodies the beginning of a dark and iconic dynasty.\n\nA central figure in Ghost's early days, this collectible captures all the authority and presence of the first Papa with the quirky touch unique to TUBBZ.",
       "variants": [
         {
           "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
           "packaging": "first-edition"
         }
       ]
@@ -2701,6 +2827,8 @@ window.TUBBZ_DATA = {
       "name": "Cyborg Eddie",
       "collection": "Iron Maiden",
       "number": "4",
+      "releaseYear": "2023",
+      "description": "Pay homage to the incredible heavy metal band Iron Maiden with their iconic mascot Eddie The Trooper as a duck! Delivered in a superb 'Iron Maiden' bathtub display stand, this one-of-a-kind collectible is ideal for fans of the series.",
       "variants": [
         {
           "size": "classic",
@@ -3857,9 +3985,18 @@ window.TUBBZ_DATA = {
       "name": "Lemmy",
       "collection": "Motörhead",
       "number": "1",
+      "description": "Rock. Whiskey. Legend.\n\nThe legendary Lemmy Kilmister, frontman of Motörhead, joins the TUBBZ collection… with a unique touch: a whiskey scent 🍀\nReimagined as a cosplay duck, he perfectly embodies the raw rock'n'roll attitude that defined a generation.\n\nWith his iconic style, untamed charisma, and now his whiskey scent, this figurine goes far beyond a simple collectible.",
       "variants": [
         {
           "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
           "packaging": "first-edition"
         }
       ]
@@ -4009,9 +4146,19 @@ window.TUBBZ_DATA = {
       "name": "Ozzy Osbourne",
       "collection": "Ozzy Osbourne",
       "number": "2",
+      "releaseYear": "2023",
+      "description": "The Prince of Darkness... duck version.\n\nThe iconic Ozzy Osbourne joins the TUBBZ collectio, ready to electrify the pond with his legendary style.\nWith his bat under his wing, a nod to one of rock's most mythical moments, this figurine captures all the madness and energy of the character.\n\nProvocative, charismatic, and inimitable, this collectible perfectly captures Ozzy's universe with the quirky touch unique to TUBBZ.",
       "variants": [
         {
           "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
           "packaging": "first-edition"
         }
       ]
@@ -4021,6 +4168,8 @@ window.TUBBZ_DATA = {
       "name": "Ozzy Osbourne (diary of a mad man)",
       "collection": "Ozzy Osbourne",
       "number": "5",
+      "releaseYear": "2023",
+      "description": "Do you have the iconic album Diary of a Madman in your music collection? Well, you're going to love this new collectible TUBBZ cosplay of Ozzy Osbourne. This crazy little quacker is rocking it like the diary of a madman and will look Ozzy-tastic in any fan's collection.",
       "variants": [
         {
           "size": "classic",
@@ -4562,9 +4711,19 @@ window.TUBBZ_DATA = {
       "name": "Nurse",
       "collection": "Silent Hill 2",
       "number": "1",
+      "releaseYear": "2025",
+      "description": "Horror takes a disturbing form.\n\nThe terrifying Nurse from the Silent Hill universe joins the TUBBZ collection.\nWith her fully bandaged face, distorted posture, and unsettling uniform, this figurine transforms one of survival horror's most iconic creatures into a collectible that is as strange as it is unforgettable.\n\nReimagined as a collectible cosplay duck, this Nurse retains all the unhealthy and psychological atmosphere that has captivated Silent Hill fans.\n\nTroubling, disturbing, and fascinating all at once, this figurine perfectly captures the nightmarish aesthetic characteristic of the franchise.",
       "variants": [
         {
           "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
           "packaging": "first-edition"
         }
       ]
@@ -4574,9 +4733,19 @@ window.TUBBZ_DATA = {
       "name": "Pyramid Head",
       "collection": "Silent Hill 2",
       "number": "2",
+      "releaseYear": "2025",
+      "description": "The nightmare emerges from the fog.\n\nThe terrifying Pyramid Head, embodiment of judgment and guilt in the Silent Hill universe, joins the TUBBZ collection.\nWith his emblematic rusty pyramidal helmet, gigantic blade, and oppressive appearance, this figurine transforms one of the most iconic monsters in survival horror into an essential collectible.\n\nReimagined as a collector's cosplay duck, Pyramid Head retains all his menacing presence and the nightmarish industrial atmosphere that marked the history of horror video games.\n\nMysterious, disturbing, and instantly recognizable, this TUBBZ perfectly captures the unique psychological horror of Silent Hill.",
       "variants": [
         {
           "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
           "packaging": "first-edition"
         }
       ]
@@ -4587,6 +4756,7 @@ window.TUBBZ_DATA = {
       "collection": "Silent Hill 3",
       "number": "3",
       "releaseYear": "2026",
+      "description": "The fog returns. And so does Heather.\n\nThe iconic heroine of Silent Hill 3, Heather Mason joins the TUBBZ collection.\nDetermined, haunted by her past, and much stronger than she appears, Heather confronts the psychological horrors of Silent Hill in this duck cosplay version, as strange as it is iconic.\n\nWith her game-accurate outfit and her gaze ready to face the nightmares of the fog, this figurine perfectly captures the tension and oppressive atmosphere of the Silent Hill universe.",
       "variants": [
         {
           "size": "classic",
@@ -4595,6 +4765,10 @@ window.TUBBZ_DATA = {
         {
           "size": "classic",
           "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
         }
       ]
     },
@@ -4604,6 +4778,7 @@ window.TUBBZ_DATA = {
       "collection": "Silent Hill 3",
       "number": "4",
       "releaseYear": "2026",
+      "description": "As adorable as he is unsettling.\n\nThe famous Robbie the Rabbit, the nightmarish mascot from the Silent Hill universe, joins the TUBBZ collection.\nFirst appearing in Silent Hill 3, this character with his bright pink costume and frozen smile has become one of the franchise's most disturbing symbols.\n\nReimagined as a cosplaying duck, Robbie retains all his strange and oppressive aura.\nBeneath his almost amusing appearance lies a deeply unsettling presence, perfectly faithful to Silent Hill's unique psychological atmosphere.\n\nBetween grotesque mascot and disturbing creature, this collector's figurine captures all the ambiguity and unease that make Robbie so cult.",
       "variants": [
         {
           "size": "classic",
@@ -4612,6 +4787,10 @@ window.TUBBZ_DATA = {
         {
           "size": "classic",
           "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
         }
       ]
     },
@@ -6162,6 +6341,42 @@ window.TUBBZ_DATA = {
       ]
     },
     {
+      "id": "transformers-optimus-prime",
+      "name": "Optimus Prime",
+      "collection": "Transformers",
+      "number": "1",
+      "releaseYear": "2022",
+      "description": "Ready to stand alongside his fellow Autobots to take on the Decepticons and their tyrant leader Megatron, Optimus Prime faces a new challenge as he has now found himself transformed into a duck! Coming in an awesome Transformers bathtub display stand, this one-of-a-kind collectible is great for fans of the series.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "transformers-megatron",
+      "name": "Megatron",
+      "collection": "Transformers",
+      "number": "2",
+      "releaseYear": "2022",
+      "description": "Power-hungry Megatron has taken on a new form to turn his arch-nemesis Optimus Prime into a formidable… duck? We're not sure he thought this through. Delivered in a stunning, displayable Transformers bathtub display stand, this one-of-a-kind collectible is ideal for fans of the series.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
       "id": "universal-monster-frankensteins-monster",
       "name": "Frankenstein's Monster",
       "collection": "Universal Monster",
@@ -6382,6 +6597,35 @@ window.TUBBZ_DATA = {
         },
         {
           "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "world-of-tanks-amx-40",
+      "name": "AMX 40",
+      "collection": "World of Tanks",
+      "number": "1",
+      "releaseYear": "2022",
+      "description": "The famous \"duck\" tank joins the TUBBZ collection.\n\nDiscover the AMX 40, the iconic tank from World of Tanks. With its recognizable silhouette and perfect nod to the world of collectible ducks, this model transforms a cult military vehicle from the game into an original geek item.\n\nInspired by the French AMX 40 tank as it appears in World of Tanks, this figurine is ideal for fans of tanks, military strategy, and gaming collectibles.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition",
+          "limitedTo": 1300
+        }
+      ]
+    },
+    {
+      "id": "world-of-tanks-tog-ii",
+      "name": "TOG II",
+      "collection": "World of Tanks",
+      "number": "2",
+      "releaseYear": "2025",
+      "description": "Get ready for battle! The battlefield just got a whole lot more explosive. This World of Tanks TUBBZ is fully equipped for combat, with authentic tank details, the classic TUBBZ hatch, and trusty goggles.",
+      "variants": [
+        {
+          "size": "classic",
           "packaging": "first-edition"
         }
       ]
