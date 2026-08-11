@@ -42,29 +42,27 @@
       var img = T.variantImageFor(fig.id, v.size, v.packaging);
       var sizeTxt = T.sizeLabel(meta, v.size);
       var packTxt = T.packagingLabel(meta, v.packaging);
-      var packClass = T.packagingClass(v.packaging);
 
       return (
-        '<div class="variant ' + (owned ? "is-owned " : "") + packClass + '">' +
+        '<div class="variant' + (owned ? " is-owned" : "") + '">' +
           '<div class="variant-media">' +
             '<img loading="lazy" src="' + T.esc(img) + '" alt="' + T.esc(fig.name + " — " + sizeTxt + " " + packTxt) + '" ' +
               'onerror="this.onerror=null;this.src=\'' + T.PLACEHOLDER + '\'" />' +
           '</div>' +
-          '<div class="variant-info">' +
-            // Emoji seul : la taille est déjà dans l'en-tête du groupe et la couleur de la
-            // pastille distingue déjà les deux emballages. Le nom complet reste accessible
-            // via title + aria-label — role="img" pour que le lecteur d'écran annonce
-            // « First Edition » et non « baignoire ».
-            '<span class="chip ' + packClass + '" role="img" ' +
-              'title="' + T.esc(packTxt) + '" aria-label="' + T.esc(packTxt) + '">' +
-              T.esc(T.packagingEmoji(v.packaging)) +
-            '</span>' +
-          '</div>' +
           (v.limitedTo ? '<p class="variant-limited">🔒 Limited to ' +
             T.esc(Number(v.limitedTo).toLocaleString("en-US")) + ' units</p>' : '') +
+          // L'emoji d'emballage tient sur la MÊME ligne que la case à cocher, calé à
+          // droite : plus de pastille ni de ligne dédiée. Le placer DANS le <label> est
+          // délibéré — il agrandit la zone cliquable et son aria-label entre dans le nom
+          // accessible de la case (« I own it, First Edition »), ce qui distingue enfin
+          // deux tuiles voisines qui annonçaient toutes deux « I own it ».
           '<label class="variant-check">' +
             '<input type="checkbox" data-key="' + T.esc(key) + '"' + (owned ? " checked" : "") + ' />' +
             '<span>I own it</span>' +
+            '<span class="variant-pack" role="img" ' +
+              'title="' + T.esc(packTxt) + '" aria-label="' + T.esc(packTxt) + '">' +
+              T.esc(T.packagingEmoji(v.packaging)) +
+            '</span>' +
           '</label>' +
         '</div>'
       );

@@ -145,10 +145,13 @@ exported collection.
 - **`duck.html` groups "Available versions" by size**: one `.size-group` per size, headed by that
   size's TUBBZ logo (`.tubbz-logo`, shared with the grid — only the width differs). Packaging is
   fully preserved: one `.variant` tile per packaging inside the group, each with its photo, its
-  `.chip.pack-fe` / `.pack-box`, its `limitedTo` and its own checkbox. The chip shows the
-  **emoji alone** (`packagingEmoji`) — no size (the header says it) and no packaging name (the
-  chip colour already separates the two). The full name is kept in `title` + `aria-label`, with
-  `role="img"` so screen readers announce "First Edition" instead of "bathtub". The header logo stays **full colour** here, unlike
+  its `limitedTo` and its own checkbox. Packaging is marked by the **emoji alone**
+  (`packagingEmoji`), `.variant-pack`, sitting at the right end of the checkbox row — no chip, no
+  line of its own, no size (the group header says it). It lives **inside** the `<label>` on
+  purpose: it widens the click target and its `aria-label` joins the checkbox's accessible name
+  ("I own it, First Edition"), which is what tells two neighbouring tiles apart. `role="img"` +
+  `title`/`aria-label` keep the full name available and stop screen readers saying "bathtub".
+  Consequence: `--fe` / `--box` no longer appear on this page, and `packagingClass` is gone. The header logo stays **full colour** here, unlike
   the grid: the checkboxes and green borders already carry ownership, and a greyed logo would
   read as "this size does not exist".
 - **Anything overlaying a figurine photo must NOT follow the theme.** Catalog images are opaque

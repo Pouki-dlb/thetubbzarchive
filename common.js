@@ -124,14 +124,9 @@ window.Tubbz = (function () {
     return PACK_EMOJI[packaging] || "";
   }
 
-  // Classe CSS de couleur associée à l'emballage.
-  function packagingClass(packaging) {
-    return packaging === "first-edition" ? "pack-fe" : "pack-box";
-  }
-
-  // Note : la pastille d'emballage de duck.html n'affiche QUE l'emoji (le nom complet
-  // passe en title / aria-label). Elle se compose donc directement depuis packagingEmoji
-  // et packagingLabel — pas de helper dédié, il ne ferait que les concaténer.
+  // Note : duck.html marque l'emballage par le SEUL emoji, posé sur la ligne de la case
+  // à cocher (le nom complet passe en title / aria-label). Plus de pastille colorée, donc
+  // plus de packagingClass ni de helper de libellé : packagingEmoji + packagingLabel suffisent.
 
   /* ------------------------------------------------------------------ */
   /* État visiteur (localStorage)                                       */
@@ -423,7 +418,6 @@ window.Tubbz = (function () {
     sizeLabel: sizeLabel,
     packagingLabel: packagingLabel,
     packagingEmoji: packagingEmoji,
-    packagingClass: packagingClass,
     imageFor: imageFor,
     sizeImageFor: sizeImageFor,
     sizesOf: sizesOf,
