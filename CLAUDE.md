@@ -144,6 +144,12 @@ exported collection.
   the images load; and they are deliberately **not** `loading="lazy"` (3 tiny shared files).
 - **`duck.html` keeps the per-variant chips** (`.chip.pack-fe` / `.pack-box`, emoji labels via
   `variantChipLabel`) — the simplification above applies to the grid only.
+- **Anything overlaying a figurine photo must NOT follow the theme.** Catalog images are opaque
+  and their background is **white in both themes** (verified across the catalog: luminance ≥ 240
+  in the badge corner). Wiring such an overlay to `--text` / `--surface` makes it light-on-white
+  in dark theme — this bit both `.num-badge` and `.heart`, whose colours are now hard-coded to
+  their light-theme values. Same trap for `❤`: it is `U+2764` **without** the emoji variation
+  selector, so it renders as a *text glyph* tinted by `color`, not as a colour emoji.
 - **Index card is a `<div>`, not one big link**: image, name, and size badges lead to the detail
   page; the collection name filters that collection (`?collection=<name>`, mirrored on `duck.html`).
 - **`duck.html` hero** = per-size image + a flip button that cycles sizes when a duck has more than

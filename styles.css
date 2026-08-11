@@ -205,12 +205,25 @@ h1, h2, h3 { line-height: 1.2; }
 .card:hover { transform: translateY(-3px); border-color: var(--accent); }
 .card-media { display: block; position: relative; aspect-ratio: 1 / 1; background: var(--surface-2); border-radius: var(--radius); }
 .card-media img { width: 100%; height: 100%; object-fit: contain; padding: 6px; border-radius: inherit; }
-.heart { position: absolute; top: 8px; right: 8px; font-size: 1.1rem; filter: drop-shadow(0 1px 2px rgba(0,0,0,.3)); }
+/* ❤ est U+2764 SANS sélecteur emoji : le navigateur le rend en glyphe texte, donc
+   coloré par `color`. Faute de déclaration il héritait de --text — quasi blanc en thème
+   sombre, donc invisible sur la photo. Même raisonnement que .num-badge : c'est posé sur
+   l'image (fond blanc dans les deux thèmes), la couleur est donc figée HORS thème.
+   Rouge = --danger du thème clair, pour ne pas ajouter une teinte de plus à la palette. */
+.heart {
+  position: absolute; top: 8px; right: 8px; font-size: 1.1rem;
+  color: #c0392b;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, .3));
+}
 .num-badge {
   position: absolute; top: 8px; left: 8px;
   font-size: .72rem; font-weight: 800; letter-spacing: .02em;
   padding: .15em .5em; border-radius: 999px;
-  background: color-mix(in srgb, var(--text) 78%, transparent); color: var(--surface);
+  /* Volontairement HORS thème : ce badge est posé sur la photo de la figurine, dont le
+     fond est blanc dans les deux thèmes (vérifié sur tout le catalogue). L'accrocher à
+     --text / --surface le rendait clair-sur-clair en thème sombre. Valeurs = celles que
+     le thème clair produisait, désormais figées. */
+  background: rgba(29, 39, 51, .78); color: #fff;
 }
 /* Corps de card à hauteur fixe → toutes les cards ont la même hauteur (grille alignée).
    Le nom (max 2 lignes, tronqué « … » au-delà) et la collection, collée juste dessous, sont
