@@ -9,7 +9,8 @@ window.TUBBZ_DATA = {
     "sizes": [
       "classic",
       "mini",
-      "xl"
+      "xl",
+      "plushies"
     ],
     "packaging": [
       "first-edition",
@@ -19,7 +20,8 @@ window.TUBBZ_DATA = {
       "sizes": {
         "classic": "Classic",
         "mini": "Mini",
-        "xl": "XL"
+        "xl": "XL",
+        "plushies": "Plushies"
       },
       "packaging": {
         "first-edition": "First Edition",
@@ -1914,6 +1916,9 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "plushies"
         }
       ]
     },
@@ -4405,6 +4410,9 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "plushies"
         }
       ]
     },
@@ -4427,6 +4435,9 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "plushies"
         }
       ]
     },
@@ -4449,6 +4460,9 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "plushies"
         }
       ]
     },
@@ -4471,6 +4485,9 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "plushies"
         }
       ]
     },

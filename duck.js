@@ -41,27 +41,30 @@
       var owned = T.isOwned(state, fig.id, key);
       var img = T.variantImageFor(fig.id, v.size, v.packaging);
       var sizeTxt = T.sizeLabel(meta, v.size);
-      var packTxt = T.packagingLabel(meta, v.packaging);
+      // Emballage, ou la taille elle-même quand il n'y en a pas (Plushies).
+      var mark = T.variantMarker(meta, v);
+      // Sans emballage, le marqueur EST la taille : ne pas écrire « Plushies Plushies ».
+      var altTxt = fig.name + " — " + sizeTxt + (mark.label === sizeTxt ? "" : " " + mark.label);
 
       return (
         '<div class="variant' + (owned ? " is-owned" : "") + '">' +
           '<div class="variant-media">' +
-            '<img loading="lazy" src="' + T.esc(img) + '" alt="' + T.esc(fig.name + " — " + sizeTxt + " " + packTxt) + '" ' +
+            '<img loading="lazy" src="' + T.esc(img) + '" alt="' + T.esc(altTxt) + '" ' +
               'onerror="this.onerror=null;this.src=\'' + T.PLACEHOLDER + '\'" />' +
           '</div>' +
           (v.limitedTo ? '<p class="variant-limited">🔒 Limited to ' +
             T.esc(Number(v.limitedTo).toLocaleString("en-US")) + ' units</p>' : '') +
-          // L'emoji d'emballage tient sur la MÊME ligne que la case à cocher, calé à
-          // droite : plus de pastille ni de ligne dédiée. Le placer DANS le <label> est
-          // délibéré — il agrandit la zone cliquable et son aria-label entre dans le nom
-          // accessible de la case (« I own it, First Edition »), ce qui distingue enfin
-          // deux tuiles voisines qui annonçaient toutes deux « I own it ».
+          // L'emoji tient sur la MÊME ligne que la case à cocher, calé à droite : plus de
+          // pastille ni de ligne dédiée. Le placer DANS le <label> est délibéré — il
+          // agrandit la zone cliquable et son aria-label entre dans le nom accessible de
+          // la case (« I own it, First Edition »), ce qui distingue enfin deux tuiles
+          // voisines qui annonçaient toutes deux « I own it ».
           '<label class="variant-check">' +
             '<input type="checkbox" data-key="' + T.esc(key) + '"' + (owned ? " checked" : "") + ' />' +
             '<span>I own it</span>' +
             '<span class="variant-pack" role="img" ' +
-              'title="' + T.esc(packTxt) + '" aria-label="' + T.esc(packTxt) + '">' +
-              T.esc(T.packagingEmoji(v.packaging)) +
+              'title="' + T.esc(mark.label) + '" aria-label="' + T.esc(mark.label) + '">' +
+              T.esc(mark.emoji) +
             '</span>' +
           '</label>' +
         '</div>'

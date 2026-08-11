@@ -33,7 +33,7 @@ The project has two parts:
 | `styles.css` | Styling, responsive, auto light/dark theme. |
 | `data.js` | The catalog (`window.TUBBZ_DATA`). |
 | `images/` | Figurine images (+ `placeholder.svg`). Only files named after an `id` live here. |
-| `logo-tubbz*.webp` | The three TUBBZ logos (classic / mini / xl) used as the grid's size badges. UI assets → kept at the root, not in `images/`. |
+| `logo-tubbz*.webp` | The four TUBBZ logos (classic / mini / xl / plushies) used as the grid's size badges and the `duck.html` group headers. UI assets → kept at the root, not in `images/`. |
 | `admin/` | Local admin tool (`index.html`/`index.css`/`index.js` + `vendor/`). **Git-ignored.** |
 
 ## The catalog — `data.js`
@@ -45,10 +45,10 @@ optional fields omitted.
 ```js
 window.TUBBZ_DATA = {
   "meta": {
-    "sizes": ["classic", "mini", "xl"],
+    "sizes": ["classic", "mini", "xl", "plushies"],
     "packaging": ["first-edition", "boxed"],
     "labels": {
-      "sizes": { "classic": "Classic", "mini": "Mini", "xl": "XL" },
+      "sizes": { "classic": "Classic", "mini": "Mini", "xl": "XL", "plushies": "Plushies" },
       "packaging": { "first-edition": "First Edition", "boxed": "Boxed" }
     }
   },
@@ -59,7 +59,8 @@ window.TUBBZ_DATA = {
       "variants": [
         { "size": "classic", "packaging": "first-edition", "limitedTo": 5000 },
         { "size": "classic", "packaging": "boxed" },
-        { "size": "mini",    "packaging": "boxed" }
+        { "size": "mini",    "packaging": "boxed" },
+        { "size": "plushies" }
       ]
     }
   ]
@@ -69,22 +70,39 @@ window.TUBBZ_DATA = {
 **Figurine fields**: `id` (required, **unique & stable**), `name` (required), `collection`
 (required), `number?` (shown `#42`, else `—`), `releaseYear?` (else `Unknown`), `description?`
 (`\n` preserved, shown italic), `variants` (required).
-**Variant fields**: `size` (`classic|mini|xl`), `packaging` (`first-edition|boxed`), `limitedTo?`
-(number, shown "Limited to 3,000 units"). List only variants that **actually exist**.
-Internal variant key: `"<size>|<packaging>"`. **Max 4 variants per figurine.**
+**Variant fields**: `size` (`classic|mini|xl|plushies`), `packaging` (`first-edition|boxed`),
+`limitedTo?` (number, shown "Limited to 3,000 units"). List only variants that **actually exist**.
+**Max 5 variants per figurine** (4 packaged + the plush).
+
+### `plushies`: the size with no packaging
+
+A plush exists in **one** form only — no First Edition, no Boxed, and therefore **one photo**.
+Its variant carries **no `packaging` key at all** (never a placeholder value), which drives
+everything else:
+
+- Internal variant key is `"<size>|<packaging>"` for packaged sizes but **just `"plushies"`**
+  for the plush — `Tubbz.variantKey` returns the bare size when `packaging` is falsy. These keys
+  are **stable**: they live in visitors' `localStorage` and in their exports.
+- `variantImageFor` falls back to the per-size image when `packaging` is absent, so a
+  `-p<packaging>.webp` file is never produced or looked up.
+- `Tubbz.hasPackaging(size)` is the single test (`SIZES_WITHOUT_PACKAGING`). Add another
+  packaging-less size there and to the same map in `admin/index.js`, and it just works.
+- Anything iterating variants to build a **packaging** image or label must guard on `v.packaging`
+  — otherwise the plush is treated as a packaged variant and points at the wrong file.
 
 ## Image naming (derived from `id` — no paths in `data.js`)
 
 Put `.webp` files in `images/`; the app computes paths from the `id`. Missing file → `placeholder.svg`
-via `onerror` (no visible error). Size initials `classic→c`, `mini→m`, `xl→x`; packaging
-`first-edition→f`, `boxed→b`.
+via `onerror` (no visible error). Size initials `classic→c`, `mini→m`, `xl→x`, `plushies→p`;
+packaging `first-edition→f`, `boxed→b`.
 
-- **Per size** (bare figurine): `images/<id>-<c|m|x>.webp` — used for the `duck.html` hero and the
+- **Per size** (bare figurine): `images/<id>-<c|m|x|p>.webp` — used for the `duck.html` hero and the
   default card image. Helpers `Tubbz.sizeImageFor` (site) / `imageForSize` (admin). **Primary size**
   = `classic` if present, else the single size = the default card image.
 - **Per variant** (figurine in its packaging): `images/<id>-<c|m|x><f|b>.webp` (e.g. `-cf`, `-cb`,
-  `-mf`, `-xb`) — used for the "Available versions" tiles and the chip-hover preview. Helper
-  `variantImageFor`.
+  `-mf`, `-xb`) — used for the "Available versions" tiles and the badge-hover preview. Helper
+  `variantImageFor`. **`plushies` has none**: `-p.webp` is its only file, and it serves as both
+  the size image and the tile photo.
 - Every image the admin tool produces is **400×400 px, WebP, quality 0.75**.
 
 ## Visitor collection (`localStorage`)
@@ -121,6 +139,11 @@ exported collection.
 - **`id`s**: locked when editing (unlock is an advanced action); on create, auto-generated from
   `collection + name` via `slugify` and editable until first save.
 - Editor renders one image slot per **distinct size** (`#size-images-list`) and flags missing images.
+- A **packaging-less size** (`plushies`) renders its variant row without the packaging `<select>`
+  and **without its own image slot** — its photo is the per-size one, already editable above; two
+  entry points for one file would be a trap. `syncVariantsFromDOM` decides from the **new size**,
+  never from the presence of `.v-pack`: it runs *before* the row re-renders, so a Classic → Plushies
+  switch would otherwise leave a ghost `packaging` in the model and write `-pf.webp`.
 
 ## Conventions & gotchas
 
@@ -135,8 +158,10 @@ exported collection.
 - **Size badge** (index grid only) = one TUBBZ logo per **existing size**, not per variant — the
   grid ignores packaging entirely (that detail stays on `duck.html`). Full colour if the visitor
   owns **at least one** packaging of that size (`Tubbz.ownsSize`), greyscale + `opacity:.45`
-  otherwise; a missing size gets no badge. Max 3 badges, forced onto **one line** (`nowrap`) —
-  no figurine currently has more than 2 sizes. Hover a badge → the card image becomes that size's
+  otherwise; a missing size gets no badge. Up to 4 badges (with `plushies`), forced onto **one
+  line** (`nowrap`): each is `flex: 0 1 46px` + `min-width: 0`, so they keep 46px while there is
+  room and **shrink proportionally** rather than overflow — 4 badges do not fit a 180px column,
+  the narrowest the grid allows. Hover a badge → the card image becomes that size's
   **bare** figurine (`Tubbz.sizeImageCandidates` falls back to its packaging shots, then the
   placeholder); click → opens the detail page. Gotchas: the logos' outline is **pure black**, so
   dark theme adds a light `drop-shadow` halo (and must restate `grayscale`, since `filter` doesn't
@@ -146,8 +171,10 @@ exported collection.
   size's TUBBZ logo (`.tubbz-logo`, shared with the grid — only the width differs). Packaging is
   fully preserved: one `.variant` tile per packaging inside the group, each with its photo, its
   its `limitedTo` and its own checkbox. Packaging is marked by the **emoji alone**
-  (`packagingEmoji`), `.variant-pack`, sitting at the right end of the checkbox row — no chip, no
-  line of its own, no size (the group header says it). It lives **inside** the `<label>` on
+  (`.variant-pack`) sitting at the right end of the checkbox row — no chip, no line of its own, no
+  size (the group header says it). The emoji and its label come from `Tubbz.variantMarker`, the
+  single place that decides: the **packaging** when there is one, the **size** otherwise (a plush
+  is alone in its group, so 🧸 + "Plushies" is what distinguishes it). It lives **inside** the `<label>` on
   purpose: it widens the click target and its `aria-label` joins the checkbox's accessible name
   ("I own it, First Edition"), which is what tells two neighbouring tiles apart. `role="img"` +
   `title`/`aria-label` keep the full name available and stop screen readers saying "bathtub".

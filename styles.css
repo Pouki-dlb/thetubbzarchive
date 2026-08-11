@@ -250,9 +250,13 @@ h1, h2, h3 { line-height: 1.2; }
   display: flex; flex-wrap: nowrap; align-items: flex-end; gap: 8px;
   margin-top: auto; min-height: 36px;
 }
-.size-badge { display: block; line-height: 0; cursor: pointer; }
+/* flex: 0 1 46px + min-width:0 → 46px de large tant qu'il y a la place, et rétrécissement
+   proportionnel sinon. Nécessaire depuis les Plushies : une card peut désormais porter
+   4 logos, ce qui dépasse la largeur utile d'une colonne à sa taille minimale (156px).
+   Mieux vaut des logos plus petits qu'une rangée qui déborde. */
+.size-badge { display: block; line-height: 0; cursor: pointer; flex: 0 1 46px; min-width: 0; }
 .size-badge .tubbz-logo {
-  width: 46px;
+  width: 100%;
   transition: transform .12s ease, opacity .12s ease, filter .12s ease;
 }
 /* Taille non possédée : noir et blanc + atténuée, pour que la possédée saute aux yeux.
@@ -266,9 +270,10 @@ h1, h2, h3 { line-height: 1.2; }
    déclaré ici (100×68, 100×77, 100×71) pour que la hauteur soit réservée AVANT le
    chargement de l'image — sinon la ligne saute. */
 .tubbz-logo { display: block; height: auto; }
-.tubbz-logo-classic { aspect-ratio: 100 / 68; }
-.tubbz-logo-mini    { aspect-ratio: 100 / 77; }
-.tubbz-logo-xl      { aspect-ratio: 100 / 71; }
+.tubbz-logo-classic  { aspect-ratio: 100 / 68; }
+.tubbz-logo-mini     { aspect-ratio: 100 / 77; }
+.tubbz-logo-xl       { aspect-ratio: 100 / 71; }
+.tubbz-logo-plushies { aspect-ratio: 100 / 75; }
 /* Le contour des logos est NOIR PUR et détouré ; sur les fonds sombres il se
    dissoudrait. Un fin halo clair l'en détache — thème sombre uniquement.
    `filter` ne se cumule pas entre règles : on redéclare le grayscale de la grille. */

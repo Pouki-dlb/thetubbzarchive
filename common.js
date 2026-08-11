@@ -17,9 +17,15 @@ window.Tubbz = (function () {
   // Image par taille    : images/<id>-<taille>.webp             (ex. -c, -m, -x) → figurine « nue »
   // Image de variante   : images/<id>-<taille><emballage>.webp  (ex. -cf, -cb, -mf, -xb) → dans son packaging
   // Image principale    : images/<id>.webp (legacy — plus utilisée par le site, cf. admin/index.html)
-  var SIZE_INITIAL = { classic: "c", mini: "m", xl: "x" };
+  var SIZE_INITIAL = { classic: "c", mini: "m", xl: "x", plushies: "p" };
   var PACK_INITIAL = { "first-edition": "f", boxed: "b" };
-  var SIZE_ORDER = ["classic", "mini", "xl"];
+  var SIZE_ORDER = ["classic", "mini", "xl", "plushies"];
+
+  // Tailles SANS emballage : la peluche n'existe qu'en un seul exemplaire, il n'y a donc
+  // ni First Edition ni Boxed, et une seule photo — l'image « par taille » (-p.webp).
+  // Leurs variantes n'ont pas de champ `packaging` du tout (cf. variantKey / variantImageFor).
+  var SIZES_WITHOUT_PACKAGING = { plushies: true };
+  function hasPackaging(size) { return !SIZES_WITHOUT_PACKAGING[size]; }
 
   function imageFor(id) {
     return "images/" + id + ".webp";
@@ -37,7 +43,10 @@ window.Tubbz = (function () {
     return SIZE_ORDER.filter(function (s) { return present[s]; });
   }
 
+  // Sans emballage (Plushies), il n'existe pas d'image de variante : on retombe sur
+  // l'unique photo de la taille. Ne jamais produire de fichier « -p<emballage>.webp ».
   function variantImageFor(id, size, packaging) {
+    if (!packaging) return sizeImageFor(id, size);
     var s = SIZE_INITIAL[size] || "";
     var p = PACK_INITIAL[packaging] || "";
     return "images/" + id + "-" + s + p + ".webp";
@@ -49,7 +58,9 @@ window.Tubbz = (function () {
   function sizeImageCandidates(figurine, size) {
     var list = [sizeImageFor(figurine.id, size)];
     (figurine.variants || []).forEach(function (v) {
-      if (v && v.size === size) list.push(variantImageFor(figurine.id, size, v.packaging));
+      if (v && v.size === size && v.packaging) {
+        list.push(variantImageFor(figurine.id, size, v.packaging));
+      }
     });
     return list;
   }
@@ -60,7 +71,8 @@ window.Tubbz = (function () {
   var SIZE_LOGO = {
     classic: "logo-tubbz.webp",
     mini: "logo-tubbz-mini.webp",
-    xl: "logo-tubbz-xl.webp"
+    xl: "logo-tubbz-xl.webp",
+    plushies: "logo-tubbz-plushies.webp"
   };
   function sizeLogoFor(size) {
     return SIZE_LOGO[size] || SIZE_LOGO.classic;
@@ -124,9 +136,21 @@ window.Tubbz = (function () {
     return PACK_EMOJI[packaging] || "";
   }
 
-  // Note : duck.html marque l'emballage par le SEUL emoji, posé sur la ligne de la case
-  // à cocher (le nom complet passe en title / aria-label). Plus de pastille colorée, donc
-  // plus de packagingClass ni de helper de libellé : packagingEmoji + packagingLabel suffisent.
+  // Emoji propre à une taille — seulement pour celles qui n'ont pas d'emballage.
+  var SIZE_EMOJI = { plushies: "🧸" };
+
+  // Ce qui distingue une variante des autres tuiles de son groupe, sur duck.html :
+  // l'emballage quand il y en a un, sinon la taille elle-même (Plushies, seule de son
+  // groupe). Un seul point de décision, pour que l'emoji, le title et le nom accessible
+  // racontent toujours la même chose. Rendu par le SEUL emoji : le libellé passe en
+  // title / aria-label (pas de pastille — cf. .variant-pack dans styles.css).
+  function variantMarker(meta, v) {
+    if (v && v.packaging) {
+      return { emoji: packagingEmoji(v.packaging), label: packagingLabel(meta, v.packaging) };
+    }
+    var size = v ? v.size : "";
+    return { emoji: SIZE_EMOJI[size] || "", label: sizeLabel(meta, size) };
+  }
 
   /* ------------------------------------------------------------------ */
   /* État visiteur (localStorage)                                       */
@@ -187,8 +211,11 @@ window.Tubbz = (function () {
   /* Mutations de l'état                                                */
   /* ------------------------------------------------------------------ */
 
+  // Clé de possession d'une variante. Sans emballage (Plushies) la taille suffit et se
+  // suffit : « plushies » plutôt qu'un « plushies|undefined » bancal. Ces clés sont
+  // STABLES — elles vivent dans le localStorage du visiteur et dans ses exports.
   function variantKey(size, packaging) {
-    return size + "|" + packaging;
+    return packaging ? size + "|" + packaging : size;
   }
 
   function isOwned(state, id, key) {
@@ -418,6 +445,8 @@ window.Tubbz = (function () {
     sizeLabel: sizeLabel,
     packagingLabel: packagingLabel,
     packagingEmoji: packagingEmoji,
+    variantMarker: variantMarker,
+    hasPackaging: hasPackaging,
     imageFor: imageFor,
     sizeImageFor: sizeImageFor,
     sizesOf: sizesOf,
