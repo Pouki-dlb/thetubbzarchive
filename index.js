@@ -92,16 +92,26 @@
   /* Rendu de la grille                                               */
   /* ---------------------------------------------------------------- */
 
-  // Une chip par variante existante : couleur d'emballage + ✓ si possédée, grisée sinon.
-  // data-img porte l'image de la variante (utilisée au survol pour changer l'image de la card).
-  function variantChips(fig) {
-    return (fig.variants || []).map(function (v) {
-      var key = T.variantKey(v.size, v.packaging);
-      var owned = T.isOwned(state, fig.id, key);
-      var cls = "card-chip " + T.packagingClass(v.packaging) + (owned ? " is-owned" : " is-missing");
-      var vimg = T.variantImageFor(fig.id, v.size, v.packaging);
-      return '<span class="' + cls + '" data-img="' + T.esc(vimg) + '">' +
-        (owned ? "✓ " : "") + T.esc(T.variantChipLabel(catalog.meta, v.size, v.packaging)) +
+  // Un badge par TAILLE existante — pas par variante : la grille reste lisible, le
+  // détail emballage par emballage vit sur la fiche. Le badge est le logo TUBBZ de
+  // la taille, en couleur si le visiteur possède au moins un de ses emballages, en
+  // noir et blanc atténué sinon ; une taille absente n'a pas de badge du tout.
+  // (Max 3 tailles → une seule ligne ; aucun TUBBZ n'en a plus de 2 à ce jour.)
+  // data-img liste les images à essayer au survol, figurine nue en tête.
+  function sizeBadges(fig) {
+    return T.sizesOf(fig).map(function (size) {
+      var owned = T.ownsSize(state, fig, size);
+      var label = T.sizeLabel(catalog.meta, size) +
+        (owned ? " — in your collection" : " — not in your collection");
+      // Pas de loading="lazy" ici : ce sont 3 fichiers minuscules et partagés par
+      // toutes les cards (un seul aller-retour réseau chacun), et le différé les
+      // laisserait à hauteur nulle — donc la rangée sauterait au chargement.
+      // La classe size-<taille> porte le ratio natif du logo (cf. styles.css).
+      return '<span class="size-badge size-' + T.esc(size) + ' ' +
+            (owned ? "is-owned" : "is-missing") + '" ' +
+          'role="img" aria-label="' + T.esc(label) + '" title="' + T.esc(label) + '" ' +
+          'data-img="' + T.esc(T.sizeImageCandidates(fig, size).join("|")) + '">' +
+          '<img src="' + T.esc(T.sizeLogoFor(size)) + '" alt="" />' +
         '</span>';
     }).join("");
   }
@@ -134,7 +144,7 @@
               T.esc(fig.collection) +
             '</span>' +
           '</p>' +
-          '<div class="card-chips">' + variantChips(fig) + '</div>' +
+          '<div class="card-sizes">' + sizeBadges(fig) + '</div>' +
         '</div>' +
       '</div>'
     );
@@ -247,38 +257,46 @@
   }
 
   /* ---------------------------------------------------------------- */
-  /* Survol d'une chip → change l'image de la card (délégation)        */
+  /* Survol d'un badge → change l'image de la card (délégation)        */
   /* ---------------------------------------------------------------- */
 
-  function setImg(im, src) {
-    im.onerror = function () { this.onerror = null; this.src = T.PLACEHOLDER; };
-    im.src = src;
+  // `sources` = une ou plusieurs URL séparées par « | », par ordre de préférence.
+  // À chaque échec on passe à la suivante ; le placeholder ferme toujours la liste.
+  function setImg(im, sources) {
+    var list = String(sources || "").split("|").filter(Boolean);
+    list.push(T.PLACEHOLDER);
+    var i = 0;
+    im.onerror = function () {
+      if (++i >= list.length) { this.onerror = null; return; }
+      this.src = list[i];
+    };
+    im.src = list[0];
   }
 
-  // Clic sur une chip → navigue vers la fiche (même destination que l'image / le nom).
-  function bindChipNav() {
+  // Clic sur un badge → navigue vers la fiche (même destination que l'image / le nom).
+  function bindBadgeNav() {
     elGrid.addEventListener("click", function (e) {
-      var chip = e.target.closest(".card-chip");
-      if (!chip || !elGrid.contains(chip)) return;
-      var card = chip.closest(".card");
+      var badge = e.target.closest(".size-badge");
+      if (!badge || !elGrid.contains(badge)) return;
+      var card = badge.closest(".card");
       var link = card && card.querySelector("a.card-media, a.card-name-link");
       if (link) window.location.href = link.getAttribute("href");
     });
   }
 
-  function bindChipHover() {
+  function bindBadgeHover() {
     elGrid.addEventListener("mouseover", function (e) {
-      var chip = e.target.closest(".card-chip");
-      if (!chip || !elGrid.contains(chip)) return;
-      var card = chip.closest(".card");
+      var badge = e.target.closest(".size-badge");
+      if (!badge || !elGrid.contains(badge)) return;
+      var card = badge.closest(".card");
       var im = card && card.querySelector(".card-media img");
-      var v = chip.getAttribute("data-img");
+      var v = badge.getAttribute("data-img");
       if (im && v) setImg(im, v);
     });
     elGrid.addEventListener("mouseout", function (e) {
-      var chip = e.target.closest(".card-chip");
-      if (!chip || !elGrid.contains(chip)) return;
-      var card = chip.closest(".card");
+      var badge = e.target.closest(".size-badge");
+      if (!badge || !elGrid.contains(badge)) return;
+      var card = badge.closest(".card");
       var im = card && card.querySelector(".card-media img");
       if (im) setImg(im, im.getAttribute("data-default"));
     });
@@ -309,8 +327,8 @@
   }
 
   function bindEvents() {
-    bindChipHover();
-    bindChipNav();
+    bindBadgeHover();
+    bindBadgeNav();
     bindCollectionFilter();
 
     function onFilterChange() { render(); saveView(); }

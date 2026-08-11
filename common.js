@@ -43,6 +43,29 @@ window.Tubbz = (function () {
     return "images/" + id + "-" + s + p + ".webp";
   }
 
+  // Images d'une taille, de la plus « nue » à la plus habillée : la figurine seule
+  // d'abord, puis ses emballages en repli si le fichier nu venait à manquer.
+  // (Sert au survol des badges de taille de la grille, cf. index.js.)
+  function sizeImageCandidates(figurine, size) {
+    var list = [sizeImageFor(figurine.id, size)];
+    (figurine.variants || []).forEach(function (v) {
+      if (v && v.size === size) list.push(variantImageFor(figurine.id, size, v.packaging));
+    });
+    return list;
+  }
+
+  // Logo TUBBZ d'une taille — l'illustration des badges de taille de la grille.
+  // À la racine et non dans images/ : c'est un élément d'interface, pas une photo
+  // de figurine (images/ ne contient que des fichiers nommés d'après un id).
+  var SIZE_LOGO = {
+    classic: "logo-tubbz.webp",
+    mini: "logo-tubbz-mini.webp",
+    xl: "logo-tubbz-xl.webp"
+  };
+  function sizeLogoFor(size) {
+    return SIZE_LOGO[size] || SIZE_LOGO.classic;
+  }
+
   /* ------------------------------------------------------------------ */
   /* Catalogue                                                          */
   /* ------------------------------------------------------------------ */
@@ -227,6 +250,18 @@ window.Tubbz = (function () {
     return { owned: owned, total: variants.length };
   }
 
+  // Une TAILLE est considérée possédée dès qu'au moins un de ses emballages l'est.
+  // La grille n'affiche qu'un badge par taille (tous emballages confondus) : le
+  // détail emballage par emballage reste sur la fiche (duck.html).
+  function ownsSize(state, figurine, size) {
+    var variants = figurine.variants || [];
+    for (var i = 0; i < variants.length; i++) {
+      if (!variants[i] || variants[i].size !== size) continue;
+      if (isOwned(state, figurine.id, variantKey(size, variants[i].packaging))) return true;
+    }
+    return false;
+  }
+
   /* ------------------------------------------------------------------ */
   /* Petits utilitaires                                                 */
   /* ------------------------------------------------------------------ */
@@ -385,6 +420,7 @@ window.Tubbz = (function () {
     getNote: getNote,
     setNote: setNote,
     ownedCountOf: ownedCountOf,
+    ownsSize: ownsSize,
     sizeLabel: sizeLabel,
     packagingLabel: packagingLabel,
     packagingEmoji: packagingEmoji,
@@ -394,6 +430,8 @@ window.Tubbz = (function () {
     sizeImageFor: sizeImageFor,
     sizesOf: sizesOf,
     variantImageFor: variantImageFor,
+    sizeImageCandidates: sizeImageCandidates,
+    sizeLogoFor: sizeLogoFor,
     esc: esc
   };
 })();

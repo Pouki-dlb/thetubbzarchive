@@ -27,12 +27,13 @@ The project has two parts:
 
 | File | Role |
 |------|------|
-| `index.html` / `index.js` | Grid: search, filters, cards (variant chips), export/import. |
+| `index.html` / `index.js` | Grid: search, filters, cards (size badges), export/import. |
 | `duck.html` / `duck.js` | Detail page (`duck.html?id=<id>`): per-variant photos, ownership checks, wishlist, note. |
 | `common.js` | Shared: catalog loading, `localStorage`, helpers (`window.Tubbz`), **the injected header/footer** (`renderLayout`) and the theme toggle. |
 | `styles.css` | Styling, responsive, auto light/dark theme. |
 | `data.js` | The catalog (`window.TUBBZ_DATA`). |
-| `images/` | Figurine images (+ `placeholder.svg`). |
+| `images/` | Figurine images (+ `placeholder.svg`). Only files named after an `id` live here. |
+| `logo-tubbz*.webp` | The three TUBBZ logos (classic / mini / xl) used as the grid's size badges. UI assets → kept at the root, not in `images/`. |
 | `admin/` | Local admin tool (`index.html`/`index.css`/`index.js` + `vendor/`). **Git-ignored.** |
 
 ## The catalog — `data.js`
@@ -131,10 +132,20 @@ exported collection.
   `#btn-about`). `.site-header` reserves `min-height` to avoid a load-time layout jump. **To add a
   page**: give it the two mount points + `data-page`, and add its case in `headerActionsFor()`. Don't
   paste header/footer markup back into the HTML.
-- **Variant chip** = ownership indicator (colored + ✓ if owned, greyed otherwise). Hover a card
-  chip → the card image becomes that variant's; click → opens the detail page. Max 4 chips.
-- **Index card is a `<div>`, not one big link**: image, name, and chips lead to the detail page; the
-  collection name filters that collection (`?collection=<name>`, mirrored on `duck.html`).
+- **Size badge** (index grid only) = one TUBBZ logo per **existing size**, not per variant — the
+  grid ignores packaging entirely (that detail stays on `duck.html`). Full colour if the visitor
+  owns **at least one** packaging of that size (`Tubbz.ownsSize`), greyscale + `opacity:.45`
+  otherwise; a missing size gets no badge. Max 3 badges, forced onto **one line** (`nowrap`) —
+  no figurine currently has more than 2 sizes. Hover a badge → the card image becomes that size's
+  **bare** figurine (`Tubbz.sizeImageCandidates` falls back to its packaging shots, then the
+  placeholder); click → opens the detail page. Gotchas: the logos' outline is **pure black**, so
+  dark theme adds a light `drop-shadow` halo (and must restate `grayscale`, since `filter` doesn't
+  merge across rules); their native ratios are declared in CSS so the row keeps its height before
+  the images load; and they are deliberately **not** `loading="lazy"` (3 tiny shared files).
+- **`duck.html` keeps the per-variant chips** (`.chip.pack-fe` / `.pack-box`, emoji labels via
+  `variantChipLabel`) — the simplification above applies to the grid only.
+- **Index card is a `<div>`, not one big link**: image, name, and size badges lead to the detail
+  page; the collection name filters that collection (`?collection=<name>`, mirrored on `duck.html`).
 - **`duck.html` hero** = per-size image + a flip button that cycles sizes when a duck has more than
   one; single-size ducks get no button.
 - **Logo gotcha**: the title and tagline lines are justified to end at the same right edge. The

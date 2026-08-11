@@ -214,11 +214,10 @@ h1, h2, h3 { line-height: 1.2; }
 }
 /* Corps de card à hauteur fixe → toutes les cards ont la même hauteur (grille alignée).
    Le nom (max 2 lignes, tronqué « … » au-delà) et la collection, collée juste dessous, sont
-   en haut ; les badges sont ancrés en bas (margin-top:auto). L'espace « flottant » se place donc
-   entre la collection et la 1re rangée de badges (nom court → plus d'air à cet endroit). La hauteur
-   du corps est calibrée pour que même le pire cas (nom 2 lignes + badges 2 rangées) reste aéré.
-   (Max 4 badges par card → tient sur 2 rangées.) */
-.card-body { padding: 10px 12px 12px; display: flex; flex-direction: column; height: 140px; }
+   en haut ; les badges de taille sont ancrés en bas (margin-top:auto). L'espace « flottant » se
+   place donc entre la collection et les badges (nom court → plus d'air à cet endroit). La hauteur
+   est calibrée sur le pire cas : nom sur 2 lignes + la rangée unique de badges (~36px). */
+.card-body { padding: 10px 12px 12px; display: flex; flex-direction: column; height: 122px; }
 .card-name {
   margin: 0; font-size: 1rem; line-height: 1.2;
   /* Max 2 lignes ; un nom de 3 lignes ou plus est tronqué avec « … ». */
@@ -230,24 +229,36 @@ h1, h2, h3 { line-height: 1.2; }
 }
 /* Nom de collection cliquable → filtre la collection (voir index.js).
    Style porté par la classe utilitaire .text-link. */
-.card-chips {
-  display: flex; flex-wrap: wrap; gap: 5px; align-content: flex-start;
-  margin-top: auto;
+/* Badges de taille : un logo TUBBZ par taille existante (voir sizeBadges dans index.js).
+   Toujours sur UNE ligne (nowrap) — 3 tailles au maximum, donc ça tient. Les logos
+   « MINI » et « XL » portent une pastille qui dépasse EN HAUT : on aligne donc les
+   badges par le bas (align-items) pour que les pilules TUBBZ restent sur la même ligne. */
+.card-sizes {
+  display: flex; flex-wrap: nowrap; align-items: flex-end; gap: 8px;
+  margin-top: auto; min-height: 36px;
 }
-.card-chip {
-  font-size: .72rem; font-weight: 700; white-space: nowrap;
-  padding: .18em .5em; border-radius: 999px;
-  border: 1px solid var(--border); background: var(--surface-2); color: var(--muted);
-  cursor: pointer;
+.size-badge { display: block; line-height: 0; cursor: pointer; }
+.size-badge img {
+  display: block; width: 46px; height: auto;
+  transition: transform .12s ease, opacity .12s ease, filter .12s ease;
 }
-.card-chip.is-missing { opacity: .72; }
-.card-chip.is-owned.pack-fe {
-  background: color-mix(in srgb, var(--fe) 18%, var(--surface));
-  color: var(--fe); border-color: color-mix(in srgb, var(--fe) 45%, transparent);
+/* Ratios natifs des trois logos (100×68, 100×77, 100×71) : déclarés en CSS pour que
+   la rangée ait sa hauteur définitive avant même que les images soient chargées. */
+.size-badge.size-classic img { aspect-ratio: 100 / 68; }
+.size-badge.size-mini img    { aspect-ratio: 100 / 77; }
+.size-badge.size-xl img      { aspect-ratio: 100 / 71; }
+/* Taille non possédée : noir et blanc + atténuée, pour que la possédée saute aux yeux. */
+.size-badge.is-missing img { filter: grayscale(1); opacity: .45; }
+.size-badge:hover img { transform: translateY(-2px); }
+.size-badge.is-missing:hover img { opacity: .7; }
+/* Le contour des logos est NOIR PUR et détouré ; sur le fond de card sombre (presque
+   noir) la pilule se dissoudrait. Un fin halo clair l'en détache — thème sombre
+   uniquement. `filter` ne se cumule pas entre règles : on redéclare le grayscale. */
+:root[data-theme="dark"] .size-badge img {
+  filter: drop-shadow(0 0 1px rgba(255, 255, 255, .5));
 }
-.card-chip.is-owned.pack-box {
-  background: color-mix(in srgb, var(--box) 18%, var(--surface));
-  color: var(--box); border-color: color-mix(in srgb, var(--box) 45%, transparent);
+:root[data-theme="dark"] .size-badge.is-missing img {
+  filter: grayscale(1) drop-shadow(0 0 1px rgba(255, 255, 255, .5));
 }
 
 /* ---------------- Page détail (duck.html) ---------------- */
