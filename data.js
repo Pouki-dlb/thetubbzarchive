@@ -2717,6 +2717,10 @@ window.TUBBZ_DATA = {
         {
           "size": "classic",
           "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
         }
       ]
     },
@@ -2736,6 +2740,10 @@ window.TUBBZ_DATA = {
         {
           "size": "classic",
           "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
         }
       ]
     },
@@ -2755,6 +2763,10 @@ window.TUBBZ_DATA = {
         {
           "size": "classic",
           "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
         }
       ]
     },
@@ -2774,6 +2786,10 @@ window.TUBBZ_DATA = {
         {
           "size": "classic",
           "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
         }
       ]
     },
@@ -4137,6 +4153,56 @@ window.TUBBZ_DATA = {
         },
         {
           "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "original-stormtrooper-stormtrooper",
+      "name": "Stormtrooper",
+      "collection": "Original Stormtrooper",
+      "number": "1",
+      "releaseYear": "2023",
+      "description": "Stand by your tubs! A new, original Stormtrooper rubber duck in cosplay has arrived to take command of the duck pond. Looking imperial in his iconic white armour, this new collectible is a must-have for original Stormtrooper fans – add him to your collection now!",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "original-stormtrooper-glimmer-trooper",
+      "name": "Glimmer Trooper",
+      "collection": "Original Stormtrooper",
+      "number": "2",
+      "releaseYear": "2026",
+      "description": "The Empire... in a glittering version.\n\nThe legendary Stormtrooper returns in an exclusive Glimmer version as part of the TUBBZ collection.\nWith its shimmering chrome finish, this variant reinterprets the iconic armor with a premium touch that immediately catches the eye.\n\nReimagined as a cosplaying duck, this collectible retains all the imperial rigor while adding a unique and modern visual dimension.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "original-stormtrooper-shadow-trooper",
+      "name": "Shadow Trooper",
+      "collection": "Original Stormtrooper",
+      "number": "2",
+      "releaseYear": "2026",
+      "description": "The Empire... in its darkest version.\n\nThe formidable Shadow Stormtrooper, an elite unit of the Imperial forces, joins the TUBBZ collection.\nWith its obsidian black armor, this rare variant embodies a more stealthy, more strategic... and even more intimidating presence.\n\nReimagined as a cosplay duck, this collectible retains all the imperial rigor and authority, with a dark, ultra-impactful aesthetic.",
+      "variants": [
+        {
+          "size": "classic",
           "packaging": "first-edition"
         }
       ]
@@ -6189,6 +6255,84 @@ window.TUBBZ_DATA = {
       "variants": [
         {
           "size": "classic",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "the-office-dwight-schrute",
+      "name": "Dwight Schrute",
+      "collection": "The Office",
+      "releaseYear": "2025",
+      "description": "Beets, bears, Battlestar Galactica… and now ducks! The Office's mini TUBBZ duck is ready for battle with his mustard shirt, intense gaze, and unwavering confidence in his authority. He's not here to sit on a shelf; he's here to rule it. Fiercely. This duck isn't just a collectible; he's a protector of paperwork and justice!",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "the-office-jim-halpert",
+      "name": "Jim Halpert",
+      "collection": "The Office",
+      "releaseYear": "2025",
+      "description": "Whether he's cracking a joke with Dwight or flashing his signature grin, the MINI TUBBZ Jim from The Office embodies effortless cool, in a collector's edition. With his laid-back style and understated humor, Jim Halpert fits perfectly into the Mini TUBBZ collection. Don't be surprised if your other ducks start staring at the camera!",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "the-office-kevin-malone",
+      "name": "Kevin Malone",
+      "collection": "The Office",
+      "releaseYear": "2025",
+      "description": "The TUBBZ MINI Kevin figurine from The Office immortalizes the legendary accountant in his most iconic moment, just before the infamous chili incident. Endearing, a little naive, and surprisingly realistic, this mini collectible will add a touch of sweetness and sweetness to your collection. It's Kevin, and all he dreams about is hot dogs and peace and quiet.",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "the-office-michael-scott",
+      "name": "Michael Scott",
+      "collection": "The Office",
+      "releaseYear": "2025",
+      "description": "The Office's mini TUBBZ Michael, a miniature duck, combines chaotic charm with bossy confidence. Mug in hand and ego intact, he's ready to parody movies, throw pizza parties, and run your department like it's Scranton. As he once said, \"I want people to be afraid of the love they have for me.\" Mission accomplished.",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "the-office-pam-beesly",
+      "name": "Pam Beesly",
+      "collection": "The Office",
+      "releaseYear": "2025",
+      "description": "weetness, humor… and subtle charm.\n\nPam Beesly, the receptionist-turned-artist from The Office, arrives in Mini TUBBZ form to bring a touch of calm and emotion to your collection.\nWith her iconic cardigan, her sincere smile, and her recognizable style, this figurine perfectly captures the essence of the character.\n\nEndearing, kind, and full of subtlety, this mini version conveys all of Pam's personality with the quirky touch unique to TUBBZ.",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "the-office-stanley-hudson",
+      "name": "Stanley Hudson",
+      "collection": "The Office",
+      "releaseYear": "2025",
+      "description": "With Stanley, the TUBBZ MINI Office duck, insolence reaches new heights! Dressed in a suit and sporting the ultimate \"I'm fed up\" expression, this duck lives and breathes crossword puzzles, Pretzel Day, and your shenanigans. The most jaded duck of the bunch? Without a doubt.",
+      "variants": [
+        {
+          "size": "mini",
           "packaging": "first-edition"
         }
       ]
