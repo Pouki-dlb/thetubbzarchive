@@ -659,6 +659,9 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "plushies"
         }
       ]
     },
@@ -867,6 +870,9 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "plushies"
         }
       ]
     },
@@ -1240,6 +1246,9 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "plushies"
         }
       ]
     },
@@ -2210,6 +2219,9 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "plushies"
         }
       ]
     },
@@ -2629,6 +2641,27 @@ window.TUBBZ_DATA = {
       ]
     },
     {
+      "id": "halloween-skeleton-gitd",
+      "name": "Skeleton (GITD)",
+      "collection": "Halloween",
+      "releaseYear": "2025",
+      "description": "Who needs flesh when you've got style? The TUBBZ Skeleton is a skeletal beauty, with its exposed ribs, spine, and neck giving this duck a deliciously macabre look. With its blank eyes, detailed sculpting, and undead expression in every quack, it's a must-have for horror fans, goths, and collectors who like their ducks deliciously dead.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
       "id": "halloween-2007-a-rob-zombie-film-michael-myers",
       "name": "Michael Myers",
       "collection": "Halloween (2007 A Rob Zombie film)",
@@ -2832,6 +2865,138 @@ window.TUBBZ_DATA = {
       ]
     },
     {
+      "id": "hazbin-hotel-charlie-morningstar",
+      "name": "Charlie Morningstar",
+      "collection": "Hazbin Hotel",
+      "number": "1",
+      "releaseYear": "2025",
+      "description": "Sweet, sincere… and driven by unshakeable hope.\n\nCharlie Morningstar makes a grand entrance into the TUBBZ collection, determined to save lost souls… one duck at a time.\nDressed in her iconic red suit and displaying her optimistic smile, she perfectly embodies her bright vision in the heart of chaos.\n\nWith her unique charm and positive energy, this collector's version captures all of Charlie's endearing personality.\nA collectible as adorable as it is inspiring… that believes in you. Maybe even a little too much.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "hazbin-hotel-alastor",
+      "name": "Alastor",
+      "collection": "Hazbin Hotel",
+      "number": "2",
+      "releaseYear": "2025",
+      "description": "The Radio Demon is on the air… and he never goes unnoticed.\n\nWith his eerie smile, his sinister charm and his vintage animation-inspired style, Alastor strikes a pose like a true presenter… with far darker intentions.\n\nTrue to his character, this TUBBZ version captures his entire aura:\na fascinating blend of charisma, menace, and retro elegance.\n\nSeemingly discreet… but impossible to ignore, this collectible will bring a touch of controlled chaos to your shelf.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "hazbin-hotel-angel-dust",
+      "name": "Angel Dust",
+      "collection": "Hazbin Hotel",
+      "number": "3",
+      "releaseYear": "2025",
+      "description": "No filter. No limits. 100% attitude.\n\nAngel Dust joins the TUBBZ collection with all his unbridled energy and unapologetic taste for chaos.\nExuberant, talkative, and impossible to ignore, he turns every appearance into a true spectacle.\n\nWith his provocative style and explosive charisma, this First Edition perfectly captures the essence of the character:\naudacious, flamboyant... and totally unstoppable.\n\nThis collectible doesn't ask for permission — it takes its rightful place.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "hazbin-hotel-lucifer-morningstar",
+      "name": "Lucifer Morningstar",
+      "collection": "Hazbin Hotel",
+      "number": "4",
+      "releaseYear": "2025",
+      "description": "Absolute charisma. Total mastery.\n\nLucifer Morningstar makes a grand entrance into the TUBBZ collection with impeccable elegance and undeniable confidence.\nImpeccable appearance, calculating gaze, dominant presence… everything about him exudes power.\n\nEvery detail of this First Edition reflects his status:\na refined, strategic, and resolutely imposing character.\n\nTransformed into a collectible duck, Lucifer retains all his royal aura, offering a piece that is both stylish, intimidating, and unmissable.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "hazbin-hotel-vaggie",
+      "name": "Vaggie",
+      "collection": "Hazbin Hotel",
+      "number": "5",
+      "releaseYear": "2026",
+      "description": "Fierce, determined, and ready for anything, Vaggie arrives in the TUBBZ range.\n\nWith her fiery temperament and unwavering loyalty, she immediately makes her presence felt.\nHer iconic red bow, her stitched cross over her eye, and her signature javelin are faithfully reproduced to capture all the intensity of the character.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "hazbin-hotel-valentino",
+      "name": "Valentino",
+      "collection": "Hazbin Hotel",
+      "number": "6",
+      "releaseYear": "2026",
+      "description": "Stylish, charismatic, and deliciously sinister, Valentino never goes unnoticed.\n\nDressed in his iconic red outfit with white heart-patterned finishes, his heart-shaped glasses, and his signature top hat, this character immediately asserts his presence.\n\nHis radiant smile reveals hypnotic multicolored teeth, reflecting a personality as fascinating as it is chaotic.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
       "id": "iron-maiden-eddie-the-trooper",
       "name": "Eddie The Trooper",
       "collection": "Iron Maiden",
@@ -2876,6 +3041,9 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "plushies"
         }
       ]
     },
@@ -3257,6 +3425,9 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "plushies"
         }
       ]
     },
@@ -4002,6 +4173,181 @@ window.TUBBZ_DATA = {
       ]
     },
     {
+      "id": "minions-stuart",
+      "name": "Stuart",
+      "collection": "Minions",
+      "number": "1",
+      "releaseYear": "2022",
+      "description": "Rock, fun… and totally uncontrollable.\n\nThe eccentric Stuart, the rebellious and musical Minion, joins the TUBBZ collection.\nWith his guitar in hand, he arrives as a cosplay duck ready to liven things up and cause a ruckus.\n\nCool, unpredictable, and always up for fun, this collectible perfectly captures Stuart's unique energy with TUBBZ's quirky touch.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "minions-bob",
+      "name": "Bob",
+      "collection": "Minions",
+      "number": "2",
+      "releaseYear": "2022",
+      "description": "So cute... and always ready for mischief.\n\nAdorable Bob, the most endearing of the Minions, joins the TUBBZ collection.\nInseparable from his teddy bear Tim, he arrives as a cosplaying duck ready to sow chaos... with a lot of tenderness.\n\nNaive, funny, and irresistible, this collectible perfectly captures Bob's unique personality with the quirky touch characteristic of TUBBZ.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "plushies"
+        }
+      ]
+    },
+    {
+      "id": "minions-kevin-with-fart-blaster",
+      "name": "Kevin with Fart Blaster",
+      "collection": "Minions",
+      "number": "3",
+      "releaseYear": "2023",
+      "description": "Oh no, who gave Kevin TUBBZ a fart blaster? This is going to cause chaos at the duck pond! He might be a cosplaying duck, but he has a fart blaster and oh yes, he's going to use it. Add the mischievous Kevin to your collections now, he's awesome!\n\nMinions fans will go wild for this Kevin TUBBZ wielding his fart blaster. Kevin loves it, it's going to be so much fun to blast his fellow ducks, nothing can stop him.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "minions-king-bob",
+      "name": "King Bob",
+      "collection": "Minions",
+      "number": "4",
+      "releaseYear": "2023",
+      "description": "All hail King Bob… even if he is a cosplaying duck, he deserves some respect! King Bob loves his new look, his crown is divine, and he wants to show it off. Minions fans should show him off too, TUBBZ Minions are a must-have in any collection.\n\nBob has had a busy time, first, he becomes King Bob of England and now he finds himself as King Bob of TUBBZ, all these royal duties must be exhausting. ",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "minions-gru",
+      "name": "Gru",
+      "collection": "Minions",
+      "number": "5",
+      "releaseYear": "2024",
+      "description": "Gru no longer wants to be the greatest villain of all time; he has a new goal: to become a TUBBZ collectible. Mission accomplished! Here he is in all his ducky glory!",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "minions-evil-minion",
+      "name": "Evil Minion",
+      "collection": "Minions",
+      "number": "6",
+      "releaseYear": "2024",
+      "description": "The Evil Minion transforms into a cosplaying duck. He’s spectacular, all purple with his crazy purple hair, a must-have for fans.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "mortal-kombat-scorpion",
+      "name": "Scorpion",
+      "collection": "Mortal Kombat",
+      "number": "1",
+      "releaseYear": "2024",
+      "description": "Scorpion is reborn… as a TUBBZ cosplaying duck. You’ll still recognise him with a kunai spear in hand, sporting the yellow ninja outfit – he’ll look great in your collection. He has beef with Sub Zero so tensions may be high in the pond.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "mortal-kombat-sub-zero",
+      "name": "Sub Zero",
+      "collection": "Mortal Kombat",
+      "number": "2",
+      "releaseYear": "2024",
+      "description": "A new evil has arrived in the form of a Sub Zero TUBBZ collectible. Essential for Mortal Kombat fans, he holds a skeleton in his hand, wears the black/blue martial arts costume and of course the mask is in place; guilt never leaves him, even as a collectible duck.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "mortal-kombat-raiden",
+      "name": "Raiden",
+      "collection": "Mortal Kombat",
+      "number": "3",
+      "releaseYear": "2024",
+      "description": "Raiden is about to use his powers in the duck pond as a TUBBZ collectible. Fans will appreciate the details that make this a quacking replica of this character. Wearing the straw hat with an iconic white jumpsuit and navy blue tabard, he is ready to strike lightning and make an impact on your collection.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "mortal-kombat-goro",
+      "name": "Goro",
+      "collection": "Mortal Kombat",
+      "number": "4",
+      "releaseYear": "2024",
+      "description": "Goro isn't just half-human, half-dragon, he now has to add a cosplay duck to his genetic makeup! This officially licensed collectible is part of the TUBBZ range, a highly collectible series of your favorite characters from games, movies, TV shows, and pop culture in duck form! Featuring intricate details, it’s truly one of a kind!",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
       "id": "motorhead-lemmy",
       "name": "Lemmy",
       "collection": "Motörhead",
@@ -4647,6 +4993,53 @@ window.TUBBZ_DATA = {
       "variants": [
         {
           "size": "classic",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "santa-claus-santa-claus",
+      "name": "Santa Claus",
+      "collection": "Santa Claus",
+      "number": "1",
+      "releaseYear": "2021",
+      "description": "Ho Ho Ho! Santa Claus is here to spread Christmas cheer, even if he somehow transformed into a duck along the way.\n\nThere’s no one better to spread festive joy than Santa himself - this time he’s looking to hop into the pond with a sack full of gifts and goodies!",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "plushies"
+        }
+      ]
+    },
+    {
+      "id": "saw-billy-the-puppet",
+      "name": "Billy The Puppet",
+      "collection": "Saw",
+      "number": "1",
+      "releaseYear": "2024",
+      "description": "Billy the Puppet becomes Billy the Duck. This ultra-creepy character is packed with detail; you can't mistake him for anyone else with his tuxedo, black and red eyes, and swirls on his cheeks.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
           "packaging": "first-edition"
         }
       ]
@@ -6726,6 +7119,52 @@ window.TUBBZ_DATA = {
         },
         {
           "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "valentines-day-cupid",
+      "name": "Cupid",
+      "collection": "Valentine's Day",
+      "number": "2",
+      "releaseYear": "2023",
+      "description": "TUBBZ Cosplaying Collectibles are looking for love and who better to help them than the God of Love himself, Cupid TUBBZ. Even in duck form, the God of love looks glorious with wings in place and a bow and arrow set at the ready.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "wedding-bride",
+      "name": "Bride",
+      "collection": "Wedding",
+      "number": "4",
+      "releaseYear": "2025",
+      "description": "Here comes the duck, here comes the duck! Meet this beautiful quacking bride, a cosplay rubber duck bride!",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "wedding-groom",
+      "name": "Groom",
+      "collection": "Wedding",
+      "number": "5",
+      "releaseYear": "2025",
+      "description": "I say! Yes, you want this handsome groom in your TUBBZ cosplay rubber duck collection. This collectible is part of the TUBBZ line, a highly collectible series of your favorite characters from games, movies, TV shows, and pop culture in duck form!",
+      "variants": [
+        {
+          "size": "classic",
           "packaging": "first-edition"
         }
       ]
