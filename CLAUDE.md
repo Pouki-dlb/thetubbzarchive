@@ -163,7 +163,15 @@ exported collection.
   room and **shrink proportionally** rather than overflow — 4 badges do not fit a 180px column,
   the narrowest the grid allows. Hover a badge → the card image becomes that size's
   **bare** figurine (`Tubbz.sizeImageCandidates` falls back to its packaging shots, then the
-  placeholder); click → opens the detail page. Gotchas: the logos' outline is **pure black**, so
+  placeholder); click → opens the detail page. Side by side, the badges are aligned on the **TUBBZ
+  wordmark, not on their boxes**: the four files place the word at different relative heights (the
+  `MINI` badge pushes it down, the `PLUSHIES` caption pulls it up), so each logo carries a
+  `--logo-align` offset in **% of its own height** (`translateY(%)` resolves against the element,
+  so the alignment survives the shrink above). Values were measured on the yellow wordmark pixels,
+  `classic` as the reference — re-measure if a logo file is redrawn. The `:hover` lift must
+  **compose** with it (`translateY(calc(var(--logo-align) - 2px))`), never replace it. This applies
+  to the grid only: on `duck.html` each logo is alone on its row, where shifting it would just
+  knock it off-centre from its label. Gotchas: the logos' outline is **pure black**, so
   dark theme adds a light `drop-shadow` halo (and must restate `grayscale`, since `filter` doesn't
   merge across rules); their native ratios are declared in CSS so the row keeps its height before
   the images load; and they are deliberately **not** `loading="lazy"` (3 tiny shared files).

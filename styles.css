@@ -259,10 +259,24 @@ h1, h2, h3 { line-height: 1.2; }
   width: 100%;
   transition: transform .12s ease, opacity .12s ease, filter .12s ease;
 }
+/* Alignement OPTIQUE des mots « TUBBZ ». Les quatre fichiers ne placent pas le wordmark
+   à la même hauteur relative (le badge MINI le pousse vers le bas, la mention PLUSHIES
+   le remonte) : aligner les boîtes par le bas ne suffit donc pas dès qu'ils sont côte à
+   côte. On décale chaque logo pour que les mots s'alignent, en % de sa PROPRE hauteur —
+   translateY(%) se résout sur la hauteur de l'élément, donc le calage survit au
+   rétrécissement des badges. Valeurs mesurées sur les pixels jaunes du wordmark, classic
+   servant de référence. Uniquement dans la GRILLE : sur duck.html chaque logo est seul
+   sur sa ligne, où le décaler ne ferait que le désaxer de son libellé. */
+.size-badge .tubbz-logo          { --logo-align: 0%; transform: translateY(var(--logo-align)); }
+.size-badge .tubbz-logo-mini     { --logo-align: -2.6%; }
+.size-badge .tubbz-logo-xl       { --logo-align: -1.4%; }
+.size-badge .tubbz-logo-plushies { --logo-align: 9.3%; }
 /* Taille non possédée : noir et blanc + atténuée, pour que la possédée saute aux yeux.
    (État propre à la GRILLE : sur duck.html le logo reste toujours en couleur, cf. duck.js.) */
 .size-badge.is-missing .tubbz-logo { filter: grayscale(1); opacity: .45; }
-.size-badge:hover .tubbz-logo { transform: translateY(-2px); }
+/* Le survol s'AJOUTE au calage optique : une simple translateY(-2px) l'écraserait
+   et ferait sauter le logo au passage de la souris. */
+.size-badge:hover .tubbz-logo { transform: translateY(calc(var(--logo-align) - 2px)); }
 .size-badge.is-missing:hover .tubbz-logo { opacity: .7; }
 
 /* ---------------- Logos TUBBZ (partagés grille + fiche) ---------------- */
