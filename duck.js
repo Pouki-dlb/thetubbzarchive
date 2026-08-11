@@ -34,14 +34,15 @@
     if (!sizes.length) sizes = ["classic"];
     var mainImg = T.sizeImageFor(fig.id, sizes[0]);
 
-    var variantsHTML = (fig.variants || []).map(function (v) {
+    // Une tuile par EMBALLAGE. La taille n'est plus écrite ici : elle est portée par
+    // l'en-tête du groupe, ce qui libère la place pour le nom complet de l'emballage.
+    function variantTile(v) {
       var key = T.variantKey(v.size, v.packaging);
       var owned = T.isOwned(state, fig.id, key);
       var img = T.variantImageFor(fig.id, v.size, v.packaging);
       var sizeTxt = T.sizeLabel(meta, v.size);
       var packTxt = T.packagingLabel(meta, v.packaging);
       var packClass = T.packagingClass(v.packaging);
-      var chipTxt = T.variantChipLabel(meta, v.size, v.packaging);
 
       return (
         '<div class="variant ' + (owned ? "is-owned " : "") + packClass + '">' +
@@ -50,7 +51,14 @@
               'onerror="this.onerror=null;this.src=\'' + T.PLACEHOLDER + '\'" />' +
           '</div>' +
           '<div class="variant-info">' +
-            '<span class="chip ' + packClass + '">' + T.esc(chipTxt) + '</span>' +
+            // Emoji seul : la taille est déjà dans l'en-tête du groupe et la couleur de la
+            // pastille distingue déjà les deux emballages. Le nom complet reste accessible
+            // via title + aria-label — role="img" pour que le lecteur d'écran annonce
+            // « First Edition » et non « baignoire ».
+            '<span class="chip ' + packClass + '" role="img" ' +
+              'title="' + T.esc(packTxt) + '" aria-label="' + T.esc(packTxt) + '">' +
+              T.esc(T.packagingEmoji(v.packaging)) +
+            '</span>' +
           '</div>' +
           (v.limitedTo ? '<p class="variant-limited">🔒 Limited to ' +
             T.esc(Number(v.limitedTo).toLocaleString("en-US")) + ' units</p>' : '') +
@@ -60,6 +68,33 @@
           '</label>' +
         '</div>'
       );
+    }
+
+    // Un groupe par taille, coiffé du logo TUBBZ correspondant. Le logo reste TOUJOURS
+    // en couleur ici — contrairement à la grille, où il porte la possession faute de
+    // mieux : sur la fiche, les coches et les bordures vertes le disent déjà, et un
+    // logo grisé se lirait à tort comme « cette taille n'existe pas ».
+    // Quand il y a plusieurs tailles, l'en-tête est un bouton qui bascule le hero
+    // dessus (sinon un simple bloc : pas de commande morte sur les fiches à 1 taille).
+    var multiSize = sizes.length > 1;
+    var groupsHTML = sizes.map(function (size) {
+      var tiles = (fig.variants || [])
+        .filter(function (v) { return v.size === size; })
+        .map(variantTile).join("");
+      if (!tiles) return "";
+
+      var sizeTxt = T.sizeLabel(meta, size);
+      var headInner =
+        '<img class="tubbz-logo tubbz-logo-' + T.esc(size) + ' size-group-logo" ' +
+          'src="' + T.esc(T.sizeLogoFor(size)) + '" alt="" />' +
+        '<span class="size-group-label">' + T.esc(sizeTxt) + '</span>';
+      var head = multiSize
+        ? '<button type="button" class="size-group-head" data-size="' + T.esc(size) + '" ' +
+            'title="Show ' + T.esc(sizeTxt) + ' in the main photo">' + headInner + '</button>'
+        : '<div class="size-group-head">' + headInner + '</div>';
+
+      return '<section class="size-group">' + head +
+        '<div class="variants">' + tiles + '</div></section>';
     }).join("");
 
     root.innerHTML =
@@ -103,7 +138,7 @@
 
         '<section class="duck-section">' +
           '<h2>Available versions</h2>' +
-          '<div class="variants">' + (variantsHTML || '<p class="muted">No variant listed.</p>') + '</div>' +
+          (groupsHTML || '<p class="muted">No variant listed.</p>') +
         '</section>' +
 
         '<section class="duck-section">' +
@@ -114,18 +149,38 @@
 
     bindEvents(fig);
 
-    // Flip du hero : cycle sur les tailles disponibles (uniquement si >1).
-    if (sizes.length > 1) {
+    // Deux commandes pointent sur la même taille de hero : le bouton « flip » (qui
+    // cycle) et les en-têtes de groupe (qui ciblent). Elles passent donc toutes deux
+    // par setHeroSize, seul endroit qui écrit l'image, le libellé du bouton et
+    // l'en-tête actif — sinon les deux se désynchronisent.
+    if (multiSize) {
       var heroIdx = 0;
       var heroImg = document.getElementById("hero-img");
       var flip = document.getElementById("hero-flip");
-      flip.addEventListener("click", function () {
-        heroIdx = (heroIdx + 1) % sizes.length;
+      var heads = root.querySelectorAll(".size-group-head[data-size]");
+
+      function setHeroSize(idx) {
+        heroIdx = idx;
+        var size = sizes[heroIdx];
         heroImg.onerror = function () { this.onerror = null; this.src = T.PLACEHOLDER; };
-        heroImg.src = T.sizeImageFor(fig.id, sizes[heroIdx]);
-        flip.textContent = "⇄ " + T.sizeLabel(meta, sizes[heroIdx]);
+        heroImg.src = T.sizeImageFor(fig.id, size);
+        flip.textContent = "⇄ " + T.sizeLabel(meta, size);
         flip.title = "Show " + T.sizeLabel(meta, sizes[(heroIdx + 1) % sizes.length]);
+        heads.forEach(function (h) {
+          h.classList.toggle("is-active", h.getAttribute("data-size") === size);
+        });
+      }
+
+      flip.addEventListener("click", function () {
+        setHeroSize((heroIdx + 1) % sizes.length);
       });
+      heads.forEach(function (h) {
+        h.addEventListener("click", function () {
+          setHeroSize(sizes.indexOf(h.getAttribute("data-size")));
+        });
+      });
+
+      setHeroSize(0); // marque l'en-tête de la taille déjà affichée dans le hero
     }
   }
 

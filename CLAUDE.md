@@ -142,8 +142,15 @@ exported collection.
   dark theme adds a light `drop-shadow` halo (and must restate `grayscale`, since `filter` doesn't
   merge across rules); their native ratios are declared in CSS so the row keeps its height before
   the images load; and they are deliberately **not** `loading="lazy"` (3 tiny shared files).
-- **`duck.html` keeps the per-variant chips** (`.chip.pack-fe` / `.pack-box`, emoji labels via
-  `variantChipLabel`) — the simplification above applies to the grid only.
+- **`duck.html` groups "Available versions" by size**: one `.size-group` per size, headed by that
+  size's TUBBZ logo (`.tubbz-logo`, shared with the grid — only the width differs). Packaging is
+  fully preserved: one `.variant` tile per packaging inside the group, each with its photo, its
+  `.chip.pack-fe` / `.pack-box`, its `limitedTo` and its own checkbox. The chip shows the
+  **emoji alone** (`packagingEmoji`) — no size (the header says it) and no packaging name (the
+  chip colour already separates the two). The full name is kept in `title` + `aria-label`, with
+  `role="img"` so screen readers announce "First Edition" instead of "bathtub". The header logo stays **full colour** here, unlike
+  the grid: the checkboxes and green borders already carry ownership, and a greyed logo would
+  read as "this size does not exist".
 - **Anything overlaying a figurine photo must NOT follow the theme.** Catalog images are opaque
   and their background is **white in both themes** (verified across the catalog: luminance ≥ 240
   in the badge corner). Wiring such an overlay to `--text` / `--surface` makes it light-on-white
@@ -152,8 +159,11 @@ exported collection.
   selector, so it renders as a *text glyph* tinted by `color`, not as a colour emoji.
 - **Index card is a `<div>`, not one big link**: image, name, and size badges lead to the detail
   page; the collection name filters that collection (`?collection=<name>`, mirrored on `duck.html`).
-- **`duck.html` hero** = per-size image + a flip button that cycles sizes when a duck has more than
-  one; single-size ducks get no button.
+- **`duck.html` hero** = per-size image, driven by **two** controls when a duck has more than one
+  size: the flip button (cycles) and the size-group headers (target a size, and get `.is-active`).
+  Both go through the single `setHeroSize()` — never write the hero image, the flip label or the
+  active header anywhere else, or the two controls drift apart. Single-size ducks get neither:
+  no flip button, and the group header is a plain `<div>` instead of a `<button>` (no dead control).
 - **Logo gotcha**: the title and tagline lines are justified to end at the same right edge. The
   tagline's `font-size` and `letter-spacing` are tuned so it reaches the title's width naturally —
   **if the title or tagline text changes, recompute those two values** (otherwise justification

@@ -129,10 +129,9 @@ window.Tubbz = (function () {
     return packaging === "first-edition" ? "pack-fe" : "pack-box";
   }
 
-  // Libellé condensé d'une variante : « Classic 📦 ».
-  function variantChipLabel(meta, size, packaging) {
-    return sizeLabel(meta, size) + " " + packagingEmoji(packaging);
-  }
+  // Note : la pastille d'emballage de duck.html n'affiche QUE l'emoji (le nom complet
+  // passe en title / aria-label). Elle se compose donc directement depuis packagingEmoji
+  // et packagingLabel — pas de helper dédié, il ne ferait que les concaténer.
 
   /* ------------------------------------------------------------------ */
   /* État visiteur (localStorage)                                       */
@@ -425,7 +424,6 @@ window.Tubbz = (function () {
     packagingLabel: packagingLabel,
     packagingEmoji: packagingEmoji,
     packagingClass: packagingClass,
-    variantChipLabel: variantChipLabel,
     imageFor: imageFor,
     sizeImageFor: sizeImageFor,
     sizesOf: sizesOf,

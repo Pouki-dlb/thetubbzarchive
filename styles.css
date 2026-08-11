@@ -251,26 +251,31 @@ h1, h2, h3 { line-height: 1.2; }
   margin-top: auto; min-height: 36px;
 }
 .size-badge { display: block; line-height: 0; cursor: pointer; }
-.size-badge img {
-  display: block; width: 46px; height: auto;
+.size-badge .tubbz-logo {
+  width: 46px;
   transition: transform .12s ease, opacity .12s ease, filter .12s ease;
 }
-/* Ratios natifs des trois logos (100×68, 100×77, 100×71) : déclarés en CSS pour que
-   la rangée ait sa hauteur définitive avant même que les images soient chargées. */
-.size-badge.size-classic img { aspect-ratio: 100 / 68; }
-.size-badge.size-mini img    { aspect-ratio: 100 / 77; }
-.size-badge.size-xl img      { aspect-ratio: 100 / 71; }
-/* Taille non possédée : noir et blanc + atténuée, pour que la possédée saute aux yeux. */
-.size-badge.is-missing img { filter: grayscale(1); opacity: .45; }
-.size-badge:hover img { transform: translateY(-2px); }
-.size-badge.is-missing:hover img { opacity: .7; }
-/* Le contour des logos est NOIR PUR et détouré ; sur le fond de card sombre (presque
-   noir) la pilule se dissoudrait. Un fin halo clair l'en détache — thème sombre
-   uniquement. `filter` ne se cumule pas entre règles : on redéclare le grayscale. */
-:root[data-theme="dark"] .size-badge img {
+/* Taille non possédée : noir et blanc + atténuée, pour que la possédée saute aux yeux.
+   (État propre à la GRILLE : sur duck.html le logo reste toujours en couleur, cf. duck.js.) */
+.size-badge.is-missing .tubbz-logo { filter: grayscale(1); opacity: .45; }
+.size-badge:hover .tubbz-logo { transform: translateY(-2px); }
+.size-badge.is-missing:hover .tubbz-logo { opacity: .7; }
+
+/* ---------------- Logos TUBBZ (partagés grille + fiche) ---------------- */
+/* Seule la largeur est fixée par le contexte ; le ratio natif de chaque logo est
+   déclaré ici (100×68, 100×77, 100×71) pour que la hauteur soit réservée AVANT le
+   chargement de l'image — sinon la ligne saute. */
+.tubbz-logo { display: block; height: auto; }
+.tubbz-logo-classic { aspect-ratio: 100 / 68; }
+.tubbz-logo-mini    { aspect-ratio: 100 / 77; }
+.tubbz-logo-xl      { aspect-ratio: 100 / 71; }
+/* Le contour des logos est NOIR PUR et détouré ; sur les fonds sombres il se
+   dissoudrait. Un fin halo clair l'en détache — thème sombre uniquement.
+   `filter` ne se cumule pas entre règles : on redéclare le grayscale de la grille. */
+:root[data-theme="dark"] .tubbz-logo {
   filter: drop-shadow(0 0 1px rgba(255, 255, 255, .5));
 }
-:root[data-theme="dark"] .size-badge.is-missing img {
+:root[data-theme="dark"] .size-badge.is-missing .tubbz-logo {
   filter: grayscale(1) drop-shadow(0 0 1px rgba(255, 255, 255, .5));
 }
 
@@ -316,6 +321,24 @@ h1, h2, h3 { line-height: 1.2; }
 .duck-section { margin-top: 28px; }
 .duck-section h2 { font-size: 1.2rem; margin: 0 0 12px; }
 
+/* Groupe de variantes = une taille. L'en-tête (logo + libellé) remplace la taille qui
+   était répétée dans chaque pastille. Quand la fiche a plusieurs tailles, c'est un
+   <button> qui bascule le hero ; sinon un simple <div> (voir duck.js). */
+.size-group + .size-group { margin-top: 24px; }
+.size-group-head {
+  display: flex; align-items: center; gap: 10px;
+  margin: 0 0 10px; padding: 2px 6px 2px 2px;
+  font: inherit; color: var(--text); text-align: left;
+  background: none; border: 1px solid transparent; border-radius: 999px;
+}
+button.size-group-head { cursor: pointer; transition: background .15s ease, border-color .15s ease; }
+button.size-group-head:hover { background: var(--surface-2); border-color: var(--border); }
+button.size-group-head:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+/* Taille actuellement montrée dans le hero : le lien entre les deux moitiés de la page. */
+button.size-group-head.is-active { border-color: var(--accent); background: var(--surface-2); }
+.size-group-logo { width: 54px; }
+.size-group-label { font-size: 1rem; font-weight: 700; }
+
 .variants { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; }
 .variant {
   background: var(--surface); border: 1px solid var(--border);
@@ -326,7 +349,9 @@ h1, h2, h3 { line-height: 1.2; }
 .variant-media { aspect-ratio: 1/1; background: var(--surface-2); border-radius: 12px; }
 .variant-media img { width: 100%; height: 100%; object-fit: contain; padding: 6px; border-radius: inherit; }
 .variant-info { display: flex; flex-wrap: wrap; gap: 6px; padding: 10px 10px 0; }
-.chip { font-size: .78rem; font-weight: 700; padding: .2em .55em; border-radius: 999px; background: var(--surface-2); color: var(--text); }
+/* Pastille d'emballage : un emoji seul (cf. duck.js). Un poil plus grand que du texte
+   puisqu'il porte seul le sens, et un rembourrage égal pour rester bien rond. */
+.chip { font-size: .95rem; line-height: 1; padding: .28em .4em; border-radius: 999px; background: var(--surface-2); color: var(--text); }
 .chip.pack-fe { background: color-mix(in srgb, var(--fe) 18%, var(--surface)); color: var(--fe); border: 1px solid color-mix(in srgb, var(--fe) 40%, transparent); }
 .chip.pack-box { background: color-mix(in srgb, var(--box) 18%, var(--surface)); color: var(--box); border: 1px solid color-mix(in srgb, var(--box) 40%, transparent); }
 .variant-limited { margin: 8px 10px 0; font-size: .8rem; font-weight: 600; color: var(--accent-ink); }

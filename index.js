@@ -106,12 +106,13 @@
       // Pas de loading="lazy" ici : ce sont 3 fichiers minuscules et partagés par
       // toutes les cards (un seul aller-retour réseau chacun), et le différé les
       // laisserait à hauteur nulle — donc la rangée sauterait au chargement.
-      // La classe size-<taille> porte le ratio natif du logo (cf. styles.css).
+      // .tubbz-logo-<taille> porte le ratio natif du logo, partagé avec duck.html.
       return '<span class="size-badge size-' + T.esc(size) + ' ' +
             (owned ? "is-owned" : "is-missing") + '" ' +
           'role="img" aria-label="' + T.esc(label) + '" title="' + T.esc(label) + '" ' +
           'data-img="' + T.esc(T.sizeImageCandidates(fig, size).join("|")) + '">' +
-          '<img src="' + T.esc(T.sizeLogoFor(size)) + '" alt="" />' +
+          '<img class="tubbz-logo tubbz-logo-' + T.esc(size) + '" ' +
+            'src="' + T.esc(T.sizeLogoFor(size)) + '" alt="" />' +
         '</span>';
     }).join("");
   }
