@@ -169,7 +169,10 @@ h1, h2, h3 { line-height: 1.2; }
 /* ---------------- Barre d'outils / filtres ---------------- */
 .toolbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: end; margin: 18px 0 8px; }
 .field { display: flex; flex-direction: column; gap: 4px; font-size: .82rem; color: var(--muted); }
-.field-search { flex: 1 1 220px; min-width: 0; }
+/* Base volontairement courte : c'est le champ de recherche qui cède la place pour que
+   la barre tienne sur UNE ligne malgré ses quatre contrôles (collection, taille, statut,
+   reset). Il reste extensible (flex-grow 1), donc il récupère tout l'espace restant. */
+.field-search { flex: 1 1 150px; min-width: 0; }
 .field-search input {
   width: 100%; font: inherit; padding: .5em .8em;
   border: 1px solid var(--border); border-radius: 10px;

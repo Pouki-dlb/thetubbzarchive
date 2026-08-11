@@ -195,6 +195,17 @@ exported collection.
   in dark theme — this bit both `.num-badge` and `.heart`, whose colours are now hard-coded to
   their light-theme values. Same trap for `❤`: it is `U+2764` **without** the emoji variation
   selector, so it renders as a *text glyph* tinted by `color`, not as a colour emoji.
+- **Size filter** (`#filter-size`, index toolbar): keeps figurines that exist in that size
+  (`Tubbz.sizesOf`) **and** switches every card photo to that size — pick Mini and you get the
+  mini shots, not the classic default. `shownSizeOf()` is the one place that decides. Gotcha: the
+  `<img data-default>` must carry the **filtered** size's `sizeImageCandidates` chain, not just the
+  src — it is what a badge mouseout restores, so a stale `data-default` would snap the card back
+  to classic. Options are built from `meta.sizes` filtered to sizes actually present, so the filter
+  can never return an empty grid on its own. The choice is part of the remembered view
+  (`sessionStorage` `tubbz-index-view`) and is cleared by Reset and by a collection click.
+- **Toolbar stays on one line** down to ~820px: `.field-search` has a deliberately short
+  `flex-basis` (150px) and grows into whatever the four controls leave — widen the basis and the
+  bar wraps early. Below ~800px it wraps, which is intended.
 - **Index card is a `<div>`, not one big link**: image, name, and size badges lead to the detail
   page; the collection name filters that collection (`?collection=<name>`, mirrored on `duck.html`).
 - **`duck.html` hero** = per-size image, driven by **two** controls when a duck has more than one

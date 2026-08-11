@@ -149,7 +149,7 @@ window.TUBBZ_DATA = {
       "collection": "Attack on Titan",
       "number": "3",
       "releaseYear": "2025",
-      "description": "Dive into the wonderful chaos of Hange Zoë's world with this First Edition TUBBZ! The eccentric Titan researcher from the Scout Regiment, Hange brings a unique blend of intelligence and enthusiasm, now with feathers! Dressed in her iconic uniform and with spectacles perfectly perched on her beak, this Hange duck captures her curious and energetic spirit.\n\nWhether you're dissecting Titans (figuratively, of course!) or obsessing over your next collectible TUBBZ, this fantastic addition will bring a touch of scientific chaos to your collection.",
+      "description": "Dive into the wonderful chaos of Hange Zoë's world with this TUBBZ! The eccentric Titan researcher from the Scout Regiment, Hange brings a unique blend of intelligence and enthusiasm, now with feathers! Dressed in her iconic uniform and with spectacles perfectly perched on her beak, this Hange duck captures her curious and energetic spirit.\n\nWhether you're dissecting Titans (figuratively, of course!) or obsessing over your next collectible TUBBZ, this fantastic addition will bring a touch of scientific chaos to your collection.",
       "variants": [
         {
           "size": "classic",

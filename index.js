@@ -12,6 +12,7 @@
   var elWarning = document.getElementById("storage-warning");
   var elSearch = document.getElementById("search");
   var elCollection = document.getElementById("filter-collection");
+  var elSize = document.getElementById("filter-size");
   var elStatus = document.getElementById("filter-status");
   var elToTop = document.getElementById("to-top");
 
@@ -27,7 +28,8 @@
   function saveView() {
     try {
       sessionStorage.setItem(VIEW_KEY, JSON.stringify({
-        q: elSearch.value, collection: elCollection.value, status: elStatus.value,
+        q: elSearch.value, collection: elCollection.value, size: elSize.value,
+        status: elStatus.value,
         scrollY: window.pageYOffset || document.documentElement.scrollTop || 0
       }));
     } catch (e) {}
@@ -39,6 +41,7 @@
     if (!v) return;
     elSearch.value = v.q || "";
     elCollection.value = v.collection || "";
+    elSize.value = v.size || "";
     elStatus.value = v.status || "";
   }
   function restoreScroll(v) {
@@ -57,6 +60,7 @@
   function applyCollectionFilter(name) {
     elSearch.value = "";
     elCollection.value = name || "";
+    elSize.value = "";
     elStatus.value = "";
     render();
     window.scrollTo(0, 0);
@@ -74,6 +78,8 @@
       if (hay.indexOf(q) === -1) return false;
     }
     if (elCollection.value && fig.collection !== elCollection.value) return false;
+    // Filtre taille : ne garde que les TUBBZ qui existent DANS cette taille.
+    if (elSize.value && T.sizesOf(fig).indexOf(elSize.value) === -1) return false;
 
     if (elStatus.value) {
       var owned = T.ownedCountOf(state, fig).owned > 0;
@@ -117,9 +123,21 @@
     }).join("");
   }
 
+  // Taille montrée sur la card : celle du filtre quand il est actif (la figurine est
+  // forcément dans cette taille, `matches` a filtré), sinon la taille primaire.
+  function shownSizeOf(fig) {
+    var sizes = T.sizesOf(fig);
+    if (elSize.value && sizes.indexOf(elSize.value) !== -1) return elSize.value;
+    return sizes[0] || "classic";
+  }
+
   function cardHTML(fig) {
     var wished = T.isWished(state, fig.id);
-    var img = T.sizeImageFor(fig.id, (T.sizesOf(fig)[0] || "classic"));
+    // Même chaîne de repli qu'au survol d'un badge : figurine nue, puis ses emballages,
+    // puis le placeholder. data-default la porte en entier pour que la sortie de survol
+    // revienne à l'image FILTRÉE et non à la classique.
+    var candidates = T.sizeImageCandidates(fig, shownSizeOf(fig));
+    var img = candidates[0];
     var url = "duck.html?id=" + encodeURIComponent(fig.id);
 
     // La card n'est PAS un lien global : seuls l'image et le nom mènent à la fiche.
@@ -128,7 +146,8 @@
     return (
       '<div class="card">' +
         '<a class="card-media" href="' + url + '" tabindex="-1" aria-label="' + T.esc(fig.name) + '">' +
-          '<img loading="lazy" src="' + T.esc(img) + '" data-default="' + T.esc(img) + '" ' +
+          '<img loading="lazy" src="' + T.esc(img) + '" ' +
+            'data-default="' + T.esc(candidates.join("|")) + '" ' +
             'alt="' + T.esc(fig.name) + '" ' +
             'onerror="this.onerror=null;this.src=\'' + T.PLACEHOLDER + '\'" />' +
           (fig.number ? '<span class="num-badge">#' + T.esc(fig.number) + '</span>' : '') +
@@ -177,6 +196,23 @@
         opt.textContent = name;
         elCollection.appendChild(opt);
       });
+  }
+
+  // Tailles réellement présentes dans le catalogue, dans l'ordre canonique de meta.sizes
+  // (classic → mini → xl → plushies). On ne propose pas une taille que personne n'a :
+  // le filtre ne doit pas pouvoir renvoyer une grille vide d'entrée de jeu.
+  function populateSizes() {
+    var present = {};
+    catalog.figurines.forEach(function (f) {
+      T.sizesOf(f).forEach(function (s) { present[s] = true; });
+    });
+    var order = (catalog.meta && catalog.meta.sizes) || [];
+    order.filter(function (s) { return present[s]; }).forEach(function (size) {
+      var opt = document.createElement("option");
+      opt.value = size;
+      opt.textContent = T.sizeLabel(catalog.meta, size);
+      elSize.appendChild(opt);
+    });
   }
 
   // Placeholder dynamique de la recherche : compte les TUBBZ uniques (un par id, on
@@ -338,13 +374,14 @@
     // sous le curseur entre mousedown et mouseup → le 1er clic ne navigue pas.
     // Les <select> gardent "change" (ils ne détruisent rien sous le pointeur).
     elSearch.addEventListener("input", onFilterChange);
-    [elCollection, elStatus].forEach(function (el) {
+    [elCollection, elSize, elStatus].forEach(function (el) {
       el.addEventListener("change", onFilterChange);
     });
 
     document.getElementById("btn-reset").addEventListener("click", function () {
       elSearch.value = "";
       elCollection.value = "";
+      elSize.value = "";
       elStatus.value = "";
       render();
       saveView();
@@ -409,6 +446,7 @@
       ready = true;
       checkStorage();
       populateCollections();
+      populateSizes();
       bindEvents();
       // Paramètres d'URL :
       //  - "?home"          (logo)     → accueil propre : on efface l'état mémorisé.
