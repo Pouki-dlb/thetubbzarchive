@@ -49,25 +49,30 @@ window.TUBBZ_DATA = {
       ]
     },
     {
-      "id": "5-year-anniversary-splash",
-      "name": "Splash",
-      "collection": "5 year Anniversary",
-      "releaseYear": "2024",
-      "description": "Introducing ‘Splash’, celebrating 5 quack-tastic years of TUBBZ! TUBBZ began with a simple rubber duck, the designers’ imaginations ran wild and created the cosplaying toy rubber duck legends that have gone down a storm with pop culture fans. Splash is part of the TUBBZ toy range, a highly collectible series of your favourite gaming, movie, TV show and pop culture characters in duck form!",
-      "variants": [
-        {
-          "size": "classic",
-          "packaging": "first-edition"
-        }
-      ]
-    },
-    {
       "id": "a-clockworkd-orange-alex-delarge",
       "name": "Alex Delarge",
       "collection": "A Clockworkd Orange",
       "number": "2",
       "releaseYear": "2024",
       "description": "The duck pond has taken a dystopian turn as Alex Delarge joins the toy collection. There’s no mistaking him, the detail is epic and captures him perfectly. He’s wearing the signature bowler hat, white button-down shirt (or is it a straitjacket) and of course one eye has the weird long eyelashes. ",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "alice-cooper-alice-cooper",
+      "name": "Alice Cooper",
+      "collection": "Alice Cooper",
+      "number": "9",
+      "releaseYear": "2026",
+      "description": "Shock rock in a collector's edition.\n\nAlice Cooper, the legendary theatrical rock icon, arrives in TUBBZ form with all his iconic stage style.\nHis top hat, layered necklaces, silver belt, detailed black jacket, and iconic makeup are faithfully reproduced in this unique character figurine.\n\nDark, charismatic, and spectacular, this collectible captures all the attitude that made Alice Cooper an undeniable rock icon.",
       "variants": [
         {
           "size": "classic",
@@ -730,7 +735,8 @@ window.TUBBZ_DATA = {
       "name": "Carrie",
       "collection": "Carrie",
       "number": "1",
-      "description": "Welcome to the world of Carrie, the cosplaying collectible toy duck that's sure to intrigue horror fans! With her striking red hair and unique appearance, she's not your typical collectible. This quirky and slightly disturbed version of Carrie is inspired by the infamous character from the horror genre. Embrace the dark and unexpected as you add Carrie to your toy collection - a playful twist on a classic tale. Don't miss the chance to own this one-of-a-kind cosplaying toy duck, and indulge in the nostalgia of horror with a touch of humor.",
+      "releaseYear": "2023",
+      "description": "After the most traumatic prom night in cinematic history, Carrie might have hoped for some peace in the duck pond... Bad idea.\n\nCarrie joins the Horror TUBBZ collection in a form as strange as it is unsettling: that of a blood-covered cosplay duck.\n\nDespite her transformation, the character remains immediately recognizable with her red hair and an appearance inspired by the cult scene where Carrie is covered in pig's blood.",
       "variants": [
         {
           "size": "classic",
@@ -826,6 +832,24 @@ window.TUBBZ_DATA = {
         },
         {
           "size": "plushies"
+        }
+      ]
+    },
+    {
+      "id": "chucky-tiffany",
+      "name": "Tiffany",
+      "collection": "Chucky",
+      "number": "2",
+      "releaseYear": "2023",
+      "description": "From human to doll, then from doll to duck… Tiffany continues her transformations and joins Chucky in the duck pond!\n\nTiffany, Chucky's unforgettable accomplice and partner in Bride of Chucky, joins the Horror TUBBZ collection in a new appearance that is as improbable as it is dangerous.\n\nDon't be fooled by her new beak: Tiffany retains her style and killer temperament. This adaptation incorporates several characteristic details of the character, including her leather jacket, her \"Tiff\" necklace, and her tattoo signifying her love for Chucky.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
         }
       ]
     },
@@ -1974,6 +1998,72 @@ window.TUBBZ_DATA = {
       ]
     },
     {
+      "id": "fallout-tv-lucy",
+      "name": "Lucy",
+      "collection": "Fallout TV",
+      "number": "1",
+      "releaseYear": "2025",
+      "description": "From the Vault to the Wasteland, Lucy MacLean continues her adventure in a form no Vault-Tec manual ever predicted: that of a TUBBZ duck.\n\nThe heroine of the Fallout series joins the collection for fans of the series and collectors.\n\nThis figurine incorporates several characteristic elements of Lucy MacLean, including her Vault-Tec suit, her utility belt, and her determined explorer's look. Her characteristic optimism contrasts perfectly with the unforgiving environment of the Wasteland... and with her new web-footed anatomy.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "fallout-tv-maximus",
+      "name": "Maximus",
+      "collection": "Fallout TV",
+      "number": "2",
+      "releaseYear": "2025",
+      "description": "The Brotherhood of Steel has a new knight… and his armor now houses a duck.\n\nMaximus, a major character from the Fallout TV series, joins the TUBBZ collection.\n\nThis figurine captures his imposing appearance associated with the Brotherhood of Steel, with particular attention to the armor plates, insignia, and his knightly stance. Fallout's military seriousness thus meets the much more eccentric world of TUBBZ cosplay ducks.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "fallout-tv-the-ghoul",
+      "name": "The Ghoul",
+      "collection": "Fallout TV",
+      "number": "3",
+      "releaseYear": "2025",
+      "description": "The most formidable gunslinger in the Wasteland joins TUBBZ: hat firmly on his head, outfit scarred by the Wasteland, and survival instinct still intact.\n\nThe Ghoul, an iconic character from the Fallout television series, joins the Numskull Designs collection.\n\nThis adaptation captures his instantly recognizable look: worn outfit, iconic hat, and the silhouette of a Wasteland gunslinger. Even transformed into a cosplay duck, The Ghoul retains his full presence as a seasoned hunter.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
       "id": "five-nights-at-freddys-freddy",
       "name": "Freddy",
       "collection": "Five Nights at Freddy's",
@@ -1992,6 +2082,9 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "plushies"
         }
       ]
     },
@@ -2039,6 +2132,9 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "plushies"
         }
       ]
     },
@@ -2061,6 +2157,9 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "plushies"
         }
       ]
     },
@@ -4373,7 +4472,7 @@ window.TUBBZ_DATA = {
       "name": "The Orange Box",
       "collection": "Metal Gear Solid",
       "releaseYear": "2025",
-      "description": "The Metal Gear Solid: The Orange Box TUBBZ takes iconic stealth to absurd new heights, because this time the box is the duck. With a bold orange beak peeking out from an otherwise plain, unmistakable cardboard crate, it’s a genius twist on the legendary in-game disguise. It’s simple, strange, and absolutely brilliant, exactly what you didn’t know your collection was missing \n\nImportant : This 1st edition does not come with the famous bathtub",
+      "description": "The Metal Gear Solid: The Orange Box TUBBZ takes iconic stealth to absurd new heights, because this time the box is the duck. With a bold orange beak peeking out from an otherwise plain, unmistakable cardboard crate, it’s a genius twist on the legendary in-game disguise. It’s simple, strange, and absolutely brilliant, exactly what you didn’t know your collection was missing ",
       "variants": [
         {
           "size": "classic",
@@ -4896,6 +4995,8 @@ window.TUBBZ_DATA = {
       "name": "Carol Anne Freeling",
       "collection": "Poltergeist",
       "number": "3",
+      "releaseYear": "2023",
+      "description": "\"They're here...\" Carol Anne Freeling leaves her TV screen to join the duck pond in a TUBBZ version that's as adorable as it is unsettling.\n\nAn iconic character from Poltergeist, Carol Anne Freeling joins the Horror TUBBZ collection in an unexpected form: that of a cosplaying duck.\n\nUsually seated in front of the television, communicating with the mysterious presences haunting her home, Carol Anne seems to have pushed her clairvoyant abilities a little too far this time... as she herself has transformed into a duck!",
       "variants": [
         {
           "size": "classic",
@@ -5893,6 +5994,32 @@ window.TUBBZ_DATA = {
       ]
     },
     {
+      "id": "splash-splash-5-year-anniversary",
+      "name": "Splash (5 year Anniversary)",
+      "collection": "Splash",
+      "releaseYear": "2024",
+      "description": "Introducing ‘Splash’, celebrating 5 quack-tastic years of TUBBZ! TUBBZ began with a simple rubber duck, the designers’ imaginations ran wild and created the cosplaying toy rubber duck legends that have gone down a storm with pop culture fans. Splash is part of the TUBBZ toy range, a highly collectible series of your favourite gaming, movie, TV show and pop culture characters in duck form!",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "splash-splash-bath-fizzer",
+      "name": "Splash (Bath Fizzer)",
+      "collection": "Splash",
+      "releaseYear": "2026",
+      "description": "Ready to make a splash? The Splash TUBBZ MINI Bath Fizzer blends bath-time fun with collectible charm. Each fizzer is its own mini blue bathtub that dissolves in water for foamy, relaxing bubbles, complete with your very own duck to keep you company.\n\nWhen the fizzing’s done, your TUBBZ duck is ready to display or sit on the side of the tub for its next splashy adventure. Because what’s a bubble bath without a rubber duck? ",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
       "id": "sports-american-football",
       "name": "American Football",
       "collection": "Sports",
@@ -6635,6 +6762,45 @@ window.TUBBZ_DATA = {
       ]
     },
     {
+      "id": "suv-black-suv",
+      "name": "Black SUV",
+      "collection": "SUV",
+      "releaseYear": "2025",
+      "description": "Sleek, subtle, and ready for any adventure!\nThe Black Mini TUBBZ SUV transforms your favorite 4x4 into an ultra-stylish duck version. Compact yet full of character, this little car with a glossy finish is driven by a daring duck driver.",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "suv-blue-suv",
+      "name": "Blue SUV",
+      "collection": "SUV",
+      "releaseYear": "2025",
+      "description": "Calm, serene, and confident. The blue TUBBZ Mini SUV concentrates style and spirit into your favorite 4x4, perfectly sized for your pocket. A touch of color and a strong character: this mini off-roader is always ready to proudly take its place in your collection.",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "suv-white-suv",
+      "name": "White SUV",
+      "collection": "SUV",
+      "releaseYear": "2025",
+      "description": "Clean, pristine, and ready to lead the convoy! The white Mini TUBBZ SUV transforms your favorite 4x4 into a timelessly stylish mini duck-mobile. Whether for imaginary off-road adventures or to decorate your shelf, this classic 4x4 is a must-have for fans who love quirky and unique collectibles.",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
       "id": "teenage-mutant-ninja-turtles-donatello",
       "name": "Donatello",
       "collection": "Teenage Mutant Ninja Turtles",
@@ -6998,6 +7164,50 @@ window.TUBBZ_DATA = {
       ]
     },
     {
+      "id": "the-flintstones-fred-flintstone",
+      "name": "Fred Flintstone",
+      "collection": "The Flintstones",
+      "number": "1",
+      "releaseYear": "2026",
+      "description": "Yabba Dabba Doo...\n\nFred Flintstone, Bedrock's iconic leader, arrives as a TUBBZ with all his legendary energy.\nHis untamed hair, his iconic prehistoric attire, and his bowling ball held like a wing are faithfully reproduced in this characterful figurine.\n\nExpressive, recognizable, and bursting with personality, this collectible perfectly captures the spirit of the cult character from The Flintstones.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "the-flintstones-wilma-flintstone",
+      "name": "Wilma Flintstone",
+      "collection": "The Flintstones",
+      "number": "2",
+      "releaseYear": "2026",
+      "description": "Bedrock's icon in a collector's edition.\n\nWilma Flintstone, an iconic figure from The Flintstones, joins the TUBBZ collection.\n\nHer iconic red hair, white prehistoric dress, and signature necklace are faithfully reproduced, with the added cult detail: the phone held in her wing.\n\nElegant, recognizable, and full of personality, this version perfectly captures the character's spirit while adding a fun touch unique to the TUBBZ universe.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
       "id": "the-hunger-games-katniss-everdeen",
       "name": "Katniss Everdeen",
       "collection": "The Hunger Games",
@@ -7298,6 +7508,8 @@ window.TUBBZ_DATA = {
       "name": "Hannibal Lecter",
       "collection": "The Silence of the Lambs",
       "number": "2",
+      "releaseYear": "2023",
+      "description": "Hannibal Lecter makes a splash in the duck pond… and even with a beak, it's best to keep his mask securely attached!\n\nOne of cinema's most unsettling characters joins the Horror TUBBZ collection. Hannibal Lecter, the iconic character from The Silence of the Lambs, temporarily sheds his human appearance to become an improbable cosplay duck.\n\nBut this transformation doesn't necessarily make him any less disturbing.\n\nHis famous restraint mask is still securely fastened, giving this figurine an instantly recognizable silhouette while retaining the quirky humor characteristic of TUBBZ.",
       "variants": [
         {
           "size": "classic",
@@ -7362,6 +7574,42 @@ window.TUBBZ_DATA = {
         {
           "size": "classic",
           "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "the-witcher-geralt-of-rivia",
+      "name": "Geralt of Rivia",
+      "collection": "The Witcher",
+      "number": "1",
+      "releaseYear": "2025",
+      "description": "The White Wolf…\n\nThe legendary Geralt of Rivia joins the TUBBZ collection, ready to roam the Continent - even as a cosplay duck.\nWith his silver sword, his iconic armor, and his stoic gaze, he remains instantly recognizable.\n\nAdorned with his wolf medallion and accompanied by monster trophies, every detail tells a story from his battles and Witcher contracts.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "the-witcher-ciri",
+      "name": "Ciri",
+      "collection": "The Witcher",
+      "number": "2",
+      "releaseYear": "2025",
+      "description": "Child of prophecy. Destiny incarnate.\n\nCiri, princess of Cintra and legendary warrior from The Witcher, joins the TUBBZ collection with impressive detail.\nFrom her ash-blonde hair to her emerald eyes, including her iconic scar and combat stance, this figurine captures the character's full power.\n\nEvery element reflects her journey:\nher detailed gloves, the elegant hilt of her sword, and the textures of her outfit testify to her fighting spirit and her connection to destiny.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
         }
       ]
     },
@@ -7992,6 +8240,28 @@ window.TUBBZ_DATA = {
       "number": "6",
       "releaseYear": "2025",
       "description": "When elegance, carelessness and rebellion meet: Prince Fiyero joins the TUBBZ universe.\n\nBehind his charm and apparent lightness, however, lies a character capable of questioning his convictions and the rules that govern Oz.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "wicked-dorothy-gale",
+      "name": "Dorothy Gale",
+      "collection": "Wicked",
+      "number": "7",
+      "releaseYear": "2026",
+      "description": "Follow the yellow brick road… to your collection.\n\nDorothy Gale, the timeless heroine from the world of Oz, joins the TUBBZ collection in a charming collector's edition.\nReimagined as a cosplay duck, this collectible faithfully features her blue gingham dress, her iconic basket, and all the sweetness of the character.\n\nNostalgic, iconic, and instantly recognizable, this figurine captures all the magic of Dorothy with a touch of humor unique to the TUBBZ universe.",
       "variants": [
         {
           "size": "classic",
