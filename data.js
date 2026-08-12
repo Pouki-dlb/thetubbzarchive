@@ -176,6 +176,81 @@ window.TUBBZ_DATA = {
       ]
     },
     {
+      "id": "avatar-the-last-airbender-aang",
+      "name": "Aang",
+      "collection": "Avatar: The Last Airbender",
+      "number": "1",
+      "releaseYear": "2024",
+      "description": "Aang is heading to the duck pond as a TUBBZ cosplay rubber duck. He is going to show the rest of the ducks the art of airbending and he's taking Momo with him.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "avatar-the-last-airbender-toph-beifong",
+      "name": "Toph Beifong",
+      "collection": "Avatar: The Last Airbender",
+      "number": "2",
+      "releaseYear": "2024",
+      "description": "The Avatar enters the pond... and your collection.\n\nAang, the last airbender and iconic hero of Avatar: The Last Airbender, arrives in a TUBBZ.\nReimagined as a cosplay duck, he retains his airbender attire, his iconic arrow tattoos and his glider staff, ready to teach airbending... even in the pond.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "avatar-the-last-airbender-cabbage-merchant",
+      "name": "Cabbage Merchant",
+      "collection": "Avatar: The Last Airbender",
+      "number": "3",
+      "releaseYear": "2024",
+      "description": "\"My cabbages!!!\"\n\nThe legendary Cabbage Merchant leaves the Earth Kingdom to join the TUBBZ pond.\nReimagined as a cosplay duck, he retains his traditional attire and his precious cabbage, ready to endure another disaster… much to the delight of fans.\n\nFunny, iconic, and immediately recognizable, this collectible perfectly captures the character's humor and emblematic bad luck.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "avatar-the-last-airbender-turtle-duck",
+      "name": "Turtle Duck",
+      "collection": "Avatar: The Last Airbender",
+      "number": "4",
+      "releaseYear": "2024",
+      "description": "The very first… and already iconic.\n\nThe famous Turtle Duck from the Avatar: The Last Airbender universe was meant to become a TUBBZ.\nWith its turtle shell, duck beak, and peaceful expression, this figurine captures all the sweetness and charm of this iconic creature.\n\nBoth adorable and cult, this collectible perfectly embodies the spirit of the series with the quirky touch unique to TUBBZ.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "plushies"
+        }
+      ]
+    },
+    {
       "id": "back-to-the-future-marty-mcfly",
       "name": "Marty Mcfly",
       "collection": "Back to the Future",
@@ -369,6 +444,9 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "plushies"
         }
       ]
     },
@@ -3905,6 +3983,91 @@ window.TUBBZ_DATA = {
       ]
     },
     {
+      "id": "mass-effect-commander-shepard-male",
+      "name": "Commander Shepard (male)",
+      "collection": "Mass Effect",
+      "number": "1",
+      "releaseYear": "2023",
+      "description": "The duck pond might be in danger, but thankfully the \"spectre\" Commander Shepard is now a TUBBZ cosplay collectible so he can save it from annihilation! He's wearing his uniform which details N7 to remind everyone he had the best training, respect! A must-have for Mass Effect fans.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "mass-effect-garrus",
+      "name": "Garrus",
+      "collection": "Mass Effect",
+      "number": "2",
+      "releaseYear": "2023",
+      "description": "Warning! The Turian has changed species, no longer an alien, Garrus is now a cosplaying duck. Garrus TUBBZ wears C-Sec (Citadel Security Armor), which is battle-scarred from his vigilante days",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "mass-effect-commander-shepard-female",
+      "name": "Commander Shepard (female)",
+      "collection": "Mass Effect",
+      "number": "3",
+      "releaseYear": "2024",
+      "description": "Take command of the galaxy with the fearless Commander Shepard, now available in TUBBZ form! Decked out in his iconic N7 armor, this duck version of the legendary Commander Shepard is ready to lead the charge against any cosmic threat.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "mass-effect-talizorah",
+      "name": "Tali'Zorah",
+      "collection": "Mass Effect",
+      "number": "4",
+      "releaseYear": "2024",
+      "description": "Dive into the world of Mass Effect with Tali'Zorah, now available as an adorable TUBBZ collectible! This charming duck embodies the ingenuity and spirit of the beloved quarian engineer, complete with her iconic environmental suit and distinctive mask. As one of the most resourceful characters in the Mass Effect universe, Tali brings her technological flair to your collection.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "mean-girls-cady-heron",
+      "name": "Cady Heron",
+      "collection": "Mean Girls",
+      "releaseYear": "2024",
+      "description": "Nothing mean about this super cute Cady Heron, she's perfect as a Mini TUBBZ collectible. A must-have for Mean Girls fans. ",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
       "id": "metal-gear-solid-solid-snake",
       "name": "Solid Snake",
       "collection": "Metal Gear Solid",
@@ -7184,6 +7347,100 @@ window.TUBBZ_DATA = {
       ]
     },
     {
+      "id": "wicked-elphaba",
+      "name": "Elphaba",
+      "collection": "Wicked",
+      "number": "1",
+      "releaseYear": "2025",
+      "description": "Introducing the Wicked Tubbz Elphaba Thropp.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "plushies"
+        }
+      ]
+    },
+    {
+      "id": "wicked-glinda",
+      "name": "Glinda",
+      "collection": "Wicked",
+      "number": "2",
+      "releaseYear": "2025",
+      "description": "Join the magical world of Glinda Upland with the Wicked TUBBZ.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "plushies"
+        }
+      ]
+    },
+    {
+      "id": "wicked-the-wizard",
+      "name": "The Wizard",
+      "collection": "Wicked",
+      "number": "3",
+      "releaseYear": "2025",
+      "description": "In Emerald City, power wears a smile. The Wizard enters the TUBBZ universe, draped in charm and political skill. Behind the curtain? A cleverly orchestrated illusion with considerable consequences.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "wicked-madame-morrible",
+      "name": "Madame Morrible",
+      "collection": "Wicked",
+      "number": "4",
+      "releaseYear": "2025",
+      "description": "Manipulation disguised as mentorship. Madame Morrible takes the form of TUBBZ with refined confidence and a pronounced taste for control. Her words shape the future, but her intentions rewrite destiny.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
       "id": "wonka-willy-wonka",
       "name": "Willy Wonka",
       "collection": "Wonka",
@@ -7237,6 +7494,56 @@ window.TUBBZ_DATA = {
       "number": "1",
       "releaseYear": "2021",
       "description": "The Dragon of Dojima enters the pond.\n\nMeet Kazuma Kiryu, the iconic hero of the Ryu ga Gotoku / Yakuza saga. Thanks to his legendary exploits and his rise within the Dojima family of the Tojo Clan, Kiryu has forged a reputation few dare to challenge.\n\nEven transformed into a collector's cosplay duck, the Dragon of Dojima remains a formidable fighter. And if he finds a bicycle nearby, it's best not to get in his way.\n\nWith his grey suit, red shirt, and calm yet imposing demeanor, this figurine captures the character's instantly recognizable elements.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "plushies"
+        }
+      ]
+    },
+    {
+      "id": "yakuza-goro-majima",
+      "name": "Goro Majima",
+      "collection": "Yakuza",
+      "number": "2",
+      "releaseYear": "2023",
+      "description": "Goro Majima is known for his wild and unpredictable behaviour so we don't know how he'd react if he turned into a duck! Sporting his distinctive eye-patch, \"The Mad Dog of Shimano\" is ready to take on any foe in his path!",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "plushies"
+        }
+      ]
+    },
+    {
+      "id": "yakuza-ichiban-kasuga",
+      "name": "Ichiban Kasuga",
+      "collection": "Yakuza",
+      "number": "3",
+      "releaseYear": "2025",
+      "description": "The big-hearted hero splashes down into the TUBBZ pond.\n\nFind Ichiban Kasuga, the charismatic protagonist of Yakuza: Like a Dragon, in this superb TUBBZ.\nTransformed into a collectible cosplaying duck, Ichiban retains all his legendary energy with his iconic burgundy suit, his untamed hair, and his trusty baseball bat.\n\nLoyal, courageous, and always ready to defend his friends, Ichiban perfectly embodies the spirit of the Like a Dragon saga: humor, emotion, combat, and determination.",
       "variants": [
         {
           "size": "classic",
