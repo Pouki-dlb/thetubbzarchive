@@ -3284,6 +3284,58 @@ window.TUBBZ_DATA = {
       ]
     },
     {
+      "id": "influencers-blob-ross",
+      "name": "Blob Ross",
+      "collection": "Influencers",
+      "releaseYear": "2025",
+      "description": "Artistic flair meets rubber ducky fun with the one and only Blob Ross! Known for spreading joy and creativity across the internet, Blob Ross has jumped into the world of TUBBZ as an original collectible . This rubber duck reimagines the iconic influencer with vibrant colors, a winged palette, and a smile as warm as a sunset on canvas. Add a touch of art and fandom to your collection with this unique rubber duck. his kind!",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "influencers-divina-de-campo",
+      "name": "Divina de Campo",
+      "collection": "Influencers",
+      "releaseYear": "2026",
+      "description": "Unapologetic glamour. Unforgettable presence.\n\nDivina de Campo joins the TUBBZ collection with spectacular energy and flamboyant style.\nReimagined as a cosplaying duck, this collectible faithfully recreates her iconic red hair, bold makeup, signature lipstick, and sparkling stage outfit.\n\nBold, charismatic, and full of personality, this TUBBZ captures all the intensity and extravagance of an unforgettable performance.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "influencers-two-angry-gamers-bongeh",
+      "name": "Two Angry Gamers - Bongeh",
+      "collection": "Influencers",
+      "releaseYear": "2025",
+      "description": "Get ready for some serious gaming fun with Bongeh TUBBZ , the perfect duck to bring TAG 's gaming fury into your collection! This cosplay duck perfectly captures Bongeh 's unmistakable look, with his signature beard and determined expression. Axe in hand and TAG t-shirt in hand, he's ready to vent his well-deserved frustration!\n\nPair it with the Tommy TUBBZ to complete the Two Angry Gamers duck duo! Don't panic: the Bongeh TUBBZ is a must-have for any TAG fan!",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "influencers-two-angry-gamers-tommy",
+      "name": "Two Angry Gamers - Tommy",
+      "collection": "Influencers",
+      "releaseYear": "2025",
+      "description": "Get ready to unleash some gaming fury with the latest Two Angry Gamers fan favorite: Tommy TUBBZ ! This cosplaying duck, one half of the iconic duo, captures the intense energy of TOMMYRAGE , with his signature beard, flamboyant hair, and no-nonsense expression. Armed with a controller and wearing the TAG t-shirt, he's ready to take on any gaming challenge—or flip the table in frustration!\n\nPair him with Bongeh TUBBZ to complete a wacky Two Angry Gamers set! Whether you're a die-hard fan or just love collecting original video game merchandise, Tommy TUBBZ is ready to enrich your collection!",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
       "id": "iron-maiden-eddie-the-trooper",
       "name": "Eddie The Trooper",
       "collection": "Iron Maiden",
@@ -7157,6 +7209,72 @@ window.TUBBZ_DATA = {
       "releaseYear": "2025",
       "description": "The king of detention arrives in the TUBBZ collection.\n\nFind Richard Vernon, the legendary assistant principal from The Breakfast Club, in a Mini TUBBZ version that's as strict as it is irresistible.\nTasked with supervising the students during their famous Saturday detention, Mr. Vernon became one of the most memorable adults in 80s cinema.\n\nWith his impeccable suit, stern gaze, and authoritative demeanor, this figurine perfectly captures the personality of the cult character.",
       "variants": [
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "the-cat-in-the-hat-the-cat-in-the-hat",
+      "name": "The Cat in the Hat",
+      "collection": "The Cat in the Hat",
+      "number": "1",
+      "releaseYear": "2026",
+      "description": "Iconic chaos…\n\nThe Cat in the Hat leaves the pages of the book to join the TUBBZ collection in a version that is both faithful and quirky.\nIts red and white striped hat, its iconic bow tie, and its mischievous smile are perfectly reproduced, accompanied by its blue umbrella topped with a fishbowl for a touch of typical Dr. Seuss chaos.\n\nPlayful, iconic, and full of fantasy, this collectible captures all the magic and energy of the cult character.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "the-cat-in-the-hat-thing-1",
+      "name": "Thing 1",
+      "collection": "The Cat in the Hat",
+      "number": "2",
+      "releaseYear": "2026",
+      "description": "Chaos, energy... and pure Seuss spirit!\n\nThing 1, one of the most mischievous characters from The Cat in the Hat, joins the TUBBZ collection in a version that is as fun as it is faithful.\nHis vibrant blue hair, iconic red outfit, and boundless energy are perfectly recreated, accompanied by a red and white kite for a touch of typical Dr. Seuss chaos.\n\nDynamic, unpredictable, and full of personality, this collectible captures all the joyful madness of the cult character.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "the-cat-in-the-hat-thing-2",
+      "name": "Thing 2",
+      "collection": "The Cat in the Hat",
+      "number": "3",
+      "releaseYear": "2026",
+      "description": "Even more chaos…\n\nThing 2 joins the TUBBZ collection with all the mischievous energy that makes the Dr. Seuss universe so charming.\nHis iconic red outfit, wild blue hair, and playful expression are perfectly reproduced in this lively figurine.\n\nFun, unpredictable, and instantly recognizable, this collectible captures all the joyful madness of the character.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
         {
           "size": "mini",
           "packaging": "first-edition"
