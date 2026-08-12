@@ -432,6 +432,20 @@ window.TUBBZ_DATA = {
       ]
     },
     {
+      "id": "black-phone-the-grabber",
+      "name": "The Grabber",
+      "collection": "Black Phone",
+      "number": "1",
+      "releaseYear": "2025",
+      "description": "The nightmare of Black Phone leaves the screen to join the duck pond… and its transformation into a TUBBZ doesn't make it any less unsettling.\n\nThe Grabber, the terrifying antagonist from Black Phone, joins the Horror TUBBZ collection.\n\nWith his disturbing mask, sinister gaze, and instantly recognizable presence, this adaptation translates the oppressive atmosphere of the film into the deliberately quirky world of TUBBZ cosplay ducks.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
       "id": "bloodbath-horror-beetlejuice-beetlejuice",
       "name": "Beetlejuice - Beetlejuice",
       "collection": "Bloodbath / Horror",
@@ -753,6 +767,36 @@ window.TUBBZ_DATA = {
       "number": "2",
       "releaseYear": "2025",
       "description": "The wild Blood Fiend is joining the TUBBZ range as a collectible duck. With her devil horns, sharp fangs, and inimitable attitude, Power is instantly recognizable to Chainsaw Man fans.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "chinese-new-year-year-of-the-horse",
+      "name": "Year of the Horse",
+      "collection": "Chinese New Year",
+      "releaseYear": "2026",
+      "description": "Energy. Luck. Elegance.\n\nCelebrate the Year of the Horse with this TUBBZ figure, inspired by the Chinese zodiac.\nA symbol of strength, freedom, and success, this reimagined duck embodies all the positive and festive energy of the Lunar New Year.\n\nWith its elegant design and meticulous details, this collectible adds a symbolic and original touch to your collection.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "chinese-new-year-year-of-the-snake",
+      "name": "Year of the Snake",
+      "collection": "Chinese New Year",
+      "releaseYear": "2025",
+      "description": "It's Chinese New Year. Kung Hei Fat Choy rubber duck fans! 2025 is the Year of the Snake, so to celebrate, here's a special first edition of TUBBZ , it's the Year of the Snake, not the Duck.",
       "variants": [
         {
           "size": "classic",
@@ -1688,105 +1732,6 @@ window.TUBBZ_DATA = {
         },
         {
           "size": "mini",
-          "packaging": "first-edition"
-        }
-      ]
-    },
-    {
-      "id": "dr-seuss-the-grinch",
-      "name": "The Grinch",
-      "collection": "Dr. Seuss",
-      "number": "1",
-      "releaseYear": "2021",
-      "description": "Christmas is coming… and the Grinch is still not pleased.\n\nDiscover The Grinch, the famous grumpy character from the Dr. Seuss universe. Hairy, cynical, and allergic to the Christmas spirit, the Grinch joins the TUBBZ pond as a collector cosplay duck.\n\nWith his sullen look, instantly recognizable style, and legendary anti-holiday attitude, this figurine perfectly captures all the character's charming grumpiness.",
-      "variants": [
-        {
-          "size": "classic",
-          "packaging": "first-edition"
-        },
-        {
-          "size": "classic",
-          "packaging": "boxed"
-        },
-        {
-          "size": "mini",
-          "packaging": "first-edition"
-        },
-        {
-          "size": "mini",
-          "packaging": "boxed"
-        }
-      ]
-    },
-    {
-      "id": "dr-seuss-cindy-lou-who",
-      "name": "Cindy Lou Who",
-      "collection": "Dr. Seuss",
-      "number": "2",
-      "releaseYear": "2021",
-      "description": "Best friend to the grumpy Grinch, Cindy Lou Who is always there to remind him of the true meaning of Christmas: spending time with loved ones!\n\nWe all know how grumpy the Grinch is. Luckily, Cindy Lou is there to remind him that Christmas isn't about gifts, but about spending time with loved ones!",
-      "variants": [
-        {
-          "size": "classic",
-          "packaging": "first-edition"
-        },
-        {
-          "size": "mini",
-          "packaging": "first-edition"
-        },
-        {
-          "size": "mini",
-          "packaging": "boxed"
-        }
-      ]
-    },
-    {
-      "id": "dr-seuss-the-grinch-santa-costume",
-      "name": "The Grinch (Santa Costume)",
-      "collection": "Dr. Seuss",
-      "number": "3",
-      "releaseYear": "2025",
-      "description": "Steal the show (and maybe even the show at Christmas) with the TUBBZ Grinch! Dressed in his festive red suit and carrying a bag overflowing with 'borrowed' presents and a Christmas tree, this delightfully mischievous duck brings classic Dr. Seuss pranks to life.\n\nBoth festive and devilish, it's the ideal collectible toy for the holidays, for all those who love the magic of Christmas with a touch of mischief.",
-      "variants": [
-        {
-          "size": "classic",
-          "packaging": "first-edition"
-        },
-        {
-          "size": "mini",
-          "packaging": "boxed"
-        },
-        {
-          "size": "mini",
-          "packaging": "first-edition"
-        }
-      ]
-    },
-    {
-      "id": "dr-seuss-max",
-      "name": "Max",
-      "collection": "Dr. Seuss",
-      "description": "Loyal, endearing, and sporting his one unforgettable deer antler, Max is the most faithful companion a Grinch could ever dream of. This officially licensed Mini TUBBZ captures his festive charm in a 5 cm (2 inch) version with impeccable detail, ready to follow the Grinch in all his pranks to cancel Christmas. Adorable and a tad patient, Max is the true heart of the story and the perfect centerpiece for any fan's collection.",
-      "variants": [
-        {
-          "size": "mini",
-          "packaging": "first-edition"
-        },
-        {
-          "size": "mini",
-          "packaging": "boxed"
-        }
-      ]
-    },
-    {
-      "id": "dr-seuss-the-grinch-book-santa-costume",
-      "name": "The Grinch (Book: Santa Costume)",
-      "collection": "Dr. Seuss",
-      "releaseYear": "2025",
-      "description": "Celebrate the holiday season with a sinister twist through the Amazon Exclusive Grinch Book Santa Costume TUBBZ. Officially licensed Dr. Seuss merchandise and designed by Numskull Designs, this limited first edition vinyl collectible transforms the iconic festive villain into a cosplaying duck. Featuring frosty white fur, blazing red eyes, and a sack stuffed with stolen gifts and a swiped Christmas tree, this Grinch is ready to snatch Christmas—and prime space on your display shelf. Crafted from premium PVC and standing at approximately 9cm tall, it is a must-have addition for collectors, fans of The Grinch, and anyone who enjoys rare, seasonal exclusives.",
-      "variants": [
-        {
-          "size": "classic",
           "packaging": "first-edition"
         }
       ]
@@ -2780,6 +2725,105 @@ window.TUBBZ_DATA = {
         },
         {
           "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "grinch-the-grinch",
+      "name": "The Grinch",
+      "collection": "Grinch",
+      "number": "1",
+      "releaseYear": "2021",
+      "description": "Christmas is coming… and the Grinch is still not pleased.\n\nDiscover The Grinch, the famous grumpy character from the Dr. Seuss universe. Hairy, cynical, and allergic to the Christmas spirit, the Grinch joins the TUBBZ pond as a collector cosplay duck.\n\nWith his sullen look, instantly recognizable style, and legendary anti-holiday attitude, this figurine perfectly captures all the character's charming grumpiness.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "grinch-cindy-lou-who",
+      "name": "Cindy Lou Who",
+      "collection": "Grinch",
+      "number": "2",
+      "releaseYear": "2021",
+      "description": "Best friend to the grumpy Grinch, Cindy Lou Who is always there to remind him of the true meaning of Christmas: spending time with loved ones!\n\nWe all know how grumpy the Grinch is. Luckily, Cindy Lou is there to remind him that Christmas isn't about gifts, but about spending time with loved ones!",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "grinch-the-grinch-santa-costume",
+      "name": "The Grinch (Santa Costume)",
+      "collection": "Grinch",
+      "number": "3",
+      "releaseYear": "2025",
+      "description": "Steal the show (and maybe even the show at Christmas) with the TUBBZ Grinch! Dressed in his festive red suit and carrying a bag overflowing with 'borrowed' presents and a Christmas tree, this delightfully mischievous duck brings classic Dr. Seuss pranks to life.\n\nBoth festive and devilish, it's the ideal collectible toy for the holidays, for all those who love the magic of Christmas with a touch of mischief.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "grinch-max",
+      "name": "Max",
+      "collection": "Grinch",
+      "description": "Loyal, endearing, and sporting his one unforgettable deer antler, Max is the most faithful companion a Grinch could ever dream of. This officially licensed Mini TUBBZ captures his festive charm in a 5 cm (2 inch) version with impeccable detail, ready to follow the Grinch in all his pranks to cancel Christmas. Adorable and a tad patient, Max is the true heart of the story and the perfect centerpiece for any fan's collection.",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "grinch-the-grinch-book-santa-costume",
+      "name": "The Grinch (Book: Santa Costume)",
+      "collection": "Grinch",
+      "releaseYear": "2025",
+      "description": "Celebrate the holiday season with a sinister twist through the Amazon Exclusive Grinch Book Santa Costume TUBBZ. Officially licensed Dr. Seuss merchandise and designed by Numskull Designs, this limited first edition vinyl collectible transforms the iconic festive villain into a cosplaying duck. Featuring frosty white fur, blazing red eyes, and a sack stuffed with stolen gifts and a swiped Christmas tree, this Grinch is ready to snatch Christmas—and prime space on your display shelf. Crafted from premium PVC and standing at approximately 9cm tall, it is a must-have addition for collectors, fans of The Grinch, and anyone who enjoys rare, seasonal exclusives.",
+      "variants": [
+        {
+          "size": "classic",
           "packaging": "first-edition"
         }
       ]
@@ -5849,6 +5893,114 @@ window.TUBBZ_DATA = {
       ]
     },
     {
+      "id": "sports-american-football",
+      "name": "American Football",
+      "collection": "Sports",
+      "description": "Impact, power, and a touchdown in sight.\n\nThis mini duck lands on the field with an impressive presence, equipped with its iconic helmet and shoulder pads, ready to take hits and rush towards the end zone.\nWith its bold design and determined look, it embodies all the intensity of American football.\n\nFierce, strong, and always ready for action, this collectible perfectly captures the spectacular spirit of the sport: power, strategy, and decisive moments.",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "sports-baseball",
+      "name": "Baseball",
+      "collection": "Sports",
+      "description": "It's your turn. Total concentration. Decisive hit.\n\nThis mini duck confidently steps onto the field, bat in hand and eyes fixed on the ball, ready to swing at the perfect moment.\nDressed in the iconic TUBBZ colors, it embodies all the intensity and precision of baseball.\n\nFast, determined, and always ready to make a difference, this collectible brings a sporty and dynamic energy to your collection.",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "sports-basketball",
+      "name": "Basketball",
+      "collection": "Sports",
+      "description": "From tip-off to the final buzzer.\n\nThis mini duck confidently steps onto the court, spinning a basketball on its finger while sporting the iconic TUBBZ colors.\nAlways composed under pressure and ready to aim high, this collectible brings dynamic and sporty energy to the Sports TUBBZ collection.\n\nCompact but full of character, it's ideal for completing a collection or adding a fun and original touch to your world.",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "sports-darts",
+      "name": "Darts",
+      "collection": "Sports",
+      "description": "Focused gaze. Precise aim. Decisive throw.\n\nThis mini duck confidently approaches the oche, dressed in a darts jersey in iconic TUBBZ colors, ready to hit the mythical triple 20.\nCalm, precise, and remarkably effective, it proves that size isn't everything when the pressure is on.\n\nCompact and stylish, this collectible perfectly captures the tension and precision of this skill sport, while adding a fun touch to your collection.",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "sports-football",
+      "name": "Football",
+      "collection": "Sports",
+      "description": "Perfect control. Eyes fixed on the goal. Ready to score.\n\nThis mini duck steps onto the field in style, showcasing precise footwork and unwavering determination.\nDressed in a dynamic outfit in TUBBZ's iconic colors, he lives for the stadium atmosphere and the cheers of the crowd.\n\nFast, technical, and always focused on the goal, this collectible captures all the passion and energy of football.",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "sports-golf",
+      "name": "Golf",
+      "collection": "Sports",
+      "description": "Silence on the green. Precision is key.\n\nThis mini duck is ready to play with calm and skill, firmly holding its golf club and sporting the iconic TUBBZ colors.\nFocused on the fairway, it perfectly embodies the precision and serenity of the sport.\n\nUnfazed by pressure, this collectible proves that even in a compact format, it can hit the mark with every shot.",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "sports-ice-hockey",
+      "name": "Ice Hockey",
+      "collection": "Sports",
+      "description": "Skates laced. Blades sharpened. Let the game begin.\n\nThis mini duck glides onto the ice with intensity, stick in hand and a determined gaze, ready to chase the puck.\nDressed in the iconic TUBBZ colours, it perfectly embodies the speed, power, and commitment of ice hockey.\n\nAlways ready to jump into action, this collectible captures the raw energy of the game, with its lightning-fast accelerations and uncompromising duels.",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "sports-rugby",
+      "name": "Rugby",
+      "collection": "Sports",
+      "description": "Eyes fixed. Shoulders set. Ready for impact.\n\nThis mini duck charges onto the rugby field with determination, wearing its protective helmet and firmly holding the ball under its wing.\nDressed in the iconic TUBBZ colours, it's ready to face tackles, scrums, and intense contact.\n\nCompact yet powerful, this collectible perfectly embodies the spirit of rugby: commitment, strength, and teamwork.",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "sports-tennis",
+      "name": "Tennis",
+      "collection": "Sports",
+      "description": "Game, set… quack!\n\nThis mini duck is ready to hit the court, tennis ball in wing and perfectly adjusted visor, with overflowing energy in every rally.\nDressed in TUBBZ's iconic colors, it brings style, confidence, and dynamism to every match.\n\nCombining precision and performance, this collectible perfectly captures the spirit of tennis: focus, elegance, and surpassing oneself.",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
       "id": "spyro-the-dragon-spyro",
       "name": "Spyro",
       "collection": "Spyro the Dragon",
@@ -7312,6 +7464,18 @@ window.TUBBZ_DATA = {
       ]
     },
     {
+      "id": "travel-australia",
+      "name": "Australia",
+      "collection": "Travel",
+      "description": "Heading to Australia! Travel TUBBZ goes to the Outback with a mini adventurer accompanied by an adorable koala.\n\nThe Travel TUBBZ collection continues its world tour with this Mini Australia Edition, inspired by the relaxed spirit of great Australian adventures.\n\nDressed in a stone-colored shirt and wearing a wide-brimmed hat, this little explorer is accompanied by a particularly charming detail: a koala by his side.",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
       "id": "travel-france",
       "name": "France",
       "collection": "Travel",
@@ -7369,6 +7533,17 @@ window.TUBBZ_DATA = {
       "collection": "Travel",
       "releaseYear": "2026",
       "description": "Destination Japan! TUBBZ celebrates the aesthetics of Kabuki theater with a mini duck as expressive as it is exotic.\n\nThe Travel TUBBZ collection takes us to Japan with this Mini Edition figurine inspired by one of the country's most iconic visual traditions: Kabuki theater.\n\nIts Kabuki-inspired makeup, red lips, and carefully crafted outfit create an immediately striking design, revisited with the characteristic humor of TUBBZ ducks.",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "travel-mexico",
+      "name": "Mexico",
+      "collection": "Travel",
       "variants": [
         {
           "size": "mini",
