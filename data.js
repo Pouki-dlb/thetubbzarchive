@@ -353,6 +353,9 @@ window.TUBBZ_DATA = {
         {
           "size": "classic",
           "packaging": "boxed"
+        },
+        {
+          "size": "plushies"
         }
       ]
     },
@@ -371,6 +374,9 @@ window.TUBBZ_DATA = {
         {
           "size": "classic",
           "packaging": "boxed"
+        },
+        {
+          "size": "plushies"
         }
       ]
     },
@@ -711,6 +717,42 @@ window.TUBBZ_DATA = {
       "collection": "Carrie",
       "number": "1",
       "description": "Welcome to the world of Carrie, the cosplaying collectible toy duck that's sure to intrigue horror fans! With her striking red hair and unique appearance, she's not your typical collectible. This quirky and slightly disturbed version of Carrie is inspired by the infamous character from the horror genre. Embrace the dark and unexpected as you add Carrie to your toy collection - a playful twist on a classic tale. Don't miss the chance to own this one-of-a-kind cosplaying toy duck, and indulge in the nostalgia of horror with a touch of humor.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "chainsaw-man-chainsaw-man",
+      "name": "Chainsaw Man",
+      "collection": "Chainsaw Man",
+      "number": "1",
+      "releaseYear": "2025",
+      "description": "Chainsaw Man can not only transform his body parts into chainsaws, but he can also transform into a TUBBZ cosplay duck. Fans will appreciate the exquisite details that make this collectible truly special with chainsaw hands, a helmet, a sticking out tongue, and blood splatter, sure to stand out in any collection.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "chainsaw-man-power",
+      "name": "Power",
+      "collection": "Chainsaw Man",
+      "number": "2",
+      "releaseYear": "2025",
+      "description": "The wild Blood Fiend is joining the TUBBZ range as a collectible duck. With her devil horns, sharp fangs, and inimitable attitude, Power is instantly recognizable to Chainsaw Man fans.",
       "variants": [
         {
           "size": "classic",
@@ -1842,6 +1884,27 @@ window.TUBBZ_DATA = {
       ]
     },
     {
+      "id": "easter-easter-bunny",
+      "name": "Easter Bunny",
+      "collection": "Easter",
+      "description": "Easter is coming to the pond… and this year, the Easter Bunny has swapped his paws for a duck bill!\n\nThe TUBBZ ducks were eagerly awaiting their delivery of eggs and treats. Good news: the Easter Bunny has just hopped into the pond with his basket full! Even more surprising, this funny duck-bunny even has a chocolate scent to complete the festive gourmet atmosphere.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition",
+          "limitedTo": 3000
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
       "id": "evil-dead-2-ash",
       "name": "Ash",
       "collection": "Evil Dead 2",
@@ -1883,6 +1946,9 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "boxed"
+        },
+        {
+          "size": "plushies"
         }
       ]
     },
@@ -3596,6 +3662,27 @@ window.TUBBZ_DATA = {
       ]
     },
     {
+      "id": "kung-fu-panda-po",
+      "name": "Po",
+      "collection": "Kung Fu Panda",
+      "releaseYear": "2025",
+      "description": "Get ready for a quacking-fantastic adventure: Po, the legendary Dragon Warrior, is waddling into the TUBBZ dojo! Reimagined in all his glory, this dumpling-devouring panda is now a collectible cosplaying duck that will bring a touch of martial arts mastery and adorable flair to your collection.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
       "id": "lord-of-the-rings-frodo-baggins",
       "name": "Frodo Baggins",
       "collection": "Lord of the Rings",
@@ -3614,6 +3701,9 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "plushies"
         }
       ]
     },
@@ -5019,6 +5109,9 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "plushies"
         }
       ]
     },
@@ -5129,6 +5222,28 @@ window.TUBBZ_DATA = {
         {
           "size": "classic",
           "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "robocop-robocop",
+      "name": "Robocop",
+      "collection": "Robocop",
+      "number": "1",
+      "releaseYear": "2023",
+      "description": "It's time there was a little law and order in the duck pond and a duck for the job... RoboDuck? RoboCop: half-man, half-machine and now, all the collectible TUBBZ cosplaying duck! Hands up, who wants this in their collection?",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
         }
       ]
     },
@@ -5563,6 +5678,9 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "plushies"
         }
       ]
     },
@@ -5783,6 +5901,23 @@ window.TUBBZ_DATA = {
         {
           "size": "classic",
           "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "st-patricks-day-leprechaun",
+      "name": "Leprechaun",
+      "collection": "St. Patrick’s Day",
+      "releaseYear": "2026",
+      "description": "Add a little luck to your collection with the TUBBZ St. Patrick's Day Cosplay Duck! Original, festive, and perfect for collectors, this duck brings a playful touch to the holiday season. With its premium construction and iconic display tub, it's a gem for pop culture fans.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
         }
       ]
     },
@@ -6633,6 +6768,84 @@ window.TUBBZ_DATA = {
       ]
     },
     {
+      "id": "the-breakfast-club-allison-reynolds",
+      "name": "Allison Reynolds",
+      "collection": "The Breakfast Club",
+      "releaseYear": "2025",
+      "description": "The most mysterious member of The Breakfast Club joins the TUBBZ collection.\n\nDiscover Allison Reynolds, the unforgettable \"Basket Case\" from The Breakfast Club, in an adorable, personality-packed Mini TUBBZ version.\nMysterious, eccentric, and totally unpredictable, Allison brings her dark and quirky style to this collectible figurine inspired by the cult 80s movie.\n\nWith her messy hair and iconic look, this cosplay duck version perfectly captures the character's rebellious and intriguing aura.",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "the-breakfast-club-andrew-clark",
+      "name": "Andrew Clark",
+      "collection": "The Breakfast Club",
+      "releaseYear": "2025",
+      "description": "The high school champ joins the TUBBZ collection.\n\nMeet Andrew Clark, the iconic jock from The Breakfast Club, in an adorable Mini TUBBZ version full of 80s nostalgia.\nWith his famous blue Shermer High School varsity jacket, this collector's figurine perfectly captures the style and attitude of the group's \"athlete.\"",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "the-breakfast-club-brian-johnson",
+      "name": "Brian Johnson",
+      "collection": "The Breakfast Club",
+      "releaseYear": "2025",
+      "description": "The brain of the group joins the TUBBZ collection.\n\nFind Brian Johnson, the brilliant and reserved student from The Breakfast Club, in an adorable Mini TUBBZ version.\nInspired by the iconic character from the emblematic 80s film, this figurine transforms “The Brain” into an irresistible collectible cosplay duck.\n\nWith his famous green sweater, his thoughtful expression and his film-accurate style, this Mini TUBBZ perfectly captures the nostalgic and endearing spirit of Brian Johnson.",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "the-breakfast-club-claire-standish",
+      "name": "Claire Standish",
+      "collection": "The Breakfast Club",
+      "releaseYear": "2025",
+      "description": "The \"Princess\" of The Breakfast Club joins the TUBBZ collection.\n\nDiscover Claire Standish, the elegant and sophisticated icon from The Breakfast Club, in an adorable Mini TUBBZ version inspired by the cult 80s movie.\nWith her chic style, confident attitude, and iconic charm, Claire brings a glamorous and retro touch to this collector's collection.\n\nReimagined as a mini cosplay duck, Claire retains all the personality that made her one of the most memorable characters in 80s teen cinema.",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "the-breakfast-club-john-bender",
+      "name": "John Bender",
+      "collection": "The Breakfast Club",
+      "releaseYear": "2025",
+      "description": "The ultimate 80s rebel joins the TUBBZ collection.\n\nDiscover John Bender, the cult anti-hero from The Breakfast Club, in a Mini TUBBZ version full of attitude and retro nostalgia.\nWith his provocative spirit, insolent gaze, and iconic style, Bender remains one of the most memorable characters in 80s teen cinema.\n\nThis figurine perfectly captures his iconic look:\nmessy hair, denim jacket, and famous red plaid shirt.",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "the-breakfast-club-richard-vernon",
+      "name": "Richard Vernon",
+      "collection": "The Breakfast Club",
+      "releaseYear": "2025",
+      "description": "The king of detention arrives in the TUBBZ collection.\n\nFind Richard Vernon, the legendary assistant principal from The Breakfast Club, in a Mini TUBBZ version that's as strict as it is irresistible.\nTasked with supervising the students during their famous Saturday detention, Mr. Vernon became one of the most memorable adults in 80s cinema.\n\nWith his impeccable suit, stern gaze, and authoritative demeanor, this figurine perfectly captures the personality of the cult character.",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
       "id": "the-hunger-games-katniss-everdeen",
       "name": "Katniss Everdeen",
       "collection": "The Hunger Games",
@@ -6916,10 +7129,15 @@ window.TUBBZ_DATA = {
       "collection": "The Shining",
       "number": "4",
       "releaseYear": "2024",
+      "description": "Here's a new TUBBZ cosplay duck that horror fans will definitely want to keep forever... and ever... and ever. Horror legend Jack Torrance has become a TUBBZ cosplaying duck and looks great. You can run but you can't hide, add him to your horror collection now!",
       "variants": [
         {
           "size": "classic",
           "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
         }
       ]
     },
@@ -7090,6 +7308,136 @@ window.TUBBZ_DATA = {
         {
           "size": "classic",
           "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "travel-france",
+      "name": "France",
+      "collection": "Travel",
+      "releaseYear": "2026",
+      "description": "Oh la la! This Mini TUBBZ brings a French touch to your collection. Dressed in a stylish black beret, a sleek red scarf, and a classic blue and white striped shirt, the French Mini TUBBZ is the ultimate symbol of effortless cool. Whether sipping an imaginary espresso or simply showing off a very sophisticated look, this little Parisian is always ready to be displayed. Nestled in a themed mini bathtub, it's the perfect quirky collectible for lovers of France, or anyone who appreciates a duck with an undeniable je-ne-sais-quoi!",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "travel-germany",
+      "name": "Germany",
+      "collection": "Travel",
+      "releaseYear": "2026",
+      "description": "Next stop: Germany! The Travel TUBBZ collection makes a stop in Bavaria with a mini duck in traditional costume.\n\nThe Travel TUBBZ range continues its world tour with this Germany Mini Edition, a highly detailed figurine inspired by traditional Bavarian imagery.\n\nWith its traditional costume, braided hair and small beer steins, this TUBBZ adopts an instantly recognizable look while retaining the quirky spirit characteristic of Numskull Designs creations.",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "travel-greece",
+      "name": "Greece",
+      "collection": "Travel",
+      "releaseYear": "2026",
+      "description": "Head to ancient Greece! The Travel TUBBZ collection goes back in time with a mini duck inspired by the legends and aesthetics of Greek antiquity.\n\nThe Travel TUBBZ range continues its world tour with this Greece Mini Edition, which pays tribute to the world of ancient Greece in Numskull Designs' characteristic quirky style.\n\nDressed in a flowing white toga and crowned with a leaf headband, this little duck immediately evokes the imagery of Greek antiquity without representing a particular historical or mythological character.",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "travel-italy",
+      "name": "Italy",
+      "collection": "Travel",
+      "releaseYear": "2026",
+      "description": "Ciao Bella! This duck embodies the charm of Italy with its classic striped shirt, traditional hat, and oar in hand, ready to integrate into your toy collection with natural elegance. A must-have for lovers of timeless European style and refined getaways.",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "travel-japan",
+      "name": "Japan",
+      "collection": "Travel",
+      "releaseYear": "2026",
+      "description": "Destination Japan! TUBBZ celebrates the aesthetics of Kabuki theater with a mini duck as expressive as it is exotic.\n\nThe Travel TUBBZ collection takes us to Japan with this Mini Edition figurine inspired by one of the country's most iconic visual traditions: Kabuki theater.\n\nIts Kabuki-inspired makeup, red lips, and carefully crafted outfit create an immediately striking design, revisited with the characteristic humor of TUBBZ ducks.",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "travel-scotland",
+      "name": "Scotland",
+      "collection": "Travel",
+      "releaseYear": "2026",
+      "description": "Next stop, Scotland! Travel TUBBZ dons a kilt for the latest stage of its miniature world tour.\n\nThe Travel TUBBZ collection now features Scotland with a mini duck inspired by traditional Scottish attire.\n\nDressed in a full kilt and wearing a Tam o’ shanter, this little traveler incorporates several immediately recognizable elements of Scottish clothing heritage, reinterpreted with Numskull Designs' characteristic humor.",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "travel-spain",
+      "name": "Spain",
+      "collection": "Travel",
+      "releaseYear": "2026",
+      "description": "Dynamic and spirited, this duck embodies the very essence of Spain with its red and black spotted pattern and floral headwear. Bold, expressive, and full of energy, it brings a warm touch of Spanish character to your toy collection.",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "travel-turkey",
+      "name": "Turkey",
+      "collection": "Travel",
+      "releaseYear": "2026",
+      "description": "Destination Turkey! Travel TUBBZ celebrates Turkish visual heritage with a vibrant mini duck.\n\nThe Travel TUBBZ collection continues its world tour with this Turkey Mini Edition, inspired by the country's rich cultural heritage.\n\nThis small figurine features a white shirt, an elegant richly detailed red and gold vest, and a traditionally inspired red headdress. Elaborate patterns and intense colors give this edition an instantly recognizable identity, always with the quirky touch characteristic of TUBBZ.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "travel-united-kingdom",
+      "name": "United Kingdom",
+      "collection": "Travel",
+      "releaseYear": "2026",
+      "description": "This little ducky takes being still very seriously—unless there's a puddle nearby! Dressed in the iconic scarlet tunic and black bearskin cap of the King's Guards, this mini TUBBZ is ready to waddle to keep your collection safe with an unflappable (okay, slightly embarrassing) attitude. But don't expect a smile: he's been given strict royal orders to keep a straight face!",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "travel-usa",
+      "name": "USA",
+      "collection": "Travel",
+      "releaseYear": "2026",
+      "description": "Bring a touch of freedom to your collection with the Mini TUBBZ USA . Embodied as the Statue of Liberty, this miniature duck is adorned with Lady Liberty's flowing green dress and iconic spiked crown, ready to stand tall (or waddle) like a symbol of freedom. Whether you're an Americana lover or simply looking for a duck that symbolizes freedom and greatness, this Mini TUBBZ USA is the perfect choice.",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "first-edition"
         }
       ]
     },
@@ -7425,6 +7773,116 @@ window.TUBBZ_DATA = {
       "number": "4",
       "releaseYear": "2025",
       "description": "Manipulation disguised as mentorship. Madame Morrible takes the form of TUBBZ with refined confidence and a pronounced taste for control. Her words shape the future, but her intentions rewrite destiny.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "wicked-chistery",
+      "name": "Chistery",
+      "collection": "Wicked",
+      "number": "5",
+      "releaseYear": "2025",
+      "description": "An iconic creature from the Land of Oz, Chistery the Flying Monkey is reinterpreted in the improbable form of a cosplay duck. Its wings and fantastic appearance give it an instantly recognizable and particularly original silhouette within the Wicked TUBBZ collection.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "wicked-fiyero",
+      "name": "Fiyero",
+      "collection": "Wicked",
+      "number": "6",
+      "releaseYear": "2025",
+      "description": "When elegance, carelessness and rebellion meet: Prince Fiyero joins the TUBBZ universe.\n\nBehind his charm and apparent lightness, however, lies a character capable of questioning his convictions and the rules that govern Oz.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "wicked-scarecrow",
+      "name": "Scarecrow",
+      "collection": "Wicked",
+      "number": "8",
+      "releaseYear": "2026",
+      "description": "If he only had a brain... he'd also have style.\n\nThe famous Scarecrow from the world of Oz joins the TUBBZ collection in a version that is as faithful as it is quirky.\nReimagined as a cosplay duck, he sports his patchwork outfit, his iconic floppy hat, and the straw poking out of every seam, for a charming and detailed result.\n\nEndearing, naive, and iconic, this collectible perfectly captures the spirit of the character with a touch of humor unique to the TUBBZ universe.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "wicked-cowardly-lion",
+      "name": "Cowardly Lion",
+      "collection": "Wicked",
+      "number": "9",
+      "releaseYear": "2026",
+      "description": "Courage… with a touch of panic.\n\nThe mythical Cowardly Lion joins the TUBBZ collection with all his irresistible charm.\nReimagined as a cosplay duck, he sports his impressive mane and his courageous yet anxious expression, true to this iconic character from the world of Oz.\n\nEndearing, funny, and iconic, this collectible perfectly captures the Lion's duality: ready to roar… but not too loudly.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "wicked-tin-man",
+      "name": "Tin Man",
+      "collection": "Wicked",
+      "number": "10",
+      "releaseYear": "2026",
+      "description": "The legendary Tin Man joins the TUBBZ collection in a version as brilliant as it is touching.\nReimagined as a cosplay duck, he sports his iconic silver body, his iconic funnel hat, and all the sensitivity that makes him one of the most beloved characters in the world of Oz.\n\nBetween nostalgia and elegance, this collectible perfectly captures the spirit of the Tin Man with a touch of humor unique to the TUBBZ universe.",
       "variants": [
         {
           "size": "classic",
