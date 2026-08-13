@@ -310,15 +310,20 @@ window.Tubbz = (function () {
   // ajouter son cas dans headerActionsFor() ci-dessous. Rien à dupliquer.
   // (Injection en JS car le site doit tourner en file:// — pas de fetch/include.)
 
+  // Logo « lockup » : THE à gauche, TUBBZ / ARCHIVE empilés à droite. Le T et le A
+  // ouvrent chacun leur ligne et tombent donc dans la MÊME colonne de la grille CSS,
+  // ce qui les aligne verticalement sans réglage manuel (cf. .brand-lockup).
+  // Pas de tagline dans cette version.
+  // ► L'ancienne version (.brand-block / .brand-name / .tagline) est conservée
+  //   intacte dans styles.css, inutilisée : y revenir = restaurer ce bloc HTML.
   var BRAND_HTML =
-    '<div class="brand-block">' +
-      '<a class="brand" href="index.html?home">' +
-        '<span class="brand-text"><strong>The </strong>' +
-        '<strong class="brand-name">TUBB<span class="brand-z">Z</span></strong> ' +
-        '<strong>Archive</strong></span>' +
-      '</a>' +
-      '<p class="tagline">Find the tubbz you deserve</p>' +
-    '</div>';
+    '<a class="brand-lockup" href="index.html?home" aria-label="The TUBBZ Archive">' +
+      '<span class="bl-the">The</span>' +
+      '<span class="bl-stack">' +
+        '<span class="bl-line bl-line-1"><span class="bl-t">T</span>ubbz</span>' +
+        '<span class="bl-line bl-line-2"><span class="bl-a">A</span>rchive</span>' +
+      '</span>' +
+    '</a>';
 
   var THEME_BTN_HTML =
     '<button id="theme-toggle" type="button" class="btn btn-ghost theme-toggle" aria-label="Theme"></button>';

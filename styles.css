@@ -138,6 +138,57 @@ h1, h2, h3 { line-height: 1.2; }
     -0.5px -0.5px 0 var(--accent-ink), 0.5px -0.5px 0 var(--accent-ink),
     -0.5px  0.5px 0 var(--accent-ink), 0.5px  0.5px 0 var(--accent-ink);
 }
+/* ---------------- Logo header, version « lockup » ----------------
+   THE à gauche, TUBBZ / ARCHIVE empilés à droite, tout en capitales.
+   L'alignement vertical du T (jaune) et du A (orange) n'est PAS réglé à la main :
+   les deux lignes occupent la même colonne de grille, et chaque lettre ouvre sa
+   ligne — elles tombent donc forcément l'une sous l'autre, quel que soit le texte.
+   Hauteur totale ≈ 33px, soit moins que l'ancien bloc titre + tagline (35px), donc
+   le min-height du header (69px) reste valable et rien ne saute au chargement.
+   ► Les règles .brand / .brand-block / .brand-name / .tagline juste au-dessus sont
+     celles de la version PRÉCÉDENTE : conservées volontairement pour pouvoir y
+     revenir (elles ne s'appliquent plus à rien tant que ce lockup est en place). */
+.brand-lockup {
+  /* --bl-cap = hauteur de capitale de la police, en fraction de la taille de police.
+     MESURÉE (0.70 pour Segoe UI / system-ui via actualBoundingBoxAscent) : c'est elle
+     qui permet de raisonner en hauteur de LETTRES et non en hauteur de boîtes. */
+  --bl-size: .95rem;   /* taille des deux lignes de droite */
+  --bl-lh: 1.08;       /* leur interligne */
+  --bl-cap: .70;
+
+  display: flex;
+  /* « last baseline » : la ligne de base de THE se cale sur celle d'ARCHIVE (la
+     DERNIÈRE du bloc empilé), pas sur celle de TUBBZ. C'est ce qui aligne les bas. */
+  align-items: last baseline;
+  column-gap: .14em;
+  text-decoration: none;
+  color: var(--text);          /* blanc cassé en sombre, quasi-noir en clair */
+  font-weight: 700;
+  line-height: var(--bl-lh);
+  text-transform: uppercase;
+}
+/* THE occupe exactement la hauteur de capitale des deux lignes réunies : du haut des
+   capitales de TUBBZ au bas de celles d'ARCHIVE. Cette distance vaut un interligne
+   plus une hauteur de capitale, d'où la taille ci-dessous. Son interligne est ramené
+   à --bl-cap pour que sa BOÎTE colle à ses lettres et n'ajoute pas de blanc. */
+.bl-the {
+  font-size: calc(var(--bl-size) * (var(--bl-lh) / var(--bl-cap) + 1));
+  line-height: var(--bl-cap);
+  letter-spacing: .01em;
+}
+.bl-stack { display: flex; flex-direction: column; }
+.bl-line { display: block; font-size: var(--bl-size); letter-spacing: .06em; }
+.bl-t { color: #ffe103; }
+.bl-a { color: var(--accent); }
+/* Même parade que l'ancien .brand-name : en thème clair le jaune et l'orange se
+   lisent mal sur le header quasi-blanc, on les détache d'un très fin contour. */
+:root[data-theme="light"] .bl-t,
+:root[data-theme="light"] .bl-a {
+  text-shadow:
+    -0.5px -0.5px 0 var(--accent-ink), 0.5px -0.5px 0 var(--accent-ink),
+    -0.5px  0.5px 0 var(--accent-ink), 0.5px  0.5px 0 var(--accent-ink);
+}
+
 .header-actions { display: flex; gap: 8px; }
 /* Titre + slogan empilés en colonne à gauche : le slogan passe SOUS le titre.
    Réduit → l'ensemble tient dans la hauteur existante du header (69px inchangés). */
