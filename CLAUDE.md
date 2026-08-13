@@ -33,7 +33,7 @@ The project has two parts:
 | `styles.css` | Styling, responsive, auto light/dark theme. |
 | `data.js` | The catalog (`window.TUBBZ_DATA`). |
 | `images/` | Figurine images **only** — every file here is named after an `id`, nothing else. |
-| `logo-tubbz*.webp`, `placeholder.webp` | The four TUBBZ logos (classic / mini / xl / plushies) used as the grid's size badges and the `duck.html` group headers, and the fallback image (also the favicon of every page). UI assets → kept at the root, not in `images/`. |
+| `logo-tubbz*.webp`, `placeholder.webp`, `favicon.png` | The four TUBBZ logos (classic / mini / xl / plushies) used as the grid's size badges and the `duck.html` group headers; the fallback image (`Tubbz.PLACEHOLDER`); and the favicon of all three pages. UI assets → kept at the root, not in `images/`. `favicon.png` is a 64×64 transparent PNG of the **`TA` monogram** in the brand colours (yellow `#ffe103` T, `--accent` orange A, `system-ui` 700). It carries the same thin `--accent-ink` outline as `.brand-name` in light theme — the favicon sits on a tab bar of unknown colour, and bare `#ffe103` vanishes on a light one. Kept **separate** from `placeholder.webp` so either can change alone. |
 | `admin/` | Local admin tool (`index.html`/`index.css`/`index.js` + `vendor/`). **Git-ignored.** |
 
 ## The catalog — `data.js`
