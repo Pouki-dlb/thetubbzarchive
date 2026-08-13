@@ -882,6 +882,21 @@ window.TUBBZ_DATA = {
       ]
     },
     {
+      "id": "cody-fry-cody-fry",
+      "name": "Cody Fry",
+      "collection": "Cody Fry",
+      "number": "1",
+      "releaseYear": "2023",
+      "description": "Produced in partnership with Numskull Designs – the folks behind TUBBZ Cosplaying Duck Collectibles – the “Cody Fry Collectible Duck” is now a real, actual thing.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition",
+          "limitedTo": 1000
+        }
+      ]
+    },
+    {
       "id": "crash-bandicoot-crash",
       "name": "Crash",
       "collection": "Crash Bandicoot",
@@ -1625,6 +1640,9 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "plushies"
         }
       ]
     },
@@ -1921,6 +1939,20 @@ window.TUBBZ_DATA = {
         {
           "size": "classic",
           "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "fallout-glow-in-the-dark-vault-boy",
+      "name": "Glow in the Dark Vault Boy",
+      "collection": "Fallout",
+      "number": "0",
+      "releaseYear": "2019",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition",
+          "limitedTo": 10
         }
       ]
     },
@@ -2846,6 +2878,62 @@ window.TUBBZ_DATA = {
       ]
     },
     {
+      "id": "good-luck-trolls-rainbow-troll",
+      "name": "Rainbow Troll",
+      "collection": "Good Luck Trolls",
+      "number": "1",
+      "releaseYear": "2023",
+      "description": "It's impossible to go unnoticed in the pond with hair like that!\n\nRainbow Troll joins the TUBBZ collection in a version as colorful as it is adorable. With its yellow body and impressive multicolored hair, this famous Troll seems perfectly at home as a cosplay duck.\n\nIn the pond, the other TUBBZ might have trouble looking away from its long, rainbow-colored locks. One thing is certain: Rainbow Troll knows how to attract attention!",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "good-luck-trolls-blue-glitter-troll",
+      "name": "Blue Glitter Troll",
+      "collection": "Good Luck Trolls",
+      "number": "2",
+      "releaseYear": "2023",
+      "description": "A Troll transformed into a duck? With Glitter Troll, the result is as improbable as it is spectacular!\n\nThe sparkling Glitter Troll joins the duck pond in a particularly colorful TUBBZ.\n\nIt's impossible to miss this funny character: its shimmering blue body contrasts with its impressive red hair, creating a mix between a Troll and a duck that is as extravagant as it is endearing.\n\nAnd ultimately, why couldn't Trolls become ducks? Glitter Troll seems perfectly comfortable with its new look!",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "good-luck-trolls-silver-troll",
+      "name": "Silver Troll",
+      "collection": "Good Luck Trolls",
+      "number": "3",
+      "releaseYear": "2024",
+      "description": "It's impossible to go unnoticed with hair like that! Silver Troll joins the TUBBZ collection with its silver body and spectacular purple hair.\n\nThe world of Good Luck Trolls meets cosplay ducks with this particularly colorful adaptation designed by Numskull Designs.\n\nThis version of Silver Troll combines a silver finish with imposing purple hair, capturing all the eccentricity that characterizes the famous trolls.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "good-luck-trolls-green-troll",
+      "name": "Green Troll",
+      "collection": "Good Luck Trolls",
+      "number": "4",
+      "releaseYear": "2024",
+      "description": "Trolls as cosplay ducks are an absolute winner and a must-have for collectors. Here's Green Troll, complete with a pink gemstone and spectacular pink hair, a striking contrast to the green body. This officially licensed collectible is part of the TUBBZ range, a highly collectible series of your favorite characters from games, movies, TV shows, and pop culture in duck form!",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
       "id": "gremlins-stripe",
       "name": "Stripe",
       "collection": "Gremlins",
@@ -3323,6 +3411,20 @@ window.TUBBZ_DATA = {
       ]
     },
     {
+      "id": "horizon-forbidden-west-aloy",
+      "name": "Aloy",
+      "collection": "Horizon Forbidden West",
+      "number": "1",
+      "releaseYear": "2024",
+      "description": "Aloy's latest quest takes her to the duck pond. Aloy joins the TUBBZ cosplay duck collectibles and this gaming icon looks quacking good with glorious details. She's ready to defend the pond, wearing her armor and feathered bow at the ready! Simply a must-have for fans of this game.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
       "id": "influencers-blob-ross",
       "name": "Blob Ross",
       "collection": "Influencers",
@@ -3341,6 +3443,19 @@ window.TUBBZ_DATA = {
       "collection": "Influencers",
       "releaseYear": "2026",
       "description": "Unapologetic glamour. Unforgettable presence.\n\nDivina de Campo joins the TUBBZ collection with spectacular energy and flamboyant style.\nReimagined as a cosplaying duck, this collectible faithfully recreates her iconic red hair, bold makeup, signature lipstick, and sparkling stage outfit.\n\nBold, charismatic, and full of personality, this TUBBZ captures all the intensity and extravagance of an unforgettable performance.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "influencers-jacksucksatlife",
+      "name": "JackSucksAtLife",
+      "collection": "Influencers",
+      "releaseYear": "2025",
+      "description": "JackSucksAtLife has officially joined the TUBBZ lineup of cosplaying ducks, and transformed into a quackingly cool collectible. Sporting Jack’s signature hairstyle, a stylish hoodie, and that cheeky grin, this wacky (or should that be quacky?) collectible perfectly captures the Youtuber’s energetic and witty personality. \n\nWhether he’s flexing his YouTube Play Buttons or uncovering bizarre internet facts, the JackDucksAtLife TUBBZ is an absolute must-have for fans of his legendary antics. ",
       "variants": [
         {
           "size": "classic",
@@ -6840,6 +6955,19 @@ window.TUBBZ_DATA = {
       ]
     },
     {
+      "id": "star-trek-guinan",
+      "name": "Guinan",
+      "collection": "Star Trek",
+      "number": "21",
+      "description": "The wisdom of the universe joins the TUBBZ collection.\n\nDiscover the iconic Guinan, mysterious barmaid of Ten Forward in Star Trek, in this superb TUBBZ.\nWith her famous purple headwear, her soothing gaze, and her enigmatic aura, this cosplay duck version perfectly captures all the serenity and wisdom of the cult character.\n\nA valuable advisor aboard the Enterprise, Guinan is known for her calm, intelligence, and ability to see far beyond appearances.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
       "id": "stranger-things-eleven",
       "name": "Eleven",
       "collection": "Stranger Things",
@@ -7289,6 +7417,34 @@ window.TUBBZ_DATA = {
       "collection": "Teenage Mutant Ninja Turtles",
       "releaseYear": "2024",
       "description": "Raphael wears a red mask. As a DIY TUBBZ, you can paint his mask any color you want. Do it, you'll baffle people, minds will be blown!",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "tekken-kazuya",
+      "name": "Kazuya",
+      "collection": "Tekken",
+      "number": "1",
+      "releaseYear": "2021",
+      "description": "QUACKOUKEN! The battle begins in the pond.\n\nDiscover Kazuya Mishima, one of Tekken's most formidable fighters, in this TUBBZ. Even transformed into a cosplay duck, Kazuya retains all his brutality, his menacing gaze, and his aura as an unmissable boss.\n\nBetween the Mishima legacy, family rivalries, and demonic power, Kazuya is one of the most iconic characters in the fighting game. This TUBBZ version captures his dark charisma and intensity in an original collector's format.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "tekken-heihachi",
+      "name": "Heihachi",
+      "collection": "Tekken",
+      "number": "2",
+      "releaseYear": "2021",
+      "description": "QUACKOUKEN! The King of the Iron Fist enters the pond.\n\nDiscover Heihachi Mishima, a legendary figure from Tekken, in this TUBBZ. A formidable martial arts master, ruthless patriarch, and mythical fighter, Heihachi retains all his intensity even when transformed into a cosplaying duck.\n\nWith his impressive physique, severe gaze, and instantly recognizable iconic hairstyle, this TUBBZ version perfectly captures the character's brutal and charismatic energy.",
       "variants": [
         {
           "size": "classic",
@@ -8030,6 +8186,9 @@ window.TUBBZ_DATA = {
         {
           "size": "classic",
           "packaging": "boxed"
+        },
+        {
+          "size": "plushies"
         }
       ]
     },
