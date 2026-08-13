@@ -178,12 +178,13 @@ h1, h2, h3 { line-height: 1.2; }
 }
 .bl-stack { display: flex; flex-direction: column; }
 .bl-line { display: block; font-size: var(--bl-size); letter-spacing: .06em; }
-.bl-t { color: #ffe103; }
-.bl-a { color: var(--accent); }
+/* Chaque mot porte une couleur pleine ; seul THE suit la couleur du texte. */
+.bl-line-1 { color: #ffe103; }
+.bl-line-2 { color: var(--accent); }
 /* Même parade que l'ancien .brand-name : en thème clair le jaune et l'orange se
    lisent mal sur le header quasi-blanc, on les détache d'un très fin contour. */
-:root[data-theme="light"] .bl-t,
-:root[data-theme="light"] .bl-a {
+:root[data-theme="light"] .bl-line-1,
+:root[data-theme="light"] .bl-line-2 {
   text-shadow:
     -0.5px -0.5px 0 var(--accent-ink), 0.5px -0.5px 0 var(--accent-ink),
     -0.5px  0.5px 0 var(--accent-ink), 0.5px  0.5px 0 var(--accent-ink);

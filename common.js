@@ -320,8 +320,8 @@ window.Tubbz = (function () {
     '<a class="brand-lockup" href="index.html?home" aria-label="The TUBBZ Archive">' +
       '<span class="bl-the">The</span>' +
       '<span class="bl-stack">' +
-        '<span class="bl-line bl-line-1"><span class="bl-t">T</span>ubbz</span>' +
-        '<span class="bl-line bl-line-2"><span class="bl-a">A</span>rchive</span>' +
+        '<span class="bl-line bl-line-1">Tubbz</span>' +
+        '<span class="bl-line bl-line-2">Archive</span>' +
       '</span>' +
     '</a>';
 
