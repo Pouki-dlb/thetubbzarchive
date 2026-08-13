@@ -11,6 +11,7 @@
   var elGrid = document.getElementById("grid");
   var elWarning = document.getElementById("storage-warning");
   var elSearch = document.getElementById("search");
+  var elSearchClear = document.getElementById("search-clear");
   var elCollection = document.getElementById("filter-collection");
   var elSize = document.getElementById("filter-size");
   var elStatus = document.getElementById("filter-status");
@@ -180,6 +181,15 @@
     }
     elGrid.setAttribute("aria-busy", "false");
     updateSearchPlaceholder();
+    syncSearchClear();
+  }
+
+  // Croix d'effacement : visible dès qu'il y a au moins un caractère. Pilotée depuis
+  // render(), par lequel passent TOUS les chemins qui touchent au champ (saisie, reset,
+  // clic sur une collection, restauration de la vue) — elle ne peut donc pas se
+  // désynchroniser du contenu réel du champ.
+  function syncSearchClear() {
+    elSearchClear.hidden = elSearch.value.length === 0;
   }
 
   /* ---------------------------------------------------------------- */
@@ -374,6 +384,16 @@
     // sous le curseur entre mousedown et mouseup → le 1er clic ne navigue pas.
     // Les <select> gardent "change" (ils ne détruisent rien sous le pointeur).
     elSearch.addEventListener("input", onFilterChange);
+
+    // Vider le champ par programme ne déclenche PAS l'événement "input" : on relance
+    // donc le rendu et la mémorisation à la main. Le focus revient dans le champ, pour
+    // pouvoir retaper aussitôt.
+    elSearchClear.addEventListener("click", function () {
+      elSearch.value = "";
+      elSearch.focus();
+      render();
+      saveView();
+    });
     [elCollection, elSize, elStatus].forEach(function (el) {
       el.addEventListener("change", onFilterChange);
     });

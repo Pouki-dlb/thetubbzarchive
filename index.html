@@ -30,6 +30,9 @@
     <section class="toolbar">
       <div class="field field-search">
         <input id="search" type="search" placeholder="Search across TUBBZ and collections…" autocomplete="off" aria-label="Search" />
+        <!-- Croix d'effacement : masquée tant que le champ est vide (l'attribut hidden
+             la sort aussi de l'ordre de tabulation). Câblée dans index.js. -->
+        <button id="search-clear" class="search-clear" type="button" aria-label="Clear search" title="Clear search" hidden>✕</button>
       </div>
       <label class="field">
         <span>Collection</span>

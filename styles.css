@@ -225,11 +225,34 @@ h1, h2, h3 { line-height: 1.2; }
    la barre tienne sur UNE ligne malgré ses quatre contrôles (collection, taille, statut,
    reset). Il reste extensible (flex-grow 1), donc il récupère tout l'espace restant. */
 .field-search { flex: 1 1 150px; min-width: 0; }
+.field-search { position: relative; }
 .field-search input {
-  width: 100%; font: inherit; padding: .5em .8em;
+  /* Rembourrage droit élargi : réserve la place de la croix d'effacement, pour que le
+     texte saisi ne passe jamais dessous. */
+  width: 100%; font: inherit; padding: .5em 2.1em .5em .8em;
   border: 1px solid var(--border); border-radius: 10px;
   background: var(--surface); color: var(--text);
 }
+/* La croix NATIVE de type="search" est neutralisée : elle n'existe pas dans tous les
+   navigateurs (absente de Firefox) et son style n'est pas contrôlable. On la remplace
+   par la nôtre, identique partout — sans quoi Chrome en afficherait deux. */
+.field-search input::-webkit-search-cancel-button {
+  -webkit-appearance: none; appearance: none; display: none;
+}
+.search-clear {
+  position: absolute; right: .4em; top: 50%; transform: translateY(-50%);
+  display: flex; align-items: center; justify-content: center;
+  width: 1.5em; height: 1.5em; padding: 0;
+  border: 0; border-radius: 50%; background: transparent;
+  color: var(--muted); font: inherit; font-size: .95em; line-height: 1;
+  cursor: pointer; transition: color .15s ease, background .15s ease;
+}
+/* INDISPENSABLE : le `display: flex` ci-dessus l'emporte sur le `display: none` que la
+   feuille du navigateur applique à [hidden]. Sans cette règle, la croix resterait
+   visible en permanence malgré l'attribut. */
+.search-clear[hidden] { display: none; }
+.search-clear:hover { background: var(--surface-2); color: var(--text); }
+.search-clear:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
 .field select {
   font: inherit; color: var(--text); background: var(--surface);
   padding: .5em .6em; border: 1px solid var(--border); border-radius: 10px; min-width: 140px;
