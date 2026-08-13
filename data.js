@@ -591,6 +591,34 @@ window.TUBBZ_DATA = {
       ]
     },
     {
+      "id": "blues-brothers-elwood",
+      "name": "Elwood",
+      "collection": "Blues Brothers",
+      "number": "2",
+      "releaseYear": "2026",
+      "description": "Sobriety. Groove. Legend.\n\nElwood Blues, the musical soul of the cult duo Blues Brothers, joins the TUBBZ collection.\nWith his iconic black suit, sunglasses, and harmonica, this figurine captures all the understated elegance and timeless groove of the character.\n\nCalm, precise, and deeply connected to music, this collectible perfectly recreates Elwood's essence with the quirky touch unique to TUBBZ.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "blues-brothers-jake",
+      "name": "Jake",
+      "collection": "Blues Brothers",
+      "number": "2",
+      "releaseYear": "2026",
+      "description": "On a mission from God…\n\nJake Blues, half of the legendary duo Blues Brothers, joins the TUBBZ collection.\nWith his iconic black suit, sunglasses, and emblematic microphone, this figurine captures all the cool attitude and musical soul of the character.\n\nCharismatic, unflappable, and timeless, this collectible perfectly translates the spirit of the cult film with the quirky touch unique to TUBBZ.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
       "id": "borderlands-3-psycho",
       "name": "Psycho",
       "collection": "Borderlands 3",
@@ -3747,6 +3775,9 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "plushies"
         }
       ]
     },
@@ -3862,6 +3893,50 @@ window.TUBBZ_DATA = {
       "collection": "Kung Fu Panda",
       "releaseYear": "2025",
       "description": "Get ready for a quacking-fantastic adventure: Po, the legendary Dragon Warrior, is waddling into the TUBBZ dojo! Reimagined in all his glory, this dumpling-devouring panda is now a collectible cosplaying duck that will bring a touch of martial arts mastery and adorable flair to your collection.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "looney-tunes-bugs-bunny",
+      "name": "Bugs Bunny",
+      "collection": "Looney Tunes",
+      "number": "1",
+      "releaseYear": "2026",
+      "description": "What's up, Doc?\n\nAn absolute animation icon, Bugs Bunny joins the TUBBZ collection with all his mischievous style and legendary charisma.\nArmed with his iconic carrot, he displays his relaxed and playful attitude in this cosplay duck version full of personality.\n\nCombining humor, insolence, and timeless charm, this collectible perfectly captures the spirit of the cult Looney Tunes character.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "looney-tunes-tasmanian-devil",
+      "name": "Tasmanian Devil",
+      "collection": "Looney Tunes",
+      "number": "2",
+      "releaseYear": "2026",
+      "description": "A whirlwind of chaos…\n\nThe legendary Tasmanian Devil (Taz) joins the TUBBZ collection with all his uncontrollable energy.\nWith a fierce expression, dynamic pose, and explosive attitude, this figurine perfectly captures the wild spirit of the iconic Looney Tunes character.\n\nUnpredictable, powerful, and utterly crazy, this collectible brings a real visual presence to your collection.",
       "variants": [
         {
           "size": "classic",
@@ -5419,6 +5494,50 @@ window.TUBBZ_DATA = {
         {
           "size": "classic",
           "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "rick-morty-rick-sanchez",
+      "name": "Rick Sanchez",
+      "collection": "Rick & Morty",
+      "number": "1",
+      "releaseYear": "2026",
+      "description": "Wubba lubba dub dub… collector’s edition.\n\nThe most unstable genius in the multiverse, Rick Sanchez, joins the TUBBZ collection.\nWith his spiky blue hair, iconic lab coat, and portal gun, this figurine captures all the madness and chaos of the character.\n\nUnpredictable, brilliant, and totally uncontrollable, this collectible perfectly encapsulates Rick’s spirit with the quirky touch unique to the TUBBZ universe.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "rick-morty-morty-smith",
+      "name": "Morty Smith",
+      "collection": "Rick & Morty",
+      "number": "2",
+      "releaseYear": "2026",
+      "description": "\"Oh man... why does this always happen to me?!\"\n\nMorty Smith joins the TUBBZ collection, and as always... he's panicking.\nWith his iconic yellow t-shirt, his worried expression, and his stressed posture, this figure perfectly captures the character's legendary anxiety.\n\nEndearing, overwhelmed, and totally involved despite himself, this collectible perfectly captures all of Morty's nervous energy with the quirky touch unique to the TUBBZ universe.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
         }
       ]
     },
