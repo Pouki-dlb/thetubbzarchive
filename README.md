@@ -5,6 +5,8 @@ you own.**
 
 No account. No server. No cookies. Just a static site and your browser.
 
+### → [**thetubbzarchive**](https://pouki-dlb.github.io/thetubbzarchive/)
+
 ---
 
 ## What are TUBBZ?
@@ -69,8 +71,8 @@ This is a deliberately old-fashioned website, and the constraints are the point:
 
 - **No framework, no build step, no dependencies.** Two HTML pages, three scripts, one stylesheet
   and one data file. What you see in the repo is exactly what runs.
-- **No backend.** It's a folder of static files, so it can be hosted for free anywhere —
-  GitHub Pages, Netlify, Cloudflare Pages.
+- **No backend.** It's a folder of static files, so it can be hosted for free anywhere. This one
+  runs on GitHub Pages, straight from the `main` branch.
 - **It runs from `file://`.** Download the repo, double-click `index.html`, and the whole site
   works offline. That's why the catalogue is loaded with `<script src="data.js">` rather than
   `fetch()` — browsers block local file requests, but they'll happily run a local script.
