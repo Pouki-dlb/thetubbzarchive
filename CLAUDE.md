@@ -32,8 +32,8 @@ The project has two parts:
 | `common.js` | Shared: catalog loading, `localStorage`, helpers (`window.Tubbz`), **the injected header/footer** (`renderLayout`) and the theme toggle. |
 | `styles.css` | Styling, responsive, auto light/dark theme. |
 | `data.js` | The catalog (`window.TUBBZ_DATA`). |
-| `images/` | Figurine images (+ `placeholder.svg`). Only files named after an `id` live here. |
-| `logo-tubbz*.webp` | The four TUBBZ logos (classic / mini / xl / plushies) used as the grid's size badges and the `duck.html` group headers. UI assets → kept at the root, not in `images/`. |
+| `images/` | Figurine images **only** — every file here is named after an `id`, nothing else. |
+| `logo-tubbz*.webp`, `placeholder.webp` | The four TUBBZ logos (classic / mini / xl / plushies) used as the grid's size badges and the `duck.html` group headers, and the fallback image (also the favicon of every page). UI assets → kept at the root, not in `images/`. |
 | `admin/` | Local admin tool (`index.html`/`index.css`/`index.js` + `vendor/`). **Git-ignored.** |
 
 ## The catalog — `data.js`
@@ -92,8 +92,8 @@ everything else:
 
 ## Image naming (derived from `id` — no paths in `data.js`)
 
-Put `.webp` files in `images/`; the app computes paths from the `id`. Missing file → `placeholder.svg`
-via `onerror` (no visible error). Size initials `classic→c`, `mini→m`, `xl→x`, `plushies→p`;
+Put `.webp` files in `images/`; the app computes paths from the `id`. Missing file → `placeholder.webp`
+(at the root, `Tubbz.PLACEHOLDER`) via `onerror` (no visible error). Size initials `classic→c`, `mini→m`, `xl→x`, `plushies→p`;
 packaging `first-edition→f`, `boxed→b`.
 
 - **Per size** (bare figurine): `images/<id>-<c|m|x|p>.webp` — used for the `duck.html` hero and the

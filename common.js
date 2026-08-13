@@ -11,7 +11,9 @@ window.Tubbz = (function () {
 
   var STORAGE_KEY = "tubbz-collection";
   var STATE_VERSION = 1;
-  var PLACEHOLDER = "images/placeholder.svg";
+  // À la RACINE, pas dans images/ : c'est un élément d'interface, comme les logos.
+  // images/ ne contient que des fichiers nommés d'après un id de figurine.
+  var PLACEHOLDER = "placeholder.webp";
 
   // Convention de nommage des images (convention pure : calculée depuis l'id, jamais stockée).
   // Image par taille    : images/<id>-<taille>.webp             (ex. -c, -m, -x) → figurine « nue »
