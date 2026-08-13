@@ -51,7 +51,10 @@
           <option value="wishlist">Wishlist</option>
         </select>
       </label>
-      <button id="btn-reset" type="button" class="btn btn-ghost btn-small">Reset</button>
+      <!-- Libellé volontairement explicite : « Reset » seul pouvait faire craindre une
+           remise à zéro de la collection. Le titre le dit noir sur blanc. -->
+      <button id="btn-reset" type="button" class="btn btn-ghost btn-small"
+              title="Clear the search and filters above. Your collection, wishlist and notes are not affected.">Clear filters</button>
     </section>
 
     <section id="grid" class="grid" aria-busy="true">
