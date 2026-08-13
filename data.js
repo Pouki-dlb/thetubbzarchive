@@ -1028,6 +1028,9 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "plushies"
         }
       ]
     },
@@ -1364,6 +1367,7 @@ window.TUBBZ_DATA = {
       "name": "Batman (DIY Edition)",
       "collection": "DC Comics",
       "releaseYear": "2024",
+      "description": "The caped crusader needs a new look, it's up to you! With this TUBBZ DIY, design rules are a no-go, grab your paints and brushes and kapow, a custom-made Batman TUBBZ. ",
       "variants": [
         {
           "size": "classic",
@@ -2387,10 +2391,15 @@ window.TUBBZ_DATA = {
       "collection": "Full Metal Jacket",
       "number": "3",
       "releaseYear": "2024",
+      "description": "Sergeant J.T. Davis is back as a TUBBZ cosplaying rubber duck. He's been through some tough training to get here, but he's made it and looks like a quacker. The detail is ready for inspection: the helmet, glasses, rifle in hand, and \"born to quack\" uniform are all impeccable! Double time!",
       "variants": [
         {
           "size": "classic",
           "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
         }
       ]
     },
@@ -2827,6 +2836,8 @@ window.TUBBZ_DATA = {
       "name": "Godzilla (Giant XL Edition)",
       "collection": "Godzilla",
       "number": "1",
+      "releaseYear": "2024",
+      "description": "Prepare for a monster-sized splash with the mighty Godzilla , reimagined as an adorable TUBBZ collectible! With a menacing expression and crushing a train car between his powerful jaws, the King of the Monsters radiates raw power, even in rubber ducky form!",
       "variants": [
         {
           "size": "xl",
@@ -3368,9 +3379,19 @@ window.TUBBZ_DATA = {
       "name": "Eddie The Trooper",
       "collection": "Iron Maiden",
       "number": "3",
+      "description": "Heavy metal. Legend. Battlefield.\n\nIron Maiden's mythical mascot, Eddie The Trooper, joins the TUBBZ collection.\nInspired by the iconic album The Trooper, this collectible reimagines Eddie as a cosplay duck, ready to charge into battle.\n\nWith his military uniform, fierce attitude, and instantly recognizable design, this figure captures all the visual intensity and energy of heavy metal.",
       "variants": [
         {
           "size": "classic",
+          "packaging": "first-edition",
+          "limitedTo": 3000
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
           "packaging": "first-edition"
         }
       ]
@@ -4005,6 +4026,7 @@ window.TUBBZ_DATA = {
       "collection": "Lord of the Rings",
       "number": "3",
       "releaseYear": "2019",
+      "description": "One tub to rule them all…\n\nMeet Sauron, the Lord of the Rings himself, in this TUBBZ. The ultimate enemy of Middle-earth leaves Mordor to join the pond in a cosplay duck collector form as dark as it is impressive.\n\nWith his menacing armor, evil aura, and central role in the quest for the One Ring, this figurine perfectly captures the power of the greatest antagonist in Tolkien's universe.",
       "variants": [
         {
           "size": "classic",
@@ -4013,6 +4035,10 @@ window.TUBBZ_DATA = {
         {
           "size": "classic",
           "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
         }
       ]
     },
@@ -4022,6 +4048,7 @@ window.TUBBZ_DATA = {
       "collection": "Lord of the Rings",
       "number": "4",
       "releaseYear": "2019",
+      "description": "One bath to rule them all…\n\nDiscover Legolas, the agile and formidable elf from the Fellowship of the Ring, in this TUBBZ. The legendary archer of Middle-earth swaps his arrows for a collector's cosplay duck form that is as elegant as it is original.\n\nAlongside Gandalf, Frodo, and the other heroes of The Lord of the Rings, Legolas embarks on a new adventure… this time across the pond.",
       "variants": [
         {
           "size": "classic",
@@ -4030,6 +4057,10 @@ window.TUBBZ_DATA = {
         {
           "size": "classic",
           "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
         }
       ]
     },
@@ -4039,6 +4070,7 @@ window.TUBBZ_DATA = {
       "collection": "Lord of the Rings",
       "number": "5",
       "releaseYear": "2021",
+      "description": "Small in stature, immense in courage.\n\nMeet Gimli, the famous dwarf warrior from the Fellowship of the Ring, in this TUBBZ. Robust, loyal, and always ready to confront the forces of Sauron, Gimli retains all his character even in the form of a collectible cosplay duck.\n\nWith his imposing beard, helmet, armor, and iconic axe, this figurine features the characteristic details of one of Middle-earth's most beloved heroes.",
       "variants": [
         {
           "size": "classic",
@@ -4047,6 +4079,10 @@ window.TUBBZ_DATA = {
         {
           "size": "classic",
           "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
         }
       ]
     },
@@ -4056,6 +4092,7 @@ window.TUBBZ_DATA = {
       "collection": "Lord of the Rings",
       "number": "6",
       "releaseYear": "2021",
+      "description": "The Lady of Lothlórien joins Middle-earth... as a duck.\n\nMeet Galadriel, one of the most powerful and ancient Elves in Middle-earth, in this TUBBZ. Bearer of Nenya, one of the Three Elven Rings, Galadriel embodies wisdom, power, and grace, even when transformed into a collectible cosplay duck.\n\nWith her long blonde hair, elven robe, and legendary elegance, this figurine pays tribute to one of the most iconic characters from The Lord of the Rings.",
       "variants": [
         {
           "size": "classic",
@@ -4073,6 +4110,7 @@ window.TUBBZ_DATA = {
       "collection": "Lord of the Rings",
       "number": "7",
       "releaseYear": "2021",
+      "description": "\"You have my sword...\" The king joins the pond.\n\nMeet Aragorn, heir of Isildur and future king of Gondor, in this TUBBZ. Armed with the legendary sword Andúril, Aragorn is ready to defend Middle-earth and lead the fight to the gates of Mordor, even as a collectible cosplay duck.\n\nWith his ranger look, iconic gear, and legendary courage, this figure pays tribute to one of the most important heroes of The Lord of the Rings.",
       "variants": [
         {
           "size": "classic",
@@ -4090,6 +4128,7 @@ window.TUBBZ_DATA = {
       "collection": "Lord of the Rings",
       "number": "8",
       "releaseYear": "2021",
+      "description": "The first leader of the Uruk-hai joins the pond.\n\nDiscover Lurtz, the formidable leader of the Uruk-hai, in this TUBBZ. Created by Saruman to lead his armies, Lurtz is one of the most formidable adversaries in The Fellowship of the Ring. Even transformed into a cosplaying duck, he retains all his ferocity.",
       "variants": [
         {
           "size": "classic",
@@ -4107,6 +4146,7 @@ window.TUBBZ_DATA = {
       "collection": "Lord of the Rings",
       "number": "9",
       "releaseYear": "2021",
+      "description": "The White Wizard has succumbed to the power of the Ring… and now joins the pond.\n\nDiscover Saruman, formerly the head of the Order of the Istari and a powerful White Wizard, in this TUBBZ. Seduced by the power of Sauron and the One Ring, Saruman abandons his mission to turn to dark magic and the domination of Middle-earth.",
       "variants": [
         {
           "size": "classic",
@@ -4124,6 +4164,7 @@ window.TUBBZ_DATA = {
       "collection": "Lord of the Rings",
       "number": "10",
       "releaseYear": "2021",
+      "description": "The most faithful of Hobbits joins the pond.\n\nMeet Samwise Gamgee, Frodo's most loyal companion, in this TUBBZ. Brave, humble, and always ready to support his friends, Sam is one of the true heroes of The Lord of the Rings. Even transformed into a collectible cosplay duck, he retains all his determination to see the quest through to Mount Doom.",
       "variants": [
         {
           "size": "classic",
@@ -4141,6 +4182,7 @@ window.TUBBZ_DATA = {
       "collection": "Lord of the Rings",
       "number": "11",
       "releaseYear": "2021",
+      "description": "The grace of the Elves joins the pond.\n\nDiscover Arwen, daughter of Elrond and an iconic figure from The Lord of the Rings, in this TUBBZ. United with Aragorn by a love capable of bringing together Elf and human peoples, Arwen retains all her wisdom, elegance, and nobility even as a collectible cosplay duck.",
       "variants": [
         {
           "size": "classic",
@@ -4158,6 +4200,29 @@ window.TUBBZ_DATA = {
       "collection": "Lord of the Rings",
       "number": "12",
       "releaseYear": "2021",
+      "description": "\"My precious...\" now echoes even in the pond.\n\nDiscover Gollum, one of the most iconic characters from The Lord of the Rings, in this TUBBZ. Obsessed with the One Ring, Gollum still lurks in the shadows, ready to retrieve his precious treasure... even as a collectible cosplay duck.\n\nWith his hunched silhouette, intense gaze, and instantly recognizable appearance, this figurine pays homage to all the strangeness and complexity of the character imagined by J.R.R. Tolkien.",
+      "variants": [
+        {
+          "size": "classic",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "lord-of-the-rings-boromir",
+      "name": "Boromir",
+      "collection": "Lord of the Rings",
+      "number": "13",
+      "releaseYear": "2021",
+      "description": "\"One does not simply walk into Mordor.\"\n\nMeet Boromir, the famed Captain of Gondor and member of the Fellowship of the Ring, in this TUBBZ. Recognizable by his armor, sword, and legendary horn of war, Boromir is one of Middle-earth's most valiant defenders.\n\nA courageous hero, he relentlessly fights to protect Gondor and the Free Peoples against the threat of Sauron. Even transformed into a collectible cosplay duck, he retains all his warrior presence and renowned bravery.",
       "variants": [
         {
           "size": "classic",
@@ -4170,28 +4235,20 @@ window.TUBBZ_DATA = {
       ]
     },
     {
-      "id": "lord-of-the-rings-boromir",
-      "name": "Boromir",
-      "collection": "Lord of the Rings",
-      "number": "13",
-      "releaseYear": "2021",
-      "variants": [
-        {
-          "size": "classic",
-          "packaging": "first-edition"
-        }
-      ]
-    },
-    {
       "id": "lord-of-the-rings-uruk-hai",
       "name": "Uruk-Hai",
       "collection": "Lord of the Rings",
       "number": "14",
       "releaseYear": "2021",
+      "description": "Saruman's fearsome warriors invade the pond.\n\nDiscover an Uruk-hai Pikeman, one of the elite soldiers created by Saruman, in this TUBBZ. Born from the dark arts of the fallen White Wizard, the Uruk-hai are Isengard's most formidable military force.\n\nRecognizable by his imposing armor, distinctive helmet, and long war pike, this Uruk-hai is ready to defend Saruman's armies on the battlefields of Middle-earth. Even transformed into a collectible cosplay duck, he retains all his ferocity.",
       "variants": [
         {
           "size": "classic",
           "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
         }
       ]
     },
@@ -4201,6 +4258,7 @@ window.TUBBZ_DATA = {
       "collection": "Lord of the Rings",
       "number": "15",
       "releaseYear": "2021",
+      "description": "Sauron's servants take to the pond.\n\nDiscover a Ringwraith, also known as a Nazgûl, Black Rider, or member of the Nine, in this TUBBZ. Once kings of Men, the Nazgûl were corrupted by the Rings of Power and became Sauron's most feared servants.\n\nEven transformed into a collectible cosplay duck, this Black Rider retains all its menacing aura, its obscure silhouette, and its terrifying connection to the One Ring.\n\nWith its black cape, hidden face, and unsettling appearance, this figure pays homage to one of the most iconic enemies from The Lord of the Rings.",
       "variants": [
         {
           "size": "classic",
@@ -4218,6 +4276,7 @@ window.TUBBZ_DATA = {
       "collection": "Lord of the Rings",
       "number": "16",
       "releaseYear": "2021",
+      "description": "The White Wizard returns more powerful… and ready to quack.\n\nMeet Gandalf the White, one of Middle-earth's greatest defenders, in this TUBBZ. After confronting the Balrog and cheating death, Gandalf returns in a more powerful form to continue the fight against Sauron.\n\nEven transformed into a collector cosplay duck, he retains all his wisdom, authority, and impressive aura as the White Wizard.\n\nWith his immaculate robe, long beard, and iconic staff, this figurine pays homage to one of the most striking evolutions in The Lord of the Rings.",
       "variants": [
         {
           "size": "classic",
@@ -4235,6 +4294,7 @@ window.TUBBZ_DATA = {
       "collection": "Lord of the Rings",
       "number": "17",
       "releaseYear": "2022",
+      "description": "“What about second breakfast?”\n\nThe mischievous Peregrin “Pippin” Took joins the TUBBZ collection, ready to turn every moment into an adventure… even as a duck.\nWith his playful spirit and legendary carefree attitude, he perfectly embodies the joy and spontaneity of hobbits.\n\nReimagined as a cosplaying duck, this collectible captures all the freshness and humor of the character with the quirky touch unique to TUBBZ.",
       "variants": [
         {
           "size": "classic",
@@ -4253,6 +4313,7 @@ window.TUBBZ_DATA = {
       "collection": "Lord of the Rings",
       "number": "18",
       "releaseYear": "2022",
+      "description": "Jokester. Loyal. Always ready for adventure.\n\nThe cheerful Meriadoc “Merry” Brandybuck joins the TUBBZ collection, ready to leave the Shire… even in duck form.\nKnown for his sharp wit and pranking skills (especially with fireworks), Merry is reinterpreted here as a charming cosplay duck.\n\nCarefree but courageous, this collectible perfectly captures the soul of the hobbits and the adventurous spirit of The Lord of the Rings, with the quirky touch unique to TUBBZ.",
       "variants": [
         {
           "size": "classic",
@@ -4271,6 +4332,7 @@ window.TUBBZ_DATA = {
       "collection": "Lord of the Rings",
       "number": "19",
       "releaseYear": "2023",
+      "description": "An ancient scourge... in XXL.\n\nEmerging from the depths of Moria, the Balrog joins the TUBBZ collection in Giant XL Edition, ready to assert its power on your shelf.\nThis demonic and monumental collectible reimagines the most formidable creature from The Lord of the Rings with an extraordinary presence.\n\nMassive, imposing, and spectacular, this TUBBZ is the largest ever created, offering an oversized version that captures all the terror and majesty of the Balrog.",
       "variants": [
         {
           "size": "xl",
@@ -4285,6 +4347,7 @@ window.TUBBZ_DATA = {
       "collection": "Lord of the Rings",
       "number": "20",
       "releaseYear": "2023",
+      "description": "“You shall not pass!”\n\nThe legendary Gandalf joins the TUBBZ collection, in his iconic pose from the Bridge of Khazad-dûm.\nStaff raised, sword in hand, he embodies the most iconic moment from The Fellowship of the Ring.",
       "variants": [
         {
           "size": "classic",
@@ -4303,7 +4366,7 @@ window.TUBBZ_DATA = {
       "collection": "Lord of the Rings",
       "number": "21",
       "releaseYear": "2024",
-      "description": "Holds 2 standard tubbz",
+      "description": "A towering figure both in the forests of Middle-earth and now in your collection, Treebeard, the ancient tree-herder of Fangorn Forest and an ally to the Hobbits, has been magnificently transformed into a mighty XL TUBBZ. This figure stands 150% larger than a standard TUBBZ, measuring an impressive 8.6 inches (21.9 cm) tall. Ingeniously designed with space on his shoulders to support two regular-sized TUBBZ, this collectible perfectly captures Treebeard’s role as a protector, capable of shielding Hobbits and perhaps even smaller TUBBZ from harm.",
       "variants": [
         {
           "size": "xl",
@@ -4317,6 +4380,7 @@ window.TUBBZ_DATA = {
       "collection": "Lord of the Rings",
       "number": "22",
       "releaseYear": "2024",
+      "description": "Even reinvented as a TUBBZ cosplaying duck, Éowyn remains a beacon of strength, courage, and independence. Adorned in her iconic chainmail armor, with her sword partially drawn, this version of Éowyn is ready to face any foe and assert her worth on the battlefield. This unique collectible captures Éowyn's formidable spirit and her pivotal role in \"The Lord of the Rings.\"",
       "variants": [
         {
           "size": "classic",
@@ -4896,10 +4960,17 @@ window.TUBBZ_DATA = {
       "name": "Izuku Midoriya",
       "collection": "My Hero Academina",
       "number": "1",
+      "releaseYear": "2024",
+      "description": "Deku is no longer just a superhero: he's now a super duck!\n\nDetermined to become a great hero, Izuku Midoriya, better known as Deku, joins the TUBBZ collection in a particularly unexpected transformation. Even as a cosplay duck, it's impossible not to recognize one of My Hero Academia's iconic characters.",
       "variants": [
         {
           "size": "classic",
-          "packaging": "first-edition"
+          "packaging": "first-edition",
+          "limitedTo": 3000
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
         }
       ]
     },
@@ -4908,10 +4979,17 @@ window.TUBBZ_DATA = {
       "name": "Katsuki Bakugo",
       "collection": "My Hero Academina",
       "number": "2",
+      "releaseYear": "2024",
+      "description": "Explosive, competitive, and always ready to prove he’s the best: Katsuki Bakugo is landing in the TUBBZ pond!\n\nKatsuki Bakugo has a new mission: to find out if his powers are still as formidable after his transformation into a cosplaying duck. And knowing his temper, it's best not to point out that he's become particularly adorable!",
       "variants": [
         {
           "size": "classic",
-          "packaging": "first-edition"
+          "packaging": "first-edition",
+          "limitedTo": 3000
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
         }
       ]
     },
@@ -4920,10 +4998,17 @@ window.TUBBZ_DATA = {
       "name": "All Might",
       "collection": "My Hero Academina",
       "number": "3",
+      "releaseYear": "2024",
+      "description": "The Symbol of Peace retires… but not before one last transformation into a super duck!\n\nAfter his confrontations with All For One, All Might is ready to pass on his experience to the new generation of heroes, especially to Deku. But even far from battles, the former number one remains impossible to miss: he now joins the TUBBZ collection in the form of a cosplay duck!",
       "variants": [
         {
           "size": "classic",
-          "packaging": "first-edition"
+          "packaging": "first-edition",
+          "limitedTo": 3000
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
         }
       ]
     },
@@ -4932,10 +5017,16 @@ window.TUBBZ_DATA = {
       "name": "Shoto Todorok",
       "collection": "My Hero Academina",
       "number": "4",
+      "releaseYear": "2025",
+      "description": "Half hot, half cool, all hero! Shoto Todoroki joins the duck pond as TUBBZ, bringing his powerful Quirk to life in duck form. With his signature two-toned hair, fighting stance, and iconic hero costume, he's ready to take on any challenge. This officially licensed collectible comes in a themed bathtub—a must-have for My Hero Academia fans. Add Shoto TUBBZ to your collection before he disappears in a flash of fire and ice!",
       "variants": [
         {
           "size": "classic",
           "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
         }
       ]
     },
@@ -4944,10 +5035,16 @@ window.TUBBZ_DATA = {
       "name": "Ochaco Uraraka",
       "collection": "My Hero Academina",
       "number": "5",
+      "releaseYear": "2025",
+      "description": "Zero gravity, adorable as can be! Ochaco Uraraka joins the duck pond as an adorable TUBBZ. Dressed in her iconic hero costume, this aspiring hero is ready for any challenge. A must-have for My Hero Academia fans, this officially licensed collectible comes in a themed bathtub display, perfect for showing off.",
       "variants": [
         {
           "size": "classic",
           "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
         }
       ]
     },
@@ -4956,10 +5053,16 @@ window.TUBBZ_DATA = {
       "name": "Shota Aizawa",
       "collection": "My Hero Academina",
       "number": "6",
+      "releaseYear": "2025",
+      "description": "It's class time, and Eraser Head is here to keep things under control! Shota Aizawa joins the duck pond as TUBBZ, complete with his signature capture scarf, yellow glasses, and wild black hair. Whether he's neutralizing Quirks or resting, this pro hero is a must-have for My Hero Academia fans. This officially licensed collectible comes in a themed bathtub, perfect for display. Don't let Eraser Head TUBBZ get away from you!",
       "variants": [
         {
           "size": "classic",
           "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
         }
       ]
     },
@@ -8029,6 +8132,8 @@ window.TUBBZ_DATA = {
       "id": "travel-mexico",
       "name": "Mexico",
       "collection": "Travel",
+      "releaseYear": "2026",
+      "description": "Celebrate the rich culture and vibrant traditions of Mexico with this collectible mini toy, adorned with elaborate makeup and elegant attire inspired by classic festivities. A powerful tribute to color, music, and heritage, this duck embodies pride and passion.",
       "variants": [
         {
           "size": "mini",
