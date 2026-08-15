@@ -490,6 +490,14 @@ window.TUBBZ_DATA = {
         {
           "size": "classic",
           "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -567,6 +575,14 @@ window.TUBBZ_DATA = {
         },
         {
           "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
           "packaging": "boxed"
         }
       ]
@@ -860,6 +876,10 @@ window.TUBBZ_DATA = {
         },
         {
           "size": "plushies"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -2149,6 +2169,10 @@ window.TUBBZ_DATA = {
         },
         {
           "size": "plushies"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -2174,6 +2198,10 @@ window.TUBBZ_DATA = {
         },
         {
           "size": "plushies"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -2199,6 +2227,10 @@ window.TUBBZ_DATA = {
         },
         {
           "size": "plushies"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -2224,6 +2256,10 @@ window.TUBBZ_DATA = {
         },
         {
           "size": "plushies"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -3658,8 +3694,8 @@ window.TUBBZ_DATA = {
       ]
     },
     {
-      "id": "john-wick-john-wick",
-      "name": "John Wick",
+      "id": "john-wick-john-wick-with-pistol",
+      "name": "John Wick (With Pistol)",
       "collection": "John Wick",
       "number": "1",
       "releaseYear": "2024",
@@ -3671,6 +3707,14 @@ window.TUBBZ_DATA = {
         },
         {
           "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
           "packaging": "boxed"
         }
       ]
@@ -5734,6 +5778,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -6190,6 +6238,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -6215,6 +6267,10 @@ window.TUBBZ_DATA = {
         },
         {
           "size": "plushies"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -6236,6 +6292,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -6257,6 +6317,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -6301,6 +6365,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
