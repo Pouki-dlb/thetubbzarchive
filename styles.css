@@ -290,16 +290,6 @@ h1, h2, h3 { line-height: 1.2; }
 .card:hover { transform: translateY(-3px); border-color: var(--accent); }
 .card-media { display: block; position: relative; aspect-ratio: 1 / 1; background: var(--surface-2); border-radius: var(--radius); }
 .card-media img { width: 100%; height: 100%; object-fit: contain; padding: 6px; border-radius: inherit; }
-/* ❤ est U+2764 SANS sélecteur emoji : le navigateur le rend en glyphe texte, donc
-   coloré par `color`. Faute de déclaration il héritait de --text — quasi blanc en thème
-   sombre, donc invisible sur la photo. Même raisonnement que .num-badge : c'est posé sur
-   l'image (fond blanc dans les deux thèmes), la couleur est donc figée HORS thème.
-   Rouge = --danger du thème clair, pour ne pas ajouter une teinte de plus à la palette. */
-.heart {
-  position: absolute; top: 8px; right: 8px; font-size: 1.1rem;
-  color: #c0392b;
-  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, .3));
-}
 .num-badge {
   position: absolute; top: 8px; left: 8px;
   font-size: .72rem; font-weight: 800; letter-spacing: .02em;
@@ -339,7 +329,22 @@ h1, h2, h3 { line-height: 1.2; }
    proportionnel sinon. Nécessaire depuis les Plushies : une card peut désormais porter
    4 logos, ce qui dépasse la largeur utile d'une colonne à sa taille minimale (156px).
    Mieux vaut des logos plus petits qu'une rangée qui déborde. */
-.size-badge { display: block; line-height: 0; cursor: pointer; flex: 0 1 46px; min-width: 0; }
+.size-badge { display: block; position: relative; line-height: 0; cursor: pointer; flex: 0 1 46px; min-width: 0; }
+/* Cœur de wishlist, au coin haut-droit du badge : il dit QUELLE taille est voulue, et
+   plusieurs peuvent en porter un. Contrairement à l'ancien cœur (posé sur la photo, donc
+   figé hors thème), celui-ci est sur le FOND DE CARD : il suit le thème, comme les cases
+   « I want it » de la fiche, et reprend leurs deux rouges. ❤ est U+2764 SANS sélecteur
+   emoji → glyphe texte, coloré par `color`. Le halo (text-shadow couleur du fond) le
+   détache du dessin du logo, sur lequel il déborde. `line-height` est remis à 1 : le
+   badge le met à 0 pour coller ses images. Il ne grisonne pas avec .is-missing (le
+   filtre ne vise que .tubbz-logo) — vouloir une taille qu'on n'a pas est le cas normal. */
+.badge-heart {
+  position: absolute; top: -2px; right: -2px; z-index: 1;
+  font-size: .72rem; line-height: 1;
+  color: #b02a37;
+  text-shadow: 0 0 2px var(--surface), 0 0 3px var(--surface);
+}
+:root[data-theme="dark"] .badge-heart { color: #ff9aa3; }
 .size-badge .tubbz-logo {
   width: 100%;
   transition: transform .12s ease, opacity .12s ease, filter .12s ease;
@@ -405,22 +410,18 @@ h1, h2, h3 { line-height: 1.2; }
 .hero-flip:hover { background: var(--surface); border-color: var(--accent); }
 .hero-flip:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .duck-name { margin: 0 0 4px; font-size: 1.8rem; }
-/* Bloc collection + année, avec le bouton wishlist aligné à droite. Le wrap est
-   assuré par flex-wrap : si la place manque, le bouton retombe sous le bloc
-   (donc entre l'année et la description, qui suit en dehors de ce conteneur). */
-.duck-subhead { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-start; gap: 10px 20px; margin: 0 0 16px; }
+/* Bloc collection + année. Il portait aussi le bouton « Add to wishlist » ; celui-ci a
+   disparu quand la wishlist est passée au niveau de la VARIANTE — vouloir un canard
+   « en général » n'a plus de sens, les coches vivent dans les tuiles. */
+.duck-subhead { margin: 0 0 16px; }
 .duck-subinfo { min-width: 0; }
 .duck-collection { margin: 0 0 8px; color: var(--muted); font-weight: 600; }
 .duck-meta { display: grid; gap: 8px; margin: 0; }
 .duck-meta div { display: flex; gap: 8px; }
 .duck-meta dt { color: var(--muted); min-width: 120px; }
 .duck-meta dd { margin: 0; font-weight: 600; }
-.duck-subhead .btn-wish { flex: none; }
 .duck-description { margin: 0 0 16px; font-style: italic; color: var(--muted); white-space: pre-line; max-width: 52ch; }
 
-.btn-wish { background: var(--surface-2); color: var(--text); border-color: var(--border); }
-.btn-wish.is-active { background: #ffe3e3; color: #b02a37; border-color: #f2b8bd; }
-:root[data-theme="dark"] .btn-wish.is-active { background: #3a2226; color: #ff9aa3; border-color: #5a2f36; }
 
 .duck-section { margin-top: 28px; }
 .duck-section h2 { font-size: 1.2rem; margin: 0 0 12px; }
@@ -454,8 +455,19 @@ button.size-group-head.is-active { border-color: var(--accent); background: var(
 .variant-media img { width: 100%; height: 100%; object-fit: contain; padding: 6px; border-radius: inherit; }
 .variant-limited { margin: 8px 10px 0; font-size: .8rem; font-weight: 600; color: var(--accent-ink); }
 :root[data-theme="dark"] .variant-limited { color: var(--accent); }
-.variant-check { display: flex; align-items: center; gap: 8px; padding: 12px 10px; cursor: pointer; font-size: .9rem; }
+/* Les deux coches d'une variante : « I own it » puis « I want it ». Le padding vit sur
+   le conteneur, pas sur chaque ligne, sinon deux lignes empilées doublent la marge. */
+.variant-marks { display: grid; gap: 4px; padding: 10px; }
+.variant-check { display: flex; align-items: center; gap: 8px; padding: 2px 0; cursor: pointer; font-size: .9rem; }
 .variant-check input { width: 18px; height: 18px; accent-color: var(--ok); }
+/* Le vert dit « je l'ai », le rouge « je le veux ». Rouge codé en dur (comme le cœur des
+   cards) : c'est une couleur de sens, pas une couleur d'interface qui suit le thème. */
+.variant-wish input { accent-color: #b02a37; }
+:root[data-theme="dark"] .variant-wish input { accent-color: #ff9aa3; }
+/* Variante possédée : « I want it » n'a plus de sens, on la retire complètement (donc
+   aussi de l'arbre d'accessibilité). L'entrée correspondante est effacée du stockage
+   par duck.js — la classe .is-owned ne fait que cacher, elle ne décide de rien. */
+.variant.is-owned .variant-wish { display: none; }
 /* Emoji d'emballage : ni pastille ni ligne à lui, juste calé à droite de la case à
    cocher (margin-left:auto). Légèrement agrandi, puisqu'il porte seul l'information. */
 .variant-pack { margin-left: auto; font-size: 1.05rem; line-height: 1; }
@@ -518,7 +530,7 @@ button.duck-hero-media { display: grid; }
   border-radius: var(--radius); padding: 10px;
 }
 /* Fond blanc EN DUR : les photos sont opaques et blanches dans les deux thèmes
-   (cf. .num-badge / .heart), un fond thémé jurerait sur leurs bords. */
+   (cf. .num-badge), un fond thémé jurerait sur leurs bords. */
 .lightbox-box img { display: block; width: 100%; height: auto; border-radius: 10px; background: #fff; }
 .lightbox-box .modal-close { position: absolute; top: 14px; right: 14px; float: none; margin: 0; }
 .lightbox-caption { margin: 8px 2px 0; font-size: .85rem; color: var(--muted); text-align: center; }

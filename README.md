@@ -36,8 +36,9 @@ you already own. So the archive doubles as a collection tracker.
   separately, because collectors care about the difference.
 - **See it at a glance**: each card shows one TUBBZ logo per size that figure exists in, in full
   colour when you own it and greyed out when you don't.
-- **Keep a wishlist** and jot **private notes** on any figure ("paid 15 €", "second copy for
-  trade", …).
+- **Keep a wishlist**, version by version — you can want the Classic in its bathtub without
+  wanting the Mini boxed — and jot **private notes** on any figure ("paid 15 €", "second copy
+  for trade", …).
 - **Export and import** your collection as a JSON file, to back it up or move it to another
   device.
 

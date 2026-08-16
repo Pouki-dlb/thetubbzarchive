@@ -255,15 +255,23 @@ window.Tubbz = (function () {
     return isOwned(state, id, key);
   }
 
-  function isWished(state, id) {
-    return !!state.wishlist[id];
+  // La wishlist a EXACTEMENT la même forme que la possession : une entrée par variante,
+  // sous les mêmes clés (`variantKey`). Vouloir « le canard » ne veut rien dire pour un
+  // collectionneur — on veut la Classic en baignoire, pas la Mini en boîte.
+  function isWished(state, id, key) {
+    return !!(state.wishlist[id] && state.wishlist[id][key]);
   }
 
-  function toggleWishlist(state, id) {
-    if (state.wishlist[id]) delete state.wishlist[id];
-    else state.wishlist[id] = true;
+  function toggleWishlist(state, id, key) {
+    if (!state.wishlist[id]) state.wishlist[id] = {};
+    if (state.wishlist[id][key]) {
+      delete state.wishlist[id][key];
+      if (Object.keys(state.wishlist[id]).length === 0) delete state.wishlist[id];
+    } else {
+      state.wishlist[id][key] = true;
+    }
     saveState(state);
-    return isWished(state, id);
+    return isWished(state, id, key);
   }
 
   function getNote(state, id) {
@@ -289,6 +297,29 @@ window.Tubbz = (function () {
       if (isOwned(state, figurine.id, key)) owned++;
     }
     return { owned: owned, total: variants.length };
+  }
+
+  // Un canard est « dans la wishlist » dès qu'UNE de ses variantes l'est. C'est la seule
+  // lecture que fait la grille (un cœur par card, cf. index.js) et le filtre Wishlist :
+  // le détail variante par variante reste sur la fiche.
+  function wishesAny(state, figurine) {
+    var variants = figurine.variants || [];
+    for (var i = 0; i < variants.length; i++) {
+      if (isWished(state, figurine.id, variantKey(variants[i].size, variants[i].packaging))) return true;
+    }
+    return false;
+  }
+
+  // Pendant de `ownsSize` pour la wishlist : une TAILLE est voulue dès qu'un de ses
+  // emballages l'est. La grille s'arrête là — quelle version exactement est voulue reste
+  // sur la fiche, une card ne peut pas tout dire.
+  function wishesSize(state, figurine, size) {
+    var variants = figurine.variants || [];
+    for (var i = 0; i < variants.length; i++) {
+      if (!variants[i] || variants[i].size !== size) continue;
+      if (isWished(state, figurine.id, variantKey(size, variants[i].packaging))) return true;
+    }
+    return false;
   }
 
   // Une TAILLE est considérée possédée dès qu'au moins un de ses emballages l'est.
@@ -463,6 +494,8 @@ window.Tubbz = (function () {
     toggleOwned: toggleOwned,
     isWished: isWished,
     toggleWishlist: toggleWishlist,
+    wishesAny: wishesAny,
+    wishesSize: wishesSize,
     getNote: getNote,
     setNote: setNote,
     ownedCountOf: ownedCountOf,

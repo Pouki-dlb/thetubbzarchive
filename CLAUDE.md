@@ -116,10 +116,23 @@ Stored under key `tubbz-collection`, browser-only:
 {
   "version": 1,
   "owned":    { "fallout-vault-boy": { "classic|first-edition": true } },
-  "wishlist": { "fallout-vault-boy": true },
+  "wishlist": { "fallout-vault-boy": { "mini|boxed": true } },
   "notes":    { "fallout-vault-boy": "paid 15€" }
 }
 ```
+
+`owned` and `wishlist` have the **same shape** — one entry per **variant**, under the same
+`variantKey`. Wanting a duck "in general" is meaningless to a collector: you want the Classic in
+its bathtub, not the Mini boxed. So `isWished`/`toggleWishlist` take a variant key, and only
+**Owning excludes wanting**: ticking "I own it" hides that variant's "I want it" (CSS, on
+`.variant.is-owned`) **and** deletes its wishlist entry — hiding without deleting would leave an
+invisible wish, hence an unexplainable heart in the grid that nothing can untick any more. The
+class only hides; `duck.js` owns the deletion, and guards on `isWished` (the model) rather than on
+the checkbox. Un-ticking "I own it" brings the control back unchecked; the wish is not resurrected.
+`wishesAny(state, fig)` collapses it to the figurine — which is all the grid needs (one heart per
+card) and all the Wishlist filter tests. The wishlist used to be `{"<id>": true}` and **no
+migration was written** (the site had no users yet): `normalizeState` stores whatever it is given,
+so an old backup would put a `true` where the code expects an object.
 
 **Export** downloads exactly this object as `.json`; **Import** restores it (replace, after
 confirmation). This is the only backup/transfer mechanism (no account, no server). The theme
@@ -161,7 +174,11 @@ exported collection.
 - **Size badge** (index grid only) = one TUBBZ logo per **existing size**, not per variant — the
   grid ignores packaging entirely (that detail stays on `duck.html`). Full colour if the visitor
   owns **at least one** packaging of that size (`Tubbz.ownsSize`), greyscale + `opacity:.45`
-  otherwise; a missing size gets no badge. Up to 4 badges (with `plushies`), forced onto **one
+  otherwise; a missing size gets no badge. A **heart** (`.badge-heart`) sits on the badge's
+  top-right corner when at least one packaging of that size is wished (`Tubbz.wishesSize`) — so the
+  grid says *which* sizes are wanted, and several can carry one. Which **packaging** is wanted is
+  deliberately not shown: that detail stays on `duck.html`. The heart is `aria-hidden`; the
+  information joins the badge's `aria-label` instead, so it is announced once, not twice. Up to 4 badges (with `plushies`), forced onto **one
   line** (`nowrap`): each is `flex: 0 1 46px` + `min-width: 0`, so they keep 46px while there is
   room and **shrink proportionally** rather than overflow — 4 badges do not fit a 180px column,
   the narrowest the grid allows. Hover a badge → the card image becomes that size's
@@ -207,9 +224,12 @@ exported collection.
 - **Anything overlaying a figurine photo must NOT follow the theme.** Catalog images are opaque
   and their background is **white in both themes** (verified across the catalog: luminance ≥ 240
   in the badge corner). Wiring such an overlay to `--text` / `--surface` makes it light-on-white
-  in dark theme — this bit both `.num-badge` and `.heart`, whose colours are now hard-coded to
-  their light-theme values. Same trap for `❤`: it is `U+2764` **without** the emoji variation
-  selector, so it renders as a *text glyph* tinted by `color`, not as a colour emoji.
+  in dark theme — this bit `.num-badge`, whose colour is now hard-coded to its light-theme value.
+  The wishlist heart used to sit there too and had the same treatment; it now lives on the size
+  badges (card **background**, themed), so `.badge-heart` legitimately follows the theme — the rule
+  is about the surface underneath, not about the element. Same trap for `❤`: it is `U+2764`
+  **without** the emoji variation selector, so it renders as a *text glyph* tinted by `color`,
+  not as a colour emoji.
 - **Size filter** (`#filter-size`, index toolbar): keeps figurines that exist in that size
   (`Tubbz.sizesOf`) **and** switches every card photo to that size — pick Mini and you get the
   mini shots, not the classic default. `shownSizeOf()` is the one place that decides. Gotcha: the

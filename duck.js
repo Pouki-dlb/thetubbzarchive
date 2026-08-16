@@ -28,7 +28,6 @@
   function render(meta, fig) {
     root.setAttribute("aria-busy", "false");
 
-    var wished = T.isWished(state, fig.id);
     // Tailles disponibles (classic → mini → xl) ; le hero part de la 1re (taille primaire).
     var sizes = T.sizesOf(fig);
     if (!sizes.length) sizes = ["classic"];
@@ -43,6 +42,7 @@
     function variantTile(v) {
       var key = T.variantKey(v.size, v.packaging);
       var owned = T.isOwned(state, fig.id, key);
+      var wished = T.isWished(state, fig.id, key);
       var img = T.variantImageFor(fig.id, v.size, v.packaging);
       var sizeTxt = T.sizeLabel(meta, v.size);
       // Emballage, ou la taille elle-même quand il n'y en a pas (Plushies).
@@ -63,14 +63,22 @@
           // agrandit la zone cliquable et son aria-label entre dans le nom accessible de
           // la case (« I own it, First Edition »), ce qui distingue enfin deux tuiles
           // voisines qui annonçaient toutes deux « I own it ».
-          '<label class="variant-check">' +
-            '<input type="checkbox" data-key="' + T.esc(key) + '"' + (owned ? " checked" : "") + ' />' +
-            '<span>I own it</span>' +
-            '<span class="variant-pack" role="img" ' +
-              'title="' + T.esc(mark.label) + '" aria-label="' + T.esc(mark.label) + '">' +
-              T.esc(mark.emoji) +
-            '</span>' +
-          '</label>' +
+          '<div class="variant-marks">' +
+            '<label class="variant-check">' +
+              '<input type="checkbox" data-own="' + T.esc(key) + '"' + (owned ? " checked" : "") + ' />' +
+              '<span>I own it</span>' +
+              '<span class="variant-pack" role="img" ' +
+                'title="' + T.esc(mark.label) + '" aria-label="' + T.esc(mark.label) + '">' +
+                T.esc(mark.emoji) +
+              '</span>' +
+            '</label>' +
+            // La wishlist porte sur la VARIANTE, exactement comme la possession : on veut
+            // une version précise, pas « le canard ». Même clé que la coche du dessus.
+            '<label class="variant-check variant-wish">' +
+              '<input type="checkbox" data-wish="' + T.esc(key) + '"' + (wished ? " checked" : "") + ' />' +
+              '<span>I want it</span>' +
+            '</label>' +
+          '</div>' +
         '</div>'
       );
     }
@@ -131,9 +139,6 @@
                   '<div><dt>Release year</dt><dd>' + (fig.releaseYear ? T.esc(fig.releaseYear) : 'Unknown') + '</dd></div>' +
                 '</dl>' +
               '</div>' +
-              '<button id="btn-wish" type="button" class="btn btn-wish' + (wished ? " is-active" : "") + '">' +
-                (wished ? "❤ In wishlist" : "♡ Add to wishlist") +
-              '</button>' +
             '</div>' +
             (fig.description ? '<p class="duck-description">' + T.esc(fig.description) + '</p>' : '') +
           '</div>' +
@@ -194,20 +199,28 @@
 
   function bindEvents(fig) {
     // Coches de possession
-    root.querySelectorAll('.variant-check input[type="checkbox"]').forEach(function (cb) {
+    root.querySelectorAll("input[data-own]").forEach(function (cb) {
       cb.addEventListener("change", function () {
-        var key = cb.getAttribute("data-key");
+        var key = cb.getAttribute("data-own");
+        var tile = cb.closest(".variant");
         T.toggleOwned(state, fig.id, key);
-        cb.closest(".variant").classList.toggle("is-owned", cb.checked);
+        tile.classList.toggle("is-owned", cb.checked);
+        // Posséder, c'est ne plus vouloir : la case « I want it » disparaît (CSS, via
+        // .is-owned) et le souhait est RETIRÉ du stockage. La masquer sans l'effacer
+        // laisserait un souhait invisible — donc un cœur inexpliqué sur la grille, qu'on
+        // ne pourrait plus décocher nulle part. On se fie au modèle, pas à la case.
+        if (!cb.checked) return;
+        var wish = tile.querySelector("input[data-wish]");
+        if (T.isWished(state, fig.id, key)) T.toggleWishlist(state, fig.id, key);
+        if (wish) wish.checked = false;
       });
     });
 
-    // Wishlist
-    var btnWish = document.getElementById("btn-wish");
-    btnWish.addEventListener("click", function () {
-      var now = T.toggleWishlist(state, fig.id);
-      btnWish.classList.toggle("is-active", now);
-      btnWish.textContent = now ? "❤ In wishlist" : "♡ Add to wishlist";
+    // Coches de wishlist — même granularité, même clé de variante.
+    root.querySelectorAll("input[data-wish]").forEach(function (cb) {
+      cb.addEventListener("change", function () {
+        T.toggleWishlist(state, fig.id, cb.getAttribute("data-wish"));
+      });
     });
 
     // Note (sauvegarde à la volée, débounce léger)

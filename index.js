@@ -94,7 +94,7 @@
     if (elStatus.value) {
       var owned = T.ownedCountOf(state, fig).owned > 0;
       if (elStatus.value === "wishlist") {
-        if (!T.isWished(state, fig.id)) return false;
+        if (!T.wishesAny(state, fig)) return false;
       } else if (elStatus.value === "owned") {
         if (!owned) return false;
       } else if (elStatus.value === "not-owned") {
@@ -117,8 +117,12 @@
   function sizeBadges(fig) {
     return T.sizesOf(fig).map(function (size) {
       var owned = T.ownsSize(state, fig, size);
+      var wished = T.wishesSize(state, fig, size);
+      // Le cœur est décoratif (aria-hidden) : l'information entre dans le libellé du
+      // badge, sinon un lecteur d'écran annoncerait deux fois la même chose.
       var label = T.sizeLabel(catalog.meta, size) +
-        (owned ? " — in your collection" : " — not in your collection");
+        (owned ? " — in your collection" : " — not in your collection") +
+        (wished ? ", in your wishlist" : "");
       // Pas de loading="lazy" ici : ce sont 3 fichiers minuscules et partagés par
       // toutes les cards (un seul aller-retour réseau chacun), et le différé les
       // laisserait à hauteur nulle — donc la rangée sauterait au chargement.
@@ -129,6 +133,7 @@
           'data-img="' + T.esc(T.sizeImageCandidates(fig, size).join("|")) + '">' +
           '<img class="tubbz-logo tubbz-logo-' + T.esc(size) + '" ' +
             'src="' + T.esc(T.sizeLogoFor(size)) + '" alt="" />' +
+          (wished ? '<span class="badge-heart" aria-hidden="true">❤</span>' : '') +
         '</span>';
     }).join("");
   }
@@ -142,7 +147,6 @@
   }
 
   function cardHTML(fig) {
-    var wished = T.isWished(state, fig.id);
     // Même chaîne de repli qu'au survol d'un badge : figurine nue, puis ses emballages,
     // puis le placeholder. data-default la porte en entier pour que la sortie de survol
     // revienne à l'image FILTRÉE et non à la classique.
@@ -161,7 +165,6 @@
             'alt="' + T.esc(fig.name) + '" ' +
             'onerror="this.onerror=null;this.src=\'' + T.PLACEHOLDER + '\'" />' +
           (fig.number ? '<span class="num-badge">#' + T.esc(fig.number) + '</span>' : '') +
-          (wished ? '<span class="heart" title="In your wishlist" aria-label="Wishlist">❤</span>' : '') +
         '</a>' +
         '<div class="card-body">' +
           '<h3 class="card-name">' +
@@ -191,7 +194,7 @@
   function listCount(status) {
     return catalog.figurines.filter(function (fig) {
       return status === "wishlist"
-        ? T.isWished(state, fig.id)
+        ? T.wishesAny(state, fig)
         : T.ownedCountOf(state, fig).owned > 0;
     }).length;
   }
@@ -206,8 +209,8 @@
     },
     wishlist: {
       title: "Your wishlist is empty.",
-      hint: "Open any TUBBZ and hit “♡ Add to wishlist”. It shows up in this list, and " +
-            "its card in the grid gets a heart."
+      hint: "Open any TUBBZ and tick “I want it” under the version you are after. It " +
+            "shows up in this list, and its card in the grid gets a heart."
     }
   };
 
