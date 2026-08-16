@@ -3446,6 +3446,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -3468,6 +3472,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -3490,6 +3498,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -3512,6 +3524,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -3534,6 +3550,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -3556,6 +3576,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -4820,6 +4844,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -5235,6 +5263,61 @@ window.TUBBZ_DATA = {
       ]
     },
     {
+      "id": "minions-dave-in-hawaii-paradise-outfit",
+      "name": "Dave In Hawaii Paradise Outfit",
+      "collection": "Minions",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "minions-kevin-in-golf-outfit",
+      "name": "Kevin In Golf Outfit",
+      "collection": "Minions",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "minions-mel",
+      "name": "Mel",
+      "collection": "Minions",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "minions-phil-in-maid-outfit",
+      "name": "Phil In Maid Outfit",
+      "collection": "Minions",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "minions-stuart-in-pirate-outfit",
+      "name": "Stuart In Pirate Outfit",
+      "collection": "Minions",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
       "id": "mortal-kombat-scorpion",
       "name": "Scorpion",
       "collection": "Mortal Kombat",
@@ -5563,6 +5646,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -6934,6 +7021,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -7352,6 +7443,78 @@ window.TUBBZ_DATA = {
         {
           "size": "classic",
           "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "strawberry-shortcake-blueberry-muffin",
+      "name": "Blueberry Muffin",
+      "collection": "Strawberry Shortcake",
+      "releaseYear": "2025",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "strawberry-shortcake-lemon-meringue",
+      "name": "Lemon Meringue",
+      "collection": "Strawberry Shortcake",
+      "releaseYear": "2025",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "strawberry-shortcake-lime-chiffon",
+      "name": "Lime Chiffon",
+      "collection": "Strawberry Shortcake",
+      "releaseYear": "2025",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "strawberry-shortcake-orange-blossom",
+      "name": "Orange Blossom",
+      "collection": "Strawberry Shortcake",
+      "releaseYear": "2025",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "strawberry-shortcake-raspberry-tart",
+      "name": "Raspberry Tart",
+      "collection": "Strawberry Shortcake",
+      "releaseYear": "2025",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "strawberry-shortcake-strawberry-shortcake",
+      "name": "Strawberry Shortcake",
+      "collection": "Strawberry Shortcake",
+      "releaseYear": "2025",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -8085,6 +8248,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -9253,6 +9420,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
