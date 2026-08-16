@@ -449,6 +449,9 @@ button.size-group-head.is-active { border-color: var(--accent); background: var(
   background: var(--surface); border: 1px solid var(--border);
   border-radius: 12px; overflow: hidden;
   display: flex; flex-direction: column;
+  /* La bordure d'état s'installe au lieu d'apparaître d'un coup : c'est ce qui relie
+     visuellement le bouton qu'on vient de presser au cadre qui change. */
+  transition: border-color .18s ease, box-shadow .18s ease;
 }
 /* La bordure porte l'ÉTAT de la variante, les bascules portent l'action : vert possédée,
    rose souhaitée. Les deux classes s'excluent par construction — posséder efface le
@@ -480,8 +483,22 @@ button.size-group-head.is-active { border-color: var(--accent); background: var(
   display: inline-flex; align-items: center; justify-content: center;
   font: inherit; font-size: .95rem; line-height: 1;
   background: transparent; border: 1px solid var(--border); color: var(--muted);
-  cursor: pointer; transition: background .15s ease, border-color .15s ease, color .15s ease;
+  cursor: pointer;
+  transition: background .15s ease, border-color .15s ease, color .15s ease, transform .1s ease;
 }
+/* Enfoncement pendant le clic, puis petit ressort à l'ACTIVATION seulement (classe posée
+   par duck.js). Impossible de déclencher le ressort depuis [aria-pressed="true"] en CSS :
+   il jouerait aussi au chargement, sur chaque variante déjà possédée — une rafale de
+   rebonds à l'ouverture de la fiche. */
+.mark-btn:active { transform: scale(.92); }
+.mark-btn.is-pop { animation: mark-pop .26s ease-out; }
+@keyframes mark-pop {
+  0%   { transform: scale(1); }
+  40%  { transform: scale(1.22); }
+  100% { transform: scale(1); }
+}
+/* (Le respect de prefers-reduced-motion est traité en UN SEUL endroit, en fin de
+   feuille — voir la section « Mouvement réduit ».) */
 /* Aucune `margin: auto` dans cette ligne, volontairement : c'est le nom de l'emballage
    qui pousse (voir plus haut). Deux marges automatiques se partageraient l'espace libre
    et feraient dériver l'emoji vers le centre — c'est déjà arrivé, via une règle
@@ -589,5 +606,32 @@ button.duck-hero-media { display: grid; }
   .duck-hero { grid-template-columns: 1fr; }
   .duck-hero-media { max-width: 260px; margin: 0 auto; }
   .field select { min-width: 120px; }
-  .stat-num { font-size: 1.35rem; }
+}
+
+/* ---------------- Mouvement réduit (préférence système) ---------------- */
+/* Le mouvement est un confort, jamais une information : sous cette préférence, TOUS les
+   états restent lisibles (couleurs, bordures, opacités) — seul le trajet disparaît.
+   Deux temps, et ils ne sont pas interchangeables :
+
+   1) Les durées sont écrasées globalement, ce qui couvre aussi tout ce qu'on ajoutera
+      plus tard sans avoir à y penser. C'est la SEULE utilisation de !important de la
+      feuille, et elle est délibérée : il faut battre des déclarations plus spécifiques.
+
+   2) Les DÉPLACEMENTS au survol ou à l'appui sont ensuite neutralisés un par un. Surtout
+      pas de `transform: none` global : plusieurs transform de cette feuille sont de la
+      MISE EN PAGE et non du mouvement — le centrage vertical de la croix de recherche
+      (translateY(-50%)) et le calage optique des logos TUBBZ (--logo-align) sauteraient,
+      ce dernier désalignant les mots « TUBBZ » de toute la grille. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+  .btn:active,
+  .card:hover,
+  .mark-btn:active,
+  .to-top { transform: none; }
+  /* On retire le SOULÈVEMENT de 2px au survol, pas le calage optique, qui reste. */
+  .size-badge:hover .tubbz-logo { transform: translateY(var(--logo-align)); }
 }

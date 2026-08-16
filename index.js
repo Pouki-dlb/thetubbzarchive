@@ -476,8 +476,12 @@
 
     bindHelpModal();
 
+    // Le défilement fluide est piloté en JS : aucune règle CSS ne l'atteint, la
+    // préférence système doit donc être lue ici. C'est le seul mouvement du site dans
+    // ce cas — tout le reste est neutralisé par le bloc « Mouvement réduit » du CSS.
     elToTop.addEventListener("click", function () {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      var still = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      window.scrollTo({ top: 0, behavior: still ? "auto" : "smooth" });
     });
 
     // Mémorise le scroll (débounce) et l'état complet juste avant de quitter la page.

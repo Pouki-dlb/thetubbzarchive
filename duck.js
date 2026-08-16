@@ -204,7 +204,24 @@
   /* Interactions                                                     */
   /* ---------------------------------------------------------------- */
 
+  // Rejoue le ressort d'une bascule qu'on vient d'activer. Le retrait + reflow est
+  // nécessaire : ré-ajouter la classe dans le même tick ne relancerait rien, le
+  // navigateur ne verrait aucun changement.
+  function pop(btn) {
+    btn.classList.remove("is-pop");
+    void btn.offsetWidth;
+    btn.classList.add("is-pop");
+  }
+
   function bindEvents(fig) {
+    // La classe part à la fin de l'animation : elle ne sert qu'à la déclencher.
+    // (animationend remonte, un seul écouteur suffit pour toute la fiche.)
+    root.addEventListener("animationend", function (e) {
+      if (e.target.classList && e.target.classList.contains("is-pop")) {
+        e.target.classList.remove("is-pop");
+      }
+    });
+
     // Bascules de possession
     root.querySelectorAll("[data-own]").forEach(function (btn) {
       btn.addEventListener("click", function () {
@@ -213,6 +230,7 @@
         var now = T.toggleOwned(state, fig.id, key);
         btn.setAttribute("aria-pressed", now ? "true" : "false");
         tile.classList.toggle("is-owned", now);
+        if (now) pop(btn);
         // Posséder, c'est ne plus vouloir : la bascule « I want it » disparaît (CSS, via
         // .is-owned) et le souhait est RETIRÉ du stockage. La masquer sans l'effacer
         // laisserait un souhait invisible — donc un cœur inexpliqué sur la grille, qu'on
@@ -231,6 +249,7 @@
         var now = T.toggleWishlist(state, fig.id, btn.getAttribute("data-wish"));
         btn.setAttribute("aria-pressed", now ? "true" : "false");
         btn.closest(".variant").classList.toggle("is-wished", now);
+        if (now) pop(btn);
       });
     });
 

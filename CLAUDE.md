@@ -224,6 +224,22 @@ exported collection.
   carries an `aria-label` that **names the packaging** ("I own it, First Edition") — without it two
   neighbouring tiles would both announce "I own it". `:hover` is split per state, because at equal
   specificity a single hover rule would override the pressed colours.
+  **Feedback**: pressing dips the button (`:active`), activating it plays a spring (`.is-pop`,
+  added by `duck.js` and dropped on `animationend`), and the tile's state border fades in rather
+  than snapping. The spring is driven from JS, **not** from `[aria-pressed="true"]` in CSS — that
+  selector starts matching at render, so every already-owned variant would bounce on page load.
+  Re-adding the class needs a forced reflow between remove and add, or the browser sees no change
+  and replays nothing.
+- **`prefers-reduced-motion` is honoured in ONE place**: the "Mouvement réduit" block at the end of
+  `styles.css` — don't scatter per-component guards. It kills every duration globally (the only
+  `!important` in the sheet, deliberately, to beat more specific declarations), which also covers
+  motion added later, then neutralises the hover/press **displacements** one by one. Never write a
+  blanket `transform: none` there: several transforms in this sheet are **layout**, not motion —
+  the search cross's `translateY(-50%)` centring and the badges' `--logo-align` optical alignment
+  would both break, the latter knocking the TUBBZ wordmarks out of line across the whole grid. The
+  reduced-motion rule for `.size-badge:hover .tubbz-logo` therefore restates the base expression
+  rather than clearing it. One motion escapes CSS entirely: the "back to top" **smooth scroll is
+  JS-driven**, so `index.js` reads the preference with `matchMedia` and falls back to `auto`.
 - **Lightbox (`duck.html` only)**: every photo container — the hero and each variant tile — is a
   `<button class="photo-zoom">` (keyboard-reachable), and clicking one opens `#photo-modal`, which
   shows the image at its **native 400×400** and never larger (upscaling would just blur it). Markup
