@@ -208,6 +208,10 @@ exported collection.
   shrink. Consequence: `--fe` / `--box` no longer appear on this page, and `packagingClass` is
   gone. The header logo stays **full colour** here, unlike the grid: the toggles and green borders
   already carry ownership, and a greyed logo would read as "this size does not exist".
+- **Border = state, toggles = action** on a variant tile: `.is-owned` rings it green, `.is-wished`
+  rings it pink. The two classes exclude each other by construction (owning deletes the wish), so
+  no arbitration rule exists — and note that ordering alone would not provide one, since the dark
+  `.is-wished` rule outranks `.is-owned` in specificity.
 - **The two tile toggles** (`.mark-btn`, own `✓` / want `❤`) are `<button>`s, not checkboxes:
   their state lives in **`aria-pressed`**, which is the single source for both the styling
   (`[aria-pressed="true"]` selectors) and what a screen reader announces. Being icon-only, each

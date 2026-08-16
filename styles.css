@@ -450,6 +450,13 @@ button.size-group-head.is-active { border-color: var(--accent); background: var(
   border-radius: 12px; overflow: hidden;
   display: flex; flex-direction: column;
 }
+/* La bordure porte l'ÉTAT de la variante, les bascules portent l'action : vert possédée,
+   rose souhaitée. Les deux classes s'excluent par construction — posséder efface le
+   souhait (duck.js) — donc aucune règle d'arbitrage n'est nécessaire ici. Si un jour
+   elles pouvaient coexister, il faudrait trancher explicitement : l'ordre ne suffirait
+   pas, la règle sombre de .is-wished étant plus spécifique que .is-owned. */
+.variant.is-wished { border-color: #b02a37; box-shadow: 0 0 0 2px color-mix(in srgb, #b02a37 35%, transparent); }
+:root[data-theme="dark"] .variant.is-wished { border-color: #ff9aa3; box-shadow: 0 0 0 2px color-mix(in srgb, #ff9aa3 35%, transparent); }
 .variant.is-owned { border-color: var(--ok); box-shadow: 0 0 0 2px color-mix(in srgb, var(--ok) 40%, transparent); }
 .variant-media { aspect-ratio: 1/1; background: var(--surface-2); border-radius: 12px; }
 .variant-media img { width: 100%; height: 100%; object-fit: contain; padding: 6px; border-radius: inherit; }

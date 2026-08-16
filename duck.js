@@ -63,7 +63,7 @@
       var altTxt = fig.name + " — " + sizeTxt + (mark.label === sizeTxt ? "" : " " + mark.label);
 
       return (
-        '<div class="variant' + (owned ? " is-owned" : "") + '">' +
+        '<div class="variant' + (owned ? " is-owned" : "") + (wished ? " is-wished" : "") + '">' +
           '<button type="button" class="variant-media photo-zoom" title="View larger">' +
             '<img loading="lazy" src="' + T.esc(img) + '" alt="' + T.esc(altTxt) + '" ' +
               'onerror="this.onerror=null;this.src=\'' + T.PLACEHOLDER + '\'" />' +
@@ -218,6 +218,7 @@
         var wish = tile.querySelector("[data-wish]");
         if (T.isWished(state, fig.id, key)) T.toggleWishlist(state, fig.id, key);
         if (wish) wish.setAttribute("aria-pressed", "false");
+        tile.classList.remove("is-wished");
       });
     });
 
@@ -226,6 +227,7 @@
       btn.addEventListener("click", function () {
         var now = T.toggleWishlist(state, fig.id, btn.getAttribute("data-wish"));
         btn.setAttribute("aria-pressed", now ? "true" : "false");
+        btn.closest(".variant").classList.toggle("is-wished", now);
       });
     });
 
