@@ -615,6 +615,17 @@ window.TUBBZ_DATA = {
       ]
     },
     {
+      "id": "bloodbath-horror-it-chapter-two-pennywise-five-below-exclusive",
+      "name": "IT Chapter Two - Pennywise (five below exclusive!)",
+      "collection": "Bloodbath / Horror",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
       "id": "blues-brothers-elwood",
       "name": "Elwood",
       "collection": "Blues Brothers",
@@ -905,6 +916,17 @@ window.TUBBZ_DATA = {
         },
         {
           "size": "classic",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "chucky-scarred-chucky-five-below-exclusive",
+      "name": "Scarred Chucky (five below exclusive!)",
+      "collection": "Chucky",
+      "variants": [
+        {
+          "size": "mini",
           "packaging": "boxed"
         }
       ]
@@ -3207,6 +3229,17 @@ window.TUBBZ_DATA = {
           "size": "mini",
           "packaging": "first-edition"
         },
+        {
+          "size": "mini",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
+      "id": "halloween-2007-a-rob-zombie-film-michael-myers-five-below-exclusive",
+      "name": "Michael Myers (five below exclusive!)",
+      "collection": "Halloween (2007 A Rob Zombie film)",
+      "variants": [
         {
           "size": "mini",
           "packaging": "boxed"
@@ -6081,6 +6114,17 @@ window.TUBBZ_DATA = {
       ]
     },
     {
+      "id": "saw-billy-the-puppet-five-below-exclusive",
+      "name": "Billy The Puppet (five below exclusive!)",
+      "collection": "Saw",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
       "id": "shaun-of-the-dead-shaun",
       "name": "Shaun",
       "collection": "Shaun of the Dead",
@@ -7776,6 +7820,17 @@ window.TUBBZ_DATA = {
       ]
     },
     {
+      "id": "texas-chainsaw-massacre-leatherface-five-below-exclusive",
+      "name": "Leatherface (five below exclusive!)",
+      "collection": "Texas Chainsaw Massacre",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "boxed"
+        }
+      ]
+    },
+    {
       "id": "the-breakfast-club-allison-reynolds",
       "name": "Allison Reynolds",
       "collection": "The Breakfast Club",
@@ -8855,6 +8910,17 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        }
+      ]
+    },
+    {
+      "id": "universal-monster-dracula-five-below-exclusive",
+      "name": "Dracula (five below exclusive!)",
+      "collection": "Universal Monster",
+      "variants": [
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
