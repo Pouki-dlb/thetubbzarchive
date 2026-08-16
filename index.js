@@ -129,6 +129,7 @@
       // .tubbz-logo-<taille> porte le ratio natif du logo, partagé avec duck.html.
       return '<span class="size-badge size-' + T.esc(size) + ' ' +
             (owned ? "is-owned" : "is-missing") + '" ' +
+          'data-size="' + T.esc(size) + '" ' +
           'role="img" aria-label="' + T.esc(label) + '" title="' + T.esc(label) + '" ' +
           'data-img="' + T.esc(T.sizeImageCandidates(fig, size).join("|")) + '">' +
           '<img class="tubbz-logo tubbz-logo-' + T.esc(size) + '" ' +
@@ -150,16 +151,21 @@
     // Même chaîne de repli qu'au survol d'un badge : figurine nue, puis ses emballages,
     // puis le placeholder. data-default la porte en entier pour que la sortie de survol
     // revienne à l'image FILTRÉE et non à la classique.
-    var candidates = T.sizeImageCandidates(fig, shownSizeOf(fig));
+    var shown = shownSizeOf(fig);
+    var candidates = T.sizeImageCandidates(fig, shown);
     var img = candidates[0];
     var url = "duck.html?id=" + encodeURIComponent(fig.id);
+    // Trois cibles, trois intentions : la PHOTO emmène vers la taille qu'elle montre
+    // (celle du filtre, sinon la taille primaire), le NOM ne nomme aucune taille et
+    // laisse la fiche décider, et un BADGE emmène vers la sienne (cf. bindBadgeNav).
+    var urlShown = url + "&size=" + encodeURIComponent(shown);
 
     // La card n'est PAS un lien global : seuls l'image et le nom mènent à la fiche.
     // (Le lien image est en tabindex=-1 pour ne pas doubler la tabulation clavier :
     //  au clavier, on tabule sur le nom, qui pointe au même endroit.)
     return (
       '<div class="card">' +
-        '<a class="card-media" href="' + url + '" tabindex="-1" aria-label="' + T.esc(fig.name) + '">' +
+        '<a class="card-media" href="' + urlShown + '" tabindex="-1" aria-label="' + T.esc(fig.name) + '">' +
           '<img loading="lazy" src="' + T.esc(img) + '" ' +
             'data-default="' + T.esc(candidates.join("|")) + '" ' +
             'alt="' + T.esc(fig.name) + '" ' +
@@ -378,14 +384,18 @@
     im.src = list[0];
   }
 
-  // Clic sur un badge → navigue vers la fiche (même destination que l'image / le nom).
+  // Clic sur un badge → la fiche, ouverte SUR CETTE TAILLE. On repart du lien du nom,
+  // seul lien de la card sans paramètre de taille, pour y ajouter la sienne — repartir
+  // de la photo empilerait deux `&size=`.
   function bindBadgeNav() {
     elGrid.addEventListener("click", function (e) {
       var badge = e.target.closest(".size-badge");
       if (!badge || !elGrid.contains(badge)) return;
       var card = badge.closest(".card");
-      var link = card && card.querySelector("a.card-media, a.card-name-link");
-      if (link) window.location.href = link.getAttribute("href");
+      var link = card && card.querySelector("a.card-name-link");
+      if (!link) return;
+      window.location.href = link.getAttribute("href") +
+        "&size=" + encodeURIComponent(badge.getAttribute("data-size"));
     });
   }
 

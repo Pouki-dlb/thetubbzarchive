@@ -11,6 +11,10 @@
     return new URLSearchParams(window.location.search).get("id");
   }
 
+  function getRequestedSize() {
+    return new URLSearchParams(window.location.search).get("size");
+  }
+
   function notFound(id) {
     root.setAttribute("aria-busy", "false");
     root.innerHTML =
@@ -28,10 +32,16 @@
   function render(meta, fig) {
     root.setAttribute("aria-busy", "false");
 
-    // Tailles disponibles (classic → mini → xl) ; le hero part de la 1re (taille primaire).
+    // Tailles disponibles (classic → mini → xl → plushies).
     var sizes = T.sizesOf(fig);
     if (!sizes.length) sizes = ["classic"];
-    var mainImg = T.sizeImageFor(fig.id, sizes[0]);
+    // D'où part le hero. `?size=` n'est qu'un INDICE posé par le lien d'arrivée : le
+    // badge de taille de la grille en nomme une, la photo transmet celle qu'elle
+    // montrait (donc celle du filtre), le nom n'en donne aucune. Une taille absente de
+    // cette fiche — ou un paramètre bricolé à la main — retombe sur la taille primaire.
+    var startIdx = sizes.indexOf(getRequestedSize());
+    if (startIdx < 0) startIdx = 0;
+    var mainImg = T.sizeImageFor(fig.id, sizes[startIdx]);
     // Le hero porte sa taille dans son alt (« Batman — Mini »), comme les tuiles : c'est
     // ce texte que la lightbox reprend en légende. setHeroSize le réécrit à chaque
     // bascule, sinon la légende annoncerait la taille de départ.
@@ -120,13 +130,15 @@
         '<div class="duck-hero">' +
           '<div class="duck-hero-figure">' +
             '<button type="button" class="duck-hero-media photo-zoom" title="View larger">' +
-              '<img id="hero-img" src="' + T.esc(mainImg) + '" alt="' + T.esc(heroAlt(sizes[0])) + '" ' +
+              '<img id="hero-img" src="' + T.esc(mainImg) + '" alt="' + T.esc(heroAlt(sizes[startIdx])) + '" ' +
                 'onerror="this.onerror=null;this.src=\'' + T.PLACEHOLDER + '\'" />' +
             '</button>' +
             (sizes.length > 1 ?
+              // Construit depuis startIdx et non depuis sizes[0] : setHeroSize réécrit
+              // ces deux textes juste après, mais les poser justes évite un clignotement.
               '<button id="hero-flip" class="hero-flip" type="button" ' +
-                'title="Show ' + T.esc(T.sizeLabel(meta, sizes[1])) + '">' +
-                '⇄ ' + T.esc(T.sizeLabel(meta, sizes[0])) +
+                'title="Show ' + T.esc(T.sizeLabel(meta, sizes[(startIdx + 1) % sizes.length])) + '">' +
+                '⇄ ' + T.esc(T.sizeLabel(meta, sizes[startIdx])) +
               '</button>' : '') +
           '</div>' +
           '<div class="duck-hero-info">' +
@@ -196,7 +208,7 @@
         });
       });
 
-      setHeroSize(0); // marque l'en-tête de la taille déjà affichée dans le hero
+      setHeroSize(startIdx); // marque l'en-tête de la taille déjà affichée dans le hero
     }
   }
 

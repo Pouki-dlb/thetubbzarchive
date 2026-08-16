@@ -281,6 +281,16 @@ exported collection.
   bar wraps early. Below ~800px it wraps, which is intended.
 - **Index card is a `<div>`, not one big link**: image, name, and size badges lead to the detail
   page; the collection name filters that collection (`?collection=<name>`, mirrored on `duck.html`).
+- **Which size `duck.html` opens on** is decided by *what was clicked* in the grid, carried over as
+  `duck.html?id=<id>&size=<size>`. Three targets, three intentions: a **size badge** names its own
+  size; the **photo** passes on the size it was showing (so the index size filter follows through);
+  the **name** names nothing and lets the page fall back to the primary size. `?size=` is only a
+  **hint** — `duck.js` looks it up in `sizesOf(fig)` and silently falls back to the primary size if
+  it is absent from that figurine or hand-edited into nonsense. It feeds `startIdx`, which must be
+  used by *all four* starting values (hero `src`, hero `alt`, the flip button's label and its
+  title) — not just the image — or the page opens self-contradictory. The URL is left as-is
+  afterwards: flipping the hero doesn't rewrite it, since the param is a starting point, not state.
+  `bindBadgeNav` builds its URL from the **name** link, the only one without a `&size=`.
 - **`duck.html` hero** = per-size image, driven by **two** controls when a duck has more than one
   size: the flip button (cycles) and the size-group headers (target a size, and get `.is-active`).
   Both go through the single `setHeroSize()` — never write the hero image, the flip label or the
