@@ -196,9 +196,22 @@ exported collection.
   merge across rules); their native ratios are declared in CSS so the row keeps its height before
   the images load; and they are deliberately **not** `loading="lazy"` (3 tiny shared files).
 - **`duck.html` groups "Available versions" by size**: one `.size-group` per size, headed by that
-  size's TUBBZ logo (`.tubbz-logo`, shared with the grid — only the width differs). Packaging is
+  size's TUBBZ logo (`.tubbz-logo`, shared with the grid — only the width differs). The groups sit
+  **two per row** in `.size-groups` (Classic | Mini, then XL | Plushies), since a group holds at
+  most two tiles. Each group is **framed** (border, no fill — the tiles already carry `--surface`,
+  a filled panel would swallow them), which is what tells the two sections apart now that they are
+  side by side. The column min is therefore `min(444px, 100%)`: 2 × 200 tile + 16 gap + 24 padding
+  + 2 border. **Re-do that arithmetic if `.size-group`'s padding changes**, or a group silently
+  drops to one tile per row. The `min()` matters too — a bare `444px` makes the page scroll
+  sideways on a phone. Spacing comes from `gap`, never a margin on `.size-group`
+  (a margin would also hit the second group of the first row and break its alignment). Because two
+  headers now sit side by side, `.size-group-head` carries a `min-height`: the four logos have
+  different native ratios, so without it the taller MINI header pushes its tiles a few px below its
+  neighbour's. Packaging is
   fully preserved: one `.variant` tile per packaging inside the group, each with its photo, its
-  `limitedTo` and its own controls, ordered by `Tubbz.variantsOfSize` (First Edition then
+  `limitedTo` — pinned to the **bottom** of the tile (`margin-top: auto`, after the toggles in the
+  DOM), because between photo and toggles it only existed on some tiles and shoved their button
+  row down, breaking the alignment across the row — and its own controls, ordered by `Tubbz.variantsOfSize` (First Edition then
   Boxed) and **never** by their order in `data.js`. The tile foot is **one line**
   (`.variant-marks`): the packaging emoji + its name on the left, the two icon toggles pushed
   right — **want first, own last**, so the `✓` (the action one repeats, tile after tile) never
@@ -293,6 +306,10 @@ exported collection.
   `bindBadgeNav` builds its URL from the **name** link, the only one without a `&size=`.
 - **`duck.html` hero** = per-size image, driven by **two** controls when a duck has more than one
   size: the flip button (cycles) and the size-group headers (target a size, and get `.is-active`).
+  A clickable header must **look clickable at rest** — it once had a transparent background and
+  border, revealed only on hover, and nobody thought to click it. It now wears `.hero-flip`'s
+  chrome (filled pill, border), and the pair reads as tabs: the active one is accent-tinted.
+  The single-size `<div>` variant stays bare, so there is no affordance without a behaviour.
   Both go through the single `setHeroSize()` — never write the hero image, the flip label or the
   active header anywhere else, or the two controls drift apart. Single-size ducks get neither:
   no flip button, and the group header is a plain `<div>` instead of a `<button>` (no dead control).

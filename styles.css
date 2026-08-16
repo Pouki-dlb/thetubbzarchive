@@ -429,18 +429,59 @@ h1, h2, h3 { line-height: 1.2; }
 /* Groupe de variantes = une taille. L'en-tête (logo + libellé) remplace la taille qui
    était répétée dans chaque pastille. Quand la fiche a plusieurs tailles, c'est un
    <button> qui bascule le hero ; sinon un simple <div> (voir duck.js). */
-.size-group + .size-group { margin-top: 24px; }
+/* Deux groupes de taille par ligne : Classic | Mini, puis XL | Plushies. Un groupe ne
+   contient jamais plus de DEUX tuiles (baignoire + boîte). Le minimum se calcule donc :
+   2 × 200px de tuile + 16px de gap = 416, + les 24px de padding du cadre + ses 2px de
+   bordure = 442, arrondi à 444. Toute retouche du padding de .size-group doit repasser
+   par ce calcul, sinon les tuiles retombent à une par ligne dans un groupe.
+   Sous cette largeur la grille passe d'elle-même à une colonne. L'ordre des groupes
+   vient de SIZE_ORDER, pas d'ici.
+   L'espacement est porté par `gap` et non par une marge sur .size-group : une marge
+   s'appliquerait aussi au 2e groupe de la 1re ligne, qui ne serait plus aligné avec
+   le 1er. */
+/* `min(430px, 100%)` et non `430px` seul : sous 430px de large, un minimum fixe reste
+   appliqué tel quel et fait déborder la page horizontalement. */
+.size-groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(444px, 100%), 1fr));
+  gap: 20px;
+}
+/* Côte à côte, deux groupes se lisaient comme une seule rangée de quatre tuiles (deux
+   baignoires, deux boîtes) sans qu'on voie où l'un finit et où l'autre commence. Chaque
+   groupe est donc CADRÉ. Bordure seule, sans fond : les tuiles portent déjà --surface,
+   un panneau rempli les ferait disparaître dedans. */
+.size-group {
+  border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 12px;
+}
+/* min-height : les quatre logos n'ont pas le même ratio natif (le MINI est le plus haut),
+   donc sans hauteur plancher deux en-têtes voisins ne font pas la même hauteur et leurs
+   tuiles ne s'alignent plus horizontalement — invisible tant que les groupes étaient
+   empilés, voyant depuis qu'ils sont côte à côte. Valeur = le plus haut des logos à 54px
+   (MINI, ratio 100/77 → 41.6px) + padding + bordures. À revoir si un logo est redessiné. */
 .size-group-head {
-  display: flex; align-items: center; gap: 10px;
-  margin: 0 0 10px; padding: 2px 6px 2px 2px;
+  display: flex; align-items: center; gap: 10px; min-height: 48px;
+  margin: 0 0 12px; padding: 2px 14px 2px 2px;
   font: inherit; color: var(--text); text-align: left;
   background: none; border: 1px solid transparent; border-radius: 999px;
 }
-button.size-group-head { cursor: pointer; transition: background .15s ease, border-color .15s ease; }
-button.size-group-head:hover { background: var(--surface-2); border-color: var(--border); }
+/* Un en-tête CLIQUABLE doit se voir au repos, pas seulement au survol : il portait un
+   fond et une bordure transparents, donc rien ne le distinguait d'un simple titre et
+   personne n'avait l'idée de cliquer. Il reprend l'habillage de .hero-flip, le bouton
+   déjà lisible de cette page, pour que les deux commandes du hero se ressemblent.
+   Le <div> des fiches mono-taille, lui, reste nu : pas de fausse affordance. */
+button.size-group-head {
+  cursor: pointer; background: var(--surface-2); border-color: var(--border);
+  transition: background .15s ease, border-color .15s ease;
+}
+button.size-group-head:hover { background: var(--surface); border-color: var(--accent); }
 button.size-group-head:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-/* Taille actuellement montrée dans le hero : le lien entre les deux moitiés de la page. */
-button.size-group-head.is-active { border-color: var(--accent); background: var(--surface-2); }
+/* Taille actuellement montrée dans le hero : le lien entre les deux moitiés de la page.
+   Elles fonctionnent comme des onglets — l'active est teintée, les autres sont sobres. */
+button.size-group-head.is-active {
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 14%, var(--surface-2));
+}
 .size-group-logo { width: 54px; }
 .size-group-label { font-size: 1rem; font-weight: 700; }
 
@@ -463,7 +504,14 @@ button.size-group-head.is-active { border-color: var(--accent); background: var(
 .variant.is-owned { border-color: var(--ok); box-shadow: 0 0 0 2px color-mix(in srgb, var(--ok) 40%, transparent); }
 .variant-media { aspect-ratio: 1/1; background: var(--surface-2); border-radius: 12px; }
 .variant-media img { width: 100%; height: 100%; object-fit: contain; padding: 6px; border-radius: inherit; }
-.variant-limited { margin: 8px 10px 0; font-size: .8rem; font-weight: 600; color: var(--accent-ink); }
+/* margin-top:auto → collé au BAS de la tuile. Les tuiles d'une même rangée ont la même
+   hauteur (étirement de la grille) : la mention descend donc au fond de celles qui en
+   ont une, sans jamais pousser la rangée de bascules, qui reste alignée d'une tuile à
+   l'autre. C'est pour ça qu'elle est passée après elles dans le DOM. */
+.variant-limited {
+  margin: auto 10px 10px;
+  font-size: .8rem; font-weight: 600; color: var(--accent-ink);
+}
 :root[data-theme="dark"] .variant-limited { color: var(--accent); }
 /* Pied de tuile, UNE seule ligne : emballage nommé à gauche, les deux bascules à droite.
    Le nom de l'emballage rétrécit (min-width:0 + ellipsis) plutôt que de pousser les

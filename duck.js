@@ -78,8 +78,6 @@
             '<img loading="lazy" src="' + T.esc(img) + '" alt="' + T.esc(altTxt) + '" ' +
               'onerror="this.onerror=null;this.src=\'' + T.PLACEHOLDER + '\'" />' +
           '</button>' +
-          (v.limitedTo ? '<p class="variant-limited">🔒 Limited to ' +
-            T.esc(Number(v.limitedTo).toLocaleString("en-US")) + ' units</p>' : '') +
           // Pied de tuile sur UNE ligne : l'emballage nommé à gauche, les deux bascules à
           // droite. Les boutons n'ont pas de libellé visible, donc chacun porte un
           // aria-label qui NOMME l'emballage (« I own it, First Edition ») — sans ça,
@@ -96,6 +94,11 @@
             markButton("wish", key, wished, "I want it", mark.label, "❤") +
             markButton("own", key, owned, "I own it", mark.label, "✓") +
           '</div>' +
+          // Le tirage limité passe APRÈS les bascules, et non entre la photo et elles :
+          // intercalé, il n'existait que sur certaines tuiles et décalait vers le bas la
+          // rangée de boutons de celles-là, désalignant toute la ligne.
+          (v.limitedTo ? '<p class="variant-limited">🔒 Limited to ' +
+            T.esc(Number(v.limitedTo).toLocaleString("en-US")) + ' units</p>' : '') +
         '</div>'
       );
     }
@@ -165,7 +168,9 @@
 
         '<section class="duck-section">' +
           '<h2>Available versions</h2>' +
-          (groupsHTML || '<p class="muted">No variant listed.</p>') +
+          (groupsHTML
+            ? '<div class="size-groups">' + groupsHTML + '</div>'
+            : '<p class="muted">No variant listed.</p>') +
         '</section>' +
 
         '<section class="duck-section">' +
