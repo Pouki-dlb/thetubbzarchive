@@ -467,8 +467,12 @@ button.size-group-head.is-active { border-color: var(--accent); background: var(
    boutons hors de la tuile — c'est lui le contenu sacrifiable des deux. */
 .variant-marks { display: flex; align-items: center; gap: 8px; padding: 10px; }
 .variant-pack { flex: none; font-size: 1.05rem; line-height: 1; }
+/* C'est le NOM qui absorbe l'espace libre (flex:1), et non une marge automatique sur un
+   bouton : la bascule « I want it » disparaît quand la variante est possédée, et une
+   marge portée par elle disparaîtrait avec. Le texte reste calé à gauche dans sa boîte
+   élargie, et les boutons restent collés à droite dans les deux états. */
 .variant-pack-label {
-  min-width: 0; font-size: .8rem; color: var(--muted);
+  flex: 1; min-width: 0; font-size: .8rem; color: var(--muted);
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
 .mark-btn {
@@ -478,12 +482,10 @@ button.size-group-head.is-active { border-color: var(--accent); background: var(
   background: transparent; border: 1px solid var(--border); color: var(--muted);
   cursor: pointer; transition: background .15s ease, border-color .15s ease, color .15s ease;
 }
-/* Sur la PREMIÈRE bascule, pour que la paire soit poussée à droite. Elle ne disparaît
-   jamais, contrairement à « I want it » — l'ancrage tient donc dans les deux états.
-   Ce doit rester l'UNIQUE marge automatique de la ligne : deux `margin:auto` se
-   partagent l'espace libre, et l'emoji se remettrait à dériver vers le centre au lieu
-   de rester plaqué à gauche (c'est arrivé, via une règle .variant-pack orpheline). */
-.mark-own { margin-left: auto; }
+/* Aucune `margin: auto` dans cette ligne, volontairement : c'est le nom de l'emballage
+   qui pousse (voir plus haut). Deux marges automatiques se partageraient l'espace libre
+   et feraient dériver l'emoji vers le centre — c'est déjà arrivé, via une règle
+   .variant-pack orpheline. */
 .mark-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 /* L'état vit dans aria-pressed, pas dans une classe : une seule source de vérité pour le
    style ET pour ce qu'annonce un lecteur d'écran. Le survol est scindé par état, sinon

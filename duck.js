@@ -78,10 +78,13 @@
           '<div class="variant-marks">' +
             '<span class="variant-pack" aria-hidden="true">' + T.esc(mark.emoji) + '</span>' +
             '<span class="variant-pack-label">' + T.esc(mark.label) + '</span>' +
-            markButton("own", key, owned, "I own it", mark.label, "✓") +
             // La wishlist porte sur la VARIANTE, exactement comme la possession : on veut
             // une version précise, pas « le canard ». Même clé que la bascule d'à côté.
+            // Elle vient AVANT « I own it » parce qu'elle est la seule des deux à
+            // disparaître : ainsi le ✓ garde toujours la même place, à l'extrême droite,
+            // et s'aligne d'une tuile à l'autre. C'est l'action la plus répétée.
             markButton("wish", key, wished, "I want it", mark.label, "❤") +
+            markButton("own", key, owned, "I own it", mark.label, "✓") +
           '</div>' +
         '</div>'
       );

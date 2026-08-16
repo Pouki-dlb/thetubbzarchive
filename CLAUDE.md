@@ -201,7 +201,13 @@ exported collection.
   `limitedTo` and its own controls, ordered by `Tubbz.variantsOfSize` (First Edition then
   Boxed) and **never** by their order in `data.js`. The tile foot is **one line**
   (`.variant-marks`): the packaging emoji + its name on the left, the two icon toggles pushed
-  right. Emoji and name both come from `Tubbz.variantMarker`, the single place that decides: the
+  right — **want first, own last**, so the `✓` (the action one repeats, tile after tile) never
+  moves and lines up across a row; only the conditional heart appears and disappears beside it.
+  What pushes them right is `flex: 1` on the packaging name, **not** a `margin: auto` on a button:
+  the want button disappears, and an auto margin carried by it would disappear with it. Keep the
+  row free of auto margins — two of them split the free space and send the emoji drifting towards
+  the centre (this happened once, via a stale `.variant-pack` rule).
+  Emoji and name both come from `Tubbz.variantMarker`, the single place that decides: the
   **packaging** when there is one, the **size** otherwise (a plush is alone in its group, so 🧸 +
   "Plushies" is what distinguishes it). The emoji is `aria-hidden` — the text beside it already
   says it. The name is the shrinkable half of the row (`min-width:0` + ellipsis); the buttons never
