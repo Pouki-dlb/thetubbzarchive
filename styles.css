@@ -269,6 +269,13 @@ h1, h2, h3 { line-height: 1.2; }
 }
 .loading, .empty, .error { grid-column: 1 / -1; padding: 30px; text-align: center; color: var(--muted); }
 .error { text-align: left; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); }
+/* État vide QUALIFIÉ : la liste du visiteur est elle-même vide (aucun TUBBZ possédé,
+   wishlist vide), et non une grille vidée par la recherche ou les filtres — cf.
+   emptyHTML() dans index.js, qui décide lequel des deux messages s'affiche. */
+.empty-list { display: grid; justify-items: center; gap: 12px; }
+.empty-list p { margin: 0; }
+.empty-title { font-size: 1.05rem; font-weight: 700; color: var(--text); }
+.empty-hint { max-width: 52ch; line-height: 1.5; }
 /* Sur duck.html, l'encadré n'est pas dans la grille : on le décale sous le header,
    au même niveau que la barre de filtre de l'index (toolbar : margin-top 18px). */
 [data-page="duck"] .loading, [data-page="duck"] .error { margin-top: 18px; }

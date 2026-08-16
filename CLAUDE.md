@@ -218,6 +218,14 @@ exported collection.
   to classic. Options are built from `meta.sizes` filtered to sizes actually present, so the filter
   can never return an empty grid on its own. The choice is part of the remembered view
   (`sessionStorage` `tubbz-index-view`) and is cleared by Reset and by a collection click.
+- **Empty grid, two different messages** (`emptyHTML()` in `index.js`): when the status filter is
+  `owned` or `wishlist` **and that list is empty catalog-wide**, the grid shows a titled message
+  explaining how to fill it, plus a "Browse all TUBBZ" button (`[data-reset]`, delegated to the same
+  `resetFilters()` as the toolbar button). Any other empty result — including `owned` **plus** a
+  search or a collection/size filter that happens to match nothing — keeps the generic "No TUBBZ
+  matches your search." The test is `listCount(status)`, which deliberately re-scans the **whole
+  catalog** ignoring every other filter: reusing the already-filtered `list` would make the site
+  claim "you don't own any TUBBZ" to someone who owns plenty but typed a search that misses.
 - **Toolbar stays on one line** down to ~820px: `.field-search` has a deliberately short
   `flex-basis` (150px) and grows into whatever the four controls leave — widen the basis and the
   bar wraps early. Below ~800px it wraps, which is intended.

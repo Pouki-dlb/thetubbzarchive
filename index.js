@@ -56,6 +56,15 @@
     elToTop.classList.toggle("is-visible", y > TO_TOP_AT);
   }
 
+  function resetFilters() {
+    elSearch.value = "";
+    elCollection.value = "";
+    elSize.value = "";
+    elStatus.value = "";
+    render();
+    saveView();
+  }
+
   // Clic sur une collection (card de l'index ou fiche duck) : vue neuve filtrée
   // sur cette seule collection. On vide les autres filtres et on remonte en haut.
   function applyCollectionFilter(name) {
@@ -171,11 +180,57 @@
     );
   }
 
+  /* ---------------------------------------------------------------- */
+  /* Grille vide : « ta liste est vide » vs « aucun résultat »         */
+  /* ---------------------------------------------------------------- */
+
+  // Combien de TUBBZ le visiteur a dans la liste demandée, TOUS AUTRES FILTRES IGNORÉS.
+  // C'est toute la nuance : une liste réellement vide mérite un mode d'emploi, alors
+  // qu'une grille vidée par la recherche ou par les filtres collection/taille n'est
+  // qu'un « aucun résultat » — y afficher « vous ne possédez aucun TUBBZ » serait faux.
+  function listCount(status) {
+    return catalog.figurines.filter(function (fig) {
+      return status === "wishlist"
+        ? T.isWished(state, fig.id)
+        : T.ownedCountOf(state, fig).owned > 0;
+    }).length;
+  }
+
+  // Libellés cités tels quels depuis duck.html : le message n'aide que s'il nomme
+  // exactement la commande à chercher sur la fiche.
+  var EMPTY_LIST = {
+    owned: {
+      title: "You don’t own any TUBBZ yet.",
+      hint: "Open any TUBBZ and tick “I own it” under the version you have — Classic or " +
+            "Mini, in its bathtub or boxed. It shows up in this list right away."
+    },
+    wishlist: {
+      title: "Your wishlist is empty.",
+      hint: "Open any TUBBZ and hit “♡ Add to wishlist”. It shows up in this list, and " +
+            "its card in the grid gets a heart."
+    }
+  };
+
+  function emptyHTML() {
+    var status = elStatus.value;
+    var msg = EMPTY_LIST[status];
+    if (!msg || listCount(status) > 0) {
+      return '<p class="empty">No TUBBZ matches your search.</p>';
+    }
+    return (
+      '<div class="empty empty-list">' +
+        '<p class="empty-title">' + msg.title + '</p>' +
+        '<p class="empty-hint">' + msg.hint + '</p>' +
+        '<button type="button" class="btn" data-reset>Browse all TUBBZ</button>' +
+      '</div>'
+    );
+  }
+
   function render() {
     var list = catalog.figurines.filter(matches);
 
     if (list.length === 0) {
-      elGrid.innerHTML = '<p class="empty">No TUBBZ matches your search.</p>';
+      elGrid.innerHTML = emptyHTML();
     } else {
       elGrid.innerHTML = list.map(cardHTML).join("");
     }
@@ -398,13 +453,11 @@
       el.addEventListener("change", onFilterChange);
     });
 
-    document.getElementById("btn-reset").addEventListener("click", function () {
-      elSearch.value = "";
-      elCollection.value = "";
-      elSize.value = "";
-      elStatus.value = "";
-      render();
-      saveView();
+    // Un seul « remise à zéro » : le bouton de la barre d'outils et celui de l'état vide
+    // (data-reset, injecté dans la grille) appellent la même fonction.
+    document.getElementById("btn-reset").addEventListener("click", resetFilters);
+    elGrid.addEventListener("click", function (e) {
+      if (e.target.closest("[data-reset]")) resetFilters();
     });
 
     document.getElementById("btn-export").addEventListener("click", exportBackup);
