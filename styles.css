@@ -455,22 +455,52 @@ button.size-group-head.is-active { border-color: var(--accent); background: var(
 .variant-media img { width: 100%; height: 100%; object-fit: contain; padding: 6px; border-radius: inherit; }
 .variant-limited { margin: 8px 10px 0; font-size: .8rem; font-weight: 600; color: var(--accent-ink); }
 :root[data-theme="dark"] .variant-limited { color: var(--accent); }
-/* Les deux coches d'une variante : « I own it » puis « I want it ». Le padding vit sur
-   le conteneur, pas sur chaque ligne, sinon deux lignes empilées doublent la marge. */
-.variant-marks { display: grid; gap: 4px; padding: 10px; }
-.variant-check { display: flex; align-items: center; gap: 8px; padding: 2px 0; cursor: pointer; font-size: .9rem; }
-.variant-check input { width: 18px; height: 18px; accent-color: var(--ok); }
+/* Pied de tuile, UNE seule ligne : emballage nommé à gauche, les deux bascules à droite.
+   Le nom de l'emballage rétrécit (min-width:0 + ellipsis) plutôt que de pousser les
+   boutons hors de la tuile — c'est lui le contenu sacrifiable des deux. */
+.variant-marks { display: flex; align-items: center; gap: 8px; padding: 10px; }
+.variant-pack { flex: none; font-size: 1.05rem; line-height: 1; }
+.variant-pack-label {
+  min-width: 0; font-size: .8rem; color: var(--muted);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.mark-btn {
+  flex: none; width: 30px; height: 30px; border-radius: 9px;
+  display: inline-flex; align-items: center; justify-content: center;
+  font: inherit; font-size: .95rem; line-height: 1;
+  background: transparent; border: 1px solid var(--border); color: var(--muted);
+  cursor: pointer; transition: background .15s ease, border-color .15s ease, color .15s ease;
+}
+/* Sur la PREMIÈRE bascule, pour que la paire soit poussée à droite. Elle ne disparaît
+   jamais, contrairement à « I want it » — l'ancrage tient donc dans les deux états.
+   Ce doit rester l'UNIQUE marge automatique de la ligne : deux `margin:auto` se
+   partagent l'espace libre, et l'emoji se remettrait à dériver vers le centre au lieu
+   de rester plaqué à gauche (c'est arrivé, via une règle .variant-pack orpheline). */
+.mark-own { margin-left: auto; }
+.mark-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+/* L'état vit dans aria-pressed, pas dans une classe : une seule source de vérité pour le
+   style ET pour ce qu'annonce un lecteur d'écran. Le survol est scindé par état, sinon
+   (spécificité égale) il écraserait la couleur de la bascule active. */
+.mark-btn[aria-pressed="false"]:hover { border-color: var(--text); color: var(--text); }
+.mark-btn[aria-pressed="true"]:hover { filter: brightness(1.12); }
+.mark-own[aria-pressed="true"] {
+  background: color-mix(in srgb, var(--ok) 16%, transparent);
+  border-color: var(--ok); color: var(--ok);
+}
 /* Le vert dit « je l'ai », le rouge « je le veux ». Rouge codé en dur (comme le cœur des
-   cards) : c'est une couleur de sens, pas une couleur d'interface qui suit le thème. */
-.variant-wish input { accent-color: #b02a37; }
-:root[data-theme="dark"] .variant-wish input { accent-color: #ff9aa3; }
+   badges) : c'est une couleur de sens, pas une couleur d'interface. */
+.mark-wish[aria-pressed="true"] {
+  background: color-mix(in srgb, #b02a37 14%, transparent);
+  border-color: #b02a37; color: #b02a37;
+}
+:root[data-theme="dark"] .mark-wish[aria-pressed="true"] {
+  background: color-mix(in srgb, #ff9aa3 14%, transparent);
+  border-color: #ff9aa3; color: #ff9aa3;
+}
 /* Variante possédée : « I want it » n'a plus de sens, on la retire complètement (donc
    aussi de l'arbre d'accessibilité). L'entrée correspondante est effacée du stockage
    par duck.js — la classe .is-owned ne fait que cacher, elle ne décide de rien. */
-.variant.is-owned .variant-wish { display: none; }
-/* Emoji d'emballage : ni pastille ni ligne à lui, juste calé à droite de la case à
-   cocher (margin-left:auto). Légèrement agrandi, puisqu'il porte seul l'information. */
-.variant-pack { margin-left: auto; font-size: 1.05rem; line-height: 1; }
+.variant.is-owned .mark-wish { display: none; }
 
 .note {
   width: 100%; font: inherit; padding: .7em .8em;

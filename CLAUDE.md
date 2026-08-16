@@ -124,7 +124,7 @@ Stored under key `tubbz-collection`, browser-only:
 `owned` and `wishlist` have the **same shape** — one entry per **variant**, under the same
 `variantKey`. Wanting a duck "in general" is meaningless to a collector: you want the Classic in
 its bathtub, not the Mini boxed. So `isWished`/`toggleWishlist` take a variant key, and only
-**Owning excludes wanting**: ticking "I own it" hides that variant's "I want it" (CSS, on
+**Owning excludes wanting**: pressing "I own it" hides that variant's "I want it" (CSS, on
 `.variant.is-owned`) **and** deletes its wishlist entry — hiding without deleting would leave an
 invisible wish, hence an unexplainable heart in the grid that nothing can untick any more. The
 class only hides; `duck.js` owns the deletion, and guards on `isWished` (the model) rather than on
@@ -198,18 +198,22 @@ exported collection.
 - **`duck.html` groups "Available versions" by size**: one `.size-group` per size, headed by that
   size's TUBBZ logo (`.tubbz-logo`, shared with the grid — only the width differs). Packaging is
   fully preserved: one `.variant` tile per packaging inside the group, each with its photo, its
-  its `limitedTo` and its own checkbox, ordered by `Tubbz.variantsOfSize` (First Edition then
-  Boxed) and **never** by their order in `data.js`. Packaging is marked by the **emoji alone**
-  (`.variant-pack`) sitting at the right end of the checkbox row — no chip, no line of its own, no
-  size (the group header says it). The emoji and its label come from `Tubbz.variantMarker`, the
-  single place that decides: the **packaging** when there is one, the **size** otherwise (a plush
-  is alone in its group, so 🧸 + "Plushies" is what distinguishes it). It lives **inside** the `<label>` on
-  purpose: it widens the click target and its `aria-label` joins the checkbox's accessible name
-  ("I own it, First Edition"), which is what tells two neighbouring tiles apart. `role="img"` +
-  `title`/`aria-label` keep the full name available and stop screen readers saying "bathtub".
-  Consequence: `--fe` / `--box` no longer appear on this page, and `packagingClass` is gone. The header logo stays **full colour** here, unlike
-  the grid: the checkboxes and green borders already carry ownership, and a greyed logo would
-  read as "this size does not exist".
+  `limitedTo` and its own controls, ordered by `Tubbz.variantsOfSize` (First Edition then
+  Boxed) and **never** by their order in `data.js`. The tile foot is **one line**
+  (`.variant-marks`): the packaging emoji + its name on the left, the two icon toggles pushed
+  right. Emoji and name both come from `Tubbz.variantMarker`, the single place that decides: the
+  **packaging** when there is one, the **size** otherwise (a plush is alone in its group, so 🧸 +
+  "Plushies" is what distinguishes it). The emoji is `aria-hidden` — the text beside it already
+  says it. The name is the shrinkable half of the row (`min-width:0` + ellipsis); the buttons never
+  shrink. Consequence: `--fe` / `--box` no longer appear on this page, and `packagingClass` is
+  gone. The header logo stays **full colour** here, unlike the grid: the toggles and green borders
+  already carry ownership, and a greyed logo would read as "this size does not exist".
+- **The two tile toggles** (`.mark-btn`, own `✓` / want `❤`) are `<button>`s, not checkboxes:
+  their state lives in **`aria-pressed`**, which is the single source for both the styling
+  (`[aria-pressed="true"]` selectors) and what a screen reader announces. Being icon-only, each
+  carries an `aria-label` that **names the packaging** ("I own it, First Edition") — without it two
+  neighbouring tiles would both announce "I own it". `:hover` is split per state, because at equal
+  specificity a single hover rule would override the pressed colours.
 - **Lightbox (`duck.html` only)**: every photo container — the hero and each variant tile — is a
   `<button class="photo-zoom">` (keyboard-reachable), and clicking one opens `#photo-modal`, which
   shows the image at its **native 400×400** and never larger (upscaling would just blur it). Markup

@@ -37,6 +37,18 @@
     // bascule, sinon la légende annoncerait la taille de départ.
     function heroAlt(size) { return fig.name + " — " + T.sizeLabel(meta, size); }
 
+    // Bascule à icône du pied de tuile. `kind` vaut "own" ou "wish" et sert à la fois
+    // d'attribut de repérage (data-own / data-wish) et de classe. L'état vit dans
+    // aria-pressed — c'est LE contrat d'un bouton bascule, il porte à la fois le style
+    // (sélecteurs [aria-pressed="true"]) et ce qu'annonce un lecteur d'écran.
+    function markButton(kind, key, on, action, packLabel, glyph) {
+      return '<button type="button" class="mark-btn mark-' + kind + '" ' +
+        'data-' + kind + '="' + T.esc(key) + '" aria-pressed="' + (on ? "true" : "false") + '" ' +
+        'title="' + T.esc(action) + '" aria-label="' + T.esc(action + ", " + packLabel) + '">' +
+        glyph +
+      '</button>';
+    }
+
     // Une tuile par EMBALLAGE. La taille n'est plus écrite ici : elle est portée par
     // l'en-tête du groupe, ce qui libère la place pour le nom complet de l'emballage.
     function variantTile(v) {
@@ -58,26 +70,18 @@
           '</button>' +
           (v.limitedTo ? '<p class="variant-limited">🔒 Limited to ' +
             T.esc(Number(v.limitedTo).toLocaleString("en-US")) + ' units</p>' : '') +
-          // L'emoji tient sur la MÊME ligne que la case à cocher, calé à droite : plus de
-          // pastille ni de ligne dédiée. Le placer DANS le <label> est délibéré — il
-          // agrandit la zone cliquable et son aria-label entre dans le nom accessible de
-          // la case (« I own it, First Edition »), ce qui distingue enfin deux tuiles
-          // voisines qui annonçaient toutes deux « I own it ».
+          // Pied de tuile sur UNE ligne : l'emballage nommé à gauche, les deux bascules à
+          // droite. Les boutons n'ont pas de libellé visible, donc chacun porte un
+          // aria-label qui NOMME l'emballage (« I own it, First Edition ») — sans ça,
+          // deux tuiles voisines s'annonceraient toutes les deux « I own it ». L'emoji
+          // est aria-hidden : le texte à côté dit déjà la même chose.
           '<div class="variant-marks">' +
-            '<label class="variant-check">' +
-              '<input type="checkbox" data-own="' + T.esc(key) + '"' + (owned ? " checked" : "") + ' />' +
-              '<span>I own it</span>' +
-              '<span class="variant-pack" role="img" ' +
-                'title="' + T.esc(mark.label) + '" aria-label="' + T.esc(mark.label) + '">' +
-                T.esc(mark.emoji) +
-              '</span>' +
-            '</label>' +
+            '<span class="variant-pack" aria-hidden="true">' + T.esc(mark.emoji) + '</span>' +
+            '<span class="variant-pack-label">' + T.esc(mark.label) + '</span>' +
+            markButton("own", key, owned, "I own it", mark.label, "✓") +
             // La wishlist porte sur la VARIANTE, exactement comme la possession : on veut
-            // une version précise, pas « le canard ». Même clé que la coche du dessus.
-            '<label class="variant-check variant-wish">' +
-              '<input type="checkbox" data-wish="' + T.esc(key) + '"' + (wished ? " checked" : "") + ' />' +
-              '<span>I want it</span>' +
-            '</label>' +
+            // une version précise, pas « le canard ». Même clé que la bascule d'à côté.
+            markButton("wish", key, wished, "I want it", mark.label, "❤") +
           '</div>' +
         '</div>'
       );
@@ -198,28 +202,30 @@
   /* ---------------------------------------------------------------- */
 
   function bindEvents(fig) {
-    // Coches de possession
-    root.querySelectorAll("input[data-own]").forEach(function (cb) {
-      cb.addEventListener("change", function () {
-        var key = cb.getAttribute("data-own");
-        var tile = cb.closest(".variant");
-        T.toggleOwned(state, fig.id, key);
-        tile.classList.toggle("is-owned", cb.checked);
-        // Posséder, c'est ne plus vouloir : la case « I want it » disparaît (CSS, via
+    // Bascules de possession
+    root.querySelectorAll("[data-own]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var key = btn.getAttribute("data-own");
+        var tile = btn.closest(".variant");
+        var now = T.toggleOwned(state, fig.id, key);
+        btn.setAttribute("aria-pressed", now ? "true" : "false");
+        tile.classList.toggle("is-owned", now);
+        // Posséder, c'est ne plus vouloir : la bascule « I want it » disparaît (CSS, via
         // .is-owned) et le souhait est RETIRÉ du stockage. La masquer sans l'effacer
         // laisserait un souhait invisible — donc un cœur inexpliqué sur la grille, qu'on
-        // ne pourrait plus décocher nulle part. On se fie au modèle, pas à la case.
-        if (!cb.checked) return;
-        var wish = tile.querySelector("input[data-wish]");
+        // ne pourrait plus retirer nulle part. On se fie au modèle, pas au bouton.
+        if (!now) return;
+        var wish = tile.querySelector("[data-wish]");
         if (T.isWished(state, fig.id, key)) T.toggleWishlist(state, fig.id, key);
-        if (wish) wish.checked = false;
+        if (wish) wish.setAttribute("aria-pressed", "false");
       });
     });
 
-    // Coches de wishlist — même granularité, même clé de variante.
-    root.querySelectorAll("input[data-wish]").forEach(function (cb) {
-      cb.addEventListener("change", function () {
-        T.toggleWishlist(state, fig.id, cb.getAttribute("data-wish"));
+    // Bascules de wishlist — même granularité, même clé de variante.
+    root.querySelectorAll("[data-wish]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var now = T.toggleWishlist(state, fig.id, btn.getAttribute("data-wish"));
+        btn.setAttribute("aria-pressed", now ? "true" : "false");
       });
     });
 
