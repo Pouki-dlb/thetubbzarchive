@@ -22,6 +22,10 @@ window.Tubbz = (function () {
   var SIZE_INITIAL = { classic: "c", mini: "m", xl: "x", plushies: "p" };
   var PACK_INITIAL = { "first-edition": "f", boxed: "b" };
   var SIZE_ORDER = ["classic", "mini", "xl", "plushies"];
+  // Ordre d'AFFICHAGE des emballages : la baignoire (First Edition) d'abord, la boîte
+  // ensuite. Comme SIZE_ORDER, il est indépendant de data.js — l'outil admin y écrit les
+  // variantes dans l'ordre où on les saisit, ce qui n'est pas un ordre d'affichage.
+  var PACK_ORDER = ["first-edition", "boxed"];
 
   // Tailles SANS emballage : la peluche n'existe qu'en un seul exemplaire, il n'y a donc
   // ni First Edition ni Boxed, et une seule photo — l'image « par taille » (-p.webp).
@@ -43,6 +47,20 @@ window.Tubbz = (function () {
     var present = {};
     (fig.variants || []).forEach(function (v) { if (v && v.size) present[v.size] = true; });
     return SIZE_ORDER.filter(function (s) { return present[s]; });
+  }
+
+  // Variantes d'une taille, dans l'ordre d'affichage (PACK_ORDER) et non dans celui de
+  // data.js. Un emballage inconnu passe en dernier plutôt que de remonter en tête.
+  // `filter` rend un NOUVEAU tableau : le `sort` ne réordonne pas `fig.variants`.
+  function variantsOfSize(fig, size) {
+    return (fig.variants || [])
+      .filter(function (v) { return v && v.size === size; })
+      .sort(function (a, b) { return packRank(a) - packRank(b); });
+  }
+
+  function packRank(v) {
+    var i = PACK_ORDER.indexOf(v.packaging);
+    return i === -1 ? PACK_ORDER.length : i;
   }
 
   // Sans emballage (Plushies), il n'existe pas d'image de variante : on retombe sur
@@ -457,6 +475,7 @@ window.Tubbz = (function () {
     imageFor: imageFor,
     sizeImageFor: sizeImageFor,
     sizesOf: sizesOf,
+    variantsOfSize: variantsOfSize,
     variantImageFor: variantImageFor,
     sizeImageCandidates: sizeImageCandidates,
     sizeLogoFor: sizeLogoFor,

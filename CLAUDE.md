@@ -73,6 +73,9 @@ window.TUBBZ_DATA = {
 **Variant fields**: `size` (`classic|mini|xl|plushies`), `packaging` (`first-edition|boxed`),
 `limitedTo?` (number, shown "Limited to 3,000 units"). List only variants that **actually exist**.
 **Max 5 variants per figurine** (4 packaged + the plush).
+The order variants sit in here is the **order they were typed into the admin tool** and carries no
+meaning — display order is decided by the site: `SIZE_ORDER` then `PACK_ORDER` in `common.js`
+(`sizesOf` / `variantsOfSize`). Don't reorder `data.js` to fix a display order.
 
 ### `plushies`: the size with no packaging
 
@@ -178,7 +181,8 @@ exported collection.
 - **`duck.html` groups "Available versions" by size**: one `.size-group` per size, headed by that
   size's TUBBZ logo (`.tubbz-logo`, shared with the grid — only the width differs). Packaging is
   fully preserved: one `.variant` tile per packaging inside the group, each with its photo, its
-  its `limitedTo` and its own checkbox. Packaging is marked by the **emoji alone**
+  its `limitedTo` and its own checkbox, ordered by `Tubbz.variantsOfSize` (First Edition then
+  Boxed) and **never** by their order in `data.js`. Packaging is marked by the **emoji alone**
   (`.variant-pack`) sitting at the right end of the checkbox row — no chip, no line of its own, no
   size (the group header says it). The emoji and its label come from `Tubbz.variantMarker`, the
   single place that decides: the **packaging** when there is one, the **size** otherwise (a plush

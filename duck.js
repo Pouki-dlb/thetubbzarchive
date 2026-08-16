@@ -83,9 +83,7 @@
     // dessus (sinon un simple bloc : pas de commande morte sur les fiches à 1 taille).
     var multiSize = sizes.length > 1;
     var groupsHTML = sizes.map(function (size) {
-      var tiles = (fig.variants || [])
-        .filter(function (v) { return v.size === size; })
-        .map(variantTile).join("");
+      var tiles = T.variantsOfSize(fig, size).map(variantTile).join("");
       if (!tiles) return "";
 
       var sizeTxt = T.sizeLabel(meta, size);
