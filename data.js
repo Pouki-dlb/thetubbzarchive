@@ -300,6 +300,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -3210,6 +3214,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -4258,6 +4266,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
