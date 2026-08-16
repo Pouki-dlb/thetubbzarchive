@@ -472,6 +472,10 @@ window.TUBBZ_DATA = {
         },
         {
           "size": "plushies"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -520,6 +524,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -1127,6 +1135,10 @@ window.TUBBZ_DATA = {
         },
         {
           "size": "plushies"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -1171,6 +1183,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -1193,6 +1209,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -1258,6 +1278,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -1845,6 +1869,14 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -1863,6 +1895,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -2144,6 +2180,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -2282,6 +2322,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -2304,6 +2348,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -2340,6 +2388,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -2362,6 +2414,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -2406,6 +2462,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -2428,6 +2488,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -2705,6 +2769,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -2742,6 +2810,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -2988,6 +3060,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -3130,6 +3206,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -3583,6 +3663,10 @@ window.TUBBZ_DATA = {
         },
         {
           "size": "plushies"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -3774,6 +3858,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -3934,6 +4022,14 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
+        },
+        {
+          "size": "classic",
+          "packaging": "boxed"
         }
       ]
     },
@@ -3958,6 +4054,10 @@ window.TUBBZ_DATA = {
         },
         {
           "size": "plushies"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -3978,6 +4078,10 @@ window.TUBBZ_DATA = {
         },
         {
           "size": "plushies"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -4050,6 +4154,14 @@ window.TUBBZ_DATA = {
         {
           "size": "classic",
           "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "first-edition"
         }
       ]
     },
@@ -4107,6 +4219,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -4129,6 +4245,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -4154,6 +4274,10 @@ window.TUBBZ_DATA = {
         },
         {
           "size": "plushies"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -4176,6 +4300,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -4220,6 +4348,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -4242,6 +4374,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -4372,6 +4508,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -4849,6 +4989,10 @@ window.TUBBZ_DATA = {
         {
           "size": "classic",
           "packaging": "boxed"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -4871,6 +5015,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -4893,6 +5041,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -4915,6 +5067,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -4937,6 +5093,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -5015,6 +5175,10 @@ window.TUBBZ_DATA = {
         },
         {
           "size": "classic",
+          "packaging": "boxed"
+        },
+        {
+          "size": "mini",
           "packaging": "boxed"
         }
       ]
@@ -5244,6 +5408,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -5804,6 +5972,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -5901,6 +6073,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -5973,6 +6149,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -5995,6 +6175,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -6017,6 +6201,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -6039,6 +6227,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -7680,6 +7872,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -7702,6 +7898,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -7724,6 +7924,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -7746,6 +7950,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -7768,6 +7976,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -7981,6 +8193,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -8020,6 +8236,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -8452,6 +8672,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -8487,6 +8711,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -8522,6 +8750,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -8708,6 +8940,10 @@ window.TUBBZ_DATA = {
         },
         {
           "size": "plushies"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -8733,6 +8969,10 @@ window.TUBBZ_DATA = {
         },
         {
           "size": "plushies"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -8755,6 +8995,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -8799,6 +9043,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -8821,6 +9069,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -8887,6 +9139,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
@@ -8909,6 +9165,10 @@ window.TUBBZ_DATA = {
         {
           "size": "mini",
           "packaging": "first-edition"
+        },
+        {
+          "size": "mini",
+          "packaging": "boxed"
         }
       ]
     },
