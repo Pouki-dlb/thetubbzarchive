@@ -29,6 +29,17 @@
 
   <footer class="site-footer" id="site-footer"></footer>
 
+  <!-- Lightbox : la photo cliquée, à sa taille native (400×400). Markup statique ici,
+       comme la modale About de index.html ; câblée par duck.js. -->
+  <div id="photo-modal" class="modal" hidden role="dialog" aria-modal="true" aria-label="Photo">
+    <div class="modal-backdrop" data-close></div>
+    <div class="lightbox-box" role="document">
+      <button class="modal-close" type="button" data-close aria-label="Close">✕</button>
+      <img id="photo-modal-img" alt="" />
+      <p id="photo-modal-caption" class="lightbox-caption"></p>
+    </div>
+  </div>
+
   <script src="data.js"></script>
   <script src="common.js"></script>
   <script src="duck.js"></script>

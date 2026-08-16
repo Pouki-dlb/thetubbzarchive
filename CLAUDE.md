@@ -189,6 +189,17 @@ exported collection.
   Consequence: `--fe` / `--box` no longer appear on this page, and `packagingClass` is gone. The header logo stays **full colour** here, unlike
   the grid: the checkboxes and green borders already carry ownership, and a greyed logo would
   read as "this size does not exist".
+- **Lightbox (`duck.html` only)**: every photo container — the hero and each variant tile — is a
+  `<button class="photo-zoom">` (keyboard-reachable), and clicking one opens `#photo-modal`, which
+  shows the image at its **native 400×400** and never larger (upscaling would just blur it). Markup
+  is static in `duck.html` (like the About modal in `index.html`) and reuses `.modal` /
+  `.modal-backdrop` / `.modal-close`; wiring is `bindPhotoZoom()` in `duck.js`, bound **once** by
+  delegation on `#duck-root` (the photos don't exist yet at load, and the hero changes `src`).
+  Gotchas: read the clicked `img.src`, **never `img.currentSrc`** — `currentSrc` describes the
+  *loaded* image, so right after a hero flip it still points at the previous size; `src` is already
+  the retained source (`onerror` swaps it to the placeholder), so no path needs recomputing. A
+  placeholder is not zoomed. The button must stay **outside** the variant's `<label>`, or clicking
+  the photo would toggle ownership.
 - **Anything overlaying a figurine photo must NOT follow the theme.** Catalog images are opaque
   and their background is **white in both themes** (verified across the catalog: luminance ≥ 240
   in the badge corner). Wiring such an overlay to `--text` / `--surface` makes it light-on-white

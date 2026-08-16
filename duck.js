@@ -33,6 +33,10 @@
     var sizes = T.sizesOf(fig);
     if (!sizes.length) sizes = ["classic"];
     var mainImg = T.sizeImageFor(fig.id, sizes[0]);
+    // Le hero porte sa taille dans son alt (« Batman — Mini »), comme les tuiles : c'est
+    // ce texte que la lightbox reprend en légende. setHeroSize le réécrit à chaque
+    // bascule, sinon la légende annoncerait la taille de départ.
+    function heroAlt(size) { return fig.name + " — " + T.sizeLabel(meta, size); }
 
     // Une tuile par EMBALLAGE. La taille n'est plus écrite ici : elle est portée par
     // l'en-tête du groupe, ce qui libère la place pour le nom complet de l'emballage.
@@ -48,10 +52,10 @@
 
       return (
         '<div class="variant' + (owned ? " is-owned" : "") + '">' +
-          '<div class="variant-media">' +
+          '<button type="button" class="variant-media photo-zoom" title="View larger">' +
             '<img loading="lazy" src="' + T.esc(img) + '" alt="' + T.esc(altTxt) + '" ' +
               'onerror="this.onerror=null;this.src=\'' + T.PLACEHOLDER + '\'" />' +
-          '</div>' +
+          '</button>' +
           (v.limitedTo ? '<p class="variant-limited">🔒 Limited to ' +
             T.esc(Number(v.limitedTo).toLocaleString("en-US")) + ' units</p>' : '') +
           // L'emoji tient sur la MÊME ligne que la case à cocher, calé à droite : plus de
@@ -102,10 +106,10 @@
       '<article class="duck">' +
         '<div class="duck-hero">' +
           '<div class="duck-hero-figure">' +
-            '<div class="duck-hero-media">' +
-              '<img id="hero-img" src="' + T.esc(mainImg) + '" alt="' + T.esc(fig.name) + '" ' +
+            '<button type="button" class="duck-hero-media photo-zoom" title="View larger">' +
+              '<img id="hero-img" src="' + T.esc(mainImg) + '" alt="' + T.esc(heroAlt(sizes[0])) + '" ' +
                 'onerror="this.onerror=null;this.src=\'' + T.PLACEHOLDER + '\'" />' +
-            '</div>' +
+            '</button>' +
             (sizes.length > 1 ?
               '<button id="hero-flip" class="hero-flip" type="button" ' +
                 'title="Show ' + T.esc(T.sizeLabel(meta, sizes[1])) + '">' +
@@ -165,6 +169,7 @@
         var size = sizes[heroIdx];
         heroImg.onerror = function () { this.onerror = null; this.src = T.PLACEHOLDER; };
         heroImg.src = T.sizeImageFor(fig.id, size);
+        heroImg.alt = heroAlt(size);
         flip.textContent = "⇄ " + T.sizeLabel(meta, size);
         flip.title = "Show " + T.sizeLabel(meta, sizes[(heroIdx + 1) % sizes.length]);
         heads.forEach(function (h) {
@@ -218,8 +223,57 @@
   }
 
   /* ---------------------------------------------------------------- */
+  /* Lightbox : une photo cliquée s'ouvre à sa taille native          */
+  /* ---------------------------------------------------------------- */
+
+  // Câblée une fois pour toutes, en délégation sur #duck-root : les photos n'existent
+  // pas encore au chargement (le catalogue arrive plus tard) et le hero change de src.
+  function bindPhotoZoom() {
+    var modal = document.getElementById("photo-modal");
+    var modalImg = document.getElementById("photo-modal-img");
+    var caption = document.getElementById("photo-modal-caption");
+    var opener = null; // pour rendre le focus au bouton d'origine à la fermeture
+
+    function open(btn) {
+      var im = btn.querySelector("img");
+      var src = im.src;
+      // .src est DÉJÀ la source retenue (onerror a pu basculer sur le placeholder) :
+      // inutile de recalculer un chemin. Surtout PAS .currentSrc, qui décrit l'image
+      // *chargée* : juste après un flip du hero il pointe encore sur la taille
+      // précédente. Et on n'agrandit pas un placeholder — voir en grand « image
+      // manquante » n'apprend rien.
+      if (!src || src.indexOf(T.PLACEHOLDER) !== -1) return;
+      opener = btn;
+      modalImg.src = src;
+      modalImg.alt = im.alt;
+      caption.textContent = im.alt;
+      modal.hidden = false;
+      modal.querySelector(".modal-close").focus();
+    }
+
+    function close() {
+      modal.hidden = true;
+      modalImg.removeAttribute("src");
+      if (opener) { opener.focus(); opener = null; }
+    }
+
+    root.addEventListener("click", function (e) {
+      var btn = e.target.closest(".photo-zoom");
+      if (btn) open(btn);
+    });
+    modal.addEventListener("click", function (e) {
+      if (e.target.hasAttribute("data-close")) close();
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && !modal.hidden) close();
+    });
+  }
+
+  /* ---------------------------------------------------------------- */
   /* Démarrage                                                        */
   /* ---------------------------------------------------------------- */
+
+  bindPhotoZoom();
 
   var id = getId();
   T.loadCatalog()

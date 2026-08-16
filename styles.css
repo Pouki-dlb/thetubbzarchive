@@ -490,6 +490,32 @@ code { background: var(--surface-2); padding: .1em .4em; border-radius: 6px; fon
 .modal-actions { display: flex; gap: 10px; margin-top: 14px; }
 .modal-actions .btn { flex: 1; justify-content: center; }
 
+/* ---------------- Lightbox photo (duck.html) ---------------- */
+/* Les conteneurs de photo (hero et vignettes) sont des <button> : le clic doit être
+   possible au clavier aussi. On neutralise le style natif du bouton — le fond, le
+   ratio et l'arrondi restent portés par .duck-hero-media / .variant-media. */
+.photo-zoom {
+  display: block; width: 100%; padding: 0; border: 0;
+  font: inherit; color: inherit; cursor: zoom-in;
+}
+.photo-zoom:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+/* Le hero garde son centrage (place-items) : on redéclare le display écrasé ci-dessus. */
+button.duck-hero-media { display: grid; }
+/* Les photos du catalogue font 400×400 : la modale les montre à leur taille NATIVE.
+   Les agrandir au-delà ne ferait que les flouter ; en dessous de ~440px de large,
+   c'est l'écran qui les rétrécit. */
+.lightbox-box {
+  position: relative; z-index: 1;
+  width: min(422px, 100%); /* 400 (image) + 2×10 de padding + 2×1 de bordure */
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 10px;
+}
+/* Fond blanc EN DUR : les photos sont opaques et blanches dans les deux thèmes
+   (cf. .num-badge / .heart), un fond thémé jurerait sur leurs bords. */
+.lightbox-box img { display: block; width: 100%; height: auto; border-radius: 10px; background: #fff; }
+.lightbox-box .modal-close { position: absolute; top: 14px; right: 14px; float: none; margin: 0; }
+.lightbox-caption { margin: 8px 2px 0; font-size: .85rem; color: var(--muted); text-align: center; }
+
 .about-social { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
 .pill-link {
   display: inline-flex; align-items: center; gap: 10px;
